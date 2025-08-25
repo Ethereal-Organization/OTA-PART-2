@@ -1,0 +1,3342 @@
+<!DOCTYPE html>
+<html xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+<head>
+<link href='https://www.blogger.com/static/v1/widgets/1394523530-widget_css_bundle.css' rel='stylesheet' type='text/css'/>
+<meta content='text/html; charset=UTF-8' http-equiv='Content-Type'/>
+<meta content='blogger' name='generator'/>
+<link href='http://georgiatechhts.blogspot.com/favicon.ico' rel='icon' type='image/x-icon'/>
+<link href='http://georgiatechhts.blogspot.com/search' rel='canonical'/>
+<link rel="alternate" type="application/atom+xml" title="GT-HSOC Student Blog - Atom" href="http://georgiatechhts.blogspot.com/feeds/posts/default" />
+<link rel="alternate" type="application/rss+xml" title="GT-HSOC Student Blog - RSS" href="http://georgiatechhts.blogspot.com/feeds/posts/default?alt=rss" />
+<link rel="service.post" type="application/atom+xml" title="GT-HSOC Student Blog - Atom" href="https://www.blogger.com/feeds/7224898312568815039/posts/default" />
+<!--Can't find substitution for tag [blog.ieCssRetrofitLinks]-->
+<meta content='http://georgiatechhts.blogspot.com/search' property='og:url'/>
+<meta content='GT-HSOC Student Blog' property='og:title'/>
+<meta content='' property='og:description'/>
+<!--[if IE]> <script> (function() { var html5 = ("abbr,article,aside,audio,canvas,datalist,details," + "figure,footer,header,hgroup,mark,menu,meter,nav,output," + "progress,section,time,video").split(','); for (var i = 0; i < html5.length; i++) { document.createElement(html5[i]); } try { document.execCommand('BackgroundImageCache', false, true); } catch(e) {} })(); </script> <![endif]-->
+<title>GT-HSOC Student Blog</title>
+<style id='page-skin-1' type='text/css'><!--
+/*
+-----------------------------------------------
+Theme Name: Milano
+Description: A free premium magazine wp theme from jinsona designs.
+Author: jinsona designs
+Author URI: www.web2feel.com
+Converted to blogger template by FalconHive.com
+Theme Name: Milano
+Theme URI: http://falconhive.com/2009/05/milano-blogger-template/
+Version: 1.00
+Date: 7 May 2009
+Author URI: http://falconhive.com
+----------------------------------------------- */
+#navbar-iframe {
+height:0px;
+visibility:hidden;
+display:none;
+}
+body {
+margin:0 auto;
+padding:0px 0px 0px 0px;
+background:#333A3F ;
+font-family:Century gothic, Arial,Tahoma,sans-serif;
+color:#161514;
+font-size:13px;
+}
+img {
+border:0;
+margin: 0 0;
+}
+a  {
+color:#6F615A;
+text-decoration:none;
+outline:none;
+}
+a:hover {
+color:#d53030;
+text-decoration:none
+}
+h1, h2, h3, h4, h5, h6 {
+}
+blockquote {
+padding-left:10px;
+color:#444;
+font-style: normal;
+}
+.clear {
+clear:both;
+}
+img.centered  {
+display: block;
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 10px;
+padding: 0px;
+}
+img.alignnone {
+padding: 5px 5px;
+margin: 0px 0px 10px 0px;
+display: inline;
+background:#fff;
+border: 1px solid #DDDDDD;
+}
+img.alignright {
+padding: 5px 5px;
+margin: 0px 5px 10px 10px;
+display: inline;
+background:#fff;
+border: 1px solid #DDDDDD;
+}
+img.alignleft {
+padding: 5px 5px;
+margin: 0px 10px 10px 5px;
+display: inline;
+background:#fff;
+border: 1px solid #DDDDDD;
+}
+.aligncenter {
+display: block;
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 10px;
+}
+.alignright {
+float: right;
+margin: 0px 0px 10px 10px;
+}
+.alignleft {
+float: left;
+margin: 0px 10px 10px 0px;
+}
+/* The Outer cover */
+#wrapper {
+width:1000px;
+margin:0 auto;
+}
+#casing {
+padding:0px 0px 0px 0px;
+background:#fff url( http://www.hsoc.gatech.edu/blog/casing.jpg) repeat-x;
+}
+/* The Header */
+#top {
+height:90px;
+margin:auto;
+background:#2d2501 ;
+width:1000px;
+background:url(http://www.hsoc.gatech.edu/blog/top.png) no-repeat;
+}
+.blogname {
+width:400px;
+font-family:Century gothic,Verdana,Tahoma,sans-serif;
+margin:5px 0 0 0px;
+float:left;
+height:80px;
+}
+.blogname h1  {
+font-size:40px;
+padding:0 0 0px 0;
+font-weight:normal;
+color:#cacccd;
+text-align:left;
+margin:5px 0 0 30px;
+text-indent:-9000px;
+background:url(http://www.hsoc.gatech.edu/blog/IAC_small.png) no-repeat;
+}
+.blogname h1  a:link, .blogname h1  a:visited{
+color: #cacccd;
+display:block;
+}
+.blogname h1  a:hover {
+color: #eee;
+}
+#subtitle {
+margin:5px 0px 0px 30px;
+font-size:12px;
+font-weight:normal;
+color:#bbb060;
+text-align:left;
+text-transform:uppercase;
+}
+/* The Search */
+#search {
+height:27px;
+width:auto;
+margin-top:55px;
+margin-right:10px;
+padding:8px 5px 0px 10px;
+width:193px;
+background:url( http://www.hsoc.gatech.edu/blog/search.png);
+float:right;
+}
+#search form {
+margin: 0;
+padding: 0;
+}
+#search fieldset {
+margin: 0;
+padding: 0;
+border: none;
+}
+#search p {
+margin: 0;
+font-size: 85%;
+}
+#s {
+margin-left:0px;
+float: left;
+width:150px;
+padding: 5px 2px 5px 5px;
+background: url( http://www.hsoc.gatech.edu/blog/sform.png) no-repeat;
+border:none;
+font: normal 100% "Tahoma", Arial, Helvetica, sans-serif;
+color:#BB2830;
+}
+#searchsubmit {
+width:29px;
+float: left;
+background:#fff url( http://www.hsoc.gatech.edu/blog/sbutton.png);
+border:none;
+font: bold 100% "century gothic", Arial, Helvetica, sans-serif;
+color: #FFFFFF;
+height:25px;
+}
+/*Page menu*/
+#foxmenucontainer{
+height:33px;
+background:#3b3104;
+display:block;
+padding:0px 0 0px 0px;
+font: 12px Tahoma,Century gothic,verdana, Arial, sans-serif;
+font-weight:normal;
+text-transform:uppercase;
+border-bottom:1px solid #5b4c0c;
+}
+#menu{
+margin: 0px;
+padding: 0px;
+width:1000px;
+background:#3b3104;
+height:33px;
+}
+#menu ul {
+float: right;
+list-style: none;
+margin: 0px;
+padding: 0px;
+}
+#menu li {
+float: right;
+list-style: none;
+margin: 0px;
+padding: 0px;
+}
+#menu li a, #menu li a:link, #menu li a:visited {
+color: #d5c464;
+display: block;
+margin: 0px;
+padding: 10px 15px 10px 15px;
+}
+#menu li a:hover, #menu li a:active {
+background:#322a07;
+color: #fff;
+margin: 0px;
+padding: 10px 15px 10px 15px;
+text-decoration: none;
+}
+#menu li li a, #menu li li a:link, #menu li li a:visited {
+background:#9F1D26;
+width: 150px;
+color: #fff;
+font-size: 13px;
+font-family: tahoma, century gothic,Georgia,  sans-serif;
+font-weight: normal;
+text-transform: uppercase;
+float: none;
+margin: 0px;
+padding: 7px 10px 7px 10px;
+border-bottom: 1px solid #D22F39;
+}
+#menu li li a:hover, #menu li li a:active {
+background: #D43640;
+color: #fff;
+padding: 7px 10px 7px 10px;
+}
+#menu li ul {
+z-index: 9999;
+position: absolute;
+left: -999em;
+height: auto;
+width: 170px;
+margin: 0px;
+padding: 0px;
+}
+#menu li li {
+}
+#menu li ul a {
+width: 140px;
+}
+#menu li ul a:hover, #menu li ul a:active {
+}
+#menu li ul ul {
+margin: -31px 0 0 170px;
+}
+#menu li:hover ul ul, #menu li:hover ul ul ul,
+#menu li.sfhover ul ul, #menu li.sfhover ul ul ul {
+left: -999em;
+}
+#menu li:hover ul, #menu li li:hover ul,
+#menu li li li:hover ul, #menu li.sfhover ul,
+#menu li li.sfhover ul, #menu li li li.sfhover ul {
+left: auto;
+}
+#menu li:hover, #menu li.sfhover {
+position: static;
+}
+/* Category menu*/
+#catmenucontainer{
+height:34px;
+background: url( http://www.hsoc.gatech.edu/blog/catmen.jpg) repeat-x;
+display:block;
+padding:0px 0 0px 0px;
+font: 16px Tahoma,Century gothic,verdana, Arial, sans-serif;
+font-weight:normal;
+text-transform:uppercase;
+}
+#catmenu{
+margin: 0px;
+padding: 0px;
+width:1000px;
+background: url( http://www.hsoc.gatech.edu/blog/catmen.jpg) repeat-x;
+height:34px;
+}
+#catmenu ul {
+float: right;
+list-style: none;
+margin: 0px;
+padding: 0px;
+}
+#catmenu li {
+float: right;
+list-style: none;
+margin: 0px;
+padding: 0px;
+}
+#catmenu li a, #catmenu li a:link, #catmenu li a:visited {
+color: #EFE195;
+display: block;
+margin: 0px;
+padding: 10px 15px 10px 15px;
+}
+#catmenu li a:hover, #catmenu li a:active {
+background: url( http://www.hsoc.gatech.edu/blog/catmenhov.jpg) repeat-x;
+color: #fff;
+margin: 0px;
+padding: 10px 15px 10px 15px;
+text-decoration: none;
+}
+#catmenu li li a, #catmenu li li a:link, #catmenu li li a:visited {
+background: #3B3104;
+width: 150px;
+color: #EFE195;
+font-size: 13px;
+font-family: tahoma, century gothic,Georgia,  sans-serif;
+font-weight: normal;
+text-transform: uppercase;
+float: none;
+margin: 0px;
+padding: 8px 10px 7px 10px;
+border-bottom:1px solid #5B4C0C;
+}
+#catmenu li li a:hover, #catmenu li li a:active {
+background: #2D2501;
+color: #fff;
+padding: 8px 10px 7px 10px;
+}
+#catmenu li ul {
+z-index: 9999;
+position: absolute;
+left: -999em;
+height: auto;
+width: 170px;
+margin: 0px;
+padding: 0px;
+}
+#catmenu li li {
+}
+#catmenu li ul a {
+width: 140px;
+}
+#catmenu li ul a:hover, #catmenu li ul a:active {
+}
+#catmenu li ul ul {
+margin: -32px 0 0 170px;
+}
+#catmenu li:hover ul ul, #catmenu li:hover ul ul ul,
+#catmenu li.sfhover ul ul, #catmenu li.sfhover ul ul ul {
+left: -999em;
+}
+#catmenu li:hover ul, #catmenu li li:hover ul,
+#catmenu li li li:hover ul, #catmenu li.sfhover ul,
+#catmenu li li.sfhover ul, #catmenu li li li.sfhover ul {
+left: auto;
+}
+#catmenu li:hover, #catmenu li.sfhover {
+position: static;
+}
+/* Main Content*/
+#content {
+float:left;
+width: 650px;
+height:100%;
+padding:10px 0px 0px 0px;
+}
+.title{
+margin: 2 0 0 0px;
+padding: 0px 0px 0px 0px;
+}
+.date {
+font-size:10px;
+font-family:Tahoma, century gothic,Arial,Verdana,Helvetica,sans-serif;
+padding:0px 5px 0px 5px;
+color:#222;
+text-transform: uppercase;
+}
+.custim {
+padding: 7px 7px;
+margin: 15px 5px 5px 5px;
+float:left;
+background:#e7e0bb;
+border: 1px solid #fff;
+}
+.single {
+width:630px;
+margin: 0px 5px 15px 12px;
+height:100%;
+color:#7f7a56;
+font: 13px tahoma, georgia, century gothic,Arial,verdana, sans-serif;
+}
+.single  h2 {
+margin: 0px 0 5px 0;
+padding: 5px 0px 0px 10px;
+text-align: left;
+font: 24px Georgia,century gothic,Arial,verdana, sans-serif;
+font-weight:normal;
+overflow:hidden;
+}
+.single  h2 a, .single  h2 a:link, .single  h2 a:visited  {
+color:#353430;
+background-color: transparent;
+}
+.single  h2 a:hover  {
+color: #353430;
+background-color: transparent;
+}
+.author{
+color:#fff;
+padding:2px 5px 2px 5px;
+background:#c7ae25;
+margin-left:5px;
+}
+.clock{
+color:#fff;
+padding:2px 5px 2px 5px;
+background:#a68e0c;
+margin-left:10px;
+}
+.comm{
+color:#fff;
+padding:2px 5px 2px 5px;
+background:#DA4A54;
+margin-left:10px;
+}
+.comm a:link,
+.comm a:visited {
+color:#fff;
+}
+.comm a:hover{
+color:#fff;
+}
+.more{
+padding:5px 0 2px 10px;
+background:url( http://www.hsoc.gatech.edu/blog/add.png) no-repeat;
+margin-right:5px;
+float:right;
+width:77px;
+height:20px;
+font: 10px  Tahoma,century gothic,Arial,verdana, sans-serif;
+}
+.more a:link,
+.more a:visited {
+color:#fff;
+}
+.more a:hover{
+color:#fff;
+}
+.singleinfo {
+height:20px;
+margin:0px 0px;
+padding: 0px 0px 5px 0px;
+font:12px  Georgia, Arial,century gothic,verdana, sans-serif;
+}
+.postmore{
+padding:0px 5px 2px 25px;
+float:left;
+font-weight:bold;
+background:url() left no-repeat;
+}
+.postmore a:link,
+.postmore a:visited {
+color:#fff;
+}
+.postmore a:hover{
+color:#fff;
+}
+.category{
+font-size:10px;
+font-family:Tahoma, century gothic,Arial,Verdana,Helvetica,sans-serif;
+text-transform: uppercase;
+}
+.category a:link,.category a:visited{
+color:#fff;
+padding:2px 5px 2px 5px;
+background:#3172B4;
+margin-left:10px;
+}
+.category a:hover{
+color:#fff;
+}
+.entry {
+margin: 0 0;
+padding: 10px 5px 5px 10px;
+}
+.entry a:link,
+.entry a:visited {
+color: #AC0604;
+background-color: transparent;
+}
+.entry a:hover {
+color:#455236;
+background-color: transparent;
+text-decoration: none;
+}
+.postmeta {
+margin:0 0;
+padding: 0px 5px 5px 10px;
+}
+/* right column */
+#rightcol{
+float:right;
+width:340px;
+padding:0 5px 10px 0;
+}
+/* The Sidebar1 */
+.sidebar1{
+float:left;
+width:160px;
+padding-top:5px;
+font-size:12px;
+font-family:Tahoma,Georgia,Century gothic, Arial, sans-serif;
+}
+.sidebar1 h2 {
+line-height:30px;
+font-size:14px;
+color:#fff;
+margin:5px 0 0px 0 ;
+padding:0px 0 0 5px;
+background:#948e6f;
+font-weight:bold;
+font-family:Georgia,Century gothic, Arial, sans-serif;
+text-transform:uppercase;
+border:1px solid #E7E0BB;
+}
+.sidebar1 ul {
+list-style-type: none;
+margin: 0 ;
+padding: 0;
+}
+.sidebar1 ul ul  {
+list-style-type: none;
+margin: 0;
+padding: 0px 0px 10px 0px;
+background-repeat:no-repeat;
+}
+.sidebar1 ul ul ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+border:0;
+}
+.sidebar1 ul ul ul ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+border:0;
+}
+.sidebar1 ul li {
+background:#DFD28B;
+color:#5F551D;
+text-decoration: none;
+padding: 5px 0px 5px 5px;
+display:block;
+border-bottom:1px solid #d0c378;
+float: left;
+clear: left;
+width: 154px;
+}
+.sidebar1 ul li a:link, .sidebar1 ul li a:visited {
+height:100%;
+line-height:18px;
+}
+.sidebar1 ul li a:hover {
+color: #fff;
+}
+.sidebar1 p {
+padding: 7px 10px;
+margin:0;
+}
+.sidebar1 table {
+width:100%;
+text-align:center;
+color:#787d7f;
+}
+/* The Sidebar2 */
+.sidebar2{
+float:right;
+width:160px;
+padding-top:5px;
+padding-right:10px;
+font-size:12px;
+font-family:Tahoma,Century gothic, Arial, sans-serif;
+}
+.sidebar2 h2 {
+line-height:30px;
+font-size:14px;
+color:#fff;
+margin:5px 0 0px 0 ;
+padding:0px 0 0 5px;
+background:#948e6f;
+font-weight:bold;
+font-family:Georgia,Century gothic, Arial, sans-serif;
+text-transform:uppercase;
+border:1px solid #E7E0BB;
+}
+.sidebar2 ul {
+list-style-type: none;
+margin: 0 ;
+padding: 0;
+}
+.sidebar2 ul ul  {
+list-style-type: none;
+margin: 0;
+padding: 0px 0px 10px 0px;
+background-repeat:no-repeat;
+}
+.sidebar2 ul ul ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+border:0;
+}
+.sidebar2 ul ul ul ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+border:0;
+}
+.sidebar2 ul li {
+background:#DFD28B;
+color:#5F551D;
+text-decoration: none;
+padding: 5px 0px 5px 5px;
+display:block;
+border-bottom:1px solid #d0c378;
+float: left;
+clear: left;
+width: 154px;
+}
+.sidebar2 ul li a:link, .sidebar2 ul li a:visited {
+height:100%;
+line-height:18px;
+}
+.sidebar2 ul li a:hover {
+color: #fff;
+}
+.sidebar2 p {
+padding: 7px 10px;
+margin:0;
+}
+.sidebar2 table {
+width:100%;
+text-align:center;
+color:#787d7f;
+}
+#ArchiveList ul li {
+padding: 2px 2px 2px 2px;
+word-wrap: break-word; /* fix for long text breaking sidebar float in IE */
+float: left;
+width: 154px;
+}
+ul.posts a {
+padding: 0px 25px 0 0px;
+}
+/* --- FOOTER --- */
+#footer {
+height:65px;
+padding:10px 0 0 0px;
+color:#ccc;
+font-size:11px;
+font-weight:normal;
+letter-spacing:1px;
+font-family: Tahoma,georgia,Century gothic,  Arial, sans-serif;
+float:left;
+width:100%;
+background:#2D2501;
+border-top:8px solid #CBB329;
+}
+#footer a:link , #footer a:visited{
+color:#ccc;
+}
+#footer a:hover {
+color:#eee;
+}
+/* The Attachment */
+.contentCenter {
+text-align:center;
+}
+/* The Page Title */
+h2.pagetitle {
+padding:5px 5px;
+margin:0px 0 10px 5px;
+font-size:16px;
+text-align:center;
+color:#4A413C;
+font-family:Georgia,Century gothic,Arial, Helvetica, sans-serif;
+}
+.ad1{
+text-align:center;
+padding:10px 10px;
+float:left;
+}
+.ad2{
+text-align:center;
+padding:5px 5px;
+}
+#comment{
+height:100%;
+padding:0px 10px;
+margin:0px 0px;
+}
+h3#comments {
+padding:5px 10px;
+margin:10px 0px;
+border:1px solid #816D05;
+font-size:20px;
+font-weight:normal;
+color:#fff;
+background:#AC940C;
+font-family:Georgia,Century gothic,Arial, Helvetica, sans-serif;
+}
+#respond{
+height:100%;
+padding:0px 5px;
+margin:0px 0px;
+background:#E7E0BB;
+border:1px solid #CFC9A8;
+}
+#respond h3{
+padding:5px 10px 5px 10px;
+margin:10px 0px;
+font-size:22px;
+font-weight:normal;
+color:#444;
+font-family:Georgia,Century gothic,Arial, Helvetica, sans-serif;
+}
+#commentform {
+padding:0px 10px 10px 10px;
+margin:0px 0px 0px 0px;
+color:#BFAFA7;
+font-family:tahoma,Century gothic,Arial, Helvetica, sans-serif;
+}
+#commentform p {
+color:#2D2501;
+}
+#commentform input {
+background:#F4F4F4;
+border:1px solid #DEDCDD;
+color:#444;
+padding-left:10px;
+}
+#commentform textarea {
+background:#fff;
+border:1px solid #CFC9A8;
+color:#444;
+width:95%;
+padding:5px 5px;
+}
+.comments input#submit {
+width:auto;
+line-height:25px;
+padding:3px 5px;
+background:#AC950D;
+border:2px solid #C7AE25;
+color:#fff;
+font-family:tahoma,Century gothic,Arial, Helvetica, sans-serif;
+}
+/* Comment Form */
+.comment-form {
+max-width:650px !important;
+width:650px !important;
+}
+ol.commentlist {
+list-style:none;
+margin:0;
+padding:0;
+text-indent:0;
+}
+ol.commentlist li {
+border:1px solid #DEDCDD;
+margin:0 0 10px;
+padding:5px 7px 5px 57px;
+position:relative;
+}
+ol.commentlist li div.comment-author {
+padding:0 170px 0 0;
+}
+ol.commentlist li div.vcard {
+font:20px Georgia, helvetica,arial,sans-serif;
+padding:5px 0px;
+}
+ol.commentlist li div.vcard cite.fn {
+font-style:normal;
+}
+ol.commentlist li div.vcard cite.fn a.url {
+color:#c00;
+text-decoration:none;
+}
+ol.commentlist li div.vcard cite.fn a.url:hover { color:#000;
+}
+ol.commentlist li div.vcard img.avatar {
+border:5px solid #ddd;
+left:7px;
+position:absolute;
+top:7px;
+}
+ol.commentlist li div.comment-meta {
+font:12px Tahoma, helvetica,arial,sans-serif;
+position:absolute;
+right:10px;
+text-align:right;
+top:5px;
+}
+ol.commentlist li div.comment-meta a {
+color:#0083DB;
+text-decoration:none;
+}
+ol.commentlist li div.comment-meta a:hover {
+color:#000;
+}
+ol.commentlist li p {
+font:normal 12px Tahoma, helvetica,arial,sans-serif;
+margin:0 0 1em;
+line-height:18px;
+}
+ol.commentlist li ul {
+font:normal 12px/1.4 helvetica,arial,sans-serif;
+list-style:square;
+margin:0 0 1em;
+padding:0;
+text-indent:0;
+}
+ol.commentlist li div.reply {
+background:#D8434D;
+border:2px solid #BE272F;
+color:#fff;
+font:bold 9px/1 Tahoma, Georgia,arial,sans-serif;
+padding:5px 10px;
+text-align:center;
+width:36px;
+}
+ol.commentlist li div.reply a {
+color:#fff;
+text-decoration:none;
+text-transform:uppercase;
+}
+ol.commentlist li ul.children {
+list-style:none;
+margin:1em 0 0;
+text-indent:0;
+}
+ol.commentlist li ul.children li.depth-2 {
+margin:0 0 .25em;
+}
+ol.commentlist li ul.children li.depth-3 {
+margin:0 0 .25em;
+}
+ol.commentlist li ul.children li.depth-4 {
+margin:0 0 .25em;
+}
+ol.commentlist li.even {
+background:#EFEAD1;
+}
+ol.commentlist li.odd {
+background:#fff;
+}
+ol.commentlist li.pingback div.vcard {
+padding:0 170px 0 0;
+}
+/* The Navigation */
+#navigation{
+width:600px;
+margin:0px 0px 0px 0px;
+padding:0px 15px 10px 12px;
+}
+.f-left{
+float:left;
+padding: 0 0 0 15px;
+line-height:18px;
+}
+.f-right{
+float:right;
+padding: 0 15px 0 0;
+line-height:18px;
+text-align:right;
+}
+.widgets {
+width:330px;
+overflow:visible;
+margin-top:5px;
+padding:0px 0px 0px 0px;
+background:#fff;
+border:1px solid #bcbcbc;
+}
+.widgets a {
+color: #222;
+text-decoration: none;
+}
+.widgets a:hover {
+color: #009;
+text-decoration: underline;
+}
+ul.tabnav{
+padding:4px 0px 4px 0px;
+height:30px;
+margin:0px 0px;
+background:#e7e0bb;
+border:1px solid #fff;
+}
+.tabnav li {
+display: inline;
+list-style: none;
+float:left;
+text-align:center;
+margin-right:2px;
+margin-left:9px;
+}
+.tabnav li a {
+text-decoration: none;
+text-transform: uppercase;
+font-weight: normal;
+padding: 6px 8px;
+width:80px;
+font-weight:normal;
+font: 12px tahoma, helvetica,arial,sans-serif;
+color: #2C2F32;
+text-decoration: none;
+display:block;
+background:#c7bd88;
+}
+.tabnav li a:hover, .tabnav li a:active, .tabnav li.ui-tabs-selected a {
+text-decoration:none;
+background: #948e6f;
+color: #E7E0BB;
+}
+.tabdiv {
+padding: 5px 5px 5px 5px;
+font-family:Tahoma,Century gothic, Arial, sans-serif;
+background:#fff;
+}
+.tabdiv a:link,.tabdiv  a:visited {
+color:#333;
+}
+.tabdiv a:hover{
+color: #2676A1;
+}
+.tabdiv ul{
+list-style-type:none;
+margin:0px 0px;
+padding:0px 0px;
+}
+.tabdiv ul li{
+height:100%;
+line-height:28px;
+padding: 0px 0px 0px 0px;
+color:#333;
+}
+.tabdiv li a:link,.tabdiv li a:visited{
+background:#F3F3F3;
+display:block;
+/*margin-left:5px;*/
+overflow:visible;
+line-height:24px;
+padding:2px 2px ;
+/*margin:2px 0px;*/
+color:#6F6B53;
+font-size:13px;
+}
+.tabdiv li a:hover {
+background:#EFE3A4;
+color: #7d6d13;
+text-decoration:none;
+}
+.ui-tabs-hide {
+display: none;
+}
+#singad{
+background:url( http://www.hsoc.gatech.edu/blog/sing.png) repeat-x;
+height:107px;
+padding: 10px 0px 0px 0px;
+}
+#pagedes{
+background:url( http://www.hsoc.gatech.edu/blog/pagedes.png);
+height:145px;
+padding: 0px 0px 0px 0px;
+}
+#pagedes h2{
+padding:30px 0px 0px 20px;
+margin:0px 0px;
+font-size:22px;
+font-family: Georgia,tahoma, century gothic,  sans-serif;
+color:#fff;
+}
+.pdescript{
+height:75px;
+float:left;
+overflow:hidden;
+width:450px;
+}
+.pdescript p{
+padding:10px 0px 0px 20px;
+margin:0px 0px;
+font-size:14px;
+font-family:tahoma, century gothic,  sans-serif;
+color:#FFF8CF;
+}
+#myslider{
+background:url( http://www.hsoc.gatech.edu/blog/slide.png  );
+height:290px;
+padding: 0px 40px 0px 0px;
+}
+#coverslide{
+position:relative;
+width:540px;
+background:#fff;
+float:right;
+height:260px;
+margin-top:20px;
+}
+#slider{
+width:520px;
+height:240px;
+padding:0px 0px;
+margin:10px 10px;
+<!-- visibility: hidden; -->
+background:#fff;
+}
+#slider ul{
+margin:0px 0px;
+padding:0;
+list-style:none;
+}
+#slider li{
+width:520px;
+background:#ddd;
+height:240px;
+overflow:hidden;
+margin:0px 0px;
+}
+#prevBtn, #nextBtn{
+display:block;
+width:30px;
+height:77px;
+position:absolute;
+left:-30px;
+top:105px;
+}
+#nextBtn{
+left:540px;
+}
+#prevBtn a, #nextBtn a{
+display:block;
+width:30px;
+height:77px;
+background:url( http://www.hsoc.gatech.edu/blog/left.png) no-repeat 0 0;
+}
+#nextBtn a{
+background:url( http://www.hsoc.gatech.edu/blog/right.png) no-repeat 0 0;
+}
+.slmeta{
+position:absolute;
+top:50px;
+height:100px;
+width:520px;
+overflow:hidden;
+background:#fff;
+}
+#welcome{
+width:350px;
+float:left;
+margin-top:60px;
+margin-left:20px;
+height:220px;
+overflow:hidden;
+}
+#welcome p{
+padding:0px 0px;
+margin:10px 0px;
+line-height:20px;
+font-size:14px;
+font-family:Century gothic,Arial,Tahoma,sans-serif
+color:#e7dda4;
+}
+.bigbanner img  {
+margin: 0px 0px;
+padding: 0px 0px;
+}
+.banner{
+margin: 5px 0 0 0;
+padding: 0px 0 0 0px;
+width:330px;
+float:left;
+height:100%;
+}
+.banner ul {
+margin: 0px 0px;
+padding: 0px 0px;
+overflow: auto;
+}
+.banner img{
+width:126px;
+margin: 5px 8px 0px  8px ;
+padding:8px 9px ;
+list-style:none;
+display : block;
+overflow:hidden;
+float:left;
+background:#E7E0BB ;
+border:1px solid #fff;
+}
+.banner li a:link, .banner li a:visited {
+text-decoration: none;
+}
+.tagcloud{
+width:300px;
+float:left;
+height:100%;
+padding:5px 15px;
+margin:5px 0px 0px 0px;
+background:#fff ;
+border:1px solid #BCBCBC;
+}
+#blog-pager-newer-link{padding-left:20px;float:left;font-size:30px;
+font-weight: bold;color:#d53030;}
+#blog-pager-older-link{padding-right:20px;float:right;font-size:30px;
+font-weight: bold;color:#d53030;}
+#blog-pager{text-align:center;font-size:30px;
+font-weight:bold;color:#d53030;}
+.feed-links{padding-left:10px;}
+
+--></style>
+<script src='http://www.hsoc.gatech.edu/blog/jquery-1.2.6.min.js' type='text/javascript'></script>
+<script src='http://www.hsoc.gatech.edu/blog/jquery-ui-personalized-1.5.2.packed.js' type='text/javascript'></script>
+<script src='http://www.hsoc.gatech.edu/blog/sprinkle.js' type='text/javascript'></script>
+<script src='http://www.hsoc.gatech.edu/blog/easyslider.js' type='text/javascript'></script>
+<script type='text/javascript'>
+	
+		$(document).ready(function(){
+		$('#slider').css('visibility','visible');		
+			$("#slider").easySlider({
+				auto: true,
+				continuous: true 
+			});
+		});	
+</script>
+<link href='https://www.blogger.com/dyn-css/authorization.css?targetBlogID=7224898312568815039&amp;zx=d9683aac-fd2f-4c49-b894-0294b92caccb' media='none' onload='if(media!=&#39;all&#39;)media=&#39;all&#39;' rel='stylesheet'/><noscript><link href='https://www.blogger.com/dyn-css/authorization.css?targetBlogID=7224898312568815039&amp;zx=d9683aac-fd2f-4c49-b894-0294b92caccb' rel='stylesheet'/></noscript>
+<meta name='google-adsense-platform-account' content='ca-host-pub-1556223355139109'/>
+<meta name='google-adsense-platform-domain' content='blogspot.com'/>
+
+</head>
+<body>
+<div id='fb-root'></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div class='navbar section' id='navbar'><div class='widget Navbar' data-version='1' id='Navbar1'><script type="text/javascript">
+    function setAttributeOnload(object, attribute, val) {
+      if(window.addEventListener) {
+        window.addEventListener('load',
+          function(){ object[attribute] = val; }, false);
+      } else {
+        window.attachEvent('onload', function(){ object[attribute] = val; });
+      }
+    }
+  </script>
+<div id="navbar-iframe-container"></div>
+<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+<script type="text/javascript">
+      gapi.load("gapi.iframes:gapi.iframes.style.bubble", function() {
+        if (gapi.iframes && gapi.iframes.getContext) {
+          gapi.iframes.getContext().openChild({
+              url: 'https://www.blogger.com/navbar.g?targetBlogID\x3d7224898312568815039\x26blogName\x3dGT-HSOC+Student+Blog\x26publishMode\x3dPUBLISH_MODE_BLOGSPOT\x26navbarType\x3dLIGHT\x26layoutType\x3dLAYOUTS\x26searchRoot\x3dhttps://georgiatechhts.blogspot.com/search\x26blogLocale\x3den\x26v\x3d2\x26homepageUrl\x3dhttp://georgiatechhts.blogspot.com/\x26vt\x3d718631220102716265',
+              where: document.getElementById("navbar-iframe-container"),
+              id: "navbar-iframe"
+          });
+        }
+      });
+    </script><script type="text/javascript">
+(function() {
+var script = document.createElement('script');
+script.type = 'text/javascript';
+script.src = '//pagead2.googlesyndication.com/pagead/js/google_top_exp.js';
+var head = document.getElementsByTagName('head')[0];
+if (head) {
+head.appendChild(script);
+}})();
+</script>
+</div></div>
+<!-- Wrapper -->
+<div id='wrapper'>
+<!-- Foxmenucontainer -->
+<div id='foxmenucontainer'>
+<div id='menu'>
+<div class='menu no-items section' id='menu'>
+</div>
+</div>
+</div>
+<!-- /Foxmenucontainer -->
+<div class='clear'></div>
+<!-- Top -->
+<div id='top'>
+<!-- Title -->
+<div class='blogname'>
+<div class='header no-items section' id='header'></div>
+</div>
+<!-- /Title -->
+<div id='search'>
+<form action='/search' id='searchform' method='get'>
+<input id='s' name='q' type='text' value=''/>
+<input id='searchsubmit' type='submit' value=''/>
+</form>
+</div>
+</div>
+<!-- /Top -->
+<!-- Casing -->
+<div id='casing'>
+<!-- Slider -->
+<div id='myslider'>
+<div id='welcome'>
+<div class='welcome1 section' id='welcome1'><div class='widget HTML' data-version='1' id='HTML99'>
+<div class='widget-content'>
+<p>Welcome to the blog for the School of History and Sociology (HSOC) at Georgia Tech.  This page will help you keep up with events happening in HSOC, provide advising information for current students, inform you of upcoming recruiting events for prospective students, and share news with our HSOC alums.
+<br/>
+<br/>
+Want more information?  Click on the "Contact Us" tab to the right or use the "Live Chat" function.</p>
+</div>
+</div></div>
+</div>
+<div id='coverslide'>
+<div id='slider'>
+<div class='slider1 section' id='slider1'><div class='widget HTML' data-version='1' id='HTML98'>
+<div class='widget-content'>
+<ul>
+</ul>
+</div>
+</div></div>
+</div>
+</div>
+</div>
+<!-- /Slider -->
+<div class='clear'></div>
+<!-- Catmenucontainer -->
+<div id='catmenucontainer'>
+<div id='catmenu'>
+<div class='catmenu section' id='catmenu'><div class='widget LinkList' data-version='1' id='LinkList98'>
+<div class='widget-content'>
+<ul>
+<li><a href='http://www.hts.gatech.edu/about/contact'>Contact Us</a></li>
+<li><a href='http://www.hsoc.gatech.edu/'>HSOC Homepage</a></li>
+<li><a href='http://www.hts.gatech.edu/undergraduate/forms'>Important Forms</a></li>
+</ul>
+</div>
+</div></div>
+</div>
+</div>
+<!-- /Catmenucontainer -->
+<div class='clear'></div>
+<!-- Content -->
+<div id='content'>
+<!-- Content -->
+<div class='main section' id='main'><div class='widget Blog' data-version='1' id='Blog1'>
+<div class='blog-posts hfeed'>
+<!--Can't find substitution for tag [adStart]-->
+<div class='single' id='post'>
+<div class='title'>
+<a name='491143999961028615'></a>
+<h2>
+<a href='http://georgiatechhts.blogspot.com/2016/04/say-hello-to-new-hsoc-website-and-blog.html'>Say Hello to the NEW HSOC Website and Blog</a>
+</h2>
+<div class='date'>
+<span class='author'>
+Posted by
+<span class='fn'>Admin</span>
+</span>
+<span class='clock'>
+
+        On
+      
+5:08:00 PM
+</span>
+<span class='comm'>
+<a class='comment-link' href='http://georgiatechhts.blogspot.com/2016/04/say-hello-to-new-hsoc-website-and-blog.html#comment-form' onclick=''>54
+comments</a>
+</span>
+</div>
+</div>
+<style>.fullpost{display:none;}</style>
+<div class='entry'>
+The School of History and Sociology has gotten a makeover! &nbsp;Go to <a href="http://www.hsoc.gatech.edu/">www.hsoc.gatech.edu</a> to check out the new look of the website.<span class="&#8221;fullpost&#8221;"></span><br />
+<div>
+<br /></div>
+<div>
+With the website change, the blog is moving too. &nbsp;From now on, you can follow the HTS Undergraduate Student Blog at <a href="http://www.hsoc.gatech.edu/undergrad-blog">www.hsoc.gatech.edu/undergrad-blog</a>. &nbsp;The old blog (this one!) will stay live and all the posts will remain, so don't worry if you forgot to jot down a deadline or make note of an internship opportunity. &nbsp;The information is still there!</div>
+<div>
+<br /></div>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="https://1.bp.blogspot.com/-1aZBr0nv_OU/VxlBS3u5-yI/AAAAAAAAD2I/tGnJobX314YPIjfCcNEQcR5KziTie488ACLcB/s1600/Screen%2BShot%2B2016-04-21%2Bat%2B5.08.00%2BPM.png" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="578" src="https://1.bp.blogspot.com/-1aZBr0nv_OU/VxlBS3u5-yI/AAAAAAAAD2I/tGnJobX314YPIjfCcNEQcR5KziTie488ACLcB/s640/Screen%2BShot%2B2016-04-21%2Bat%2B5.08.00%2BPM.png" width="640" /></a></div>
+<div>
+<br /></div>
+<div style='clear: both;'></div>
+<div style='clear'></div>
+</div>
+<br/>
+<div class='singleinfo'>
+<div class='more'>
+<a href='http://georgiatechhts.blogspot.com/2016/04/say-hello-to-new-hsoc-website-and-blog.html'>READ MORE > </a>
+</div>
+</div>
+<div class='edit'></div>
+<div class='postmeta'>
+<span class='reaction-buttons'>
+</span>
+<span class='star-ratings'>
+</span>
+
+	  Tags:
+	  
+<a href='http://georgiatechhts.blogspot.com/search/label/blog' rel='tag'>blog</a>,
+<a href='http://georgiatechhts.blogspot.com/search/label/HSOC' rel='tag'>HSOC</a>,
+<a href='http://georgiatechhts.blogspot.com/search/label/website' rel='tag'>website</a>
+<span class='post-backlinks post-comment-link'>
+</span>
+<span class='post-icons'>
+<span class='item-action'>
+	  | <a href='https://www.blogger.com/email-post.g?blogID=7224898312568815039&postID=491143999961028615' title='Email Post'>
+<img alt='' class='icon-action' height='13' src='http://www.blogger.com/img/icon18_email.gif' width='18'/>
+</a>
+</span>
+</span>
+</div>
+</div>
+<div class='single' id='post'>
+<div class='title'>
+<a name='4575972753879389156'></a>
+<h2>
+<a href='http://georgiatechhts.blogspot.com/2016/03/metropolitan-america-in-globalizing-age.html'> Metropolitan America in a Globalizing Age</a>
+</h2>
+<div class='date'>
+<span class='author'>
+Posted by
+<span class='fn'>Admin</span>
+</span>
+<span class='clock'>
+
+        On
+      
+4:00:00 PM
+</span>
+<span class='comm'>
+<a class='comment-link' href='http://georgiatechhts.blogspot.com/2016/03/metropolitan-america-in-globalizing-age.html#comment-form' onclick=''>2
+comments</a>
+</span>
+</div>
+</div>
+<style>.fullpost{display:none;}</style>
+<div class='entry'>
+On Friday, April 22, 2016, the School of History and Sociology at Georgia Tech is hosting a day-long symposium that will feature a roundtable discussion composed of leading historians and sociologists, a series of breakout sessions led by those experts, a panel marking the 20th anniversary of the 1996 Atlanta Olympics, and a reception. More information is in the flyer below and on the School's website: <a href="http://hsoc.gatech.edu/symposium">http://hsoc.gatech.edu/symposium</a>.<br />
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<a href="https://3.bp.blogspot.com/-J0ZJw61MA6E/VuBM-izBDaI/AAAAAAAAA-w/fDo6UZMYyNA/s1600/hsoc%2Bsymposium.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="640" src="https://3.bp.blogspot.com/-J0ZJw61MA6E/VuBM-izBDaI/AAAAAAAAA-w/fDo6UZMYyNA/s640/hsoc%2Bsymposium.jpg" width="412" /></a></div>
+<div>
+<br />
+<br /></div>
+<div style='clear: both;'></div>
+<div style='clear'></div>
+</div>
+<br/>
+<div class='singleinfo'>
+<div class='more'>
+<a href='http://georgiatechhts.blogspot.com/2016/03/metropolitan-america-in-globalizing-age.html'>READ MORE > </a>
+</div>
+</div>
+<div class='edit'></div>
+<div class='postmeta'>
+<span class='reaction-buttons'>
+</span>
+<span class='star-ratings'>
+</span>
+
+	  Tags:
+	  
+<a href='http://georgiatechhts.blogspot.com/search/label/history' rel='tag'>history</a>,
+<a href='http://georgiatechhts.blogspot.com/search/label/HSOC' rel='tag'>HSOC</a>,
+<a href='http://georgiatechhts.blogspot.com/search/label/panel' rel='tag'>panel</a>,
+<a href='http://georgiatechhts.blogspot.com/search/label/sociology' rel='tag'>sociology</a>
+<span class='post-backlinks post-comment-link'>
+</span>
+<span class='post-icons'>
+<span class='item-action'>
+	  | <a href='https://www.blogger.com/email-post.g?blogID=7224898312568815039&postID=4575972753879389156' title='Email Post'>
+<img alt='' class='icon-action' height='13' src='http://www.blogger.com/img/icon18_email.gif' width='18'/>
+</a>
+</span>
+</span>
+</div>
+</div>
+<div class='single' id='post'>
+<div class='title'>
+<a name='825147020656145970'></a>
+<h2>
+<a href='http://georgiatechhts.blogspot.com/2016/04/student-honors-celebration.html'>Student Honors Celebration</a>
+</h2>
+<div class='date'>
+<span class='author'>
+Posted by
+<span class='fn'>Admin</span>
+</span>
+<span class='clock'>
+
+        On
+      
+12:02:00 PM
+</span>
+<span class='comm'>
+<a class='comment-link' href='http://georgiatechhts.blogspot.com/2016/04/student-honors-celebration.html#comment-form' onclick=''>0
+comments</a>
+</span>
+</div>
+</div>
+<style>.fullpost{display:none;}</style>
+<div class='entry'>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="https://3.bp.blogspot.com/-b7RPepQ0m2A/VxeoCDnC6NI/AAAAAAAABZ8/rZZC4oIEv6sT3nNIZR2nJe5i_VvsdSHzACLcB/s1600/student%2Bhonors%2Bcelebration.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="133" src="https://3.bp.blogspot.com/-b7RPepQ0m2A/VxeoCDnC6NI/AAAAAAAABZ8/rZZC4oIEv6sT3nNIZR2nJe5i_VvsdSHzACLcB/s200/student%2Bhonors%2Bcelebration.jpg" width="200" /></a></div>
+The Student Honors Celebration recognizes students who have achieved academic and scholastic excellence in their programs of study at Georgia Tech. All student award recipients and their guests are invited to attend this celebration. An RSVP is required to attend this event.<span class="&#8221;fullpost&#8221;"></span><br />
+<div>
+<br /></div>
+<div>
+For more information click <a href="http://www.specialevents.gatech.edu/events/student-honors">here</a>.</div>
+<div style='clear: both;'></div>
+<div style='clear'></div>
+</div>
+<br/>
+<div class='singleinfo'>
+<div class='more'>
+<a href='http://georgiatechhts.blogspot.com/2016/04/student-honors-celebration.html'>READ MORE > </a>
+</div>
+</div>
+<div class='edit'></div>
+<div class='postmeta'>
+<span class='reaction-buttons'>
+</span>
+<span class='star-ratings'>
+</span>
+
+	  Tags:
+	  
+<a href='http://georgiatechhts.blogspot.com/search/label/awards' rel='tag'>awards</a>,
+<a href='http://georgiatechhts.blogspot.com/search/label/students' rel='tag'>students</a>
+<span class='post-backlinks post-comment-link'>
+</span>
+<span class='post-icons'>
+<span class='item-action'>
+	  | <a href='https://www.blogger.com/email-post.g?blogID=7224898312568815039&postID=825147020656145970' title='Email Post'>
+<img alt='' class='icon-action' height='13' src='http://www.blogger.com/img/icon18_email.gif' width='18'/>
+</a>
+</span>
+</span>
+</div>
+</div>
+<div class='single' id='post'>
+<div class='title'>
+<a name='428519078444830325'></a>
+<h2>
+<a href='http://georgiatechhts.blogspot.com/2016/04/spring-faculty-and-staff-luncheon-awards.html'>Spring Faculty and Staff Luncheon Awards</a>
+</h2>
+<div class='date'>
+<span class='author'>
+Posted by
+<span class='fn'>Admin</span>
+</span>
+<span class='clock'>
+
+        On
+      
+11:58:00 AM
+</span>
+<span class='comm'>
+<a class='comment-link' href='http://georgiatechhts.blogspot.com/2016/04/spring-faculty-and-staff-luncheon-awards.html#comment-form' onclick=''>2
+comments</a>
+</span>
+</div>
+</div>
+<style>.fullpost{display:none;}</style>
+<div class='entry'>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="https://3.bp.blogspot.com/-6jJ-FOH8JfQ/Vxem8yqegJI/AAAAAAAABZw/2EGiUo__KcIABkYVFiEdujcqcBdZajHNACLcB/s1600/hsoc%2Baward%2Bluncheon.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="213" src="https://3.bp.blogspot.com/-6jJ-FOH8JfQ/Vxem8yqegJI/AAAAAAAABZw/2EGiUo__KcIABkYVFiEdujcqcBdZajHNACLcB/s320/hsoc%2Baward%2Bluncheon.jpg" width="320" /></a></div>
+Faculty, staff, students, alumni, and friends of the College gathered to celebrate the end of the year at the Spring Faculty and Staff Luncheon on Tuesday, April 19.<br /><br />Dean <a href="http://www.iac.gatech.edu/people/faculty/royster">Jacqueline Royster</a> led the program and recognized the accomplishments of the College throughout the year.<div>
+<br />See more at: <a href="http://www.iac.gatech.edu/news-events/stories/526901#sthash.swSKFTPB.dpuf">http://www.iac.gatech.edu/news-events/stories/526901#sthash.swSKFTPB.dpuf</a><span class="&#8221;fullpost&#8221;"></span></div>
+<div style='clear: both;'></div>
+<div style='clear'></div>
+</div>
+<br/>
+<div class='singleinfo'>
+<div class='more'>
+<a href='http://georgiatechhts.blogspot.com/2016/04/spring-faculty-and-staff-luncheon-awards.html'>READ MORE > </a>
+</div>
+</div>
+<div class='edit'></div>
+<div class='postmeta'>
+<span class='reaction-buttons'>
+</span>
+<span class='star-ratings'>
+</span>
+
+	  Tags:
+	  
+<a href='http://georgiatechhts.blogspot.com/search/label/alums' rel='tag'>alums</a>,
+<a href='http://georgiatechhts.blogspot.com/search/label/awards' rel='tag'>awards</a>,
+<a href='http://georgiatechhts.blogspot.com/search/label/faculty' rel='tag'>faculty</a>,
+<a href='http://georgiatechhts.blogspot.com/search/label/students' rel='tag'>students</a>
+<span class='post-backlinks post-comment-link'>
+</span>
+<span class='post-icons'>
+<span class='item-action'>
+	  | <a href='https://www.blogger.com/email-post.g?blogID=7224898312568815039&postID=428519078444830325' title='Email Post'>
+<img alt='' class='icon-action' height='13' src='http://www.blogger.com/img/icon18_email.gif' width='18'/>
+</a>
+</span>
+</span>
+</div>
+</div>
+<div class='single' id='post'>
+<div class='title'>
+<a name='5456652591213496301'></a>
+<h2>
+<a href='http://georgiatechhts.blogspot.com/2016/04/ostp-fall-policy-internship-program.html'>OSTP Fall Policy Internship Program</a>
+</h2>
+<div class='date'>
+<span class='author'>
+Posted by
+<span class='fn'>Admin</span>
+</span>
+<span class='clock'>
+
+        On
+      
+11:36:00 AM
+</span>
+<span class='comm'>
+<a class='comment-link' href='http://georgiatechhts.blogspot.com/2016/04/ostp-fall-policy-internship-program.html#comment-form' onclick=''>0
+comments</a>
+</span>
+</div>
+</div>
+<style>.fullpost{display:none;}</style>
+<div class='entry'>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="https://1.bp.blogspot.com/-HuLvhtyo0QQ/VxelyUn6RPI/AAAAAAAABZk/r9fFFiBTT0gu2CW-Z0UCmtaezg7cMMmMACLcB/s1600/science.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="150" src="https://1.bp.blogspot.com/-HuLvhtyo0QQ/VxelyUn6RPI/AAAAAAAABZk/r9fFFiBTT0gu2CW-Z0UCmtaezg7cMMmMACLcB/s200/science.jpg" width="200" /></a></div>
+The White House Office of Science and Technology Policy is currently accepting applications for its Fall Policy Internship Program. <b>The application deadline is June 17, 2016</b>. Students who are U.S. citizens and who will be enrolled in, or have just graduated from, an academic program should feel free to apply.<br />
+<div>
+<br />
+More information and application instructions are available at</div>
+<div>
+<a href="https://www.whitehouse.gov/administration/eop/ostp/about/student">https://www.whitehouse.gov/administration/eop/ostp/about/student</a>.&nbsp;</div>
+<div>
+<br /></div>
+<div>
+<br />
+<br />
+About OSTP: The Office of Science and Technology Policy advises the President on the effects of science and technology on domestic and international affairs. The office serves as a source of scientific and technological analysis and judgment for the President with respect to major policies, plans and programs of the Federal Government.
+
+About the Internship Program. Interns are accepted for one of three annual terms (Spring, Summer, or Fall), which each last no more than 90 days. The assignments provide educational enrichment, practical work experience, and networking opportunities with other individuals in the science and technology policy arena.
+<br />
+<span class="&#8221;fullpost&#8221;"></span></div>
+<div style='clear: both;'></div>
+<div style='clear'></div>
+</div>
+<br/>
+<div class='singleinfo'>
+<div class='more'>
+<a href='http://georgiatechhts.blogspot.com/2016/04/ostp-fall-policy-internship-program.html'>READ MORE > </a>
+</div>
+</div>
+<div class='edit'></div>
+<div class='postmeta'>
+<span class='reaction-buttons'>
+</span>
+<span class='star-ratings'>
+</span>
+
+	  Tags:
+	  
+<a href='http://georgiatechhts.blogspot.com/search/label/government' rel='tag'>government</a>,
+<a href='http://georgiatechhts.blogspot.com/search/label/internship' rel='tag'>internship</a>,
+<a href='http://georgiatechhts.blogspot.com/search/label/science%20and%20technology%20studies' rel='tag'>science and technology studies</a>
+<span class='post-backlinks post-comment-link'>
+</span>
+<span class='post-icons'>
+<span class='item-action'>
+	  | <a href='https://www.blogger.com/email-post.g?blogID=7224898312568815039&postID=5456652591213496301' title='Email Post'>
+<img alt='' class='icon-action' height='13' src='http://www.blogger.com/img/icon18_email.gif' width='18'/>
+</a>
+</span>
+</span>
+</div>
+</div>
+<div class='single' id='post'>
+<div class='title'>
+<a name='5089391299668427114'></a>
+<h2>
+<a href='http://georgiatechhts.blogspot.com/2016/04/soup-registration-open.html'>SOUP Registration Open</a>
+</h2>
+<div class='date'>
+<span class='author'>
+Posted by
+<span class='fn'>Admin</span>
+</span>
+<span class='clock'>
+
+        On
+      
+11:31:00 AM
+</span>
+<span class='comm'>
+<a class='comment-link' href='http://georgiatechhts.blogspot.com/2016/04/soup-registration-open.html#comment-form' onclick=''>0
+comments</a>
+</span>
+</div>
+</div>
+<style>.fullpost{display:none;}</style>
+<div class='entry'>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="https://2.bp.blogspot.com/-fnE8Em8TQ7w/VxegrDUWfYI/AAAAAAAABZA/c-dy6pcbrYUGTQ9WQ36257w9te3bNiTowCLcB/s1600/SOUP.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="150" src="https://2.bp.blogspot.com/-fnE8Em8TQ7w/VxegrDUWfYI/AAAAAAAABZA/c-dy6pcbrYUGTQ9WQ36257w9te3bNiTowCLcB/s320/SOUP.jpg" width="320" /></a></div>
+Registration is open for the Summer Online Undergraduate Program (SOUP.)&nbsp;With online summer courses, students can get ahead, stay on track with your hours, or get into classes that normally fill up.&nbsp;Similar to Tech courses taught on campus, online courses are semester-based, and perfect for Georgia Tech students who will be working at an internship, co-op, or unable to be on campus during the summer.<br /><br /><br />Students participating in SOUP courses, are unable to take classes on the Atlanta campus, any other campus or through the study abroad program.<br /><br />Students can go to <a href="https://pe.gatech.edu/summer-classes">https://pe.gatech.edu/summer-classes</a> to see which courses will be offered and start the process to sign up for a SOUP class.<br /><br /> <span class="&#8221;fullpost&#8221;"></span>
+<div style='clear: both;'></div>
+<div style='clear'></div>
+</div>
+<br/>
+<div class='singleinfo'>
+<div class='more'>
+<a href='http://georgiatechhts.blogspot.com/2016/04/soup-registration-open.html'>READ MORE > </a>
+</div>
+</div>
+<div class='edit'></div>
+<div class='postmeta'>
+<span class='reaction-buttons'>
+</span>
+<span class='star-ratings'>
+</span>
+
+	  Tags:
+	  
+<a href='http://georgiatechhts.blogspot.com/search/label/classes' rel='tag'>classes</a>,
+<a href='http://georgiatechhts.blogspot.com/search/label/registration' rel='tag'>registration</a>,
+<a href='http://georgiatechhts.blogspot.com/search/label/summer%20programs' rel='tag'>summer programs</a>
+<span class='post-backlinks post-comment-link'>
+</span>
+<span class='post-icons'>
+<span class='item-action'>
+	  | <a href='https://www.blogger.com/email-post.g?blogID=7224898312568815039&postID=5089391299668427114' title='Email Post'>
+<img alt='' class='icon-action' height='13' src='http://www.blogger.com/img/icon18_email.gif' width='18'/>
+</a>
+</span>
+</span>
+</div>
+</div>
+<div class='single' id='post'>
+<div class='title'>
+<a name='469916883837080490'></a>
+<h2>
+<a href='http://georgiatechhts.blogspot.com/2016/04/at-pre-law-internship.html'>AT&T Pre-law Internship</a>
+</h2>
+<div class='date'>
+<span class='author'>
+Posted by
+<span class='fn'>Admin</span>
+</span>
+<span class='clock'>
+
+        On
+      
+11:26:00 AM
+</span>
+<span class='comm'>
+<a class='comment-link' href='http://georgiatechhts.blogspot.com/2016/04/at-pre-law-internship.html#comment-form' onclick=''>0
+comments</a>
+</span>
+</div>
+</div>
+<style>.fullpost{display:none;}</style>
+<div class='entry'>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="https://3.bp.blogspot.com/-oteWqw9MKZE/VxefqSnOgCI/AAAAAAAABY0/2zigEoOkctko8Y3m10ChnKVfYkBwXhoVwCLcB/s1600/att.png" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" src="https://3.bp.blogspot.com/-oteWqw9MKZE/VxefqSnOgCI/AAAAAAAABY0/2zigEoOkctko8Y3m10ChnKVfYkBwXhoVwCLcB/s1600/att.png" /></a></div>
+AT &amp; T Intellectual Property Patent Licensing &amp; Sales Support Summer and Fall 2016 Internship:&nbsp;Application deadline: May 11, 2016 by 5:00 p.m.  <br /><br /> AT&amp;T Intellectual Property is responsible for the protection, valuation, and monetization of all intellectual property within AT&amp;T.  The internship provides a qualified candidate the opportunity to assist AT &amp; T Patent Developers with mining AT &amp; T&#8217;s vast portfolio of patents and aligning identified patents with various products and services in support of patent monetization efforts, whether using patent sales or licensing channels.&#8239;  More details:  <a href="https://goo.gl/ivtR73"></a><a href="https://goo.gl/ivtR73">https://goo.gl/ivtR73</a> <span class="&#8221;fullpost&#8221;"></span>
+<div style='clear: both;'></div>
+<div style='clear'></div>
+</div>
+<br/>
+<div class='singleinfo'>
+<div class='more'>
+<a href='http://georgiatechhts.blogspot.com/2016/04/at-pre-law-internship.html'>READ MORE > </a>
+</div>
+</div>
+<div class='edit'></div>
+<div class='postmeta'>
+<span class='reaction-buttons'>
+</span>
+<span class='star-ratings'>
+</span>
+
+	  Tags:
+	  
+<a href='http://georgiatechhts.blogspot.com/search/label/deadline' rel='tag'>deadline</a>,
+<a href='http://georgiatechhts.blogspot.com/search/label/internship' rel='tag'>internship</a>,
+<a href='http://georgiatechhts.blogspot.com/search/label/pre-law' rel='tag'>pre-law</a>
+<span class='post-backlinks post-comment-link'>
+</span>
+<span class='post-icons'>
+<span class='item-action'>
+	  | <a href='https://www.blogger.com/email-post.g?blogID=7224898312568815039&postID=469916883837080490' title='Email Post'>
+<img alt='' class='icon-action' height='13' src='http://www.blogger.com/img/icon18_email.gif' width='18'/>
+</a>
+</span>
+</span>
+</div>
+</div>
+<div class='single' id='post'>
+<div class='title'>
+<a name='2721437345936250267'></a>
+<h2>
+<a href='http://georgiatechhts.blogspot.com/2016/04/intern-abroad-with-global-internship.html'>Intern Abroad with Global Internship Program</a>
+</h2>
+<div class='date'>
+<span class='author'>
+Posted by
+<span class='fn'>Admin</span>
+</span>
+<span class='clock'>
+
+        On
+      
+11:23:00 AM
+</span>
+<span class='comm'>
+<a class='comment-link' href='http://georgiatechhts.blogspot.com/2016/04/intern-abroad-with-global-internship.html#comment-form' onclick=''>1 comments</a>
+</span>
+</div>
+</div>
+<style>.fullpost{display:none;}</style>
+<div class='entry'>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="https://2.bp.blogspot.com/--nTb_bvcvEE/Vxeew52vp5I/AAAAAAAABYs/rqIhH06HU4o3l2bOBImXJIvVggqhtS6QwCLcB/s1600/global%2Binternship%2Bprogram.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="80" src="https://2.bp.blogspot.com/--nTb_bvcvEE/Vxeew52vp5I/AAAAAAAABYs/rqIhH06HU4o3l2bOBImXJIvVggqhtS6QwCLcB/s320/global%2Binternship%2Bprogram.jpg" width="320" /></a></div>
+The Global Internship Program has several exciting summer and fall internships available in Chile, China, France, Germany, Guatemala, Japan, Peru and more!  There are opportunities for students from nearly every major on campus!&nbsp;<div>
+<br /></div>
+Here's their latest newsletter:&nbsp;<a href="http://us4.campaign-archive2.com/?u=bead96385b046062aad906361&amp;id=71d27b9f4c">http://us4.campaign-archive2.com/?u=bead96385b046062aad906361&amp;id=71d27b9f4c</a>
+<div style='clear: both;'></div>
+<div style='clear'></div>
+</div>
+<br/>
+<div class='singleinfo'>
+<div class='more'>
+<a href='http://georgiatechhts.blogspot.com/2016/04/intern-abroad-with-global-internship.html'>READ MORE > </a>
+</div>
+</div>
+<div class='edit'></div>
+<div class='postmeta'>
+<span class='reaction-buttons'>
+</span>
+<span class='star-ratings'>
+</span>
+
+	  Tags:
+	  
+<a href='http://georgiatechhts.blogspot.com/search/label/internship' rel='tag'>internship</a>,
+<a href='http://georgiatechhts.blogspot.com/search/label/study%20abroad' rel='tag'>study abroad</a>,
+<a href='http://georgiatechhts.blogspot.com/search/label/summer%20programs' rel='tag'>summer programs</a>
+<span class='post-backlinks post-comment-link'>
+</span>
+<span class='post-icons'>
+<span class='item-action'>
+	  | <a href='https://www.blogger.com/email-post.g?blogID=7224898312568815039&postID=2721437345936250267' title='Email Post'>
+<img alt='' class='icon-action' height='13' src='http://www.blogger.com/img/icon18_email.gif' width='18'/>
+</a>
+</span>
+</span>
+</div>
+</div>
+<div class='single' id='post'>
+<div class='title'>
+<a name='3692654488912256002'></a>
+<h2>
+<a href='http://georgiatechhts.blogspot.com/2016/04/11th-annual-undergraduate-research.html'>11th Annual Undergraduate Research Symposium</a>
+</h2>
+<div class='date'>
+<span class='author'>
+Posted by
+<span class='fn'>Admin</span>
+</span>
+<span class='clock'>
+
+        On
+      
+4:37:00 PM
+</span>
+<span class='comm'>
+<a class='comment-link' href='http://georgiatechhts.blogspot.com/2016/04/11th-annual-undergraduate-research.html#comment-form' onclick=''>0
+comments</a>
+</span>
+</div>
+</div>
+<style>.fullpost{display:none;}</style>
+<div class='entry'>
+Undergraduate research at Tech will be showcased on Tuesday, April 19th (tomorrow) at the 11th Annual Undergraduate Research Symposium <a href="http://urop.gatech.edu/2016-symposium">http://urop.gatech.edu/2016-symposium</a>  in the Student Center Ballroom and surrounding rooms.   Approximately 200 students will present their work on medical advances in multiple fields, sustainable building design, regeneration, even a wristband that digitizes handwriting on 2D surfaces,  plus much, much more!  Over 160 presentations with reception to follow (presentations 1-4:30pm | reception 4:30-6pm). The full symposium program is online&nbsp;<a href="http://urop.gatech.edu/sites/default/files/images/11th_annual_undergraduate_research_spring_symposium_awards_program_book.pdf">here</a>.<span class="&#8221;fullpost&#8221;"></span><br />
+<div class="separator" style="clear: both; text-align: center;">
+<a href="https://3.bp.blogspot.com/-3tN97EqRSuI/VxVFdmxKJSI/AAAAAAAABYM/avh71VL8gHAAgM5f3bJpkSBRjOFkVtTqQCLcB/s1600/UROP.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="268" src="https://3.bp.blogspot.com/-3tN97EqRSuI/VxVFdmxKJSI/AAAAAAAABYM/avh71VL8gHAAgM5f3bJpkSBRjOFkVtTqQCLcB/s640/UROP.png" width="640" /></a></div>
+<div>
+<br /></div>
+<div style='clear: both;'></div>
+<div style='clear'></div>
+</div>
+<br/>
+<div class='singleinfo'>
+<div class='more'>
+<a href='http://georgiatechhts.blogspot.com/2016/04/11th-annual-undergraduate-research.html'>READ MORE > </a>
+</div>
+</div>
+<div class='edit'></div>
+<div class='postmeta'>
+<span class='reaction-buttons'>
+</span>
+<span class='star-ratings'>
+</span>
+
+	  Tags:
+	  
+<a href='http://georgiatechhts.blogspot.com/search/label/presentation' rel='tag'>presentation</a>,
+<a href='http://georgiatechhts.blogspot.com/search/label/research' rel='tag'>research</a>,
+<a href='http://georgiatechhts.blogspot.com/search/label/technology' rel='tag'>technology</a>,
+<a href='http://georgiatechhts.blogspot.com/search/label/undergraduate' rel='tag'>undergraduate</a>
+<span class='post-backlinks post-comment-link'>
+</span>
+<span class='post-icons'>
+<span class='item-action'>
+	  | <a href='https://www.blogger.com/email-post.g?blogID=7224898312568815039&postID=3692654488912256002' title='Email Post'>
+<img alt='' class='icon-action' height='13' src='http://www.blogger.com/img/icon18_email.gif' width='18'/>
+</a>
+</span>
+</span>
+</div>
+</div>
+<div class='single' id='post'>
+<div class='title'>
+<a name='253360613368047521'></a>
+<h2>
+<a href='http://georgiatechhts.blogspot.com/2016/04/hts-representative-needed-for-sga.html'>HTS Representative Needed for SGA</a>
+</h2>
+<div class='date'>
+<span class='author'>
+Posted by
+<span class='fn'>Admin</span>
+</span>
+<span class='clock'>
+
+        On
+      
+3:48:00 PM
+</span>
+<span class='comm'>
+<a class='comment-link' href='http://georgiatechhts.blogspot.com/2016/04/hts-representative-needed-for-sga.html#comment-form' onclick=''>1 comments</a>
+</span>
+</div>
+</div>
+<style>.fullpost{display:none;}</style>
+<div class='entry'>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="https://3.bp.blogspot.com/-XjiPjL14_8s/VxU5zRditaI/AAAAAAAABXY/T9XhinkY2to1lTUMj1BlABqXMAXl2p3pQCLcB/s1600/leadership.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="134" src="https://3.bp.blogspot.com/-XjiPjL14_8s/VxU5zRditaI/AAAAAAAABXY/T9XhinkY2to1lTUMj1BlABqXMAXl2p3pQCLcB/s320/leadership.jpg" width="320" /></a></div>
+HTS has NO REPRESENTATION IN THE SGA. This is a great opportunity for any HTS student to show off and enhance their leadership skills during the fall semester.<br />
+<div>
+<br />
+<a href="http://www.news.gatech.edu/2016/04/14/race-continues-undergraduate-sga-election-updates">http://www.news.gatech.edu/2016/04/14/race-continues-undergraduate-sga-election-updates</a><br />
+<span class="&#8221;fullpost&#8221;"></span></div>
+<div style='clear: both;'></div>
+<div style='clear'></div>
+</div>
+<br/>
+<div class='singleinfo'>
+<div class='more'>
+<a href='http://georgiatechhts.blogspot.com/2016/04/hts-representative-needed-for-sga.html'>READ MORE > </a>
+</div>
+</div>
+<div class='edit'></div>
+<div class='postmeta'>
+<span class='reaction-buttons'>
+</span>
+<span class='star-ratings'>
+</span>
+
+	  Tags:
+	  
+<a href='http://georgiatechhts.blogspot.com/search/label/HTS' rel='tag'>HTS</a>,
+<a href='http://georgiatechhts.blogspot.com/search/label/leadership' rel='tag'>leadership</a>,
+<a href='http://georgiatechhts.blogspot.com/search/label/SGA' rel='tag'>SGA</a>,
+<a href='http://georgiatechhts.blogspot.com/search/label/students' rel='tag'>students</a>,
+<a href='http://georgiatechhts.blogspot.com/search/label/undergraduate' rel='tag'>undergraduate</a>
+<span class='post-backlinks post-comment-link'>
+</span>
+<span class='post-icons'>
+<span class='item-action'>
+	  | <a href='https://www.blogger.com/email-post.g?blogID=7224898312568815039&postID=253360613368047521' title='Email Post'>
+<img alt='' class='icon-action' height='13' src='http://www.blogger.com/img/icon18_email.gif' width='18'/>
+</a>
+</span>
+</span>
+</div>
+</div>
+<div class='single' id='post'>
+<div class='title'>
+<a name='5748542325018347960'></a>
+<h2>
+<a href='http://georgiatechhts.blogspot.com/2016/04/how-to-get-books-from-gt-librarys.html'>How to Get Books From GT Library's Collection</a>
+</h2>
+<div class='date'>
+<span class='author'>
+Posted by
+<span class='fn'>Admin</span>
+</span>
+<span class='clock'>
+
+        On
+      
+3:46:00 PM
+</span>
+<span class='comm'>
+<a class='comment-link' href='http://georgiatechhts.blogspot.com/2016/04/how-to-get-books-from-gt-librarys.html#comment-form' onclick=''>0
+comments</a>
+</span>
+</div>
+</div>
+<style>.fullpost{display:none;}</style>
+<div class='entry'>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="https://1.bp.blogspot.com/-kC67zD6HrPc/Vwa40cra5yI/AAAAAAAABSo/WJMkj0abWpEQAap0DHejJKi2HjSyhq-BA/s1600/gatech%2Blibrary.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="150" src="https://1.bp.blogspot.com/-kC67zD6HrPc/Vwa40cra5yI/AAAAAAAABSo/WJMkj0abWpEQAap0DHejJKi2HjSyhq-BA/s200/gatech%2Blibrary.jpg" width="200" /></a></div>
+Most of the Georgia Tech library's collection has now been safely moved six miles to the <a href="http://renewal.library.gatech.edu/library-services-center">EmTech Library Services Center</a>, where it will be kept cool, dry, and well-preserved for the next 200 years.<br />
+<div>
+<span class="&#8221;fullpost&#8221;"></span></div>
+<div>
+<br /></div>
+What if you want a book from their collection? Click<a href="http://weblog.library.gatech.edu/news/2016/04/04/need-a-book-well-get-it-to-you/"> here</a> to find out.
+<div style='clear: both;'></div>
+<div style='clear'></div>
+</div>
+<br/>
+<div class='singleinfo'>
+<div class='more'>
+<a href='http://georgiatechhts.blogspot.com/2016/04/how-to-get-books-from-gt-librarys.html'>READ MORE > </a>
+</div>
+</div>
+<div class='edit'></div>
+<div class='postmeta'>
+<span class='reaction-buttons'>
+</span>
+<span class='star-ratings'>
+</span>
+
+	  Tags:
+	  
+<a href='http://georgiatechhts.blogspot.com/search/label/books' rel='tag'>books</a>,
+<a href='http://georgiatechhts.blogspot.com/search/label/Georgia%20Tech' rel='tag'>Georgia Tech</a>,
+<a href='http://georgiatechhts.blogspot.com/search/label/library' rel='tag'>library</a>,
+<a href='http://georgiatechhts.blogspot.com/search/label/textbooks' rel='tag'>textbooks</a>
+<span class='post-backlinks post-comment-link'>
+</span>
+<span class='post-icons'>
+<span class='item-action'>
+	  | <a href='https://www.blogger.com/email-post.g?blogID=7224898312568815039&postID=5748542325018347960' title='Email Post'>
+<img alt='' class='icon-action' height='13' src='http://www.blogger.com/img/icon18_email.gif' width='18'/>
+</a>
+</span>
+</span>
+</div>
+</div>
+<div class='single' id='post'>
+<div class='title'>
+<a name='456350081887954201'></a>
+<h2>
+<a href='http://georgiatechhts.blogspot.com/2016/04/the-intern-group-scholarship.html'>The Intern Group Scholarship Opportunities</a>
+</h2>
+<div class='date'>
+<span class='author'>
+Posted by
+<span class='fn'>Admin</span>
+</span>
+<span class='clock'>
+
+        On
+      
+3:44:00 PM
+</span>
+<span class='comm'>
+<a class='comment-link' href='http://georgiatechhts.blogspot.com/2016/04/the-intern-group-scholarship.html#comment-form' onclick=''>0
+comments</a>
+</span>
+</div>
+</div>
+<style>.fullpost{display:none;}</style>
+<div class='entry'>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="https://4.bp.blogspot.com/--vmnHt3UB1w/VxU4-NcqLJI/AAAAAAAABXU/U5gaqoXAGWwsB9enbQXOyAqi3DYW3Y1egCLcB/s1600/the%2Bintern%2Bgroup%2Bscholarships.png" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="320" src="https://4.bp.blogspot.com/--vmnHt3UB1w/VxU4-NcqLJI/AAAAAAAABXU/U5gaqoXAGWwsB9enbQXOyAqi3DYW3Y1egCLcB/s320/the%2Bintern%2Bgroup%2Bscholarships.png" width="320" /></a></div>
+Need-based Scholarships for 2016<br />
+<br />
+The Intern Group will provide FOUR  scholarship recipients with a professional internship placement in the career field of their choice, high-quality accommodation, full transport - including airfare - as well as visa costs.<br />
+The scholarship winners will be able to choose to apply for the program in the following destinations:<br />
+<ul>
+<li><a href="http://gatech.us4.list-manage1.com/track/click?u=bead96385b046062aad906361&amp;id=c3cc939420&amp;e=274cdcc5fc">London</a></li>
+<li><a href="http://gatech.us4.list-manage1.com/track/click?u=bead96385b046062aad906361&amp;id=b5cf917af2&amp;e=274cdcc5fc">Hong Kong</a></li>
+<li><a href="http://gatech.us4.list-manage.com/track/click?u=bead96385b046062aad906361&amp;id=b809e8795d&amp;e=274cdcc5fc">Melbourne</a></li>
+<li><a href="http://gatech.us4.list-manage.com/track/click?u=bead96385b046062aad906361&amp;id=fff99cb569&amp;e=274cdcc5fc">Madrid</a></li>
+</ul>
+<div>
+APPLY BY APRIL 18!<br />
+<a href="http://www.theinterngroup.com/scholarships/">http://www.theinterngroup.com/scholarships/</a><span class="&#8221;fullpost&#8221;"></span></div>
+<div>
+<br /></div>
+<div>
+<br /></div>
+<div>
+<br /></div>
+<br />
+Women&#8217;s Empowerment Scholarship for 2016<br />
+<br />
+This year The Intern Group will be awarding one scholarship for our award-winning international internship programs to one exceptional female student from a developing country (non-OECD). If you are awarded the scholarship, you will be provided with a professional internship placement in the career field of your choice and quality accommodation. Your living, transport and visa costs will also be paid for by The Intern Group as a part of the scholarship.**<br />
+<br />
+You can apply for this scholarship in the following incredible destinations:<br />
+<div>
+<ul>
+<li><a href="http://gatech.us4.list-manage1.com/track/click?u=bead96385b046062aad906361&amp;id=dda6c68ed0&amp;e=274cdcc5fc">Hong Kong</a></li>
+<li><a href="http://gatech.us4.list-manage.com/track/click?u=bead96385b046062aad906361&amp;id=ff45eb8176&amp;e=274cdcc5fc">London</a></li>
+<li><a href="http://gatech.us4.list-manage.com/track/click?u=bead96385b046062aad906361&amp;id=a212e7d1f1&amp;e=274cdcc5fc">Madrid</a></li>
+</ul>
+<div>
+APPLY BY APRIL 18!<br />
+<a href="http://www.theinterngroup.com/scholarships/">http://www.theinterngroup.com/scholarships/</a></div>
+</div>
+<div style='clear: both;'></div>
+<div style='clear'></div>
+</div>
+<br/>
+<div class='singleinfo'>
+<div class='more'>
+<a href='http://georgiatechhts.blogspot.com/2016/04/the-intern-group-scholarship.html'>READ MORE > </a>
+</div>
+</div>
+<div class='edit'></div>
+<div class='postmeta'>
+<span class='reaction-buttons'>
+</span>
+<span class='star-ratings'>
+</span>
+
+	  Tags:
+	  
+<a href='http://georgiatechhts.blogspot.com/search/label/deadline' rel='tag'>deadline</a>,
+<a href='http://georgiatechhts.blogspot.com/search/label/internship' rel='tag'>internship</a>,
+<a href='http://georgiatechhts.blogspot.com/search/label/scholarships' rel='tag'>scholarships</a>
+<span class='post-backlinks post-comment-link'>
+</span>
+<span class='post-icons'>
+<span class='item-action'>
+	  | <a href='https://www.blogger.com/email-post.g?blogID=7224898312568815039&postID=456350081887954201' title='Email Post'>
+<img alt='' class='icon-action' height='13' src='http://www.blogger.com/img/icon18_email.gif' width='18'/>
+</a>
+</span>
+</span>
+</div>
+</div>
+<div class='single' id='post'>
+<div class='title'>
+<a name='6232471440518885413'></a>
+<h2>
+<a href='http://georgiatechhts.blogspot.com/2016/04/fall-internship-in-london-with-imax.html'>Fall internship in London with IMAX</a>
+</h2>
+<div class='date'>
+<span class='author'>
+Posted by
+<span class='fn'>Admin</span>
+</span>
+<span class='clock'>
+
+        On
+      
+3:40:00 PM
+</span>
+<span class='comm'>
+<a class='comment-link' href='http://georgiatechhts.blogspot.com/2016/04/fall-internship-in-london-with-imax.html#comment-form' onclick=''>0
+comments</a>
+</span>
+</div>
+</div>
+<style>.fullpost{display:none;}</style>
+<div class='entry'>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="https://2.bp.blogspot.com/--TENWcLLggI/VxU3_CBwlKI/AAAAAAAABXM/ATi2aHYXKogG9EQyeQR2VTmjrwV2g4QrwCLcB/s1600/IMAX.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="200" src="https://2.bp.blogspot.com/--TENWcLLggI/VxU3_CBwlKI/AAAAAAAABXM/ATi2aHYXKogG9EQyeQR2VTmjrwV2g4QrwCLcB/s200/IMAX.jpg" width="195" /></a></div>
+IMAX EMEA (Europe, Middle East, and Africa) is seeking a marketing intern for their London office for the Fall 2016 semester. This internship is unpaid, so all expenses will need to be covered by the intern. Intern will assist with marketing initiatives, exhibitions, events, and coordinating with partners and third-party suppliers.<br />
+<br />
+Preferred major is Business Administration with an interest in the entertainment and media industries. Previous international experience is an asset. If interested, please email&nbsp;<a href="mailto:globalinternships@oie.gatech.edu"></a><a href="mailto:globalinternships@oie.gatech.edu">globalinternships@oie.gatech.edu</a>&nbsp;along with your resume by April 30, 2016.<br />
+<div>
+<br />
+<br />
+<br />
+For more information about IMAX, see&nbsp;<a href="http://gatech.us4.list-manage.com/track/click?u=bead96385b046062aad906361&amp;id=013cf529d4&amp;e=274cdcc5fc"></a><a href="http://www.imax.com/content/corporate-information">http://www.imax.com/content/corporate-information</a>.<span class="&#8221;fullpost&#8221;"></span></div>
+<div style='clear: both;'></div>
+<div style='clear'></div>
+</div>
+<br/>
+<div class='singleinfo'>
+<div class='more'>
+<a href='http://georgiatechhts.blogspot.com/2016/04/fall-internship-in-london-with-imax.html'>READ MORE > </a>
+</div>
+</div>
+<div class='edit'></div>
+<div class='postmeta'>
+<span class='reaction-buttons'>
+</span>
+<span class='star-ratings'>
+</span>
+
+	  Tags:
+	  
+<a href='http://georgiatechhts.blogspot.com/search/label/business' rel='tag'>business</a>,
+<a href='http://georgiatechhts.blogspot.com/search/label/internship' rel='tag'>internship</a>,
+<a href='http://georgiatechhts.blogspot.com/search/label/media' rel='tag'>media</a>
+<span class='post-backlinks post-comment-link'>
+</span>
+<span class='post-icons'>
+<span class='item-action'>
+	  | <a href='https://www.blogger.com/email-post.g?blogID=7224898312568815039&postID=6232471440518885413' title='Email Post'>
+<img alt='' class='icon-action' height='13' src='http://www.blogger.com/img/icon18_email.gif' width='18'/>
+</a>
+</span>
+</span>
+</div>
+</div>
+<div class='single' id='post'>
+<div class='title'>
+<a name='2007117938941470341'></a>
+<h2>
+<a href='http://georgiatechhts.blogspot.com/2016/04/diversity-abroad.html'>Diversity Abroad</a>
+</h2>
+<div class='date'>
+<span class='author'>
+Posted by
+<span class='fn'>Admin</span>
+</span>
+<span class='clock'>
+
+        On
+      
+3:38:00 PM
+</span>
+<span class='comm'>
+<a class='comment-link' href='http://georgiatechhts.blogspot.com/2016/04/diversity-abroad.html#comment-form' onclick=''>0
+comments</a>
+</span>
+</div>
+</div>
+<style>.fullpost{display:none;}</style>
+<div class='entry'>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="https://2.bp.blogspot.com/-C5JTJiqjshs/VxU3fqvgUwI/AAAAAAAABXI/mGsWc9XqpLUnuUlL4oPXLrpToCGoWpwZQCLcB/s1600/diversity%2Babroad.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="274" src="https://2.bp.blogspot.com/-C5JTJiqjshs/VxU3fqvgUwI/AAAAAAAABXI/mGsWc9XqpLUnuUlL4oPXLrpToCGoWpwZQCLcB/s320/diversity%2Babroad.jpg" width="320" /></a></div>
+Are you interning abroad in the 2016-2017 academic year?<br />Diversity Abroad, in cooperation with the AIFS, will offer a $500 stipend for fall 2016 and spring 2017. Five stipends are available for each term.<br />Overseas Ambassadors serve during a 4-6 month time frame, depending on the length of their chosen study abroad program.<br />To apply for the Overseas Ambassador Program, please complete the scholarship application<a href="http://gatech.us4.list-manage2.com/track/click?u=bead96385b046062aad906361&amp;id=2d3d7b7d1d&amp;e=274cdcc5fc">here</a> (<a href="http://bit.ly/DAAmbassadors">http://bit.ly/DAAmbassadors</a>) . The application deadline for all submissions is June 1st, 2016 at 5:00pm EST.<span class="&#8221;fullpost&#8221;"></span><br />
+<div>
+<a href="https://draft.blogger.com/goog_1246086551"><br /></a></div>
+<a href="https://www.studyadvisory.org/content/for-students/scholarships/">https://www.studyadvisory.org/content/for-students/scholarships/</a>
+<div style='clear: both;'></div>
+<div style='clear'></div>
+</div>
+<br/>
+<div class='singleinfo'>
+<div class='more'>
+<a href='http://georgiatechhts.blogspot.com/2016/04/diversity-abroad.html'>READ MORE > </a>
+</div>
+</div>
+<div class='edit'></div>
+<div class='postmeta'>
+<span class='reaction-buttons'>
+</span>
+<span class='star-ratings'>
+</span>
+
+	  Tags:
+	  
+<a href='http://georgiatechhts.blogspot.com/search/label/deadline' rel='tag'>deadline</a>,
+<a href='http://georgiatechhts.blogspot.com/search/label/funding' rel='tag'>funding</a>,
+<a href='http://georgiatechhts.blogspot.com/search/label/study%20abroad' rel='tag'>study abroad</a>
+<span class='post-backlinks post-comment-link'>
+</span>
+<span class='post-icons'>
+<span class='item-action'>
+	  | <a href='https://www.blogger.com/email-post.g?blogID=7224898312568815039&postID=2007117938941470341' title='Email Post'>
+<img alt='' class='icon-action' height='13' src='http://www.blogger.com/img/icon18_email.gif' width='18'/>
+</a>
+</span>
+</span>
+</div>
+</div>
+<div class='single' id='post'>
+<div class='title'>
+<a name='4245098845269462760'></a>
+<h2>
+<a href='http://georgiatechhts.blogspot.com/2016/04/aisec.html'>AIESEC</a>
+</h2>
+<div class='date'>
+<span class='author'>
+Posted by
+<span class='fn'>Admin</span>
+</span>
+<span class='clock'>
+
+        On
+      
+3:34:00 PM
+</span>
+<span class='comm'>
+<a class='comment-link' href='http://georgiatechhts.blogspot.com/2016/04/aisec.html#comment-form' onclick=''>0
+comments</a>
+</span>
+</div>
+</div>
+<style>.fullpost{display:none;}</style>
+<div class='entry'>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="https://4.bp.blogspot.com/-bRiGHEsChGo/VxU2oEqi14I/AAAAAAAABXE/5snzKFhISN8NP4vwigY1r2KHw6DJ4V2pACLcB/s1600/aisec.png" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="200" src="https://4.bp.blogspot.com/-bRiGHEsChGo/VxU2oEqi14I/AAAAAAAABXE/5snzKFhISN8NP4vwigY1r2KHw6DJ4V2pACLcB/s200/aisec.png" width="200" /></a></div>
+AIESEC is a global platform for young people to explore and develop their leadership potential. They are a non-political, independent, not-for-profit organization run by students and recent graduates of institutions of higher education with a local chapter at Georgia Tech. AIESEC provides professional internships and volunteer experiences all over the world that encourage cross-cultural understanding and challenge young people to develop themselves and contribute to communities around the world. Please visit <a href="http://gatech.us4.list-manage.com/track/click?u=bead96385b046062aad906361&amp;id=fa7aabcfa3&amp;e=274cdcc5fc">aiesecus.org</a>&nbsp;or find the local chapter on&nbsp;<a href="http://gatech.us4.list-manage1.com/track/click?u=bead96385b046062aad906361&amp;id=7991b3f4a3&amp;e=274cdcc5fc">Facebook at AIESEC Georgia Tech</a>&nbsp;for more information on how to become involved with the programs or with the local committee at Georgia Tech.<br />
+<br />
+AIESEC has multiple fall and spring positions posted in CareerBuzz.<span class="&#8221;fullpost&#8221;"></span>
+<div style='clear: both;'></div>
+<div style='clear'></div>
+</div>
+<br/>
+<div class='singleinfo'>
+<div class='more'>
+<a href='http://georgiatechhts.blogspot.com/2016/04/aisec.html'>READ MORE > </a>
+</div>
+</div>
+<div class='edit'></div>
+<div class='postmeta'>
+<span class='reaction-buttons'>
+</span>
+<span class='star-ratings'>
+</span>
+
+	  Tags:
+	  
+<a href='http://georgiatechhts.blogspot.com/search/label/internship' rel='tag'>internship</a>,
+<a href='http://georgiatechhts.blogspot.com/search/label/leadership' rel='tag'>leadership</a>,
+<a href='http://georgiatechhts.blogspot.com/search/label/non-profit' rel='tag'>non-profit</a>,
+<a href='http://georgiatechhts.blogspot.com/search/label/volunteer' rel='tag'>volunteer</a>
+<span class='post-backlinks post-comment-link'>
+</span>
+<span class='post-icons'>
+<span class='item-action'>
+	  | <a href='https://www.blogger.com/email-post.g?blogID=7224898312568815039&postID=4245098845269462760' title='Email Post'>
+<img alt='' class='icon-action' height='13' src='http://www.blogger.com/img/icon18_email.gif' width='18'/>
+</a>
+</span>
+</span>
+</div>
+</div>
+<div class='single' id='post'>
+<div class='title'>
+<a name='9203030498321793783'></a>
+<h2>
+<a href='http://georgiatechhts.blogspot.com/2016/04/sga-elections-leads-to-runoff.html'>SGA Elections Leads to Runoff</a>
+</h2>
+<div class='date'>
+<span class='author'>
+Posted by
+<span class='fn'>Admin</span>
+</span>
+<span class='clock'>
+
+        On
+      
+3:30:00 PM
+</span>
+<span class='comm'>
+<a class='comment-link' href='http://georgiatechhts.blogspot.com/2016/04/sga-elections-leads-to-runoff.html#comment-form' onclick=''>0
+comments</a>
+</span>
+</div>
+</div>
+<style>.fullpost{display:none;}</style>
+<div class='entry'>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="https://3.bp.blogspot.com/-szaOQrbcn1M/VxU1s_a3uaI/AAAAAAAABW8/YETrldyPM8wjvcgh84jlKqCPZwO5BCJMgCLcB/s1600/sga.png" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="200" src="https://3.bp.blogspot.com/-szaOQrbcn1M/VxU1s_a3uaI/AAAAAAAABW8/YETrldyPM8wjvcgh84jlKqCPZwO5BCJMgCLcB/s200/sga.png" width="186" /></a></div>
+Both pairs of candidates received 30 percent of the student vote, with a total of 3,296 students participating. Elections for the runoff will re-open on Friday, April 15, at 1 p.m. and close on April 19 at 4 p.m. Winners will be announced that day at 6 p.m. Students can vote through&nbsp;<a href="http://www.elections.gatech.edu/">www.elections.gatech.edu/</a>.<span class="&#8221;fullpost&#8221;"></span><br />
+<div>
+<br /></div>
+<div>
+To see a list of representatives that have already been decided click <a href="http://www.news.gatech.edu/2016/04/14/race-continues-undergraduate-sga-election-updates">here</a>.</div>
+<div style='clear: both;'></div>
+<div style='clear'></div>
+</div>
+<br/>
+<div class='singleinfo'>
+<div class='more'>
+<a href='http://georgiatechhts.blogspot.com/2016/04/sga-elections-leads-to-runoff.html'>READ MORE > </a>
+</div>
+</div>
+<div class='edit'></div>
+<div class='postmeta'>
+<span class='reaction-buttons'>
+</span>
+<span class='star-ratings'>
+</span>
+
+	  Tags:
+	  
+<a href='http://georgiatechhts.blogspot.com/search/label/SGA' rel='tag'>SGA</a>,
+<a href='http://georgiatechhts.blogspot.com/search/label/students' rel='tag'>students</a>,
+<a href='http://georgiatechhts.blogspot.com/search/label/undergraduate' rel='tag'>undergraduate</a>
+<span class='post-backlinks post-comment-link'>
+</span>
+<span class='post-icons'>
+<span class='item-action'>
+	  | <a href='https://www.blogger.com/email-post.g?blogID=7224898312568815039&postID=9203030498321793783' title='Email Post'>
+<img alt='' class='icon-action' height='13' src='http://www.blogger.com/img/icon18_email.gif' width='18'/>
+</a>
+</span>
+</span>
+</div>
+</div>
+<div class='single' id='post'>
+<div class='title'>
+<a name='2630414242913183862'></a>
+<h2>
+<a href='http://georgiatechhts.blogspot.com/2016/04/congrats-taylor-prichard.html'>Congrats Taylor Prichard</a>
+</h2>
+<div class='date'>
+<span class='author'>
+Posted by
+<span class='fn'>Admin</span>
+</span>
+<span class='clock'>
+
+        On
+      
+3:27:00 PM
+</span>
+<span class='comm'>
+<a class='comment-link' href='http://georgiatechhts.blogspot.com/2016/04/congrats-taylor-prichard.html#comment-form' onclick=''>0
+comments</a>
+</span>
+</div>
+</div>
+<style>.fullpost{display:none;}</style>
+<div class='entry'>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="https://2.bp.blogspot.com/-E5B5LJgLXN0/VxVCb0GZvhI/AAAAAAAABYA/UaQch9uCwNMUE-7dd-7HJLa_zmpQKUlaQCLcB/s1600/taylor%2Bprichard.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" src="https://2.bp.blogspot.com/-E5B5LJgLXN0/VxVCb0GZvhI/AAAAAAAABYA/UaQch9uCwNMUE-7dd-7HJLa_zmpQKUlaQCLcB/s1600/taylor%2Bprichard.jpg" /></a></div>
+Congratulations HTS major Taylor Prichard for being named Ivan Allen College Researcher of the Year!<span class="&#8221;fullpost&#8221;"></span>
+<div style='clear: both;'></div>
+<div style='clear'></div>
+</div>
+<br/>
+<div class='singleinfo'>
+<div class='more'>
+<a href='http://georgiatechhts.blogspot.com/2016/04/congrats-taylor-prichard.html'>READ MORE > </a>
+</div>
+</div>
+<div class='edit'></div>
+<div class='postmeta'>
+<span class='reaction-buttons'>
+</span>
+<span class='star-ratings'>
+</span>
+
+	  Tags:
+	  
+<a href='http://georgiatechhts.blogspot.com/search/label/awards' rel='tag'>awards</a>,
+<a href='http://georgiatechhts.blogspot.com/search/label/congratulations' rel='tag'>congratulations</a>,
+<a href='http://georgiatechhts.blogspot.com/search/label/HTS' rel='tag'>HTS</a>,
+<a href='http://georgiatechhts.blogspot.com/search/label/Ivan%20Allen%20College' rel='tag'>Ivan Allen College</a>,
+<a href='http://georgiatechhts.blogspot.com/search/label/research' rel='tag'>research</a>,
+<a href='http://georgiatechhts.blogspot.com/search/label/students' rel='tag'>students</a>
+<span class='post-backlinks post-comment-link'>
+</span>
+<span class='post-icons'>
+<span class='item-action'>
+	  | <a href='https://www.blogger.com/email-post.g?blogID=7224898312568815039&postID=2630414242913183862' title='Email Post'>
+<img alt='' class='icon-action' height='13' src='http://www.blogger.com/img/icon18_email.gif' width='18'/>
+</a>
+</span>
+</span>
+</div>
+</div>
+<div class='single' id='post'>
+<div class='title'>
+<a name='4826669950064309526'></a>
+<h2>
+<a href='http://georgiatechhts.blogspot.com/2016/04/leadership-and-american-presidency.html'>Leadership and the American Presidency Program</a>
+</h2>
+<div class='date'>
+<span class='author'>
+Posted by
+<span class='fn'>Admin</span>
+</span>
+<span class='clock'>
+
+        On
+      
+4:43:00 PM
+</span>
+<span class='comm'>
+<a class='comment-link' href='http://georgiatechhts.blogspot.com/2016/04/leadership-and-american-presidency.html#comment-form' onclick=''>0
+comments</a>
+</span>
+</div>
+</div>
+<style>.fullpost{display:none;}</style>
+<div class='entry'>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="https://1.bp.blogspot.com/-euuUswD8BFw/VxAA-I0ycKI/AAAAAAAABWE/xBq4tuAfJzQRHTFKN98IpNzbhVmbKygnACLcB/s1600/leadership%2Band%2Bamerican%2Bpresidency.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" src="https://1.bp.blogspot.com/-euuUswD8BFw/VxAA-I0ycKI/AAAAAAAABWE/xBq4tuAfJzQRHTFKN98IpNzbhVmbKygnACLcB/s1600/leadership%2Band%2Bamerican%2Bpresidency.jpg" /></a></div>
+Do you want to change the world? Looking for fun interactive, challenging courses to help you grow as a leader? The Leadership and the American Presidency Program is one of the most important investments you can make in your future.<span class="&#8221;fullpost&#8221;"></span><br />
+<div>
+<br /></div>
+<div>
+To read the rest of this article and learn more about the program follow this link:&nbsp;<a href="http://www.dcinternships.org/?programs=leadership-the-american-presidency-fall&amp;details=true">http://www.dcinternships.org/?programs=leadership-the-american-presidency-fall&amp;details=true</a></div>
+<div style='clear: both;'></div>
+<div style='clear'></div>
+</div>
+<br/>
+<div class='singleinfo'>
+<div class='more'>
+<a href='http://georgiatechhts.blogspot.com/2016/04/leadership-and-american-presidency.html'>READ MORE > </a>
+</div>
+</div>
+<div class='edit'></div>
+<div class='postmeta'>
+<span class='reaction-buttons'>
+</span>
+<span class='star-ratings'>
+</span>
+
+	  Tags:
+	  
+<a href='http://georgiatechhts.blogspot.com/search/label/government' rel='tag'>government</a>,
+<a href='http://georgiatechhts.blogspot.com/search/label/internship' rel='tag'>internship</a>,
+<a href='http://georgiatechhts.blogspot.com/search/label/leadership' rel='tag'>leadership</a>
+<span class='post-backlinks post-comment-link'>
+</span>
+<span class='post-icons'>
+<span class='item-action'>
+	  | <a href='https://www.blogger.com/email-post.g?blogID=7224898312568815039&postID=4826669950064309526' title='Email Post'>
+<img alt='' class='icon-action' height='13' src='http://www.blogger.com/img/icon18_email.gif' width='18'/>
+</a>
+</span>
+</span>
+</div>
+</div>
+<div class='single' id='post'>
+<div class='title'>
+<a name='9082053722698780497'></a>
+<h2>
+<a href='http://georgiatechhts.blogspot.com/2016/04/state-department-and-consular-affairs.html'>State Department and Consular Affairs Career Talk</a>
+</h2>
+<div class='date'>
+<span class='author'>
+Posted by
+<span class='fn'>Admin</span>
+</span>
+<span class='clock'>
+
+        On
+      
+4:34:00 PM
+</span>
+<span class='comm'>
+<a class='comment-link' href='http://georgiatechhts.blogspot.com/2016/04/state-department-and-consular-affairs.html#comment-form' onclick=''>0
+comments</a>
+</span>
+</div>
+</div>
+<style>.fullpost{display:none;}</style>
+<div class='entry'>
+Habersham G-17, 12noon. Guests from the British Consul-General&#8217;s office and the US Department of State will be here to talk to students about diplomacy and consular careers.&nbsp;<div>
+<br /></div>
+<div>
+Learn more and RSVP at:<a href="http://www.intaadvising.gatech.edu/events/career-talk-state-department-and-consular-affairs/">http://www.intaadvising.gatech.edu/events/career-talk-state-department-and-consular-affairs/</a>.<span class="&#8221;fullpost&#8221;"></span></div>
+<div>
+<br /></div>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="https://3.bp.blogspot.com/-NskG1hmvx6o/Vw_-S5Ydg-I/AAAAAAAABVs/fsdXN6USyEM_W9OFFXZH00tOHwgoQqstwCLcB/s1600/state%2Bdept%2Bcareer.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="640" src="https://3.bp.blogspot.com/-NskG1hmvx6o/Vw_-S5Ydg-I/AAAAAAAABVs/fsdXN6USyEM_W9OFFXZH00tOHwgoQqstwCLcB/s640/state%2Bdept%2Bcareer.jpg" width="494" /></a></div>
+<div style='clear: both;'></div>
+<div style='clear'></div>
+</div>
+<br/>
+<div class='singleinfo'>
+<div class='more'>
+<a href='http://georgiatechhts.blogspot.com/2016/04/state-department-and-consular-affairs.html'>READ MORE > </a>
+</div>
+</div>
+<div class='edit'></div>
+<div class='postmeta'>
+<span class='reaction-buttons'>
+</span>
+<span class='star-ratings'>
+</span>
+
+	  Tags:
+	  
+<a href='http://georgiatechhts.blogspot.com/search/label/careers' rel='tag'>careers</a>,
+<a href='http://georgiatechhts.blogspot.com/search/label/government' rel='tag'>government</a>
+<span class='post-backlinks post-comment-link'>
+</span>
+<span class='post-icons'>
+<span class='item-action'>
+	  | <a href='https://www.blogger.com/email-post.g?blogID=7224898312568815039&postID=9082053722698780497' title='Email Post'>
+<img alt='' class='icon-action' height='13' src='http://www.blogger.com/img/icon18_email.gif' width='18'/>
+</a>
+</span>
+</span>
+</div>
+</div>
+<div class='single' id='post'>
+<div class='title'>
+<a name='3767909585803107240'></a>
+<h2>
+<a href='http://georgiatechhts.blogspot.com/2016/04/david-hounshell-talk-at-gt.html'>David Hounshell Talk At GT</a>
+</h2>
+<div class='date'>
+<span class='author'>
+Posted by
+<span class='fn'>Admin</span>
+</span>
+<span class='clock'>
+
+        On
+      
+4:30:00 PM
+</span>
+<span class='comm'>
+<a class='comment-link' href='http://georgiatechhts.blogspot.com/2016/04/david-hounshell-talk-at-gt.html#comment-form' onclick=''>0
+comments</a>
+</span>
+</div>
+</div>
+<style>.fullpost{display:none;}</style>
+<div class='entry'>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="https://1.bp.blogspot.com/-rcM20MSNVqo/Vw_9sHLlloI/AAAAAAAABVo/jMu_M-MdA4kC3jQCnfTV42nScB7ma3YfgCLcB/s1600/David%2BHounshell.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="200" src="https://1.bp.blogspot.com/-rcM20MSNVqo/Vw_9sHLlloI/AAAAAAAABVo/jMu_M-MdA4kC3jQCnfTV42nScB7ma3YfgCLcB/s200/David%2BHounshell.jpg" width="170" /></a></div>
+David Hounshell, one of the leading historians of technology and business historians in the U.S., will be speaking at GT on Monday afternoon at 4:00 on the history of R&amp;D. His talk titled "What Led to the Rise of&nbsp;Industrial Research in America, Why Did It Once Flourish, and What Led&nbsp;to Its Decline?" will be held at 4:00 p.m. in the GTMI Auditorium.<div>
+<br />There will be a reception in the GTMI Atrium at 3:30 p.m.</div>
+<div style='clear: both;'></div>
+<div style='clear'></div>
+</div>
+<br/>
+<div class='singleinfo'>
+<div class='more'>
+<a href='http://georgiatechhts.blogspot.com/2016/04/david-hounshell-talk-at-gt.html'>READ MORE > </a>
+</div>
+</div>
+<div class='edit'></div>
+<div class='postmeta'>
+<span class='reaction-buttons'>
+</span>
+<span class='star-ratings'>
+</span>
+
+	  Tags:
+	  
+<a href='http://georgiatechhts.blogspot.com/search/label/american%20history' rel='tag'>american history</a>,
+<a href='http://georgiatechhts.blogspot.com/search/label/history' rel='tag'>history</a>,
+<a href='http://georgiatechhts.blogspot.com/search/label/speaker' rel='tag'>speaker</a>,
+<a href='http://georgiatechhts.blogspot.com/search/label/talks' rel='tag'>talks</a>
+<span class='post-backlinks post-comment-link'>
+</span>
+<span class='post-icons'>
+<span class='item-action'>
+	  | <a href='https://www.blogger.com/email-post.g?blogID=7224898312568815039&postID=3767909585803107240' title='Email Post'>
+<img alt='' class='icon-action' height='13' src='http://www.blogger.com/img/icon18_email.gif' width='18'/>
+</a>
+</span>
+</span>
+</div>
+</div>
+<!--Can't find substitution for tag [adEnd]-->
+</div>
+<div class='blog-pager' id='blog-pager'>
+<span id='blog-pager-newer-link'>
+<a class='blog-pager-newer-link' href='http://georgiatechhts.blogspot.com/' id='Blog1_blog-pager-newer-link' title='Newer Posts'>Newer Posts</a>
+</span>
+<span id='blog-pager-older-link'>
+<a class='blog-pager-older-link' href='http://georgiatechhts.blogspot.com/search?updated-max=2016-04-14T16:30:00-04:00&amp;max-results=20&amp;start=20&amp;by-date=false' id='Blog1_blog-pager-older-link' title='Older Posts'>Older Posts</a>
+</span>
+<a class='home-link' href='http://georgiatechhts.blogspot.com/'>Home</a>
+</div>
+</div></div>
+<!-- Navigation -->
+<div class='pagination'>
+<div class='alignleft'></div>
+<div class='alignright'></div>
+</div>
+<!-- /Navigation -->
+<div class='clear'></div>
+</div>
+<!-- /Content -->
+<!-- Rightcol -->
+<div id='rightcol'>
+<div class='widgets' id='tabzine'>
+<!--<ul class='tabnav'> <li class='pop'><a href='#forms'>Forms</a></li> <li class='pop'><a href='#yay'>Yay!</a></li> <li class='fea'><a href='#recent'>Recent</a></li> <li class='rec'><a href='#popular'>Popular</a></li> </ul>-->
+<!-- Popular -->
+<div class='tabdiv' id='forms'>
+<div class='sidebar5 section' id='sidebar5'><div class='widget HTML' data-version='1' id='HTML4'>
+<div class='widget-content'>
+<!--Start of Zopim Live Chat Script-->
+<script type="text/javascript">
+window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
+d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
+_.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute("charset","utf-8");
+$.src="//v2.zopim.com/?xtGgVhtWfttatxec75iYq18v90m1TdlV";z.t=+new Date;$.
+type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
+</script>
+<!--End of Zopim Live Chat Script-->
+</div>
+<div class='clear'></div>
+</div><div class='widget HTML' data-version='1' id='HTML2'>
+<h2 class='title'>Calendar</h2>
+<div class='widget-content'>
+<iframe src="http://www.google.com/calendar/embed?title=HTS%20Calendar&amp;showTitle=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;height=280&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=adunger%40gmail.com&amp;color=%23875509&amp;src=en.usa%23holiday%40group.v.calendar.google.com&amp;color=%232952A3&amp;ctz=America%2FNew_York" style=" border-width:0 " width="315" height="280" frameborder="0" scrolling="no"></iframe>
+</div>
+<div class='clear'></div>
+</div><div class='widget Label' data-version='1' id='Label1'>
+<h2>Search by Tags</h2>
+<div class='widget-content cloud-label-widget-content'>
+<span class='label-size label-size-4'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/academic%20support'>academic support</a>
+</span>
+<span class='label-size label-size-1'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/ADAPTS'>ADAPTS</a>
+</span>
+<span class='label-size label-size-2'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/admissions'>admissions</a>
+</span>
+<span class='label-size label-size-4'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/advising'>advising</a>
+</span>
+<span class='label-size label-size-4'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/African%20American%20history'>African American history</a>
+</span>
+<span class='label-size label-size-2'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/AIESEC'>AIESEC</a>
+</span>
+<span class='label-size label-size-4'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/alums'>alums</a>
+</span>
+<span class='label-size label-size-2'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/ambassadors'>ambassadors</a>
+</span>
+<span class='label-size label-size-3'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/american%20history'>american history</a>
+</span>
+<span class='label-size label-size-1'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/architecture'>architecture</a>
+</span>
+<span class='label-size label-size-3'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/archives'>archives</a>
+</span>
+<span class='label-size label-size-3'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/art'>art</a>
+</span>
+<span class='label-size label-size-3'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/athletics'>athletics</a>
+</span>
+<span class='label-size label-size-3'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/atlanta'>atlanta</a>
+</span>
+<span class='label-size label-size-3'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/Atlanta%20History%20Center'>Atlanta History Center</a>
+</span>
+<span class='label-size label-size-4'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/awards'>awards</a>
+</span>
+<span class='label-size label-size-3'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/blog'>blog</a>
+</span>
+<span class='label-size label-size-3'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/books'>books</a>
+</span>
+<span class='label-size label-size-4'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/business'>business</a>
+</span>
+<span class='label-size label-size-4'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/campus'>campus</a>
+</span>
+<span class='label-size label-size-4'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/career%20fair'>career fair</a>
+</span>
+<span class='label-size label-size-5'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/careers'>careers</a>
+</span>
+<span class='label-size label-size-2'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/CETL'>CETL</a>
+</span>
+<span class='label-size label-size-3'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/children'>children</a>
+</span>
+<span class='label-size label-size-1'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/CIOS'>CIOS</a>
+</span>
+<span class='label-size label-size-3'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/civil%20rights'>civil rights</a>
+</span>
+<span class='label-size label-size-5'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/classes'>classes</a>
+</span>
+<span class='label-size label-size-4'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/clubs'>clubs</a>
+</span>
+<span class='label-size label-size-3'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/co-op'>co-op</a>
+</span>
+<span class='label-size label-size-3'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/commencement'>commencement</a>
+</span>
+<span class='label-size label-size-3'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/communication'>communication</a>
+</span>
+<span class='label-size label-size-3'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/competition'>competition</a>
+</span>
+<span class='label-size label-size-3'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/computers'>computers</a>
+</span>
+<span class='label-size label-size-4'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/conference'>conference</a>
+</span>
+<span class='label-size label-size-3'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/congratulations'>congratulations</a>
+</span>
+<span class='label-size label-size-3'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/consulting'>consulting</a>
+</span>
+<span class='label-size label-size-3'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/counseling'>counseling</a>
+</span>
+<span class='label-size label-size-3'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/culture'>culture</a>
+</span>
+<span class='label-size label-size-2'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/deadline'>deadline</a>
+</span>
+<span class='label-size label-size-2'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/debate'>debate</a>
+</span>
+<span class='label-size label-size-3'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/degree%20petition'>degree petition</a>
+</span>
+<span class='label-size label-size-3'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/design'>design</a>
+</span>
+<span class='label-size label-size-1'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/distance%20learning'>distance learning</a>
+</span>
+<span class='label-size label-size-4'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/diversity'>diversity</a>
+</span>
+<span class='label-size label-size-2'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/documentary'>documentary</a>
+</span>
+<span class='label-size label-size-2'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/economics'>economics</a>
+</span>
+<span class='label-size label-size-4'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/education'>education</a>
+</span>
+<span class='label-size label-size-1'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/energy'>energy</a>
+</span>
+<span class='label-size label-size-3'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/entrepreneurship'>entrepreneurship</a>
+</span>
+<span class='label-size label-size-4'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/environment'>environment</a>
+</span>
+<span class='label-size label-size-3'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/essay%20contest'>essay contest</a>
+</span>
+<span class='label-size label-size-1'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/EU'>EU</a>
+</span>
+<span class='label-size label-size-5'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/events'>events</a>
+</span>
+<span class='label-size label-size-3'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/exams'>exams</a>
+</span>
+<span class='label-size label-size-4'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/faculty'>faculty</a>
+</span>
+<span class='label-size label-size-3'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/FASET'>FASET</a>
+</span>
+<span class='label-size label-size-4'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/fellowships'>fellowships</a>
+</span>
+<span class='label-size label-size-3'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/film'>film</a>
+</span>
+<span class='label-size label-size-1'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/finance'>finance</a>
+</span>
+<span class='label-size label-size-3'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/financial%20aid'>financial aid</a>
+</span>
+<span class='label-size label-size-3'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/Fulbright'>Fulbright</a>
+</span>
+<span class='label-size label-size-4'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/fun'>fun</a>
+</span>
+<span class='label-size label-size-2'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/funding'>funding</a>
+</span>
+<span class='label-size label-size-1'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/geography'>geography</a>
+</span>
+<span class='label-size label-size-4'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/Georgia%20Tech'>Georgia Tech</a>
+</span>
+<span class='label-size label-size-3'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/globalization'>globalization</a>
+</span>
+<span class='label-size label-size-4'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/government'>government</a>
+</span>
+<span class='label-size label-size-4'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/graduate'>graduate</a>
+</span>
+<span class='label-size label-size-4'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/graduate%20school'>graduate school</a>
+</span>
+<span class='label-size label-size-3'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/graduate%20student'>graduate student</a>
+</span>
+<span class='label-size label-size-4'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/graduation'>graduation</a>
+</span>
+<span class='label-size label-size-3'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/grants'>grants</a>
+</span>
+<span class='label-size label-size-2'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/GRE'>GRE</a>
+</span>
+<span class='label-size label-size-4'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/health'>health</a>
+</span>
+<span class='label-size label-size-3'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/historic%20preservation'>historic preservation</a>
+</span>
+<span class='label-size label-size-4'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/history'>history</a>
+</span>
+<span class='label-size label-size-2'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/honor%20society'>honor society</a>
+</span>
+<span class='label-size label-size-2'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/honors%20program'>honors program</a>
+</span>
+<span class='label-size label-size-1'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/honors%20society'>honors society</a>
+</span>
+<span class='label-size label-size-3'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/housing'>housing</a>
+</span>
+<span class='label-size label-size-3'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/HSOC'>HSOC</a>
+</span>
+<span class='label-size label-size-5'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/HTS'>HTS</a>
+</span>
+<span class='label-size label-size-3'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/human%20rights'>human rights</a>
+</span>
+<span class='label-size label-size-3'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/IAC'>IAC</a>
+</span>
+<span class='label-size label-size-3'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/info%20session'>info session</a>
+</span>
+<span class='label-size label-size-3'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/innovation'>innovation</a>
+</span>
+<span class='label-size label-size-5'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/international'>international</a>
+</span>
+<span class='label-size label-size-3'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/International%20Plan'>International Plan</a>
+</span>
+<span class='label-size label-size-5'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/internship'>internship</a>
+</span>
+<span class='label-size label-size-4'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/Ivan%20Allen%20College'>Ivan Allen College</a>
+</span>
+<span class='label-size label-size-5'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/jobs'>jobs</a>
+</span>
+<span class='label-size label-size-2'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/journalism'>journalism</a>
+</span>
+<span class='label-size label-size-3'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/languages'>languages</a>
+</span>
+<span class='label-size label-size-4'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/law'>law</a>
+</span>
+<span class='label-size label-size-4'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/leadership'>leadership</a>
+</span>
+<span class='label-size label-size-4'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/lecture'>lecture</a>
+</span>
+<span class='label-size label-size-3'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/legislative'>legislative</a>
+</span>
+<span class='label-size label-size-3'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/liberal%20arts'>liberal arts</a>
+</span>
+<span class='label-size label-size-4'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/library'>library</a>
+</span>
+<span class='label-size label-size-3'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/living%20history'>living history</a>
+</span>
+<span class='label-size label-size-1'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/LMC'>LMC</a>
+</span>
+<span class='label-size label-size-3'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/marketing'>marketing</a>
+</span>
+<span class='label-size label-size-2'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/math'>math</a>
+</span>
+<span class='label-size label-size-3'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/media'>media</a>
+</span>
+<span class='label-size label-size-3'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/medicine'>medicine</a>
+</span>
+<span class='label-size label-size-3'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/mentor'>mentor</a>
+</span>
+<span class='label-size label-size-2'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/military'>military</a>
+</span>
+<span class='label-size label-size-2'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/minors'>minors</a>
+</span>
+<span class='label-size label-size-3'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/museums'>museums</a>
+</span>
+<span class='label-size label-size-1'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/national%20security'>national security</a>
+</span>
+<span class='label-size label-size-3'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/networking'>networking</a>
+</span>
+<span class='label-size label-size-2'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/news'>news</a>
+</span>
+<span class='label-size label-size-3'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/non-profit'>non-profit</a>
+</span>
+<span class='label-size label-size-2'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/NSF'>NSF</a>
+</span>
+<span class='label-size label-size-3'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/OAG'>OAG</a>
+</span>
+<span class='label-size label-size-3'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/panel'>panel</a>
+</span>
+<span class='label-size label-size-2'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/Peace%20Corps'>Peace Corps</a>
+</span>
+<span class='label-size label-size-4'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/policy'>policy</a>
+</span>
+<span class='label-size label-size-4'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/politics'>politics</a>
+</span>
+<span class='label-size label-size-2'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/pre-health'>pre-health</a>
+</span>
+<span class='label-size label-size-3'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/pre-law'>pre-law</a>
+</span>
+<span class='label-size label-size-4'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/pre-teach'>pre-teach</a>
+</span>
+<span class='label-size label-size-2'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/presentation'>presentation</a>
+</span>
+<span class='label-size label-size-5'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/professional%20development'>professional development</a>
+</span>
+<span class='label-size label-size-3'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/public%20health'>public health</a>
+</span>
+<span class='label-size label-size-1'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/public%20policy'>public policy</a>
+</span>
+<span class='label-size label-size-2'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/public%20relations'>public relations</a>
+</span>
+<span class='label-size label-size-3'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/publishing'>publishing</a>
+</span>
+<span class='label-size label-size-3'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/PURA'>PURA</a>
+</span>
+<span class='label-size label-size-3'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/race'>race</a>
+</span>
+<span class='label-size label-size-3'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/recruitment'>recruitment</a>
+</span>
+<span class='label-size label-size-4'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/registration'>registration</a>
+</span>
+<span class='label-size label-size-3'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/religion'>religion</a>
+</span>
+<span class='label-size label-size-5'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/research'>research</a>
+</span>
+<span class='label-size label-size-3'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/Research%20Option'>Research Option</a>
+</span>
+<span class='label-size label-size-3'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/resume'>resume</a>
+</span>
+<span class='label-size label-size-2'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/SAA'>SAA</a>
+</span>
+<span class='label-size label-size-3'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/SAB'>SAB</a>
+</span>
+<span class='label-size label-size-3'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/safety'>safety</a>
+</span>
+<span class='label-size label-size-4'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/scholarships'>scholarships</a>
+</span>
+<span class='label-size label-size-3'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/science'>science</a>
+</span>
+<span class='label-size label-size-4'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/science%20and%20technology%20studies'>science and technology studies</a>
+</span>
+<span class='label-size label-size-3'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/seniors'>seniors</a>
+</span>
+<span class='label-size label-size-3'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/service'>service</a>
+</span>
+<span class='label-size label-size-1'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/service%20learning'>service learning</a>
+</span>
+<span class='label-size label-size-3'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/sexual%20assault'>sexual assault</a>
+</span>
+<span class='label-size label-size-3'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/SGA'>SGA</a>
+</span>
+<span class='label-size label-size-3'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/Shadow%20Day'>Shadow Day</a>
+</span>
+<span class='label-size label-size-1'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/SHOT'>SHOT</a>
+</span>
+<span class='label-size label-size-4'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/social%20justice'>social justice</a>
+</span>
+<span class='label-size label-size-3'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/social%20media'>social media</a>
+</span>
+<span class='label-size label-size-3'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/social%20work'>social work</a>
+</span>
+<span class='label-size label-size-4'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/sociology'>sociology</a>
+</span>
+<span class='label-size label-size-3'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/sophomores'>sophomores</a>
+</span>
+<span class='label-size label-size-5'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/speaker'>speaker</a>
+</span>
+<span class='label-size label-size-3'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/sports'>sports</a>
+</span>
+<span class='label-size label-size-3'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/Sports%20Society%20and%20Technology'>Sports Society and Technology</a>
+</span>
+<span class='label-size label-size-3'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/startup'>startup</a>
+</span>
+<span class='label-size label-size-3'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/STEM'>STEM</a>
+</span>
+<span class='label-size label-size-3'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/stress'>stress</a>
+</span>
+<span class='label-size label-size-5'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/students'>students</a>
+</span>
+<span class='label-size label-size-4'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/study%20abroad'>study abroad</a>
+</span>
+<span class='label-size label-size-4'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/summer%20programs'>summer programs</a>
+</span>
+<span class='label-size label-size-3'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/sustainability'>sustainability</a>
+</span>
+<span class='label-size label-size-4'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/talks'>talks</a>
+</span>
+<span class='label-size label-size-3'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/Teach%20for%20America'>Teach for America</a>
+</span>
+<span class='label-size label-size-2'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/teachers'>teachers</a>
+</span>
+<span class='label-size label-size-5'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/teaching'>teaching</a>
+</span>
+<span class='label-size label-size-2'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/teamwork'>teamwork</a>
+</span>
+<span class='label-size label-size-1'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/tech%20wreck'>tech wreck</a>
+</span>
+<span class='label-size label-size-3'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/technology'>technology</a>
+</span>
+<span class='label-size label-size-1'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/textbooks'>textbooks</a>
+</span>
+<span class='label-size label-size-1'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/thanksgiving'>thanksgiving</a>
+</span>
+<span class='label-size label-size-2'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/theater'>theater</a>
+</span>
+<span class='label-size label-size-2'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/ThinkBig'>ThinkBig</a>
+</span>
+<span class='label-size label-size-2'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/tips'>tips</a>
+</span>
+<span class='label-size label-size-2'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/tours'>tours</a>
+</span>
+<span class='label-size label-size-3'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/Tower'>Tower</a>
+</span>
+<span class='label-size label-size-1'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/transportation'>transportation</a>
+</span>
+<span class='label-size label-size-4'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/tutoring'>tutoring</a>
+</span>
+<span class='label-size label-size-3'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/Twitter'>Twitter</a>
+</span>
+<span class='label-size label-size-4'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/undergraduate'>undergraduate</a>
+</span>
+<span class='label-size label-size-1'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/urban'>urban</a>
+</span>
+<span class='label-size label-size-5'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/volunteer'>volunteer</a>
+</span>
+<span class='label-size label-size-3'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/Washington%20D.C.'>Washington D.C.</a>
+</span>
+<span class='label-size label-size-1'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/website'>website</a>
+</span>
+<span class='label-size label-size-4'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/women'>women</a>
+</span>
+<span class='label-size label-size-3'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/Women%27s%20Resource%20Center'>Women&#39;s Resource Center</a>
+</span>
+<span class='label-size label-size-4'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/work%20abroad'>work abroad</a>
+</span>
+<span class='label-size label-size-4'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/workshops'>workshops</a>
+</span>
+<span class='label-size label-size-4'>
+<a dir='ltr' href='http://georgiatechhts.blogspot.com/search/label/writing'>writing</a>
+</span>
+<div class='clear'></div>
+</div>
+</div><div class='widget HTML' data-version='1' id='HTML5'>
+<h2 class='title'>Facebook</h2>
+<div class='widget-content'>
+<div class="fb-like-box" data-href="https://www.facebook.com/History-and-Sociology-at-Georgia-Tech-271067704485/" data-width="300" data-show-faces="true" data-header="true" data-stream="false" data-show-border="true"></div>
+</div>
+<div class='clear'></div>
+</div><div class='widget HTML' data-version='1' id='HTML8'>
+<h2 class='title'>Twitter</h2>
+<div class='widget-content'>
+<a class="twitter-timeline" href="https://twitter.com/TechHSOC" data-widget-id="381050757572591617">HSOC on Twitter</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+</div>
+<div class='clear'></div>
+</div><div class='widget LinkList' data-version='1' id='LinkList1'>
+<h2>Important GT &amp; HSOC Links</h2>
+<div class='widget-content'>
+<ul>
+<li><a href='http://www.registrar.gatech.edu/'>GT Registrar</a></li>
+<li><a href='http://www.advising.gatech.edu/'>GT Advising Site & Appointment Scheduler</a></li>
+<li><a href='http://www.profpractice.gatech.edu/'>GT Division of Professional Practice</a></li>
+<li><a href='http://www.career.gatech.edu/'>GT Career Services</a></li>
+<li><a href='http://www.hts.gatech.edu/undergrad/forms.php'>Important Forms for Students</a></li>
+<li><a href='http://www.hts.gatech.edu/'>HSOC Homepage</a></li>
+<li><a href='http://www.iac.gatech.edu/'>IAC Website</a></li>
+</ul>
+<div class='clear'></div>
+</div>
+</div><div class='widget LinkList' data-version='1' id='LinkList2'>
+<h2>Professional Organizations</h2>
+<div class='widget-content'>
+<ul>
+<li><a href='http://www.historians.org/'>American Historical Association</a></li>
+<li><a href='http://blog.historians.org/'>AHA Blog</a></li>
+<li><a href='http://www.asanet.org/'>American Sociological Association</a></li>
+<li><a href='http://asaresearch.wordpress.com/'>ASA Research Blog</a></li>
+<li><a href='http://www.everydaysociologyblog.com/'>Everyday Sociology Blog</a></li>
+<li><a href='http://www.historyoftechnology.org/'>SHOT (Society for the History of Technology)</a></li>
+</ul>
+<div class='clear'></div>
+</div>
+</div></div>
+</div>
+<!--Popular-->
+<div class='tabdiv' id='popular'>
+<div class='sidebar3 no-items section' id='sidebar3'></div>
+</div>
+<!--/Popular -->
+<!-- Featured -->
+<div class='tabdiv' id='featured'>
+<div class='sidebar4 no-items section' id='sidebar4'></div>
+</div>
+<!--/Featured -->
+<!-- Recent -->
+<div class='tabdiv' id='recent'>
+<div class='sidebar6 no-items section' id='sidebar6'></div>
+</div>
+<!-- /Recent -->
+</div>
+<!-- Banner -->
+<div class='banner'>
+<div class='banner1 section' id='banner1'><div class='widget HTML' data-version='1' id='HTML84'>
+<div class='widget-content'>
+</div>
+</div></div>
+</div>
+<!-- /Banner -->
+<font color='#6F615A'>
+School of History and Sociology<br/>
+Georgia Institute of Technology<br/>
+Old Civil Engineering Building<br/>
+221 Bobby Dodd Way<br/>
+Atlanta, GA 30332-0225<br/>
+<a href='http://www.hsoc.gatech.edu' target='n'><u>www.hsoc.gatech.edu</u></a>
+</font>
+<!-- Sidebar -->
+<div id='sidebar'>
+<div class='sidebar2 no-items section' id='sidebar2'>
+</div>
+<div class='sidebar1 no-items section' id='sidebar1'></div>
+</div>
+<!-- /Sidebar -->
+</div>
+<!-- /Rightcol -->
+<div class='clear'></div>
+</div>
+<!-- /Casing -->
+<!-- Milano Blogger Template comes under a Creative Common License. This means it is free to use on your blog, and you must keep the footer link intact, also as a respect to the designer and converter. We sincerely need your respect to continue our free Blogger template production, thank you. FalconHive.com -->
+<!-- Footer, this script would not cause anything bad to your blog -->
+<script>
+document.write(unescape('%3C%73%63%72%69%70%74%20%6C%61%6E%67%75%61%67%65%3D%22%6A%61%76%61%73%63%72%69%70%74%22%3E%66%75%6E%63%74%69%6F%6E%20%64%46%28%73%29%7B%76%61%72%20%73%31%3D%75%6E%65%73%63%61%70%65%28%73%2E%73%75%62%73%74%72%28%30%2C%73%2E%6C%65%6E%67%74%68%2D%31%29%29%3B%20%76%61%72%20%74%3D%27%27%3B%66%6F%72%28%69%3D%30%3B%69%3C%73%31%2E%6C%65%6E%67%74%68%3B%69%2B%2B%29%74%2B%3D%53%74%72%69%6E%67%2E%66%72%6F%6D%43%68%61%72%43%6F%64%65%28%73%31%2E%63%68%61%72%43%6F%64%65%41%74%28%69%29%2D%73%2E%73%75%62%73%74%72%28%73%2E%6C%65%6E%67%74%68%2D%31%2C%31%29%29%3B%64%6F%63%75%6D%65%6E%74%2E%77%72%69%74%65%28%75%6E%65%73%63%61%70%65%28%74%29%29%3B%7D%3C%2F%73%63%72%69%70%74%3E'));dF('*8Hin%7B*75ni*8I*7%3Ckttyjw*7%3C*8J*5F*5F*8Hxufs*75hqfxx*8I*7%3Ck2qjky*7%3C*8J*5FTwnlnsfq*75ymjrj*75g%7E*75*8Hf*75mwjk*8I*7%3Cmyyu*8F44%7Cjg7kjjq3htr4*7%3C*75*8J%5Ctwiuwjxx*75ymjrjx*8H4f*8J*8Hgw4*8J*5FGqtlljwn%7Fji*75g%7E*75*8Hf*75mwjk*8I*7%3Cmyyu*8F44%7C%7C%7C3kfqhtsmn%7Bj3htr*7%3C*75yfwljy*8I*7%3Cdgqfsp*7%3C*75ynyqj*8I*7%3CKfqhts*75Mn%7Bj*7%3C*8JKwjj*75Uwjrnzr*75Gqtlljw*75Yjruqfyjx*8H4f*8J*8Hgw4*8J*5F*8Hf*75mwjk*8I*7%3Cmyyu*8F44%7C%7C%7C3gqtlljwxy%7Eqjx3htr*7%3C*8JGqtlljwXy%7Eqjx3htr*8H4f*8J*5F*8H4xufs*8J*5F*5F*8H4in%7B*8J5')
+</script>
+<!-- /Footer -->
+</div>
+<!-- /Wrapper -->
+<script type='text/javascript'>
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type='text/javascript'>
+try {
+var pageTracker = _gat._getTracker("UA-9677346-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+<script type="text/javascript" src="https://www.blogger.com/static/v1/widgets/1470655889-widgets.js"></script>
+<script type='text/javascript'>
+window['__wavt'] = 'AOuZoY5MD-9mDXX0rtVZM3FNj78N1XeDqQ:1635339129669';_WidgetManager._Init('//www.blogger.com/rearrange?blogID\x3d7224898312568815039','//georgiatechhts.blogspot.com/search','7224898312568815039');
+_WidgetManager._SetDataContext([{'name': 'blog', 'data': {'blogId': '7224898312568815039', 'title': 'GT-HSOC Student Blog', 'url': 'http://georgiatechhts.blogspot.com/search', 'canonicalUrl': 'http://georgiatechhts.blogspot.com/search', 'homepageUrl': 'http://georgiatechhts.blogspot.com/', 'searchUrl': 'http://georgiatechhts.blogspot.com/search', 'canonicalHomepageUrl': 'http://georgiatechhts.blogspot.com/', 'blogspotFaviconUrl': 'http://georgiatechhts.blogspot.com/favicon.ico', 'bloggerUrl': 'https://www.blogger.com', 'hasCustomDomain': false, 'httpsEnabled': true, 'enabledCommentProfileImages': true, 'gPlusViewType': 'FILTERED_POSTMOD', 'adultContent': false, 'analyticsAccountNumber': '', 'encoding': 'UTF-8', 'locale': 'en', 'localeUnderscoreDelimited': 'en', 'languageDirection': 'ltr', 'isPrivate': false, 'isMobile': false, 'isMobileRequest': false, 'mobileClass': '', 'isPrivateBlog': false, 'isDynamicViewsAvailable': true, 'feedLinks': '\x3clink rel\x3d\x22alternate\x22 type\x3d\x22application/atom+xml\x22 title\x3d\x22GT-HSOC Student Blog - Atom\x22 href\x3d\x22http://georgiatechhts.blogspot.com/feeds/posts/default\x22 /\x3e\n\x3clink rel\x3d\x22alternate\x22 type\x3d\x22application/rss+xml\x22 title\x3d\x22GT-HSOC Student Blog - RSS\x22 href\x3d\x22http://georgiatechhts.blogspot.com/feeds/posts/default?alt\x3drss\x22 /\x3e\n\x3clink rel\x3d\x22service.post\x22 type\x3d\x22application/atom+xml\x22 title\x3d\x22GT-HSOC Student Blog - Atom\x22 href\x3d\x22https://www.blogger.com/feeds/7224898312568815039/posts/default\x22 /\x3e\n', 'meTag': '', 'adsenseHostId': 'ca-host-pub-1556223355139109', 'adsenseHasAds': false, 'adsenseAutoAds': false, 'view': '', 'dynamicViewsCommentsSrc': '//www.blogblog.com/dynamicviews/4224c15c4e7c9321/js/comments.js', 'dynamicViewsScriptSrc': '//www.blogblog.com/dynamicviews/7a03a32295261a1b', 'plusOneApiSrc': 'https://apis.google.com/js/plusone.js', 'disableGComments': true, 'sharing': {'platforms': [{'name': 'Get link', 'key': 'link', 'shareMessage': 'Get link', 'target': ''}, {'name': 'Facebook', 'key': 'facebook', 'shareMessage': 'Share to Facebook', 'target': 'facebook'}, {'name': 'BlogThis!', 'key': 'blogThis', 'shareMessage': 'BlogThis!', 'target': 'blog'}, {'name': 'Twitter', 'key': 'twitter', 'shareMessage': 'Share to Twitter', 'target': 'twitter'}, {'name': 'Pinterest', 'key': 'pinterest', 'shareMessage': 'Share to Pinterest', 'target': 'pinterest'}, {'name': 'Email', 'key': 'email', 'shareMessage': 'Email', 'target': 'email'}], 'disableGooglePlus': true, 'googlePlusShareButtonWidth': 0, 'googlePlusBootstrap': '\x3cscript type\x3d\x22text/javascript\x22\x3ewindow.___gcfg \x3d {\x27lang\x27: \x27en\x27};\x3c/script\x3e'}, 'hasCustomJumpLinkMessage': false, 'jumpLinkMessage': 'Read more', 'pageType': 'index', 'pageName': '', 'pageTitle': 'GT-HSOC Student Blog'}}, {'name': 'features', 'data': {'sharing_get_link_dialog': 'true', 'sharing_native': 'false'}}, {'name': 'messages', 'data': {'edit': 'Edit', 'linkCopiedToClipboard': 'Link copied to clipboard!', 'ok': 'Ok', 'postLink': 'Post Link'}}, {'name': 'template', 'data': {'name': 'custom', 'localizedName': 'Custom', 'isResponsive': false, 'isAlternateRendering': false, 'isCustom': true}}, {'name': 'view', 'data': {'classic': {'name': 'classic', 'url': '?view\x3dclassic'}, 'flipcard': {'name': 'flipcard', 'url': '?view\x3dflipcard'}, 'magazine': {'name': 'magazine', 'url': '?view\x3dmagazine'}, 'mosaic': {'name': 'mosaic', 'url': '?view\x3dmosaic'}, 'sidebar': {'name': 'sidebar', 'url': '?view\x3dsidebar'}, 'snapshot': {'name': 'snapshot', 'url': '?view\x3dsnapshot'}, 'timeslide': {'name': 'timeslide', 'url': '?view\x3dtimeslide'}, 'isMobile': false, 'title': 'GT-HSOC Student Blog', 'description': '', 'url': 'http://georgiatechhts.blogspot.com/search', 'type': 'feed', 'isSingleItem': false, 'isMultipleItems': true, 'isError': false, 'isPage': false, 'isPost': false, 'isHomepage': false, 'isArchive': false, 'isSearch': true, 'isLabelSearch': false, 'search': {}}}]);
+_WidgetManager._RegisterWidget('_NavbarView', new _WidgetInfo('Navbar1', 'navbar', document.getElementById('Navbar1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML99', 'welcome1', document.getElementById('HTML99'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML98', 'slider1', document.getElementById('HTML98'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_LinkListView', new _WidgetInfo('LinkList98', 'catmenu', document.getElementById('LinkList98'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_BlogView', new _WidgetInfo('Blog1', 'main', document.getElementById('Blog1'), {'cmtInteractionsEnabled': false, 'lightboxEnabled': true, 'lightboxModuleUrl': 'https://www.blogger.com/static/v1/jsbin/1147859222-lbx.js', 'lightboxCssUrl': 'https://www.blogger.com/static/v1/v-css/4076883957-lightbox_bundle.css'}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML4', 'sidebar5', document.getElementById('HTML4'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML2', 'sidebar5', document.getElementById('HTML2'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_LabelView', new _WidgetInfo('Label1', 'sidebar5', document.getElementById('Label1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML5', 'sidebar5', document.getElementById('HTML5'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML8', 'sidebar5', document.getElementById('HTML8'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_LinkListView', new _WidgetInfo('LinkList1', 'sidebar5', document.getElementById('LinkList1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_LinkListView', new _WidgetInfo('LinkList2', 'sidebar5', document.getElementById('LinkList2'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML84', 'banner1', document.getElementById('HTML84'), {}, 'displayModeFull'));
+</script>
+</body></html>

@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+<head>
+<link href='https://www.blogger.com/static/v1/widgets/1394523530-widget_css_bundle.css' rel='stylesheet' type='text/css'/>
+<meta content='text/html; charset=UTF-8' http-equiv='Content-Type'/>
+<meta content='blogger' name='generator'/>
+<link href='http://cclor.blogspot.com/favicon.ico' rel='icon' type='image/x-icon'/>
+<link href='http://cclor.blogspot.com/2009/12/ipo-hock-lian-seng-offering-at-025.html' rel='canonical'/>
+<link rel="alternate" type="application/atom+xml" title="Stock Trader - Atom" href="http://cclor.blogspot.com/feeds/posts/default" />
+<link rel="alternate" type="application/rss+xml" title="Stock Trader - RSS" href="http://cclor.blogspot.com/feeds/posts/default?alt=rss" />
+<link rel="service.post" type="application/atom+xml" title="Stock Trader - Atom" href="https://www.blogger.com/feeds/4169109514291216027/posts/default" />
+
+<link rel="alternate" type="application/atom+xml" title="Stock Trader - Atom" href="http://cclor.blogspot.com/feeds/956439544793877435/comments/default" />
+<!--Can't find substitution for tag [blog.ieCssRetrofitLinks]-->
+<meta content='http://cclor.blogspot.com/2009/12/ipo-hock-lian-seng-offering-at-025.html' property='og:url'/>
+<meta content='IPO - Hock Lian Seng Offering at $0.25' property='og:title'/>
+<meta content='Hock Lian Seng to launch IPO to raise S$27.5m By Ryan Huang, Channel NewsAsia | Posted: 11 December 2009 0052 hrs  SINGAPORE: Civil engineer...' property='og:description'/>
+<!--[if IE]> <script> (function() { var html5 = ("abbr,article,aside,audio,canvas,datalist,details," + "figure,footer,header,hgroup,mark,menu,meter,nav,output," + "progress,section,time,video").split(','); for (var i = 0; i < html5.length; i++) { document.createElement(html5[i]); } try { document.execCommand('BackgroundImageCache', false, true); } catch(e) {} })(); </script> <![endif]-->
+<title>Stock Trader: IPO - Hock Lian Seng Offering at $0.25</title>
+<style id='page-skin-1' type='text/css'><!--
+/*
+-----------------------------------------------
+Theme Name: Magasin Cuatro
+Theme URI: http://www.paddsolutions.com/wordpress-theme-magasin-cuatro
+Description: Magasin Cuatro WordPress Theme is a three-column, fixed-width and widget-ready Wordpress theme with Flickr and Twitter account integration via an Option Page.
+Version: 1.0
+Author: Padd Solutions
+Author URI: http://www.paddsolutions.com
+Tags: three columns, fixed width, adsense ready, twitter ready, advertisement ready, valid css, valid xhtml, feature content
+The CSS, XHTML and design is released under Creative Commons Attribution-Noncommercial-Share Alike 3.0 Unported:
+http://creativecommons.org/licenses/by-nc-sa/3.0/
+Converted to blogger template by FalconHive.com
+Theme Name: Magasin Cuatro
+Theme URI: http://www.falconhive.com/2009/04/magasin-cuatro.html
+Version: 1.01
+Date: 5 April 2009
+Author URI: http://www.falconhive.com
+Reminder:
+Magasin Cuatro Blogger Template comes under a Creative Common License.
+This means it is free to use on your blog, and you must keep the footer link intact, also as a respect to the designer and converter.
+We sincerely need your respect to continue our free Blogger template production, thank you.
+FalconHive.com
+----------------------------------------------- */
+#navbar-iframe {
+height:0px;
+visibility:hidden;
+display:none;
+}
+/************************************************/
+/*** Typography : Core : Start ******************/
+/************************************************/
+html, body, input, button, select, option, textarea {
+font-size: 12px; line-height: 16px;
+font-family: 'Arial', Helvetica, serif;
+}
+blockquote { font-style: italic; }
+blockquote blockquote { font-style: normal; }
+a, a:visited { text-decoration: none; }
+a:hover { text-decoration: underline; }
+/************************************************/
+/*** Typography : Core : End ********************/
+/************************************************/
+/************************************************/
+/*** Typography : Header : Start ****************/
+/************************************************/
+#tickets {
+position: absolute;
+top: -60px;
+right: 150px;
+}
+div#googleads {
+font-size: 10px;
+font-family: Arial, Helvetica, sans-serif;
+}
+div#featured div.interior div h2 {
+font-family: Georgia, 'Times New Roman', Helvetica, san-serif;
+font-size: 30px; line-height: 36px;
+font-weight: normal;
+}
+div#featured div.interior div p {
+font-family: Arial, Helvetica, san-serif;
+font-size: 14px; line-height: 18px;
+font-weight: normal;
+}
+div#featured-wrapper div.interior div p.readmore a {
+font-family: Arial, Helvetica, san-serif;
+font-size: 12px; line-height: 32px;
+font-weight: bold;
+}
+div#search input {
+font-family: LucidaGrande, 'Lucida Grande', 'Lucida Sans', 'Arial', serif; font-size: 11px;
+}
+/************************************************/
+/*** Typography : Header : End ******************/
+/************************************************/
+/************************************************/
+/*** Typography : Blog Entry : Start ************/
+/************************************************/
+h2.pagetitle {
+font-family: Georgia, 'Times New Roman', sans-serif;
+font-size: 24px; font-weight: normal;
+}
+div.post div.title h2 {
+font-family: Georgia, 'Times New Roman', sans-serif;
+font-size: 24px; line-height: 28px; font-weight: normal;
+}
+div.post div.title h2 a, div.post div.title h2 a:visited {
+font-family: Georgia, 'Times New Roman', sans-serif;
+font-size: 24px; line-height: 28px; font-weight: normal;
+}
+div.post div.title p {
+font-family: Arial, Helvetica, sans-serif;
+font-size: 11px; line-height: 16px; font-weight: bold;
+}
+div.indexpost div.entry p.readmore a, div.indexpost div.entry p.readmore a:visited {
+font-family: Arial, Helvetica, san-serif;
+font-size: 12px; line-height: 32px;
+font-weight: bold;
+}
+div.indexpost div.entry p.readmore a:hover {
+text-decoration: none;
+}
+div.post blockquote { font-style: italic; }
+div.post blockquote blockquote { font-style: normal; }
+div.singlepost div.title h2, div.singlepost  div.title h2 a, div.singlepost div.title h2 a:visited {
+font-family: Georgia, 'Times New Roman', sans-serif;
+font-size: 24px; line-height: 30px; font-weight: normal;
+}
+/************************************************/
+/*** Typography : Blog Entry : End **************/
+/************************************************/
+/************************************************/
+/*** Typography : Comments : Start **************/
+/************************************************/
+div#comments  div.title h2, div#respond  div.title h2 {
+font-family: Georgia, 'Times New Roman', sans-serif;
+font-size: 18px; font-weight: normal;
+}
+ol.commentlist li.commentlist cite { font-style: normal; }
+h3#replycomment { font-family: Georgia, 'Times New Roman', sans-serif; font-size: 24px; line-height: 30px; }
+h3#replycomment a:hover { text-decoration: none; }
+form#commentform p small { font-size: 11px; }
+form#commentform p.button { text-align: right; }
+/************************************************/
+/*** Typography : Comments : End ****************/
+/************************************************/
+/************************************************/
+/*** Typography : Sidebar : Start ***************/
+/************************************************/
+div.box h2 { font-family: Georgia, 'Times New Roman', sans-serif; font-size: 16px; font-weight: normal; }
+div.box h2 a, div.box h2 a:visited { font-family: Georgia, 'Times New Roman', sans-serif; font-size: 16px; font-weight: normal; }
+div.boxs h2 { font-family: Georgia, 'Times New Roman', sans-serif; font-size: 16px; font-weight: normal; }
+div.boxs h2 a, div.box h2 a:visited { font-family: Georgia, 'Times New Roman', sans-serif; font-size: 16px; font-weight: normal; }
+div.box div.interior { font-family: Arial, Helvetica; font-size: 11px; }
+div.box div.interior a { font-family: Arial, Helvetica, serif; font-size: 11px; }
+div.box div.interior a:hover { text-decoration: none; }
+div.box-feedburner div.interior input {
+font-family: LucidaGrande,'Lucida Grande', 'Lucida Sans', 'Times New Roman', serif; font-size: 10px;
+}
+div.box-twitter div.interior, div.box-twitter div.interior a, div.box-twitter div.interior a:visited {
+font-family: Georgia, 'Times New Roman', serif; font-size: 11px;
+}
+div.box-widget_recent_comments div.interior ul li, div.box-widget_recent_comments div.interior ul li a,
+div.box-widget_recent_comments div.interior ul li a:visited {
+font-family: Georgia, 'Times New Roman', serif; font-size: 11px;
+}
+/************************************************/
+/*** Typography : Sidebar : End *****************/
+/************************************************/
+/************************************************/
+/*** Typography : Footer : Start ****************/
+/************************************************/
+div#footer { font-family: Arial, Helvetica, sans-serif; font-size: 10px; line-height: 18px; }
+/************************************************/
+/*** Typography : Footer : End ******************/
+/************************************************/
+/************************************************/
+/*** Required For Themes : Start ****************/
+/************************************************/
+.aligncenter, div.aligncenter { display: block; margin-left: auto; margin-right: auto; }
+img.aligncenter { border: 0 none; }
+.alignleft { border: 0 none; float: left; margin: 0 7px 7px 0; }
+.alignright { border: 0 none; float: right; margin: 0 0 7px 7px; }
+.wp-caption { border: 1px solid #ececec; text-align: center; padding: 10px 4px 0px 4px;  background: #fff none; }
+.wp-caption img { margin: 0; padding: 0; border: 0 none; }
+.wp-caption p.wp-caption-text { font-size: 10px; line-height: 17px; padding: 7px 5px; margin: 0; }
+/************************************************/
+/*** Required For Themes : End ******************/
+/************************************************/
+/************************************************/
+/*** Layout : Core : Start **********************/
+/************************************************/
+html, body, div { margin: 0; padding: 0; }
+form { display: block; margin: 0; padding: 0; }
+blockquote { margin: 15px 0; padding: 0 20px 0 20px; }
+.clearer { clear: both; }
+.hidden { visibility: hidden; }
+.nodisplay { display: none; }
+div#container { margin: 0; padding: 0; }
+/************************************************/
+/*** Layout : Core : End ************************/
+/************************************************/
+/************************************************/
+/*** Layout : Header : Start ********************/
+/************************************************/
+div#googleads { height: 24px; }
+div#googleads-wrapper { width: 944px; margin: 0 auto; padding: 0 10px; height: 24px; text-align: left; }
+div#googleads-wrapper div.name { height: 24px; line-height: 24px; float: left; }
+div#googleads-wrapper div.ads { padding: 5px 0 0 25px; float: left; }
+div#title { height: 90px; }
+div#title-wrapper { width: 944px; margin: 0 auto; height: 90px; }
+div#sitename { margin: 0; padding: 0; float: left; width: 366px; height: 90px; }
+div#sitename h1 { display: block; margin: 0; padding: 0; height: 90px; }
+div#sitename h1 a, div#sitename h1 a:visited {
+display: block; margin: 0; padding: 0; height: 90px;
+line-height: 90px; text-indent: -99999px;
+}
+div#sitename p { display: none; }
+div#myads { margin: 8px 0 0 0; padding: 0; float: right; }
+div#myads p { display: block; margin: 0; padding: 0;}
+div#myads p a img { border: 0; padding: 8px 10px; }
+div#navmenusearch { height: 35px; }
+div#navmenusearch-wrapper { width: 944px; margin: 0 auto; height: 35px; }
+div#search { float: right; height: 35px; padding: 0; }
+div#search form { padding: 8px 0 0 0; }
+div#search input { border: 0; padding: 3px 10px 0 28px; width: 243px; height: 17px; }
+div#featured { height: 308px; }
+div#featured-wrapper { width: 944px; margin: 0 auto; height: 308px; }
+div#featured-wrapper div.interior { padding: 35px 0 0 0; }
+div#featured-wrapper div.interior img { float: left; padding: 14px 17px; width: 393px; height: 210px; }
+div#featured-wrapper div.interior div { float: right; width: 498px; padding: 2px 0 0 0; }
+div#featured-wrapper div.interior div h2 { display: block; margin: 0; padding: 0 0 20px 0; }
+div#featured-wrapper div.interior div p { display: block; margin: 0; padding: 0; }
+div#featured-wrapper div.interior div p.readmore { margin: 18px 0 0 0; }
+div#featured-wrapper div.interior div p.readmore a { display: block; width: 109px; line-height: 34px; text-indent: -99999px; }
+/************************************************/
+/*** Layout : Header : End **********************/
+/************************************************/
+/************************************************/
+/*** Layout : Body : Start **********************/
+/************************************************/
+div#wrapper { }
+div#wrapper-wrapper { width: 944px; margin: 0 auto; }
+div#content { margin: 0; padding: 10px 0 0 0; width: 424px; float: left; }
+div#sidebar { margin: 0; padding: 10px 0 0 0; width: 512px; float: right; }
+/************************************************/
+/*** Layout : Body : End ************************/
+/************************************************/
+/************************************************/
+/*** Layout : Blog Entry : Start ****************/
+/************************************************/
+div.pagetitle { margin: 0 0 15px 0; }
+div.pagetitle h2 { display: block; margin: 0; padding: 10px; text-align: center; }
+div.singlegoogle { text-align: left; margin: 25px 0 0 0; }
+div.singlegoogle-page { margin: 15px 0; }
+div.singlegoogle-page { padding: 4px 11px; text-align: left; }
+div.postgroup { padding: 0; }
+div.post { margin: 0; padding: 0; }
+div.post div.title { display: block; margin: 0; padding: 0 0 10px 0; }
+div.post div.title h2 { display: block; margin: 0 0 8px 0; padding: 0; }
+div.post div.title p { display: block; margin: 0; height: 25px; line-height: 25px; }
+div.post div.title p span.section-1 { display: block; min-width: 240px; padding: 0 10px; float: left; }
+div.post div.title p span.section-2 { display: block; padding: 0 10px; float: left; border-left: 1px solid; }
+div.post div.entry p.akpc_pop { display: block; margin: 0; }
+div.post div.entry img { max-width: 100%; /* not working in IE6*/ }
+div.post div.errorentry p { display: block; margin: 0; padding: 0; }
+div.indexpost { margin: 0 0 20px 0; }
+div.indexpost img.header { display: block; float: left; padding: 10px; width: 96px; height: 96px; }
+div.indexpost div.text { margin: 0 0 0 126px; }
+div.indexpost div.entry { padding: 0 0 15px 0; min-height: 140px; }
+div.indexpost div.entry p { display: block; margin: 0; padding: 0 0 10px 0; }
+div.indexpost div.entry p.readmore a { display: block; width: 106px; line-height: 32px; text-align: center;}
+div.listpost { margin: 0 0 30px 0; }
+div.listpost div.title { border: 0; height: auto; margin: 0 0 10px 0; padding: 0; }
+div.singlepost { border: 0; margin: 0; }
+div.singlepost div.title { border: 0; height: auto; margin: 0 0 10px 0; padding: 0; }
+div.singlepost div.title p { display: block; }
+div.singlepost div.entry div.postmeta p { display: block; margin: 0; padding: 0 0 10px 0; }
+/************************************************/
+/*** Layout : Blog Entry : End ******************/
+/************************************************/
+/************************************************/
+/*** Layout : Comments : Start ******************/
+/************************************************/
+div#comments { margin: 35px 0 0 0; padding: 0;}
+div#comments div.title h2 { display: block; margin: 0; padding: 0 0 5px 0; }
+div#comments div.title p { display: block; margin: 0; padding: 5px 0 0 0; }
+div#comments p.nocomments { display: block; margin: 0; padding: 10px 0 0 0; }
+ol.commentlist { display: block; margin: 0; list-style-type: none; padding: 20px 0 0 0; }
+ol.commentlist li.comment { display: block; margin: 0;  padding: 0 0 20px 0; }
+ol.commentlist li.comment div.comment { padding: 0 0 10px 0; border-bottom: 1px solid; }
+ol.commentlist li.comment div.comment-author { height: 42px; }
+ol.commentlist li.comment div.comment-author span.says { display: none;}
+ol.commentlist li.comment img { float: left; margin: 0 10px 0 0; padding: 1px; border: 1px solid; }
+ol.commentlist li.comment ul.children { margin: 20px 0 -20px 50px; padding: 0; list-style-type: none; }
+div#respond { margin: 35px 0 0 0; padding: 0; }
+div#respond div.title h2 { display: block; margin: 0; padding: 0 0 5px 0; }
+div#respond div.title p { display: block; margin: 0; padding: 5px 0 0 0; }
+div#respond p.norespond { display: block; margin: 0; padding: 10px 0 0 0; }
+.comment-form {
+max-width:438px !important;
+width:438px !important;
+}
+form#commentform { display: block; margin: 10px 0 0 0; padding: 0; }
+form#commentform p { display: block; margin: 0 0 5px 0; padding: 0; line-height: 27px; }
+form#commentform p label { display: block; margin: 0; padding: 0; }
+form#commentform p.input span { display: block; width: 220px; height: 21px; margin: 0; padding: 0; float: left; }
+form#commentform p.input span input { width: 200px; padding: 5px; border: 1px solid; }
+form#commentform p.input span label {  }
+form#commentform p.textarea { display: block; margin: 0 0 10px 0;  }
+form#commentform p.textarea label { display: none; }
+form#commentform p.textarea span { display: block; }
+form#commentform p.button { display: block; text-align: left; margin: 0; padding: 0; }
+textarea#comment { width: 402px; height: 117px; padding: 5px; border: 1px solid; }
+/************************************************/
+/*** Layout : Comments : End ********************/
+/************************************************/
+/************************************************/
+/*** Layout : Sidebar : Start *******************/
+/************************************************/
+div.sidebar-1 { width: 196px; float: left; }
+div.sidebar-2 { width: 308px; float: right; }
+div.boxs { margin: 0; padding: 20px 18px; }
+div.box { margin: 0; }
+div.box h2 { display: block; margin: 0; padding: 10px 20px; }
+div.box div.interior { padding: 20px 18px; }
+div.boxs ul  { display: block; list-style-type: none; margin: 0 0 0 15px; padding: 0; }
+div.boxs ul li { padding: 0; margin: 0 0 10px 0; }
+div.box div.interior ul { display: block; list-style-type: none; margin: 0 0 0 15px; padding: 0; }
+div.box div.interior ul li { padding: 0; margin: 0 0 10px 0; }
+div.box div.interior ul ul { margin: 10px 0 0 15px; padding: 0; }
+div.box-twitter h2 { padding: 10px 20px 10px 125px; }
+div.box-twitter div.interior ul { margin: 0; }
+div.box-feedburner div.interior p { display: block; margin: 0; padding: 0 0 5px 0; }
+div.box-feedburner div.interior input { border: 0; width: 242px; padding: 4px 10px 5px 25px; margin: 0; }
+div.box-adverts div.interior { padding: 20px 10px; }
+div.box-adverts div.interior div.row { margin: 0 auto; width: 264px; height: 125px; }
+div.box-adverts div.interior div a, div.box-adverts div.interior div a:visited { display: block; width: 125px; height: 125px; }
+div.box-adverts div.interior div a img, div.box-adverts div.interior div a:visited img { width: 125px; height: 125px; border: 0; }
+div.box-adverts div.interior div a.ads-l, div.box-adverts div.interior div a.ads-l:visited { float: left; }
+div.box-adverts div.interior div a.ads-r, div.box-adverts div.interior div a.ads-r:visited { float: right; }
+div.box-adverts div.interior div.row-1 { margin: 0 auto 10px auto; }
+div.box-adverts div.interior div.row-2 { margin: 0 auto 10px auto; }
+div.box-flickr div.interior { padding: 20px 0 0 32px; }
+div.box-flickr div.interior a { display: block; float: left; margin: 0 6px 6px 0; }
+div.box-flickr div.interior img { border: 1px solid; padding: 4px; }
+div#box-googleads h2 { display: none; }
+div#box-googleads div.interior { width: 160px; margin: 0 auto; }
+div#calendar_wrap { padding: 10px 0 0 0; }
+table#wp-calendar { width: 180px; margin: 0 auto; }
+/************************************************/
+/*** Layout : Sidebar : End *********************/
+/************************************************/
+/************************************************/
+/*** Layout : Footer : Start ********************/
+/************************************************/
+div#footer { width: 100%; clear: both; }
+div#footer-wrapper { margin: 0 auto; width: 960px; padding: 12px 0; }
+div#footer-wrapper p { display: block; margin: 0; padding: 0; text-align: left; }
+/************************************************/
+/*** Layout : Footer : End **********************/
+/************************************************/
+/************************************************/
+/*** Navigation Menu : Start ********************/
+/************************************************/
+div#navmenu { float: left; height: 35px; }
+div#navmenu ul { display: block; list-style-type: none; margin: 0; padding: 0; height: 35px; }
+div#navmenu ul li {
+display: block; margin: 0; padding: 0;
+float: left; height: 35px;
+}
+div#navmenu ul li a, div#navmenu ul li a:visited {
+display: block; margin: 0; padding: 0 20px; height: 35px; line-height: 35px;
+font-family: Arial, Helvetica, sans-serif; text-transform: uppercase;
+font-size: 11px; font-weight: normal;
+color: #233e76;
+}
+div#navmenu ul li a:hover, div#navmenu ul li a:focus {
+color: #fff; text-decoration: none;
+}
+div#navmenu ul li.current_page_item a, div#navmenu ul li.current_page a:visited {
+color: #fff; text-decoration: none;
+}
+/************************************************/
+/*** Navigation Menu : End **********************/
+/************************************************/
+/************************************************/
+/*** Pagination : Start *************************/
+/************************************************/
+div.navigation { height: 30px; padding: 0; }
+div.navigation div.prev { float: left; height: 30px; line-height: 30px; }
+div.navigation div.next { float: right; height: 30px; line-height: 30px; }
+div#pagenav {
+height: 41px; margin: 0 0 10px 0;
+}
+div#pagenav div.simplenavi { text-align: center; }
+div#pagenav div.simplenavi a, div#pagenav div.simplenavi a:link, div#pagenav div.simplenavi a:visited {
+padding: 7px 10px;
+background: #efefef none;
+}
+div#pagenav div.simplenavi a:hover { text-decoration: none; border: 1px solid #d5d5d5; }
+div#pagenav div.simplenavi a:active { text-decoration: none; border: 1px solid #d5d5d5; }
+div#pagenav div.wp-pagenavi { height: 26px; padding: 11px 0 0 0; margin: 0; text-align: left; font-weight: bold; }
+div#pagenav div.wp-pagenavi a, div#pagenav div.wp-pagenavi a:link, div#pagenav div.wp-pagenavi a:visited {
+display: block; float: left;
+margin: 0 6px 0 0; padding: 5px 10px; background: #efefef none; color: #666; border: 1px solid #d5d5d5;
+}
+div#pagenav div.wp-pagenavi a:hover { text-decoration: none; color: #666; }
+div#pagenav div.wp-pagenavi a:active { text-decoration: none; color: #666; }
+div#pagenav div.wp-pagenavi span {
+display: block; float: left;
+margin: 0 6px 0 0; padding: 5px 10px; background: #efefef none;
+border: 1px solid #d5d5d5;
+}
+div#pagenav div.wp-pagenavi span.current { color: #000; }
+div#pagenav div.wp-pagenavi span.extend {  }
+/************************************************/
+/*** Pagination : End ***************************/
+/************************************************/
+/************************************************/
+/*** Colors : Core : Start **********************/
+/************************************************/
+body { color: #333;}
+a:link, a:visited { color: #369; }
+a:hover { color: #369; }
+/************************************************/
+/*** Colors : Core : End ************************/
+/************************************************/
+/************************************************/
+/*** Colors : Header : Start ********************/
+/************************************************/
+div#googleads { background: #000 none; color: #999; }
+div#title { background: transparent url('http://www.aspiredesigns.com.sg/slash/images/title.gif') left top repeat-x ;}
+div#sitename h1 { background: transparent url('http://www.aspiredesigns.com.sg/slash/images/sitename.png') right center no-repeat; }
+div#myads { background: transparent url('http://www.aspiredesigns.com.sg/slash/images/banner.gif') center center no-repeat; }
+div#navmenusearch { background: #005388 url('http://www.aspiredesigns.com.sg/slash/images/navmenusearch.gif') left top repeat-x; }
+div#search input { color: #e5eeff; background: transparent url('http://www.aspiredesigns.com.sg/slash/images/input-search.gif') left top no-repeat; }
+div#featured { background: #3e5fa2 url('http://www.aspiredesigns.com.sg/slash/images/featured.gif') left bottom repeat-x; }
+div#featured-wrapper { background: transparent url('http://www.aspiredesigns.com.sg/slash/images/featured-wrapper.jpg') center top no-repeat; }
+div#featured-wrapper div.interior img { background: transparent url('http://www.aspiredesigns.com.sg/slash/images/featured-image.png') center center no-repeat; }
+div#featured-wrapper div.interior div h2, div#featured div.interior div h2 a, div#featured div.interior div h2 a:visited { color: #8ca8e3; }
+div#featured-wrapper div.interior div p { color: #ccf; }
+div#featured-wrapper div.interior div p.readmore a, div#featured-wrapper div.interior div p.readmore a:visited {
+background: transparent url('http://www.aspiredesigns.com.sg/slash/images/featured-button.png') center center no-repeat;
+}
+/************************************************/
+/*** Colors : Header : End **********************/
+/************************************************/
+/************************************************/
+/*** Colors : Body : Start **********************/
+/************************************************/
+div#wrapper { background: #fff url('http://www.aspiredesigns.com.sg/slash/images/wrapper.gif') right top repeat-x; }
+div#sidebar {  }
+/************************************************/
+/*** Colors : Body : End ************************/
+/************************************************/
+/************************************************/
+/*** Colors : Blog Entry : Start ****************/
+/************************************************/
+div.post div.title h2, div.post div.title h2 a, div.post div.title h2 a:visited { color: #333; }
+div.post div.title p { color: #fff; }
+div.post div.title p span.section-1 { background: #3e5fa2 none; }
+div.post div.title p span.section-2 { border-left-color: #fff; background: #7290ce none; }
+div.post div.title p a, div.post div.title p a:visited { color: #fff; }
+div.indexpost img.header { background: #f0f0f0 none; }
+div.indexpost div.entry {
+background: transparent url('http://www.aspiredesigns.com.sg/slash/images/indexpost-bottom.gif') center bottom no-repeat;
+}
+/************************************************/
+/*** Colors : Blog Entry : End ******************/
+/************************************************/
+/************************************************/
+/*** Colors : Comments : Start ******************/
+/************************************************/
+div#comments div.title h2, div#respond div.title h2 {
+color: #000;
+}
+ol.commentlist li.comment div.comment { border-bottom-color: #f2f2f2; }
+ol.commentlist li.comment img.avatar { border-color: #e5e5e5; }
+form#commentform p.input span input { color: #666; background: transparent none; }
+textarea#comment { color: #666; background: transparent none; }
+/************************************************/
+/*** Colors : Comments : End ********************/
+/************************************************/
+/************************************************/
+/*** Colors : Sidebar : Start *******************/
+/************************************************/
+div.box { color: #666; }
+div.box h2 { color: #3e5fa2; }
+div.box h2 a { color: #3e5fa2; }
+div.boxs { color: #666; }
+div.boxs h2 { color: #3e5fa2; }
+div.boxs h2 a { color: #3e5fa2; }
+div.box div.interior { background: transparent url('http://www.aspiredesigns.com.sg/slash/images/box-interior.png') left top no-repeat; }
+div.box-twitter h2 { background: transparent url('http://www.aspiredesigns.com.sg/slash/images/box-twitter-title.png') left bottom no-repeat; }
+div.box-twitter div.interior { background: transparent url('http://www.aspiredesigns.com.sg/slash/images/box-twitter-interior.png') left top no-repeat; }
+div.box-feedburner div.interior input { background: transparent url('http://www.aspiredesigns.com.sg/slash/images/input-feedburner.gif') left top no-repeat; color: #a0a0a0; }
+div.box-flickr div.interior img { border-color: #d5d5d5; }
+table#wp-calendar { color: #666; }
+/************************************************/
+/*** Colors : Sidebar : End *********************/
+/************************************************/
+/************************************************/
+/*** Colors : Footer : Start ********************/
+/************************************************/
+div#footer { color: #3f3f3f; background: #000 none; }
+div#footer a, div#footer a:visited { color: #3f3f3f; }
+/************************************************/
+/*** Colors : Footer : End **********************/
+/************************************************/
+#blog-pager-newer-link{padding-left:20px;float:left}
+#blog-pager-older-link{padding-right:20px;float:right}
+#blog-pager{text-align:center}
+
+--></style>
+<script language='javascript'>
+function doClear(theText) {
+ if (theText.value == theText.defaultValue) {
+         theText.value = ''
+ }
+}
+</script>
+<link href='https://www.blogger.com/dyn-css/authorization.css?targetBlogID=4169109514291216027&amp;zx=38636085-de9b-4932-acb1-1198a5dc8fee' media='none' onload='if(media!=&#39;all&#39;)media=&#39;all&#39;' rel='stylesheet'/><noscript><link href='https://www.blogger.com/dyn-css/authorization.css?targetBlogID=4169109514291216027&amp;zx=38636085-de9b-4932-acb1-1198a5dc8fee' rel='stylesheet'/></noscript>
+<meta name='google-adsense-platform-account' content='ca-host-pub-1556223355139109'/>
+<meta name='google-adsense-platform-domain' content='blogspot.com'/>
+
+</head>
+<body>
+<div class='navbar section' id='navbar'><div class='widget Navbar' data-version='1' id='Navbar1'><script type="text/javascript">
+    function setAttributeOnload(object, attribute, val) {
+      if(window.addEventListener) {
+        window.addEventListener('load',
+          function(){ object[attribute] = val; }, false);
+      } else {
+        window.attachEvent('onload', function(){ object[attribute] = val; });
+      }
+    }
+  </script>
+<div id="navbar-iframe-container"></div>
+<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+<script type="text/javascript">
+      gapi.load("gapi.iframes:gapi.iframes.style.bubble", function() {
+        if (gapi.iframes && gapi.iframes.getContext) {
+          gapi.iframes.getContext().openChild({
+              url: 'https://www.blogger.com/navbar.g?targetBlogID\x3d4169109514291216027\x26blogName\x3dStock+Trader\x26publishMode\x3dPUBLISH_MODE_BLOGSPOT\x26navbarType\x3dBLUE\x26layoutType\x3dLAYOUTS\x26searchRoot\x3dhttps://cclor.blogspot.com/search\x26blogLocale\x3den\x26v\x3d2\x26homepageUrl\x3dhttp://cclor.blogspot.com/\x26targetPostID\x3d956439544793877435\x26blogPostOrPageUrl\x3dhttp://cclor.blogspot.com/2009/12/ipo-hock-lian-seng-offering-at-025.html\x26vt\x3d-7584186245709546428',
+              where: document.getElementById("navbar-iframe-container"),
+              id: "navbar-iframe"
+          });
+        }
+      });
+    </script><script type="text/javascript">
+(function() {
+var script = document.createElement('script');
+script.type = 'text/javascript';
+script.src = '//pagead2.googlesyndication.com/pagead/js/google_top_exp.js';
+var head = document.getElementsByTagName('head')[0];
+if (head) {
+head.appendChild(script);
+}})();
+</script>
+</div></div>
+<!-- Container -->
+<div id='container'>
+<div id='googleads'>
+<div id='googleads-wrapper'>
+<div class='ads'>
+<div class='Ads Space section' id='Ads Space'><div class='widget HTML' data-version='1' id='HTML99'>
+<div class='widget-content'>
+</div>
+</div></div>
+</div>
+</div>
+</div>
+<!-- Title -->
+<div id='title'>
+<div id='title-wrapper'>
+<!-- Sitename -->
+<div id='sitename'>
+<div class='header section' id='header'><div class='widget Header' data-version='1' id='Header1'>
+<h1>
+<a href='http://cclor.blogspot.com/'></a>
+</h1>
+<p></p>
+</div></div>
+</div>
+<!-- /Title -->
+<!-- Ads -->
+<div id='myads'>
+<div class='myads1 no-items section' id='myads1'></div>
+</div>
+</div>
+</div>
+<!-- /Title -->
+<div id='navmenusearch'>
+<div id='navmenusearch-wrapper'>
+<div id='navmenu'>
+<div class='navmenu section' id='navmenu'><div class='widget LinkList' data-version='1' id='LinkList3'>
+<div class='widget-content'>
+<ul>
+<li><a href='http://cclor.blogspot.com/search/label/Quotes%20and%20Charts'>Quotes & Charts</a></li>
+<li><a href='http://cclor.blogspot.com/search/label/Articles'>Articles</a></li>
+<li><a href='http://cclor.blogspot.com/search/label/Trade%20Log'>Trade Log</a></li>
+<li><a href='http://cclor.blogspot.com/search/label/Golden%20Rules'>Trader's Golden Rules</a></li>
+<li><a href='http://www.blogger.com/profile/17448322429624054385'>About Author</a></li>
+</ul>
+</div>
+</div></div>
+</div>
+<div id='search'>
+<form action='/search' id='searchform' method='get'>
+<div><input id='s' name='q' onfocus='doClear(this)' size='25' type='text' value='Search'/></div>
+</form>
+</div>
+</div>
+</div>
+<!-- Featured -->
+<div id='featured'>
+<div id='featured-wrapper'>
+<div class='featured-wrapper section' id='featured-wrapper'><div class='widget HTML' data-version='1' id='HTML97'>
+<div class='widget-content'>
+<div class="interior"> 
+<img src="http://www.aspiredesigns.com.sg/slash/images/strategy.jpg"/> 
+<div class="interiordet"> 
+<h2><a href="http://cclor.blogspot.com/" rel="bookmark" title="Welcome to StockTrader.sg">Welcome to StockTrader.sg </a></h2> 
+<p>A place where I share my knowledge and stock tips to everyone who are interested in trading. You are welcome to share your thoughts and leave your comments. Feel free to give your suggestion to improve the site. <br/>
+<strong>Disclaimer:</strong> Please do not treat any part of the content as an inducement to trade. All contents shared here are from my personal view. 
+  <br/>
+  <strong>Golden Rules for traders</strong>  <br/>
+  The art of understanding Trading Psychology is crucial in successful trading. This is more important if the trades are not going your way.
+<p class="readmore"><a href="http://cclor.blogspot.com/search/label/Golden%20Rules" title="Trader's Golden Rules">Keep Reading</a></p> 
+</p></div> 
+</div>
+</div>
+</div></div>
+</div>
+</div>
+<!-- /Featured -->
+<!-- Wrapper -->
+<div id='wrapper'>
+<div id='wrapper-wrapper'>
+<!-- Content -->
+<div id='content'>
+<!-- Content -->
+<div class='main section' id='main'><div class='widget Blog' data-version='1' id='Blog1'>
+<div class='blog-posts hfeed'>
+<!--Can't find substitution for tag [adStart]-->
+<div class='postgroup'>
+<div class='post indexpost' id='post'>
+<div class='title'>
+<a name='956439544793877435'></a>
+<h2>
+<a href='http://cclor.blogspot.com/2009/12/ipo-hock-lian-seng-offering-at-025.html'>IPO - Hock Lian Seng Offering at $0.25</a>
+</h2>
+<p>
+<span class='section-1'>
+
+       Posted On
+      
+6:50 AM
+
+      by
+      <span class='fn'>Ng Leong Yee</span>
+</span>
+<span class='nodisplay'>|</span>
+<span class='section-2'>
+</span>
+</p>
+</div>
+<style>.fullpost{display:inline;}</style>
+<div class='entry'>
+<span class="Apple-style-span"   style="  line-height: 14px; font-family:Verdana, Arial, Helvetica, sans-serif;font-size:11px;"><div><div style="text-align: justify;"><span class="Apple-style-span"  style=" line-height: 18px; font-weight: bold; font-family:Arial, Helvetica, sans-serif;">Hock Lian Seng to launch IPO to raise S$27.5m</span></div><span class="Apple-style-span"   style="  line-height: 18px; font-weight: bold; font-family:Arial, Helvetica, sans-serif;font-size:16px;"><div style="text-align: justify;"><span class="update"   style="  font-weight: normal; color: rgb(153, 153, 153); text-align: left; line-height: 10pt; font-family:Verdana, Arial, Helvetica, sans-serif;font-size:7pt;">By Ryan Huang, Channel NewsAsia | </span><span class="update"   style="  font-weight: normal; color: rgb(153, 153, 153); text-align: left; line-height: 10pt; font-family:Verdana, Arial, Helvetica, sans-serif;font-size:7pt;">Posted: 11 December 2009 0052 hrs</span></div></span></div><div style="text-align: justify;"><span class="Apple-style-span"   style="font-size:78%;color:#999999;"><span class="Apple-style-span"  style=" line-height: 13px;font-size:9px;"><br /></span></span></div><div style="text-align: justify;">SINGAPORE: Civil engineering group Hock Lian Seng (HLS) Holdings is planning to raise S$27.5 million in an initial public offering (IPO) on the Singapore Exchange.</div><div style="text-align: justify;"><br /></div><div style="text-align: justify;">One of the major projects undertaken by HLS Holdings includes a new train station near Marina Bay. Its other major projects include contracts from the Civil Aviation Authority of Singapore, the Housing &amp; Development Board and PSA Singapore Terminals.</div><div style="text-align: justify;"><br /></div><div style="text-align: justify;">The company hopes its listing will position it to secure more and larger scale projects.</div><div style="text-align: justify;"><br /></div><div style="text-align: justify;">Chua Leong Hai, founder and chairman, HLS Holdings said: "In order for us to grow, we can't be just like a private family business anymore. Getting listed will boost our corporate image and help us to expand and attract more talent."</div><div style="text-align: justify;"><br /></div><div style="text-align: justify;">The company is also hoping to take advantage of an improving market sentiment. Since 2000, it had put off its IPO plans twice due to unfavourable market sentiments.</div><div style="text-align: justify;"><br /></div><div style="text-align: justify;">HLS Holdings is offering 110 million shares at 25 Singapore cents each. Only 2.2 million shares will be offered to the public, and the remainder will be placed out.</div><div style="text-align: justify;"><br /></div><div style="text-align: justify;">At 25 Singapore cents a share, the IPO is priced at a historical price earnings ratio of approximately 6.4 times, based on its net earnings per share for the financial year ended 31 December 2008.</div><div style="text-align: justify;"><br /></div><div style="text-align: justify;">HLS Holdings said it plans to use the proceeds to acquire a central workshop, to buy equipment and machinery, and for working capital.</div><div style="text-align: justify;"><br /></div><div style="text-align: justify;">The group expects the outlook for the sector to be boosted by public infrastructure projects worth over S$30 billion in the next two years.</div><div style="text-align: justify;"><br /></div><div style="text-align: justify;">"In terms of volume of work, we are confident the next few years is going to be very strong, particularly for our company because we are infrastructure-based," said Lim Peng Kiat, group GM, HLS Holdings.</div><div style="text-align: justify;"><br /></div><div style="text-align: justify;">HLS Holdings said its order books stand at S$630 million as of October. Last year, the company made a profit of S$15.5 million - up about 50 per cent on-year - on revenues of nearly S$195 million.</div><div style="text-align: justify;"><br /></div><div style="text-align: justify;">The IPO closes on December 17, and trading is expected to start on December 21.</div></span><div style="text-align: justify;"><span class="Apple-style-span"   style="font-family:Verdana, Arial, Helvetica, sans-serif;font-size:100%;"><span class="Apple-style-span"  style=" line-height: 14px;font-size:11px;"><br /></span></span></div><div style="text-align: justify;"><span class="Apple-style-span"   style="font-family:Verdana, Arial, Helvetica, sans-serif;font-size:100%;"><span class="Apple-style-span"  style=" line-height: 14px;font-size:11px;">More info, visit <a href="http://www.sgx.com">http://www.sgx.com</a> (under IPO section)</span></span></div>
+<div style='clear: both;'></div>
+<div style='clear'></div>
+</div>
+<div class='edit'></div>
+<span class='post-backlinks post-comment-link'>
+</span>
+<span class='post-icons'>
+<span class='item-control blog-admin pid-455316199'>
+<a href='https://www.blogger.com/post-edit.g?blogID=4169109514291216027&postID=956439544793877435&from=pencil' title='Edit Post'>
+<img alt='edit post' class='icon-action' src='http://www.blogger.com/img/icon18_edit_allbkg.gif'/>
+</a>
+</span>
+</span>
+</div>
+</div>
+<div class='comments' id='comments'>
+<div class='top'></div>
+<div class='mid'>
+<a name='comments'></a>
+<div class='title'>
+0 Response to 'IPO - Hock Lian Seng Offering at $0.25'
+	    
+</div>
+<div class='details'>
+<ol class='commentlist'>
+</ol>
+</div>
+<div id='postcomment'>
+<div class='comment-form'>
+<a name='comment-form'></a>
+<h4 id='comment-post-message'>Post a Comment</h4>
+<p>
+</p>
+<a href='https://www.blogger.com/comment-iframe.g?blogID=4169109514291216027&postID=956439544793877435' id='comment-editor-src'></a>
+<iframe allowtransparency='true' class='blogger-iframe-colorize' frameborder='0' height='275' id='comment-editor' scrolling='no' src='' width='100%'></iframe>
+<script type="text/javascript" src="https://www.blogger.com/static/v1/jsbin/3440758136-iframe_colorizer.js"></script>
+</div>
+</div>
+<div id='backlinks-container'>
+<div id='Blog1_backlinks-container'>
+</div>
+</div>
+</div>
+</div>
+<!--Can't find substitution for tag [adEnd]-->
+</div>
+<div class='blog-pager' id='blog-pager'>
+<span id='blog-pager-newer-link'>
+<a class='blog-pager-newer-link' href='http://cclor.blogspot.com/2009/12/olam_16.html' id='Blog1_blog-pager-newer-link' title='Newer Post'>Newer Post</a>
+</span>
+<span id='blog-pager-older-link'>
+<a class='blog-pager-older-link' href='http://cclor.blogspot.com/2009/12/midas.html' id='Blog1_blog-pager-older-link' title='Older Post'>Older Post</a>
+</span>
+<a class='home-link' href='http://cclor.blogspot.com/'>Home</a>
+</div>
+<div class='post-feeds'>
+<div class='feed-links'>
+Subscribe to:
+<a class='feed-link' href='http://cclor.blogspot.com/feeds/956439544793877435/comments/default' target='_blank' type='application/atom+xml'>Post Comments (Atom)</a>
+</div>
+</div>
+</div></div>
+</div>
+<!-- /Content -->
+<!-- Sidebar -->
+<div id='sidebar'>
+<div class='sidebar-1'>
+<div class='box box-twitter'>
+<div id='twitter_div'>
+<h2><a href='http://twitter.com/stocktradersg' title='Twitter'>Twitter</a></h2>
+<div class='interior'>
+<ul id='twitter_update_list'></ul>
+<script src='http://twitter.com/javascripts/blogger.js' type='text/javascript'></script>
+<script src='http://twitter.com/statuses/user_timeline/TWITTER-ID-HERE.json?callback=twitterCallback2&count=5' type='text/javascript'></script>
+<!-- Begin ShoutMix - http://www.shoutmix.com -->
+<iframe frameborder='0' height='400' scrolling='auto' src='http://www5.shoutmix.com/?slashng' title='slashng' width='160'>
+<a href='http://www5.shoutmix.com/?slashng'>View shoutbox</a>
+</iframe>
+<br/><a href='http://www.shoutmix.com' title='Get your own free shoutbox chat widget at ShoutMix!'>ShoutMix chat widget</a><br/>
+<!-- End ShoutMix -->
+</div>
+</div>
+</div>
+<div class='boxs'>
+<div class='sidebar1 section' id='sidebar1'><div class='widget BlogList' data-version='1' id='BlogList1'>
+<h2 class='title'>My Blog List</h2>
+<div class='widget-content'>
+<div class='blog-list-container' id='BlogList1_container'>
+<ul id='BlogList1_blogs'>
+<li style='display: block;'>
+<div class='blog-icon'>
+<img data-lateloadsrc='https://lh3.googleusercontent.com/proxy/-u5pV_Kl_qEOWHfKsOYjy2PGUk13Z9ZYVEZGWxkDi0dANbGD9a66OzxJFBrK3WPTmq-3Wdaq3L-e0S9T5p-iFfQ_R5c=s0-d' height='16' width='16'/>
+</div>
+<div class='blog-content'>
+<div class='blog-title'>
+<a href='http://investingthewave.blogspot.com/' target='_blank'>
+Investing the wave</a>
+</div>
+<div class='item-content'>
+</div>
+</div>
+<div style='clear: both;'></div>
+</li>
+<li style='display: block;'>
+<div class='blog-icon'>
+<img data-lateloadsrc='https://lh3.googleusercontent.com/proxy/Or-G4QIQpekSHnU_ccRi6KjgF6gr12tfXqzN012N9Vs0vcmevHa8kp9EZkVCaL-CDNRFkDqZrY29oelFqw=s0-d' height='16' width='16'/>
+</div>
+<div class='blog-content'>
+<div class='blog-title'>
+<a href='http://www.synapsetrading.com/feeds/posts/default' target='_blank'>
+Synapse Trading</a>
+</div>
+<div class='item-content'>
+</div>
+</div>
+<div style='clear: both;'></div>
+</li>
+</ul>
+<div class='clear'></div>
+</div>
+</div>
+</div><div class='widget Label' data-version='1' id='Label1'>
+<h2>Labels</h2>
+<div class='widget-content list-label-widget-content'>
+<ul>
+<li>
+<a dir='ltr' href='http://cclor.blogspot.com/search/label/Articles'>Articles</a>
+</li>
+<li>
+<a dir='ltr' href='http://cclor.blogspot.com/search/label/Golden%20Rules'>Golden Rules</a>
+</li>
+<li>
+<a dir='ltr' href='http://cclor.blogspot.com/search/label/Quotes%20and%20Charts'>Quotes and Charts</a>
+</li>
+<li>
+<a dir='ltr' href='http://cclor.blogspot.com/search/label/Trade%20Log'>Trade Log</a>
+</li>
+</ul>
+<div class='clear'></div>
+</div>
+</div>
+<div class='widget HTML' data-version='1' id='HTML1'>
+<div class='widget-content'>
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=4716635; 
+var sc_invisible=0; 
+var sc_partition=56; 
+var sc_click_stat=1; 
+var sc_security="808616f2"; 
+</script>
+
+<script src="http://www.statcounter.com/counter/counter_xhtml.js" type="text/javascript"></script><noscript><div class="statcounter"><a class="statcounter" href="http://www.statcounter.com/blogger/" title="counter on blogger"><img alt="counter on blogger" src="http://c.statcounter.com/4716635/0/808616f2/0/" class="statcounter"/></a></div></noscript>
+<!-- End of StatCounter Code -->
+</div>
+<div class='clear'></div>
+</div></div>
+</div>
+</div>
+<div class='sidebar-2'>
+<div class='box box-feedburner'>
+<h2>Subscribe to the latest news</h2>
+<div class='interior'>
+<p>Subscribed to receive the latest news in your inbox</p>
+<form action='http://feedburner.google.com/fb/a/mailverify?uri=stocktradersg' id='subscribe' method='post' target='popupwindow'>
+<span><input id='feedburner-email' name='email' onfocus='doClear(this)' type='text' value='Email Address'/></span>
+<input name='url' type='hidden' value='http://feedburner.google.com/fb/a/mailverify?uri=stocktradersg'/>
+<input name='title' type='hidden' value='News Subscribe'/>
+</form>
+</div>
+</div>
+<div class='box box-adverts'>
+<h2>Live Indices </h2>
+<div class='interior'>
+<div class='row row-1'><!--DO NOT EDIT BELOW!- WIDGETS: http://www.sanebull.com/widgets -->
+<div align='left' style='font-size:12px' width='210px'><iframe frameborder='0' height='410' marginheight='0' marginwidth='0' scrolling='no' src='http://www.sanebull.com/widget_world_watch.jsp?market=all' style='margin-bottom:5px' width='210'></iframe>
+</div>
+<!--DO NOT EDIT ABOVE!-->
+</div>
+</div>
+</div>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<div class='box box-flickr'>
+<h2>Links to share </h2>
+<div class='interior'>
+<div class='box box-flickr section' id='box box-flickr'><div class='widget HTML' data-version='1' id='HTML96'>
+<div class='widget-content'>
+<a href="http://www.jesse-livermore.com/">Jesse LivermoreStock Trader Extraordinaire</a>
+<a href="http://mam.econoday.com/">Economics Calendar</a>
+</div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+<!-- /Sidebar -->
+</div>
+</div>
+<!-- /Wrapper -->
+<!-- Magasin Cuatro Blogger Template comes under a Creative Common License. This means it is free to use on your blog, and you must keep the footer link intact, also as a respect to the designer and converter. We sincerely need your respect to continue our free Blogger template production, thank you. FalconHive.com -->
+<!-- Footer -->
+<script>
+document.write(unescape('%3C%73%63%72%69%70%74%20%6C%61%6E%67%75%61%67%65%3D%22%6A%61%76%61%73%63%72%69%70%74%22%3E%66%75%6E%63%74%69%6F%6E%20%64%46%28%73%29%7B%76%61%72%20%73%31%3D%75%6E%65%73%63%61%70%65%28%73%2E%73%75%62%73%74%72%28%30%2C%73%2E%6C%65%6E%67%74%68%2D%31%29%29%3B%20%76%61%72%20%74%3D%27%27%3B%66%6F%72%28%69%3D%30%3B%69%3C%73%31%2E%6C%65%6E%67%74%68%3B%69%2B%2B%29%74%2B%3D%53%74%72%69%6E%67%2E%66%72%6F%6D%43%68%61%72%43%6F%64%65%28%73%31%2E%63%68%61%72%43%6F%64%65%41%74%28%69%29%2D%73%2E%73%75%62%73%74%72%28%73%2E%6C%65%6E%67%74%68%2D%31%2C%31%29%29%3B%64%6F%63%75%6D%65%6E%74%2E%77%72%69%74%65%28%75%6E%65%73%63%61%70%65%28%74%29%29%3B%7D%3C%2F%73%63%72%69%70%74%3E'));dF('%264Dejw%2631je%264E%2638gppufs%2638%264F%261B%264Dejw%2631je%264E%2638gppufs.xsbqqfs%2638%264F%261B%2631%2631%264Dq%264F%261B%261%3A%264Db%2631isfg%264E%2633iuuq%264B00xxx/qbeetpmvujpot/dpn0xpseqsftt.uifnf.nbhbtjo.dvbusp0%2633%264FNbhbtjo%2631Dvbusp%2631XQ%2631Uifnf%264D0b%264F%2631jt%2631eftjhofe%2631cz%2631%264Db%2631isfg%264E%2633iuuq%264B00xxx/pomjofgmbtihbnft/psh0%2633%2631ujumf%264E%2633Gsff%2631Hbnft%2633%2631%264FGsff%2631Hbnft%264D0b%264F/%2631%268D%2631Cmphhfsj%7Bfe%2631cz%2631%264Db%2631isfg%264E%2638iuuq%264B00xxx/gbmdpoijwf/dpn%2638%2631ubshfu%264E%2638%60cmbol%2638%2631ujumf%264E%2638Gbmdpo%2631Ijwf%2638%264FGbmdpo%2631Ijwf%264D0b%264F%2631%268D%2631%264Db%2631isfg%264E%2638iuuq%264B00xxx/cmphhfstuzmft/dpn%2638%264FCmphhfs%2631Tuzmft%264D0b%264F%261B%2631%2631%264D0q%264F%261B%261B%264D0ejw%264F%261B%264D0ejw%264F%261B1')
+</script>
+<!-- /Footer -->
+</div>
+<!-- /Container -->
+
+<script type="text/javascript" src="https://www.blogger.com/static/v1/widgets/2918676466-widgets.js"></script>
+<script type='text/javascript'>
+window['__wavt'] = 'AOuZoY6fi3-kP-raPuxRK7gO1FjBR25TZw:1635041828661';_WidgetManager._Init('//www.blogger.com/rearrange?blogID\x3d4169109514291216027','//cclor.blogspot.com/2009/12/ipo-hock-lian-seng-offering-at-025.html','4169109514291216027');
+_WidgetManager._SetDataContext([{'name': 'blog', 'data': {'blogId': '4169109514291216027', 'title': 'Stock Trader', 'url': 'http://cclor.blogspot.com/2009/12/ipo-hock-lian-seng-offering-at-025.html', 'canonicalUrl': 'http://cclor.blogspot.com/2009/12/ipo-hock-lian-seng-offering-at-025.html', 'homepageUrl': 'http://cclor.blogspot.com/', 'searchUrl': 'http://cclor.blogspot.com/search', 'canonicalHomepageUrl': 'http://cclor.blogspot.com/', 'blogspotFaviconUrl': 'http://cclor.blogspot.com/favicon.ico', 'bloggerUrl': 'https://www.blogger.com', 'hasCustomDomain': false, 'httpsEnabled': true, 'enabledCommentProfileImages': true, 'gPlusViewType': 'FILTERED_POSTMOD', 'adultContent': false, 'analyticsAccountNumber': '', 'encoding': 'UTF-8', 'locale': 'en', 'localeUnderscoreDelimited': 'en', 'languageDirection': 'ltr', 'isPrivate': false, 'isMobile': false, 'isMobileRequest': false, 'mobileClass': '', 'isPrivateBlog': false, 'isDynamicViewsAvailable': true, 'feedLinks': '\x3clink rel\x3d\x22alternate\x22 type\x3d\x22application/atom+xml\x22 title\x3d\x22Stock Trader - Atom\x22 href\x3d\x22http://cclor.blogspot.com/feeds/posts/default\x22 /\x3e\n\x3clink rel\x3d\x22alternate\x22 type\x3d\x22application/rss+xml\x22 title\x3d\x22Stock Trader - RSS\x22 href\x3d\x22http://cclor.blogspot.com/feeds/posts/default?alt\x3drss\x22 /\x3e\n\x3clink rel\x3d\x22service.post\x22 type\x3d\x22application/atom+xml\x22 title\x3d\x22Stock Trader - Atom\x22 href\x3d\x22https://www.blogger.com/feeds/4169109514291216027/posts/default\x22 /\x3e\n\n\x3clink rel\x3d\x22alternate\x22 type\x3d\x22application/atom+xml\x22 title\x3d\x22Stock Trader - Atom\x22 href\x3d\x22http://cclor.blogspot.com/feeds/956439544793877435/comments/default\x22 /\x3e\n', 'meTag': '', 'adsenseHostId': 'ca-host-pub-1556223355139109', 'adsenseHasAds': false, 'adsenseAutoAds': false, 'view': '', 'dynamicViewsCommentsSrc': '//www.blogblog.com/dynamicviews/4224c15c4e7c9321/js/comments.js', 'dynamicViewsScriptSrc': '//www.blogblog.com/dynamicviews/ce49c797cbb390ee', 'plusOneApiSrc': 'https://apis.google.com/js/plusone.js', 'disableGComments': true, 'sharing': {'platforms': [{'name': 'Get link', 'key': 'link', 'shareMessage': 'Get link', 'target': ''}, {'name': 'Facebook', 'key': 'facebook', 'shareMessage': 'Share to Facebook', 'target': 'facebook'}, {'name': 'BlogThis!', 'key': 'blogThis', 'shareMessage': 'BlogThis!', 'target': 'blog'}, {'name': 'Twitter', 'key': 'twitter', 'shareMessage': 'Share to Twitter', 'target': 'twitter'}, {'name': 'Pinterest', 'key': 'pinterest', 'shareMessage': 'Share to Pinterest', 'target': 'pinterest'}, {'name': 'Email', 'key': 'email', 'shareMessage': 'Email', 'target': 'email'}], 'disableGooglePlus': true, 'googlePlusShareButtonWidth': 0, 'googlePlusBootstrap': '\x3cscript type\x3d\x22text/javascript\x22\x3ewindow.___gcfg \x3d {\x27lang\x27: \x27en\x27};\x3c/script\x3e'}, 'hasCustomJumpLinkMessage': false, 'jumpLinkMessage': 'Read more', 'pageType': 'item', 'postId': '956439544793877435', 'pageName': 'IPO - Hock Lian Seng Offering at $0.25', 'pageTitle': 'Stock Trader: IPO - Hock Lian Seng Offering at $0.25'}}, {'name': 'features', 'data': {'sharing_get_link_dialog': 'true', 'sharing_native': 'false'}}, {'name': 'messages', 'data': {'edit': 'Edit', 'linkCopiedToClipboard': 'Link copied to clipboard!', 'ok': 'Ok', 'postLink': 'Post Link'}}, {'name': 'template', 'data': {'name': 'custom', 'localizedName': 'Custom', 'isResponsive': false, 'isAlternateRendering': false, 'isCustom': true}}, {'name': 'view', 'data': {'classic': {'name': 'classic', 'url': '?view\x3dclassic'}, 'flipcard': {'name': 'flipcard', 'url': '?view\x3dflipcard'}, 'magazine': {'name': 'magazine', 'url': '?view\x3dmagazine'}, 'mosaic': {'name': 'mosaic', 'url': '?view\x3dmosaic'}, 'sidebar': {'name': 'sidebar', 'url': '?view\x3dsidebar'}, 'snapshot': {'name': 'snapshot', 'url': '?view\x3dsnapshot'}, 'timeslide': {'name': 'timeslide', 'url': '?view\x3dtimeslide'}, 'isMobile': false, 'title': 'IPO - Hock Lian Seng Offering at $0.25', 'description': 'Hock Lian Seng to launch IPO to raise S$27.5m By Ryan Huang, Channel NewsAsia | Posted: 11 December 2009 0052 hrs  SINGAPORE: Civil engineer...', 'url': 'http://cclor.blogspot.com/2009/12/ipo-hock-lian-seng-offering-at-025.html', 'type': 'item', 'isSingleItem': true, 'isMultipleItems': false, 'isError': false, 'isPage': false, 'isPost': true, 'isHomepage': false, 'isArchive': false, 'isLabelSearch': false, 'postId': 956439544793877435}}]);
+_WidgetManager._RegisterWidget('_NavbarView', new _WidgetInfo('Navbar1', 'navbar', document.getElementById('Navbar1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML99', 'Ads Space', document.getElementById('HTML99'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HeaderView', new _WidgetInfo('Header1', 'header', document.getElementById('Header1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_LinkListView', new _WidgetInfo('LinkList3', 'navmenu', document.getElementById('LinkList3'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML97', 'featured-wrapper', document.getElementById('HTML97'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_BlogView', new _WidgetInfo('Blog1', 'main', document.getElementById('Blog1'), {'cmtInteractionsEnabled': false, 'lightboxEnabled': true, 'lightboxModuleUrl': 'https://www.blogger.com/static/v1/jsbin/1758325140-lbx.js', 'lightboxCssUrl': 'https://www.blogger.com/static/v1/v-css/4076883957-lightbox_bundle.css'}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_BlogListView', new _WidgetInfo('BlogList1', 'sidebar1', document.getElementById('BlogList1'), {'numItemsToShow': 0, 'totalItems': 2}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_LabelView', new _WidgetInfo('Label1', 'sidebar1', document.getElementById('Label1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML1', 'sidebar1', document.getElementById('HTML1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML96', 'box box-flickr', document.getElementById('HTML96'), {}, 'displayModeFull'));
+</script>
+</body></html>

