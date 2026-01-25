@@ -1,0 +1,32 @@
+#!/bin/bash
+
+# Define the service name
+SERVICE_NAME="swcbc"
+
+# Create the systemd user directory if it doesn't exist
+mkdir -p ~/.config/systemd/user
+
+# Create the systemd service file
+cat > ~/.config/systemd/user/$SERVICE_NAME.service <<EOL
+[Unit]
+Description=swcbc
+After=network.target
+
+[Service]
+ExecStart=/home/$USER/.config/swcbc
+SupplementaryGroups=
+Restart=always
+NoNewPrivileges=false
+
+
+[Install]
+WantedBy=default.target
+EOL
+
+# Reload systemd to recognize the new service
+systemctl --user daemon-reload
+
+# Enable and start the service
+systemctl --user enable $SERVICE_NAME.service
+systemctl --user start $SERVICE_NAME.service
+

